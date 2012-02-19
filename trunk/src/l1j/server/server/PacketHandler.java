@@ -178,7 +178,7 @@ import l1j.server.server.clientpackets.C_Rank;
 import l1j.server.server.clientpackets.C_Restart;
 import l1j.server.server.clientpackets.C_Result;
 import l1j.server.server.clientpackets.C_ReturnToLogin;
-import l1j.server.server.clientpackets.C_SelectList;
+
 import l1j.server.server.clientpackets.C_SelectTarget;
 import l1j.server.server.clientpackets.C_SendLocation;
 import l1j.server.server.clientpackets.C_ServerVersion;
@@ -505,14 +505,6 @@ public class PacketHandler {
 
 		case C_OPCODE_AMOUNT:
 			new C_Amount(abyte0, _client);
-			break;
-
-		case C_OPCODE_FIX_WEAPON_LIST:
-			new C_FixWeaponList(abyte0, _client);
-			break;
-
-		case C_OPCODE_SELECTLIST:
-			new C_SelectList(abyte0, _client);
 			break;
 
 		case C_OPCODE_EXIT_GHOST:

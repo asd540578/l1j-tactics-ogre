@@ -84,28 +84,12 @@ public class ClientThread implements Runnable, PacketOutput {
 
 	private int _loginStatus = 0;
 
-	// private static final byte[] FIRST_PACKET = { 10, 0, 38, 58, -37, 112, 46,
-	// 90, 120, 0 }; // for Episode5
-	// private static final byte[] FIRST_PACKET =
-	// { (byte) 0x12, (byte) 0x00, (byte) 0x14, (byte) 0x1D,
-	// (byte) 0x82,
-	// (byte) 0xF1,
-	// (byte) 0x0C, // = 0x0cf1821d
-	// (byte) 0x87, (byte) 0x7D, (byte) 0x75, (byte) 0x7D,
-	// (byte) 0xA1, (byte) 0x3B, (byte) 0x62, (byte) 0x2C,
-	// (byte) 0x5E, (byte) 0x3E, (byte) 0x9F }; // for Episode 6
-	// private static final byte[] FIRST_PACKET = { 2.70C
-	// (byte) 0xb1, (byte) 0x3c, (byte) 0x2c, (byte) 0x28,
-	// (byte) 0xf6, (byte) 0x65, (byte) 0x1d, (byte) 0xdd,
-	// (byte) 0x56, (byte) 0xe3, (byte) 0xef };
-	// private static final byte[] FIRST_PACKET = { // 3.0c
-	// (byte) 0xec, (byte) 0x64, (byte) 0x3e, (byte) 0x0d,
-	// (byte) 0xc0, (byte) 0x82, (byte) 0x00, (byte) 0x00,
-	// (byte) 0x02, (byte) 0x08, (byte) 0x00 };
-	private static final byte[] FIRST_PACKET = { // 3.3C
-	(byte) 0x65, (byte) 0xb6, (byte) 0xbd, (byte) 0x65, (byte) 0xcc,
-			(byte) 0xd0, (byte) 0x7e, (byte) 0x53, (byte) 0x2e, (byte) 0xfa,
-			(byte) 0xc1 };
+	  private static final byte[] FIRST_PACKET = { // 3.5C Taiwan Server
+          (byte) 0xf4, (byte) 0x0a, (byte) 0x8d, (byte) 0x23, (byte) 0x6f,
+          (byte) 0x7f, (byte) 0x04, (byte) 0x00, (byte) 0x05, (byte) 0x08,
+          (byte) 0x00
+};
+
 
 	/**
 	 * for Test
@@ -236,7 +220,7 @@ public class ClientThread implements Runnable, PacketOutput {
 		 * ex1.サーバに過負荷が掛かっている場合、負荷が落ちたときにクライアントパケットを一気に処理し、結果的に不正扱いとなる。
 		 * ex2.サーバ側のネットワーク（下り）にラグがある場合、クライアントパケットが一気に流れ込み、結果的に不正扱いとなる。
 		 * ex3.クライアント側のネットワーク（上り）にラグがある場合、以下同様。
-		 * 
+		 *
 		 * 無制限にする前に不正検出方法を見直す必要がある。
 		 */
 		HcPacket movePacket = new HcPacket(M_CAPACITY);

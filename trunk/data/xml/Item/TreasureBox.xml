@@ -127,7 +127,7 @@
 	</TreasureBox>
 
 	<!-- 武器の箱（ランクＢ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60202">	
 		<Item ItemId="505"  Count="1" Chance="2" /> <!-- マローダーナイフ-->
 		<Item ItemId="506"  Count="1" Chance="2" /> <!-- プレデターナイフ-->
 		<Item ItemId="507"  Count="1" Chance="2" /> <!-- ソロトル-->
@@ -176,7 +176,7 @@
 	</TreasureBox>
 
 	<!-- 武器の箱（ランクＣ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60203">	
 		<Item ItemId="503"  Count="1" Chance="2" /> <!-- ダマスカスダガー-->
 		<Item ItemId="504"  Count="1" Chance="2" /> <!-- ブリリアントダガー-->
 		<Item ItemId="603"  Count="1" Chance="2" /> <!-- ダマスクソード-->
@@ -199,7 +199,7 @@
 	</TreasureBox>
 	
 	<!-- 武器の箱（ランクＤ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60204">	
 		<Item ItemId="501"  Count="1" Chance="2" /> <!-- バトルナイフ-->
 		<Item ItemId="502"  Count="1" Chance="2" /> <!-- バルダーダガー-->
 		<Item ItemId="601"  Count="1" Chance="2" /> <!-- シャムシール-->
@@ -225,7 +225,7 @@
 	</TreasureBox>
 
 	<!-- 武器の箱（ランクＥ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60205">	
 		<Item ItemId="500"  Count="1" Chance="2" /> <!-- ミニマムダガー-->
 		<Item ItemId="600"  Count="1" Chance="2" /> <!-- ショートソード-->
 		<Item ItemId="700"  Count="1" Chance="2" /> <!-- ブロードソード-->
@@ -246,7 +246,7 @@
 
 
 	<!-- 防具の箱（ランクＡ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60206">	
 		<Item ItemId="30015"  Count="1" Chance="2" /> <!-- フレイムシールド-->
 		<Item ItemId="30016"  Count="1" Chance="2" /> <!-- イージスの盾-->
 		<Item ItemId="30019"  Count="1" Chance="2" /> <!-- ハーネラの加護-->
@@ -309,7 +309,7 @@
 	</TreasureBox>
 
 	<!-- 防具の箱（ランクＢ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60207">	
 		<Item ItemId="30009"  Count="1" Chance="2" /> <!-- ヒーターシールド-->
 		<Item ItemId="30010"  Count="1" Chance="2" /> <!-- アイスシールド-->
 		<Item ItemId="30011"  Count="1" Chance="2" /> <!-- ウィンドシールド-->
@@ -360,7 +360,7 @@
 	</TreasureBox>
 
 	<!-- 防具の箱（ランクＣ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60208">	
 		<Item ItemId="30005"  Count="1" Chance="2" /> <!-- ダマスカスシールド-->
 		<Item ItemId="30006"  Count="1" Chance="2" /> <!-- ドラゴンスケイル-->
 		<Item ItemId="30007"  Count="1" Chance="2" /> <!-- ロゼンジシールド-->
@@ -384,7 +384,7 @@
 	</TreasureBox>
 	
 	<!-- 防具の箱（ランクＤ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60209">	
 		<Item ItemId="30002"  Count="1" Chance="2" /> <!-- サークルシールド-->
 		<Item ItemId="30003"  Count="1" Chance="2" /> <!-- スパイクシールド-->
 		<Item ItemId="30004"  Count="1" Chance="2" /> <!-- バルダーシールド-->
@@ -405,7 +405,7 @@
 	</TreasureBox>
 
 	<!-- 防具の箱（ランクＥ） -->
-	<TreasureBox Type="RANDOM" ItemId="60201">	
+	<TreasureBox Type="RANDOM" ItemId="60210">	
 		<Item ItemId="30000"  Count="1" Chance="2" /> <!-- バックラー-->
 		<Item ItemId="30001"  Count="1" Chance="2" /> <!-- ベルターシールド-->
 		<Item ItemId="30100"  Count="1" Chance="2" /> <!-- レザーアーマー-->

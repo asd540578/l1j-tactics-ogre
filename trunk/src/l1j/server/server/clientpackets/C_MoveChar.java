@@ -62,8 +62,10 @@ public class C_MoveChar extends ClientBasePacket {
 
 		L1PcInstance pc = client.getActiveChar();
 
-		if (pc.isTeleport()) { // テレポート処理中
-			return;
+		if (pc.isTeleport()) { // 傳送中
+			if (pc == null || pc.isTeleport()) {  // テレポート処理中
+				return;
+			}
 		}
 
 		// 移動要求間隔をチェックする

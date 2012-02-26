@@ -157,11 +157,10 @@ public class L1Party {
 			// パーティーリーダーの場合
 			breakup();
 		} else {
-			removeMember(pc);
 			if (isLeader(pc)) { // 隊長離隊自動分配下一個隊長
-				removeMember(pc);
 				L1PcInstance[] member = getMembers();// 下一個隊員
 				passLeader(member[0]);
+				removeMember(pc);
 			}
 			for (L1PcInstance member : getMembers()) {
 				sendLeftMessage(member, pc);

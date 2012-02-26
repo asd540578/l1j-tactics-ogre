@@ -384,6 +384,9 @@ public class L1SkillUse
 			L1PcInstance pc = (L1PcInstance) _user;
 			L1PcInventory pcInventory = pc.getInventory();
 
+			if (pc.isTeleport()) { // 傳送中
+				return false;
+			}
 			if (pc.isParalyzed())
 			{ // 麻痺・凍結状態か
 				return false;
@@ -532,6 +535,9 @@ public class L1SkillUse
 		// スペルスクロールを使用するのはPCのみ
 		L1PcInstance pc = (L1PcInstance) _user;
 
+		if (pc.isTeleport()) { // 傳送中
+			return false;
+		}
 		if (pc.isParalyzed())
 		{ // 麻痺・凍結状態か
 			return false;

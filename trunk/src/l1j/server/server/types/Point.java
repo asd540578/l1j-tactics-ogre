@@ -70,7 +70,7 @@ public class Point {
 
 	/**
 	 * 指定された向きにこの座標をひとつ進める。
-	 * 
+	 *
 	 * @param heading
 	 *            向き(0~7)
 	 */
@@ -81,7 +81,7 @@ public class Point {
 
 	/**
 	 * 指定された向きと逆方向にこの座標をひとつ進める。
-	 * 
+	 *
 	 * @param heading
 	 *            向き(0~7)
 	 */
@@ -92,7 +92,7 @@ public class Point {
 
 	/**
 	 * 指定された座標への直線距離を返す。
-	 * 
+	 *
 	 * @param pt
 	 *            座標を保持するPointオブジェクト
 	 * @return 座標までの直線距離
@@ -105,7 +105,7 @@ public class Point {
 
 	/**
 	 * 指定された座標までの直線タイル数を返す。
-	 * 
+	 *
 	 * @param pt
 	 *            座標を保持するPointオブジェクト
 	 * @return 指定された座標までの直線タイル数。
@@ -117,7 +117,7 @@ public class Point {
 
 	/**
 	 * 指定された座標までのタイル数を返す。
-	 * 
+	 *
 	 * @param pt
 	 *            座標を保持するPointオブジェクト
 	 * @return 指定された座標までのタイル数。
@@ -129,7 +129,7 @@ public class Point {
 	/**
 	 * 指定された座標が画面内に見えるかを返す プレイヤーの座標を(0,0)とすれば見える範囲の座標は
 	 * 左上(2,-15)右上(15,-2)左下(-15,2)右下(-2,15)となる。 チャット欄に隠れて見えない部分も画面内に含まれる。
-	 * 
+	 *
 	 * @param pt
 	 *            座標を保持するPointオブジェクト
 	 * @return 指定された座標が画面内に見える場合はtrue。そうでない場合はfalse。
@@ -137,18 +137,18 @@ public class Point {
 	public boolean isInScreen(Point pt) {
 		int dist = this.getTileDistance(pt);
 
-		if (dist > 17) {
+		if (dist > 19) { // 當tile距離 > 19 的時候，判定為不在畫面內(false)
 			return false;
-		} else if (dist <= 13) {
+		} else if (dist <= 18) { // 當tile距離 <= 18 的時候，判定為位於同一個畫面內(true)
 			return true;
 		} else {
 			// 左右の画面外部分を除外
-			// プレイヤーの座標を(15, 15)とした場合に(0, 0)にあたる座標からの距離で判断
-			// Point pointZero = new Point(this.getX() - 15, this.getY() - 15);
+			// プレイヤーの座標を(18, 18)とした場合に(0, 0)にあたる座標からの距離で判断
+			// Point pointZero = new Point(this.getX() - 18, this.getY() - 18);
 			// int dist2 = pointZero.getTileDistance(pt);
-			int dist2 = Math.abs(pt.getX() - (this.getX() - 15))
-					+ Math.abs(pt.getY() - (this.getY() - 15));
-			if (17 <= dist2 && dist2 <= 43) {
+			int dist2 = Math.abs(pt.getX() - (getX() - 18))
+					+ Math.abs(pt.getY() - (getY() - 18));
+			if ((19 <= dist2) && (dist2 <= 52)) {
 				return true;
 			}
 			return false;
@@ -157,7 +157,7 @@ public class Point {
 
 	/**
 	 * 指定された座標と同じ座標かを返す。
-	 * 
+	 *
 	 * @param pt
 	 *            座標を保持するPointオブジェクト
 	 * @return 指定された座標と同じ座標か。

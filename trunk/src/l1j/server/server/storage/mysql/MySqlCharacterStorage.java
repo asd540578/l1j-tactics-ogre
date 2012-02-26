@@ -23,6 +23,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,9 +33,9 @@ import l1j.server.server.storage.CharacterStorage;
 import l1j.server.server.templates.L1Account;
 import l1j.server.server.templates.L1InventoryItem;
 import l1j.server.server.utils.L1QueryUtil;
+import l1j.server.server.utils.L1QueryUtil.EntityFactory;
 import l1j.server.server.utils.L1SQLException;
 import l1j.server.server.utils.SQLUtil;
-import l1j.server.server.utils.L1QueryUtil.EntityFactory;
 
 public class MySqlCharacterStorage implements CharacterStorage {
 	private static Logger _log = Logger.getLogger(MySqlCharacterStorage.class
@@ -63,6 +64,7 @@ public class MySqlCharacterStorage implements CharacterStorage {
 			pc = new L1PcInstance(L1Account.findById(rs.getInt("account_id")));
 			pc.setId(rs.getInt("id"));
 			pc.setName(rs.getString("name"));
+			pc.setBirthday((Timestamp) rs.getTimestamp("birthday"));
 			pc.setHighLevel(rs.getInt("HighLevel"));
 			pc.setExp(rs.getInt("Exp"));
 			pc.addBaseMaxHp(rs.getShort("MaxHp"));
@@ -104,15 +106,15 @@ public class MySqlCharacterStorage implements CharacterStorage {
 			 * Random random = new Random(); // 強制移動 int rndmap = 1 +
 			 * random.nextInt(5); switch (rndmap) { case 1: // skt locX = 33080;
 			 * locY = 33392; map = 4; break;
-			 * 
+			 *
 			 * case 2: // ti locX = 32580; locY = 32931; map = 0; break;
-			 * 
+			 *
 			 * case 3: // wb locX = 32621; locY = 33169; map = 4; break;
-			 * 
+			 *
 			 * case 4: // kent locX = 33050; locY = 32780; map = 4; break;
-			 * 
+			 *
 			 * case 5: // h locX = 33612; locY = 33268; map = 4; break;
-			 * 
+			 *
 			 * default: // skt locX = 33080; locY = 33392; map = 4; break; } }
 			 * pc.set_x(locX); pc.set_y(locY); pc.set_map(map);
 			 */
@@ -184,10 +186,11 @@ public class MySqlCharacterStorage implements CharacterStorage {
 			int i = 0;
 			con = L1DatabaseFactory.getInstance().getConnection();
 			pstm = con
-					.prepareStatement("INSERT INTO characters SET id=?,account_id=?,name=?,level=?,HighLevel=?,Exp=?,MaxHp=?,CurHp=?,MaxMp=?,CurMp=?,Ac=?,Str=?,Con=?,Dex=?,Cha=?,Intel=?,Wis=?,Status=?,Class=?,Sex=?,Type=?,Heading=?,LocX=?,LocY=?,MapID=?,Food=?,Lawful=?,Title=?,ClanID=?,Clanname=?,ClanRank=?,BonusStatus=?,ElixirStatus=?,ElfAttr=?,PKcount=?,PkCountForElf=?,ExpRes=?,PartnerID=?,AccessLevel=?,OnlineStatus=?,HomeTownID=?,Contribution=?,Pay=?,HellTime=?,Banned=?,Karma=?,LastPk=?,LastPkForElf=?,DeleteTime=?");
+					.prepareStatement("INSERT INTO characters SET id=?,account_id=?,name=?,birthday=?,level=?,HighLevel=?,Exp=?,MaxHp=?,CurHp=?,MaxMp=?,CurMp=?,Ac=?,Str=?,Con=?,Dex=?,Cha=?,Intel=?,Wis=?,Status=?,Class=?,Sex=?,Type=?,Heading=?,LocX=?,LocY=?,MapID=?,Food=?,Lawful=?,Title=?,ClanID=?,Clanname=?,ClanRank=?,BonusStatus=?,ElixirStatus=?,ElfAttr=?,PKcount=?,PkCountForElf=?,ExpRes=?,PartnerID=?,AccessLevel=?,OnlineStatus=?,HomeTownID=?,Contribution=?,Pay=?,HellTime=?,Banned=?,Karma=?,LastPk=?,LastPkForElf=?,DeleteTime=?");
 			pstm.setInt(++i, pc.getId());
 			pstm.setInt(++i, pc.getAccountId());
 			pstm.setString(++i, pc.getName());
+			pstm.setInt(++i, pc.getSimpleBirthday());
 			pstm.setInt(++i, pc.getLevel());
 			pstm.setInt(++i, pc.getHighLevel());
 			pstm.setInt(++i, pc.getExp());

@@ -74,7 +74,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターを復活させる。
-	 * 
+	 *
 	 * @param hp
 	 *            復活後のHP
 	 */
@@ -100,7 +100,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの現在のHPを返す。
-	 * 
+	 *
 	 * @return 現在のHP
 	 */
 	public int getCurrentHp() {
@@ -109,7 +109,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのHPを設定する。
-	 * 
+	 *
 	 * @param i
 	 *            キャラクターの新しいHP
 	 */
@@ -123,7 +123,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのHPを設定する。
-	 * 
+	 *
 	 * @param i
 	 *            キャラクターの新しいHP
 	 */
@@ -135,7 +135,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの現在のMPを返す。
-	 * 
+	 *
 	 * @return 現在のMP
 	 */
 	public int getCurrentMp() {
@@ -144,7 +144,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのMPを設定する。
-	 * 
+	 *
 	 * @param i
 	 *            キャラクターの新しいMP
 	 */
@@ -158,7 +158,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのMPを設定する。
-	 * 
+	 *
 	 * @param i
 	 *            キャラクターの新しいMP
 	 */
@@ -168,7 +168,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの眠り状態を返す。
-	 * 
+	 *
 	 * @return 眠り状態を表す値。眠り状態であればtrue。
 	 */
 	public boolean isSleeped() {
@@ -177,7 +177,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの眠り状態を設定する。
-	 * 
+	 *
 	 * @param sleeped
 	 *            眠り状態を表す値。眠り状態であればtrue。
 	 */
@@ -187,7 +187,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの麻痺状態を返す。
-	 * 
+	 *
 	 * @return 麻痺状態を表す値。麻痺状態であればtrue。
 	 */
 	public boolean isParalyzed() {
@@ -196,7 +196,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの麻痺状態を設定する。
-	 * 
+	 *
 	 * @param i
 	 *            麻痺状態を表す値。麻痺状態であればtrue。
 	 */
@@ -222,7 +222,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの可視範囲に居るプレイヤーへ、パケットを送信する。
-	 * 
+	 *
 	 * @param packet
 	 *            送信するパケットを表すServerBasePacketオブジェクト。
 	 */
@@ -240,7 +240,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの可視範囲に居るプレイヤーへ、パケットを送信する。 ただしターゲットの画面内には送信しない。
-	 * 
+	 *
 	 * @param packet
 	 *            送信するパケットを表すServerBasePacketオブジェクト。
 	 */
@@ -254,7 +254,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの可視範囲でインビジを見破れるor見破れないプレイヤーを区別して、パケットを送信する。
-	 * 
+	 *
 	 * @param packet
 	 *            送信するパケットを表すServerBasePacketオブジェクト。
 	 * @param isFindInvis
@@ -277,7 +277,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの50マス以内に居るプレイヤーへ、パケットを送信する。
-	 * 
+	 *
 	 * @param packet
 	 *            送信するパケットを表すServerBasePacketオブジェクト。
 	 */
@@ -289,7 +289,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの正面の座標を返す。
-	 * 
+	 *
 	 * @return 正面の座標
 	 */
 	public int[] getFrontLoc() {
@@ -325,7 +325,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * 指定された座標に対する方向を返す。
-	 * 
+	 *
 	 * @param tx
 	 *            座標のX値
 	 * @param ty
@@ -393,7 +393,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * 指定された座標までの直線上に、障害物が存在*しないか*を返す。
-	 * 
+	 *
 	 * @param tx
 	 *            座標のX値
 	 * @param ty
@@ -421,7 +421,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * 指定された座標へ攻撃可能であるかを返す。
-	 * 
+	 *
 	 * @param x
 	 *            座標のX値。
 	 * @param y
@@ -447,7 +447,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのインベントリを返す。
-	 * 
+	 *
 	 * @return キャラクターのインベントリを表す、L1Inventoryオブジェクト。
 	 */
 	public L1Inventory getInventory() {
@@ -456,7 +456,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ、新たにスキル効果を追加する。
-	 * 
+	 *
 	 * @param skillId
 	 *            追加する効果のスキルID。
 	 * @param timeMillis
@@ -475,7 +475,7 @@ public class L1Character extends L1Object {
 	 * キャラクターへ、スキル効果を設定する。<br>
 	 * 重複するスキルがない場合は、新たにスキル効果を追加する。<br>
 	 * 重複するスキルがある場合は、残り効果時間とパラメータの効果時間の長い方を優先して設定する。
-	 * 
+	 *
 	 * @param skillId
 	 *            設定する効果のスキルID。
 	 * @param timeMillis
@@ -498,7 +498,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターから、スキル効果を削除する。
-	 * 
+	 *
 	 * @param skillId
 	 *            削除する効果のスキルID
 	 */
@@ -511,7 +511,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターから、スキル効果のタイマーを削除する。 スキル効果は削除されない。
-	 * 
+	 *
 	 * @param skillId
 	 *            削除するタイマーのスキルＩＤ
 	 */
@@ -536,7 +536,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターに、スキル効果が掛かっているかを返す。
-	 * 
+	 *
 	 * @param skillId
 	 *            調べる効果のスキルID。
 	 * @return 魔法効果があればtrue、なければfalse。
@@ -547,7 +547,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのスキル効果の持続時間を返す。
-	 * 
+	 *
 	 * @param skillId
 	 *            調べる効果のスキルID
 	 * @return スキル効果の残り時間(秒)。スキルがかかっていないか効果時間が無限の場合、-1。
@@ -564,7 +564,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ、スキルディレイを追加する。
-	 * 
+	 *
 	 * @param flag
 	 */
 	public void setSkillDelay(boolean flag) {
@@ -573,7 +573,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの毒状態を返す。
-	 * 
+	 *
 	 * @return スキルディレイ中か。
 	 */
 	public boolean isSkillDelay() {
@@ -582,7 +582,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ、アイテムディレイを追加する。
-	 * 
+	 *
 	 * @param delayId
 	 *            アイテムディレイID。 通常のアイテムであれば0、インビジビリティ クローク、バルログ ブラッディ クロークであれば1。
 	 * @param timer
@@ -594,7 +594,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターから、アイテムディレイを削除する。
-	 * 
+	 *
 	 * @param delayId
 	 *            アイテムディレイID。 通常のアイテムであれば0、インビジビリティ クローク、バルログ ブラッディ クロークであれば1。
 	 */
@@ -604,7 +604,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターに、アイテムディレイがあるかを返す。
-	 * 
+	 *
 	 * @param delayId
 	 *            調べるアイテムディレイID。 通常のアイテムであれば0、インビジビリティ クローク、バルログ ブラッディ
 	 *            クロークであれば1。
@@ -616,7 +616,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのアイテムディレイ時間を表す、L1ItemDelay.ItemDelayTimerを返す。
-	 * 
+	 *
 	 * @param delayId
 	 *            調べるアイテムディレイID。 通常のアイテムであれば0、インビジビリティ クローク、バルログ ブラッディ
 	 *            クロークであれば1。
@@ -628,7 +628,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ、新たにペット、サモンモンスター、テイミングモンスター、あるいはクリエイトゾンビを追加する。
-	 * 
+	 *
 	 * @param npc
 	 *            追加するNpcを表す、L1NpcInstanceオブジェクト。
 	 */
@@ -641,7 +641,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターから、ペット、サモンモンスター、テイミングモンスター、あるいはクリエイトゾンビを削除する。
-	 * 
+	 *
 	 * @param npc
 	 *            削除するNpcを表す、L1NpcInstanceオブジェクト。
 	 */
@@ -654,7 +654,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * 3.3C PetMenu
-	 * 
+	 *
 	 * @param npc
 	 * @param type
 	 *            1: 0:
@@ -665,22 +665,22 @@ public class L1Character extends L1Object {
 			L1Character cha = pet.getMaster();
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
-				pc.sendPackets(new S_PetCtrlMenu(type));
+				pc.sendPackets(new S_PetCtrlMenu(cha, npc, type));
 			}
 		} else if (npc instanceof L1SummonInstance) {
 			L1SummonInstance summon = (L1SummonInstance) npc;
 			L1Character cha = summon.getMaster();
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
-				pc.sendPackets(new S_PetCtrlMenu(type));
+				pc.sendPackets(new S_PetCtrlMenu(cha, npc, type));
 			}
 		}
 	}
 
 	/**
 	 * キャラクターのペットリストを返す。
-	 * 
-	 * @return 
+	 *
+	 * @return
 	 *         キャラクターのペットリストを表す、HashMapオブジェクト。このオブジェクトのKeyはオブジェクトID、ValueはL1NpcInstance
 	 *         。
 	 */
@@ -690,7 +690,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへマジックドールを追加する。
-	 * 
+	 *
 	 * @param doll
 	 *            追加するdollを表す、L1DollInstanceオブジェクト。
 	 */
@@ -700,7 +700,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターからマジックドールを削除する。
-	 * 
+	 *
 	 * @param doll
 	 *            削除するdollを表す、L1DollInstanceオブジェクト。
 	 */
@@ -710,7 +710,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターのマジックドールリストを返す。
-	 * 
+	 *
 	 * @return キャラクターの魔法人形リストを表す、HashMapオブジェクト。このオブジェクトのKeyはオブジェクトID、
 	 *         ValueはL1DollInstance。
 	 */
@@ -720,7 +720,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ従者を追加する。
-	 * 
+	 *
 	 * @param follower
 	 *            追加するfollowerを表す、L1FollowerInstanceオブジェクト。
 	 */
@@ -730,7 +730,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターから従者を削除する。
-	 * 
+	 *
 	 * @param follower
 	 *            削除するfollowerを表す、L1FollowerInstanceオブジェクト。
 	 */
@@ -740,7 +740,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの従者リストを返す。
-	 * 
+	 *
 	 * @return キャラクターの従者リストを表す、HashMapオブジェクト。このオブジェクトのKeyはオブジェクトID、
 	 *         ValueはL1FollowerInstance。
 	 */
@@ -750,7 +750,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ、毒を追加する。
-	 * 
+	 *
 	 * @param poison
 	 *            毒を表す、L1Poisonオブジェクト。
 	 */
@@ -770,7 +770,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターの毒状態を返す。
-	 * 
+	 *
 	 * @return キャラクターの毒を表す、L1Poisonオブジェクト。
 	 */
 	public L1Poison getPoison() {
@@ -779,7 +779,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターへ毒のエフェクトを付加する
-	 * 
+	 *
 	 * @param effectId
 	 * @see S_Poison#S_Poison(int, int)
 	 */
@@ -789,7 +789,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが存在する座標が、どのゾーンに属しているかを返す。
-	 * 
+	 *
 	 * @return 座標のゾーンを表す値。セーフティーゾーンであれば1、コンバットゾーンであれば-1、ノーマルゾーンであれば0。
 	 */
 	public int getZoneType() {
@@ -806,7 +806,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが保持している経験値を返す。
-	 * 
+	 *
 	 * @return 経験値。
 	 */
 	public int getExp() {
@@ -815,7 +815,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが保持する経験値を設定する。
-	 * 
+	 *
 	 * @param exp
 	 *            経験値。
 	 */
@@ -829,7 +829,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * 指定されたオブジェクトを、キャラクターが認識しているかを返す。
-	 * 
+	 *
 	 * @param obj
 	 *            調べるオブジェクト。
 	 * @return オブジェクトをキャラクターが認識していればtrue、していなければfalse。 自分自身に対してはfalseを返す。
@@ -840,7 +840,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが認識している全てのオブジェクトを返す。
-	 * 
+	 *
 	 * @return キャラクターが認識しているオブジェクトを表すL1Objectが格納されたArrayList。
 	 */
 	public List<L1Object> getKnownObjects() {
@@ -849,7 +849,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが認識している全てのプレイヤーを返す。
-	 * 
+	 *
 	 * @return キャラクターが認識しているオブジェクトを表すL1PcInstanceが格納されたArrayList。
 	 */
 	public List<L1PcInstance> getKnownPlayers() {
@@ -858,7 +858,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターに、新たに認識するオブジェクトを追加する。
-	 * 
+	 *
 	 * @param obj
 	 *            新たに認識するオブジェクト。
 	 */
@@ -873,7 +873,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターから、認識しているオブジェクトを削除する。
-	 * 
+	 *
 	 * @param obj
 	 *            削除するオブジェクト。
 	 */
@@ -1517,7 +1517,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが保持しているカルマを返す。
-	 * 
+	 *
 	 * @return カルマ。
 	 */
 	public int getKarma() {
@@ -1526,7 +1526,7 @@ public class L1Character extends L1Object {
 
 	/**
 	 * キャラクターが保持するカルマを設定する。
-	 * 
+	 *
 	 * @param karma
 	 *            カルマ。
 	 */

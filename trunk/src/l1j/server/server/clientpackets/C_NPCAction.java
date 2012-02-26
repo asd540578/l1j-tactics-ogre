@@ -149,7 +149,7 @@ public class C_NPCAction extends ClientBasePacket {
 		String[] htmldata = null;
 
 		L1PcInstance pc = client.getActiveChar();
-		L1PcInstance target;
+		L1PcInstance target = null;
 		L1Object obj = L1World.getInstance().findObject(objid);
 		if (obj != null) {
 			if (obj instanceof L1PetInstance) {
@@ -624,7 +624,7 @@ public class C_NPCAction extends ClientBasePacket {
 				}
 			}
 		} else if (((L1NpcInstance) obj).getNpcTemplate().get_npcId() == 91328) { // 象牙の塔秘密研究室
-			if (s.equalsIgnoreCase("enter")) { // 部屋・ホールに入る 
+			if (s.equalsIgnoreCase("enter")) { // 部屋・ホールに入る
 				// -
 				// ユキ
 				// /
@@ -781,7 +781,7 @@ public class C_NPCAction extends ClientBasePacket {
 				}
 			}
 			if (pc.getPetList().isEmpty()) {
-				pc.sendPackets(new S_PetCtrlMenu(false));// ペットコントロールメニュー」
+				pc.sendPackets(new S_PetCtrlMenu(target, null, false));;// ペットコントロールメニュー」
 			} else {
 				for (Object petObject : petList) {
 					if (petObject instanceof L1SummonInstance) {
@@ -1136,7 +1136,7 @@ public class C_NPCAction extends ClientBasePacket {
 				int diff = pcStatusPoint - initStatusPoint;
 				/**
 				 * [50級以上]
-				 * 
+				 *
 				 * 目前點數 - 初始點數 = 人物應有等級 - 50 -> 人物應有等級 = 50 + (目前點數 - 初始點數)
 				 */
 				int maxLevel = 1;

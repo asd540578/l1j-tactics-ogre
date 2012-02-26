@@ -16,7 +16,7 @@
  *
  * http://www.gnu.org/copyleft/gpl.html
  */
- package l1j.server.server.serverpackets;
+package l1j.server.server.serverpackets;
 
 import java.io.IOException;
 import java.util.List;
@@ -34,18 +34,20 @@ import l1j.server.server.model.Instance.L1ItemInstance;
 import l1j.server.server.templates.L1Item;
 import l1j.server.server.templates.L1ShopItem;
 
-public class S_ShopSellList extends ServerBasePacket {
-
+public class S_ShopSellList extends ServerBasePacket
+{
 
 	/**
 	 * 店の品物リストを表示する。キャラクターがBUYボタンを押した時に送る。
 	 */
-	public S_ShopSellList(int objId) {
+	public S_ShopSellList(int objId)
+	{
 		writeC(Opcodes.S_OPCODE_SHOWSHOPBUYLIST);
 		writeD(objId);
 
 		L1Object npcObj = L1World.getInstance().findObject(objId);
-		if (!(npcObj instanceof L1NpcInstance)) {
+		if (!(npcObj instanceof L1NpcInstance))
+		{
 			writeH(0);
 			return;
 		}
@@ -60,38 +62,50 @@ public class S_ShopSellList extends ServerBasePacket {
 		// L1ItemInstanceのgetStatusBytesを利用するため
 		L1ItemInstance dummy = new L1ItemInstance();
 
-		for (int i = 0; i < shopItems.size(); i++) {
+		for (int i = 0; i < shopItems.size(); i++)
+		{
 			L1ShopItem shopItem = shopItems.get(i);
 			L1Item item = shopItem.getItem();
-			int price = calc.layTax((int)
-					(shopItem.getPrice() * Config.RATE_SHOP_SELLING_PRICE));
+			int price = calc
+					.layTax((int) (shopItem.getPrice() * Config.RATE_SHOP_SELLING_PRICE));
 			writeD(i);
 			writeH(shopItem.getItem().getGfxId());
 			writeD(price);
-			
-			if (shopItem.getPackCount() > 1) {
+
+			if (shopItem.getPackCount() > 1)
+			{
 				writeS(item.getName() + " (" + shopItem.getPackCount() + ")");
-			} else {
-				//XXX
-				if(item.getItemId()==40309){//レースチケット
-					String[] temp=item.getName().split(" ");
-					String buf=temp[temp.length-1];
-					temp=buf.split("-");
-					writeS(buf+" $"+(1212+Integer.parseInt(temp[temp.length-1])));
-				}else{
+			}
+			else
+			{
+				// XXX
+				if (item.getItemId() == 40309)
+				{// レースチケット
+					String[] temp = item.getName().split(" ");
+					String buf = temp[temp.length - 1];
+					temp = buf.split("-");
+					writeS(buf + " $"
+							+ (1212 + Integer.parseInt(temp[temp.length - 1])));
+				}
+				else
+				{
 					writeS(item.getName());
 				}
 			}
-			
-			L1Item template = ItemTable
-					.getInstance().getTemplate(item.getItemId());
-			if (template == null) {
+
+			L1Item template = ItemTable.getInstance().getTemplate(
+					item.getItemId());
+			if (template == null)
+			{
 				writeC(0);
-			} else {
+			}
+			else
+			{
 				dummy.setItem(template);
 				byte[] status = dummy.getStatusBytes();
 				writeC(status.length);
-				for (byte b : status) {
+				for (byte b : status)
+				{
 					writeC(b);
 				}
 			}
@@ -100,7 +114,8 @@ public class S_ShopSellList extends ServerBasePacket {
 	}
 
 	@Override
-	public byte[] getContent() throws IOException {
+	public byte[] getContent() throws IOException
+	{
 		return _bao.toByteArray();
 	}
 }

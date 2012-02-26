@@ -19,7 +19,17 @@
 
 package l1j.server.server.clientpackets;
 
-import static l1j.server.server.model.skill.L1SkillId.*;
+import static l1j.server.server.model.skill.L1SkillId.AWAKEN_ANTHARAS;
+import static l1j.server.server.model.skill.L1SkillId.AWAKEN_FAFURION;
+import static l1j.server.server.model.skill.L1SkillId.AWAKEN_VALAKAS;
+import static l1j.server.server.model.skill.L1SkillId.BLESSED_ARMOR;
+import static l1j.server.server.model.skill.L1SkillId.CANCELLATION;
+import static l1j.server.server.model.skill.L1SkillId.ELEMENTAL_PROTECTION;
+import static l1j.server.server.model.skill.L1SkillId.ENCHANT_WEAPON;
+import static l1j.server.server.model.skill.L1SkillId.SHAPE_CHANGE;
+import static l1j.server.server.model.skill.L1SkillId.STATUS_CURSE_BARLOG;
+import static l1j.server.server.model.skill.L1SkillId.STATUS_CURSE_YAHEE;
+import static l1j.server.server.model.skill.L1SkillId.STATUS_HASTE;
 
 import java.sql.Timestamp;
 import java.util.Calendar;
@@ -772,7 +782,8 @@ public class C_NPCAction extends ClientBasePacket {
 			Object[] petList = pc.getPetList().values().toArray();
 			for (Object petObject : petList) {
 				if (petObject instanceof L1PetInstance) { // ペット
-					L1PetInstance pet = (L1PetInstance) petObject;
+					L1PetInstance pet = (L1PetInstance)petObject;
+					pc.sendPackets(new S_PetCtrlMenu(pc, pet, false));
 					// ペット空腹度タイマー停止
 					pet.stopFoodTimer(pet);
 					pet.collect(false);
@@ -780,7 +791,7 @@ public class C_NPCAction extends ClientBasePacket {
 					pet.deleteMe();
 				}
 			}
-			if (pc.getPetList().isEmpty()) {
+			/*if (pc.getPetList().isEmpty()) {
 				pc.sendPackets(new S_PetCtrlMenu(pc, null, false));// ペットコントロールメニュー」
 			} else {
 				for (Object petObject : petList) {
@@ -791,7 +802,7 @@ public class C_NPCAction extends ClientBasePacket {
 						break;
 					}
 				}
-			}
+			}*/
 			htmlid = ""; // ウィンドウを消す
 		} else if (s.equalsIgnoreCase("withdrawnpc")) { // 「動物を受け取る」
 			pc.sendPackets(new S_PetList(objid, pc));

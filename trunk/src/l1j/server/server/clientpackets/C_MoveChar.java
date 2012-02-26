@@ -71,7 +71,7 @@ public class C_MoveChar extends ClientBasePacket {
 			int result;
 			result = pc.getAcceleratorChecker()
 					.checkInterval(AcceleratorChecker.ACT_TYPE.MOVE);
-			if (result == AcceleratorChecker.R_DISCONNECTED) {
+			if (result == AcceleratorChecker.R_DISPOSED) {
 				return;
 			}
 		}

@@ -3248,9 +3248,10 @@ public class L1PcInstance extends L1Character
 		return hasSkillEffect(BLOODLUST);
 	}
 
-	// public boolean isThirdSpeed() { // 三段加速 * 1.15
-	// return hasSkillEffect(EFFECT_THIRD_SPEED);
-	// }
+	public boolean isThirdSpeed() { // 三段加速 * 1.15
+		return false;
+		// return hasSkillEffect(EFFECT_THIRD_SPEED);
+	}
 
 	public boolean isWindShackle()
 	{ // ウィンドシャックル　攻撃速度1/2

@@ -1,41 +1,38 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
+/**
+ *                            License
+ * THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS
+ * CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE").
+ * THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW.
+ * ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR
+ * COPYRIGHT LAW IS PROHIBITED.
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
+ * BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND
+ * AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE
+ * MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED
+ * HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
  *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
  */
-
- package l1j.server.server.model;
+package l1j.server.server.model;
 
 import java.util.EnumMap;
+import java.util.List;
 import java.util.logging.Logger;
 
 import l1j.server.configure.Config;
 import l1j.server.server.datatables.SprTable;
 import l1j.server.server.model.Instance.L1PcInstance;
 import l1j.server.server.serverpackets.S_Disconnect;
+import l1j.server.server.serverpackets.S_Paralysis;
 import l1j.server.server.serverpackets.S_ServerMessage;
 import l1j.server.server.serverpackets.S_SystemMessage;
+import l1j.server.server.templates.L1Account;
 
 /**
- * 加速器の使用をチェックするクラス。
+ * 檢虍加速器使用的類別。
  */
 public class AcceleratorChecker {
 
-	private static final Logger _log =
-			Logger.getLogger(AcceleratorChecker.class.getName());
+	private static final Logger _log = Logger.getLogger(AcceleratorChecker.class.getName());
 
 	private final L1PcInstance _pc;
 
@@ -51,26 +48,28 @@ public class AcceleratorChecker {
 	// それを考慮して-5としている。
 	private static final double CHECK_STRICTNESS = (Config.CHECK_STRICTNESS - 5) / 100D;
 
-	private static final double HASTE_RATE = 0.745;
+	private static final double HASTE_RATE = 0.745; // 速度 * 1.33
 
-	private static final double WAFFLE_RATE = 0.874;
+	private static final double WAFFLE_RATE = 0.874; // 速度 * 1.15
 
-	private final EnumMap<ACT_TYPE, Long> _actTimers =
-			new EnumMap<ACT_TYPE, Long>(ACT_TYPE.class);
+	private static final double DOUBLE_HASTE_RATE = 0.375; // 速度 * 2.66
 
-	private final EnumMap<ACT_TYPE, Long> _checkTimers =
-			new EnumMap<ACT_TYPE, Long>(ACT_TYPE.class);
+	private final EnumMap<ACT_TYPE, Long> _actTimers = new EnumMap<ACT_TYPE, Long>(
+			ACT_TYPE.class);
+
+	private final EnumMap<ACT_TYPE, Long> _checkTimers = new EnumMap<ACT_TYPE, Long>(
+			ACT_TYPE.class);
 
 	public static enum ACT_TYPE {
 		MOVE, ATTACK, SPELL_DIR, SPELL_NODIR
 	}
 
-	// チェックの結果
+	// 檢虍結果
 	public static final int R_OK = 0;
 
 	public static final int R_DETECTED = 1;
 
-	public static final int R_DISCONNECTED = 2;
+	public static final int R_DISPOSED = 2;
 
 	public AcceleratorChecker(L1PcInstance pc) {
 		_pc = pc;
@@ -86,8 +85,8 @@ public class AcceleratorChecker {
 	/**
 	 * アクションの間隔が不正でないかチェックし、適宜処理を行う。
 	 *
-	 * @param type -
-	 *            チェックするアクションのタイプ
+	 * @param type
+	 *            - チェックするアクションのタイプ
 	 * @return 問題がなかった場合は0、不正であった場合は1、不正動作が一定回数に達した ためプレイヤーを切断した場合は2を返す。
 	 */
 	public int checkInterval(ACT_TYPE type) {
@@ -102,8 +101,8 @@ public class AcceleratorChecker {
 			_injusticeCount++;
 			_justiceCount = 0;
 			if (_injusticeCount >= INJUSTICE_COUNT_LIMIT) {
-				doDisconnect();
-				return R_DISCONNECTED;
+				doPunishment(0);
+				return R_DISPOSED;
 			}
 			result = R_DETECTED;
 		} else if (interval >= rightInterval) {
@@ -115,41 +114,90 @@ public class AcceleratorChecker {
 		}
 
 		// 検証用
-// double rate = (double) interval / rightInterval;
-// System.out.println(String.format("%s: %d / %d = %.2f (o-%d x-%d)",
-// type.toString(), interval, rightInterval, rate,
-// _justiceCount, _injusticeCount));
+		// double rate = (double) interval / rightInterval;
+		// System.out.println(String.format("%s: %d / %d = %.2f (o-%d x-%d)",
+		// type.toString(), interval, rightInterval, rate,
+		// _justiceCount, _injusticeCount));
 
 		_actTimers.put(type, now);
 		return result;
 	}
 
-	private void doDisconnect() {
-		if (!_pc.isGm()) {
-			_pc.sendPackets(new S_ServerMessage(945)); // 違法プログラムが見つかったので、終了します。
-			_pc.sendPackets(new S_Disconnect());
-			_log.info(String.format(
-					"加速器検知のため%sを強制切断しました。", _pc.getName()));
+	/**
+	 * 加速檢測處罰
+	 * @param punishmaent 處罰模式
+	 */
+	private void doPunishment(int punishmaent) {
+		if (!_pc.isGm()) {// 如果不是GM才執行處罰
+			int x = _pc.getX() ,y = _pc.getY() ,mapid = _pc.getMapId();// 紀桃ﾀ標
+			switch (punishmaent) {
+			case 0:// 剔除
+				_pc.sendPackets(new S_ServerMessage(945));
+				_pc.sendPackets(new S_Disconnect());
+				_log.info(String.format("因為檢測到%s正在使用加速器，強制切斷其連線。",_pc.getName()));
+				break;
+			case 1:// 鎖定人物10秒
+				_pc.sendPackets(new S_Paralysis(S_Paralysis.TYPE_BIND, true));
+				try {
+					Thread.sleep(10000);// 暫停十秒
+				} catch (Exception e) {
+					System.out.println(e.getLocalizedMessage());
+				}
+				_pc.sendPackets(new S_Paralysis(S_Paralysis.TYPE_BIND, false));
+				break;
+			case 2:// 傳到地域
+				L1Teleport.teleport(_pc, 32737, 32796, (short) 99, 5, false);
+				_pc.sendPackets(new S_SystemMessage("因為`O使用加速器，被傳送到了地域，10秒後傳回。"));
+				try {
+					Thread.sleep(10000);// 暫停十秒
+				} catch (Exception e) {
+					System.out.println(e.getLocalizedMessage());
+				}
+				L1Teleport.teleport(_pc, x, y, (short) mapid, 5, false);
+				break;
+			case 3:// 傳到GM房，30秒後傳回
+				L1Teleport.teleport(_pc, 32737, 32796, (short) 99, 5, false);
+				_pc.sendPackets(new S_SystemMessage("因為`O使用加速器，被傳送到了GM房，30秒後傳回。"));
+				try {
+					Thread.sleep(30000);// 暫停30秒
+				} catch (Exception e) {
+					System.out.println(e.getLocalizedMessage());
+				}
+				L1Teleport.teleport(_pc, x, y, (short) mapid, 5, false);
+				break;
+			}
 		} else {
-			// GMは切断しない
-			_pc.sendPackets(new S_SystemMessage(
-					"加速器検知にひっかかっています。"));
+			// GM不需要斷線
+			_pc.sendPackets(new S_SystemMessage("遊戲管理員在遊戲中使用加速器檢測中。"));
 			_injusticeCount = 0;
 		}
+		L1Account account  = L1Account.findById(_pc.getAccountId());
+		StringBuilder msg = new StringBuilder();
+		msg.append("Host:" + account.getHost());
+		msg.append("IP:" + account.getIp());
+		msg.append("AccountName:"+ account.getName());
+		List<String> characters = account.charactersName();
+		msg.append("Characters:");
+		for(int i = 0 ;i < characters.size();++i)
+		{
+			msg.append("->" + characters.get(i));
+		}
+		_log.severe(msg.toString());
 	}
 
 	/**
 	 * PCの状態から指定された種類のアクションの正しいインターバル(ms)を計算し、返す。
 	 *
-	 * @param type -
-	 *            アクションの種類
-	 * @param _user -
-	 *            調べるPC
+	 * @param type
+	 *            - アクションの種類
+	 * @param _pc
+	 *            - 調べるPC
 	 * @return 正しいインターバル(ms)
 	 */
 	private int getRightInterval(ACT_TYPE type) {
 		int interval;
 
+		// 動作判斷
 		switch (type) {
 		case ATTACK:
 			interval = SprTable.getInstance().getAttackSpeed(
@@ -161,44 +209,68 @@ public class AcceleratorChecker {
 			break;
 		case SPELL_DIR:
 			interval = SprTable.getInstance().getDirSpellSpeed(
-							_pc.getTempCharGfx());
+					_pc.getTempCharGfx());
 			break;
 		case SPELL_NODIR:
 			interval = SprTable.getInstance().getNodirSpellSpeed(
-							_pc.getTempCharGfx());
+					_pc.getTempCharGfx());
 			break;
 		default:
 			return 0;
 		}
 
-		if (_pc.isHaste()) {
+		// 一段加速
+		switch (_pc.getMoveSpeed()) {
+		case 1: // 加速術
 			interval *= HASTE_RATE;
-		}
-		if (type.equals(ACT_TYPE.MOVE) && _pc.isFastMovable()) {
-			interval *= HASTE_RATE;
+			break;
+		case 2: // 緩速術
+			interval /= HASTE_RATE;
+			break;
+		default:
+			break;
 		}
 
-		// TODO ユグドラの実バグ対応
-		if (type.equals(ACT_TYPE.MOVE) && _pc.isRIBRAVE()) {
+		// 二段加速
+		switch (_pc.getBraveSpeed()) {
+		case 1: // 勇水
+			interval *= HASTE_RATE; // 攻速、移速 * 1.33倍
+			break;
+		case 3: // 精餅
+			interval *= WAFFLE_RATE; // 攻速、移速 * 1.15倍
+			break;
+		case 4: // 神疾、風走、行走
+			if (type.equals(ACT_TYPE.MOVE)) {
+				interval *= HASTE_RATE; // 移速 * 1.33倍
+			}
+			break;
+		case 5: // 超級加速
+			interval *= DOUBLE_HASTE_RATE; // 攻速、移速 * 2.66倍
+			break;
+		case 6: // 血之4n望
+			if (type.equals(ACT_TYPE.ATTACK)) {
+				interval *= HASTE_RATE; // 攻速 * 1.33倍
+			}
+			break;
+		default:
+			break;
+		}
+
+		// 生命之樹果實
+		if (_pc.isRIBRAVE() && type.equals(ACT_TYPE.MOVE)) { // 移速 * 1.15倍
 			interval *= WAFFLE_RATE;
 		}
-		// TODO ユグドラの実バグ対応
-
-		if (type.equals(ACT_TYPE.ATTACK) && _pc.isFastAttackable()) {
-			interval *= HASTE_RATE;
-		}
-		if (_pc.isBrave()) {
-			interval *= HASTE_RATE;
-		}
-		if (_pc.isElfBrave()) {
+		// 三段加速
+		if (_pc.isThirdSpeed()) { // 攻速、移速 * 1.15倍
 			interval *= WAFFLE_RATE;
 		}
-
-		// TODO ペットレース用 start
-		if(_pc.getMapId() == 5143){
+		// 風之枷鎖
+		if (_pc.isWindShackle() && !type.equals(ACT_TYPE.MOVE)) { // 攻速or施法速度 / 2倍
+			interval /= 2;
+		}
+		if (_pc.getMapId() == 5143) { // 寵物競速例外
 			interval *= 0.1;
 		}
-		// TODO ペットレース用 end
 		return interval;
 	}
 }

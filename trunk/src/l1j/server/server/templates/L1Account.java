@@ -76,7 +76,7 @@ public class L1Account {
 
 	/**
 	 * パスワードを暗号化する.
-	 * 
+	 *
 	 * @param rawPassword
 	 *            平文のパスワード
 	 * @return String
@@ -107,7 +107,7 @@ public class L1Account {
 
 	/**
 	 * アカウントを新規作成する.
-	 * 
+	 *
 	 * @param name
 	 *            アカウント名
 	 * @param rawPassword
@@ -144,7 +144,7 @@ public class L1Account {
 
 	/**
 	 * アカウント名からアカウント情報を検索する
-	 * 
+	 *
 	 * @param name
 	 *            アカウント名
 	 * @return Account
@@ -156,7 +156,7 @@ public class L1Account {
 
 	/**
 	 * 最終ログイン日をDBに反映する.
-	 * 
+	 *
 	 */
 	public void updateLastActivatedTime() {
 		Timestamp currentTime = new Timestamp(System.currentTimeMillis());
@@ -167,7 +167,7 @@ public class L1Account {
 
 	/**
 	 * スロット数をDBに反映する.
-	 * 
+	 *
 	 */
 	public void updateCharacterSlot() {
 		L1QueryUtil.execute(
@@ -178,7 +178,7 @@ public class L1Account {
 
 	/**
 	 * キャラクター所有数をカウントする.
-	 * 
+	 *
 	 * @return int
 	 */
 	public int countCharacters() {
@@ -188,8 +188,19 @@ public class L1Account {
 	}
 
 	/**
+	 * 全キャラクターの名前を取得する
+	 *
+	 * @return String
+	 */
+	public List<String> charactersName() {
+		return L1QueryUtil.selectAll(new NameFactory(),
+				"SELECT  as cnt FROM characters WHERE account_id = ?",
+				_id);
+	}
+
+	/**
 	 * アカウントを無効にする.
-	 * 
+	 *
 	 * @param name
 	 *            アカウント名
 	 */
@@ -200,7 +211,7 @@ public class L1Account {
 
 	/**
 	 * 入力されたパスワードとDB上のパスワードを照合する.
-	 * 
+	 *
 	 * @param rawPassword
 	 *            平文パスワード
 	 * @return boolean
@@ -224,7 +235,7 @@ public class L1Account {
 
 	/**
 	 * アカウントが有効かどうかを返す(Trueで有効).
-	 * 
+	 *
 	 * @return boolean
 	 */
 	public boolean isValid() {
@@ -233,7 +244,7 @@ public class L1Account {
 
 	/**
 	 * アカウントがゲームマスタかどうか返す(Trueでゲームマスタ).
-	 * 
+	 *
 	 * @return boolean
 	 */
 	public boolean isGameMaster() {
@@ -242,7 +253,7 @@ public class L1Account {
 
 	/**
 	 * アカウント名を取得する.
-	 * 
+	 *
 	 * @return String
 	 */
 	public String getName() {
@@ -251,7 +262,7 @@ public class L1Account {
 
 	/**
 	 * 接続先のIPアドレスを取得する.
-	 * 
+	 *
 	 * @return String
 	 */
 	public String getIp() {
@@ -267,7 +278,7 @@ public class L1Account {
 
 	/**
 	 * アクセスレベルを取得する.
-	 * 
+	 *
 	 * @return int
 	 */
 	public int getAccessLevel() {
@@ -276,7 +287,7 @@ public class L1Account {
 
 	/**
 	 * ホスト名を取得する.
-	 * 
+	 *
 	 * @return String
 	 */
 	public String getHost() {
@@ -285,7 +296,7 @@ public class L1Account {
 
 	/**
 	 * アクセス禁止情報を取得する.
-	 * 
+	 *
 	 * @return boolean
 	 */
 	public boolean isBanned() {
@@ -294,7 +305,7 @@ public class L1Account {
 
 	/**
 	 * キャラクターの追加スロット数を取得する.
-	 * 
+	 *
 	 * @return int
 	 */
 	public int getCharacterSlot() {
@@ -309,6 +320,13 @@ public class L1Account {
 		@Override
 		public Integer fromResultSet(ResultSet rs) throws SQLException {
 			return rs.getInt("cnt");
+		}
+	}
+
+	private static class NameFactory implements EntityFactory<String> {
+		@Override
+		public String fromResultSet(ResultSet rs) throws SQLException {
+			return rs.getString("Name");
 		}
 	}
 

@@ -70,6 +70,7 @@ public class S_ShopBuyList extends ServerBasePacket {
 			writeD(item.getTargetId());
 			writeD(item.getAssessedPrice());
 		}
+		writeH(0x0007);
 	}
 
 	@Override

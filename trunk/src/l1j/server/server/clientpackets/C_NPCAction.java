@@ -781,7 +781,7 @@ public class C_NPCAction extends ClientBasePacket {
 				}
 			}
 			if (pc.getPetList().isEmpty()) {
-				pc.sendPackets(new S_PetCtrlMenu(target, null, false));;// ペットコントロールメニュー」
+				pc.sendPackets(new S_PetCtrlMenu(pc, null, false));// ペットコントロールメニュー」
 			} else {
 				for (Object petObject : petList) {
 					if (petObject instanceof L1SummonInstance) {

@@ -2230,6 +2230,8 @@ public class C_ItemUSe extends ClientBasePacket
 										L1PetInstance pet = (L1PetInstance) npc;
 										// 空腹度タイマー開始
 										pet.startFoodTimer(pet);
+										pet.startHpRegeneration();
+										pet.startMpRegeneration();
 									}
 								}
 							}

@@ -113,7 +113,6 @@ import l1j.server.server.serverpackets.S_SkillHaste;
 import l1j.server.server.serverpackets.S_SkillIconAura;
 import l1j.server.server.serverpackets.S_SkillIconGFX;
 import l1j.server.server.serverpackets.S_SkillSound;
-import l1j.server.server.serverpackets.S_SummonPack;
 import l1j.server.server.serverpackets.S_TaxRate;
 import l1j.server.server.templates.L1Castle;
 import l1j.server.server.templates.L1House;

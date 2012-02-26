@@ -63,7 +63,6 @@ import static l1j.server.server.Opcodes.C_OPCODE_EXIT_GHOST;
 import static l1j.server.server.Opcodes.C_OPCODE_EXTCOMMAND;
 import static l1j.server.server.Opcodes.C_OPCODE_FIGHT;
 import static l1j.server.server.Opcodes.C_OPCODE_FISHCLICK;
-import static l1j.server.server.Opcodes.C_OPCODE_FIX_WEAPON_LIST;
 import static l1j.server.server.Opcodes.C_OPCODE_GIVEITEM;
 import static l1j.server.server.Opcodes.C_OPCODE_HIRESOLDIER;
 import static l1j.server.server.Opcodes.C_OPCODE_JOINCLAN;
@@ -89,7 +88,6 @@ import static l1j.server.server.Opcodes.C_OPCODE_RANK;
 import static l1j.server.server.Opcodes.C_OPCODE_RESTART;
 import static l1j.server.server.Opcodes.C_OPCODE_RESULT;
 import static l1j.server.server.Opcodes.C_OPCODE_RETURNTOLOGIN;
-import static l1j.server.server.Opcodes.C_OPCODE_SELECTLIST;
 import static l1j.server.server.Opcodes.C_OPCODE_SELECTTARGET;
 import static l1j.server.server.Opcodes.C_OPCODE_SENDLOCATION;
 import static l1j.server.server.Opcodes.C_OPCODE_SHIP;
@@ -108,6 +106,9 @@ import static l1j.server.server.Opcodes.C_OPCODE_USEPETITEM;
 import static l1j.server.server.Opcodes.C_OPCODE_USESKILL;
 import static l1j.server.server.Opcodes.C_OPCODE_WAR;
 import static l1j.server.server.Opcodes.C_OPCODE_WHO;
+import static l1j.server.server.Opcodes.C_OPCODE_FIX_WEAPON_LIST;
+import static l1j.server.server.Opcodes.C_OPCODE_SELECTLIST;
+
 
 import java.util.logging.Logger;
 
@@ -178,7 +179,7 @@ import l1j.server.server.clientpackets.C_Rank;
 import l1j.server.server.clientpackets.C_Restart;
 import l1j.server.server.clientpackets.C_Result;
 import l1j.server.server.clientpackets.C_ReturnToLogin;
-
+import l1j.server.server.clientpackets.C_SelectList;
 import l1j.server.server.clientpackets.C_SelectTarget;
 import l1j.server.server.clientpackets.C_SendLocation;
 import l1j.server.server.clientpackets.C_ServerVersion;
@@ -505,6 +506,14 @@ public class PacketHandler {
 
 		case C_OPCODE_AMOUNT:
 			new C_Amount(abyte0, _client);
+			break;
+
+		case C_OPCODE_FIX_WEAPON_LIST:
+			new C_FixWeaponList(abyte0, _client);
+			break;
+
+		case C_OPCODE_SELECTLIST:
+			new C_SelectList(abyte0, _client);
 			break;
 
 		case C_OPCODE_EXIT_GHOST:

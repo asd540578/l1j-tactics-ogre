@@ -134,7 +134,7 @@ public class GameServer extends Thread {
 		puts("サーバーセッティング: サーバーソケット生成");
 
 		puts("┌───────────────────────────────┐");
-		puts("│  Lineage 3.3C  開発　 By L1J For All User\t\t    　　│");
+		puts("│  Lineage 3.5C  開発　 By L1J For All User\t\t    　　│");
 		puts("└───────────────────────────────┘" + "\n");
 
 		puts("●●●●〈サーバー設定〉●●●●");
@@ -152,7 +152,7 @@ public class GameServer extends Thread {
 		puts("└「接続人数制限」： 最大%d人", Config.MAX_ONLINE_USERS);
 
 		puts("┌───────────────────────────────┐");
-		puts("│  Lineage 3.3C  開発　 By L1J For All User\t\t    　　│");
+		puts("│  Lineage 3.5C  開発　 By L1J For All User\t\t    　　│");
 		puts("└───────────────────────────────┘" + "\n");
 	}
 
@@ -232,6 +232,8 @@ public class GameServer extends Thread {
 		// GeneralThreadPool.getInstance().execute(crackTimeController);
 
 		Announcements.getInstance();
+		AnnouncementsCycle.getInstance();
+
 		MobSkillTable.initialize();
 		/* t.s 2011/09/27 add start */
 		MobSkillChatTable.initialize();

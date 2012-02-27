@@ -722,8 +722,7 @@ public class C_NPCAction extends ClientBasePacket {
 					L1Castle l1castle = CastleTable.getInstance()
 							.getCastleTable(castle_id);
 					pc.sendPackets(new S_ServerMessage(309, // %0の精算総額は%1アデナです。
-							l1castle.getName(), String.valueOf(l1castle
-									.getPublicMoney())));
+							l1castle.getName(), String.valueOf(l1castle.getPublicMoney())));
 					htmlid = ""; // ウィンドウを消す
 				}
 			}

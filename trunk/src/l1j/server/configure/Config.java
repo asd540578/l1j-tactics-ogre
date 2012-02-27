@@ -172,6 +172,13 @@ public final class Config {
 	@Configure(file = SERVER, key = "SendPacketBeforeTeleport")
 	public static boolean SEND_PACKET_BEFORE_TELEPORT = false;
 
+
+	@Configure(file = SERVER, key = "AnnouncementsCycleTime")
+	public static int Announcements_Cycle_Time;
+
+	@Configure(file = SERVER, key = "AnnounceTimeDisplay")
+	public static boolean Announcements_Cycle_Modify_Time;
+
 	/** Rate control */
 	@Configure(file = RATE, key = "RateXp")
 	public static double RATE_XP = 1.0;

@@ -227,15 +227,15 @@ public class L1Attack {
 	 * 8～26まで 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11, 11, 11, 12, 12, 12, //
 	 * 27～44まで 13, 13, 13, 14, 14, 14, 15, 15, 15, 16, 16, 16, 17, 17, 17}; //
 	 * 45～59まで
-	 * 
+	 *
 	 * private static final int[] dexHit = { -2, -2, -2, -2, -2, -2, -1, -1, 0,
 	 * 0, // 1～10まで 1, 1, 2, 2, 3, 3, 4, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 	 * 15, 16, // 11～30まで 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
 	 * 30, 31, // 31～45まで 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,
 	 * 45, 46 }; // 46～60まで
-	 * 
+	 *
 	 * private static final int[] strDmg = new int[128];
-	 * 
+	 *
 	 * static { // ＳＴＲダメージ補正 int dmg = -6; for (int str = 0; str <= 22; str++) {
 	 * // ０～２２は２毎に＋１ if (str % 2 == 1) { dmg++; } strDmg[str] = dmg; } for (int
 	 * str = 23; str <= 28; str++) { // ２３～２８は３毎に＋１ if (str % 3 == 2) { dmg++; }
@@ -245,9 +245,9 @@ public class L1Attack {
 	 * for (int str = 40; str <= 46; str++) { // ４０～４６は１毎に＋２ dmg += 2;
 	 * strDmg[str] = dmg; } for (int str = 47; str <= 127; str++) { //
 	 * ４７～１２７は１毎に＋１ dmg++; strDmg[str] = dmg; } }
-	 * 
+	 *
 	 * private static final int[] dexDmg = new int[128];
-	 * 
+	 *
 	 * static { // ＤＥＸダメージ補正 for (int dex = 0; dex <= 14; dex++) { // ０～１４は０
 	 * dexDmg[dex] = 0; } dexDmg[15] = 1; dexDmg[16] = 2; dexDmg[17] = 3;
 	 * dexDmg[18] = 4; dexDmg[19] = 4; dexDmg[20] = 4; dexDmg[21] = 5;
@@ -1723,39 +1723,54 @@ public class L1Attack {
 
 	// ●●●● プレイヤーの攻撃モーション送信 ●●●●
 	private void actionPc() {
+		boolean isFly = false;
+		int attackGrfxId = 0;
+
 		_pc.setHeading(_pc.targetDirection(_targetX, _targetY)); // 向きのセット
+
+		// 遠距離武器（弓、スティング）判定
 		if (_weaponType == 20) {
+			isFly = true;
 			if (_arrow != null) { // 矢がある場合
-				_pc.sendPackets(new S_UseArrowSkill(_pc, _targetId, 66,
-						_targetX, _targetY, _isHit));
-				_pc.broadcastPacket(new S_UseArrowSkill(_pc, _targetId, 66,
-						_targetX, _targetY, _isHit));
-				if (_isHit) {
-					_target.broadcastPacketExceptTargetSight(new S_DoActionGFX(
-							_targetId, ActionCodes.ACTION_Damage), _pc);
-				}
+				attackGrfxId = 66;
 				_pc.getInventory().removeItem(_arrow, 1);
 			} else if (_weaponId == 190) { // 弓-矢が無くてサイハの場合
-				_pc.sendPackets(new S_UseArrowSkill(_pc, _targetId, 2349,
-						_targetX, _targetY, _isHit));
-				_pc.broadcastPacket(new S_UseArrowSkill(_pc, _targetId, 2349,
-						_targetX, _targetY, _isHit));
-				if (_isHit) {
-					_target.broadcastPacketExceptTargetSight(new S_DoActionGFX(
-							_targetId, ActionCodes.ACTION_Damage), _pc);
-				}
+				attackGrfxId = 2349;
 			}
+
+			if (_pc.getTempCharGfx() == 8719)
+			{
+				attackGrfxId = 8721;
+			}
+			if (_pc.getTempCharGfx() == 8900)
+			{
+				attackGrfxId = 8904;
+			}
+			 if (_pc.getTempCharGfx() == 8913)
+			 {
+				attackGrfxId = 8916;
+			 }
+
 		} else if (_weaponType == 62 && _sting != null) { // ガントレット - スティング有
-			_pc.sendPackets(new S_UseArrowSkill(_pc, _targetId, 2989, _targetX,
+			attackGrfxId = 2989;
+			isFly = true;
+			_pc.getInventory().removeItem(_sting, 1);
+		}
+
+		// 遠距離武器の場合のパケット
+		if(isFly)
+		{
+			_pc.sendPackets(new S_UseArrowSkill(_pc, _targetId, attackGrfxId, _targetX,
 					_targetY, _isHit));
-			_pc.broadcastPacket(new S_UseArrowSkill(_pc, _targetId, 2989,
+			_pc.broadcastPacket(new S_UseArrowSkill(_pc, _targetId, attackGrfxId,
 					_targetX, _targetY, _isHit));
 			if (_isHit) {
 				_target.broadcastPacketExceptTargetSight(new S_DoActionGFX(
 						_targetId, ActionCodes.ACTION_Damage), _pc);
 			}
-			_pc.getInventory().removeItem(_sting, 1);
-		} else {
+		}
+		else // 近接武器の場合のパケット
+		{
 			if (_isHit) {
 				_pc.sendPackets(new S_AttackPacket(_pc, _targetId,
 						ActionCodes.ACTION_Attack));
@@ -1853,12 +1868,12 @@ public class L1Attack {
 	 * == 6) { avg_x = -1; avg_y = 0; } else if (head == 7) { avg_x = -1; avg_y
 	 * = -1; } else if (head == 0) { avg_x = 0; avg_y = -1; } } else { avg_x =
 	 * dis_x / dis; avg_y = dis_y / dis; }
-	 * 
+	 *
 	 * int add_x = (int) Math.floor((avg_x 15) + 0.59f); // 上下左右がちょっと優先な丸め int
 	 * add_y = (int) Math.floor((avg_y 15) + 0.59f); // 上下左右がちょっと優先な丸め
-	 * 
+	 *
 	 * if (cx > _targetX) { add_x *= -1; } if (cy > _targetY) { add_y *= -1; }
-	 * 
+	 *
 	 * _targetX = _targetX + add_x; _targetY = _targetY + add_y; }
 	 */
 

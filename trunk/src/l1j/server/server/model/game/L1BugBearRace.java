@@ -16,7 +16,7 @@
  *
  * http://www.gnu.org/copyleft/gpl.html
  */
-package l1j.server.server.model;
+package l1j.server.server.model.game;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,6 +27,10 @@ import l1j.server.server.datatables.DoorTable;
 import l1j.server.server.datatables.NpcTable;
 import l1j.server.server.datatables.RaceTicketTable;
 import l1j.server.server.datatables.ShopTable;
+import l1j.server.server.model.Heading;
+import l1j.server.server.model.L1Location;
+import l1j.server.server.model.L1Object;
+import l1j.server.server.model.L1World;
 import l1j.server.server.model.Instance.L1DoorInstance;
 import l1j.server.server.model.Instance.L1MerchantInstance;
 import l1j.server.server.model.Instance.L1NpcInstance;

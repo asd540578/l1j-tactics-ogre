@@ -63,7 +63,7 @@ public class TextMapReader extends MapReader {
 
 	/**
 	 * 指定のマップ番号のテキストマップを読み込む.
-	 * 
+	 *
 	 * @param mapId
 	 *            マップ番号
 	 * @param xSize
@@ -102,7 +102,7 @@ public class TextMapReader extends MapReader {
 
 	/**
 	 * 指定のマップ番号のテキストマップを読み込む.
-	 * 
+	 *
 	 * @param id
 	 *            マップ番号
 	 * @return L1Map
@@ -141,7 +141,7 @@ public class TextMapReader extends MapReader {
 
 	/**
 	 * 全てのテキストマップを読み込む.
-	 * 
+	 *
 	 * @return Map
 	 * @throws IOException
 	 */
@@ -184,7 +184,7 @@ public class TextMapReader extends MapReader {
 
 	/**
 	 * 全マップIDのリストを返す.
-	 * 
+	 *
 	 * @return List<Integer> 全マップIDのリスト
 	 */
 	public static List<Integer> listMapIds() {
@@ -584,7 +584,7 @@ public class TextMapReader extends MapReader {
 			{ 781, 32704, 33023, 32704, 32895 },
 			{ 782, 32704, 32831, 32768, 32895 },
 			{ 783, 32768, 33279, 32640, 32895 },
-			{ 784, 32704, 32831, 32768, 32895 },
+			{ 784, 32704, 32767, 32832, 32895 },
 			{ 997, 32704, 32767, 32768, 32831 },
 			{ 998, 32704, 32767, 32768, 32831 },
 			{ 1000, 32704, 32895, 32768, 32959 },

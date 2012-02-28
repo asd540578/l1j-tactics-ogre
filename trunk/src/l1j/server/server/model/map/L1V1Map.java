@@ -228,6 +228,10 @@ public class L1V1Map extends L1Map {
 			return false;
 		}
 
+		if (!((tile2 & 0x02) == 0x02 || (tile2 & 0x01) == 0x01)) {
+			return false;
+		}
+
 		if (heading == Heading.UP) {
 			int dir = DoorTable.getInstance().getDoorDirection(newLoc);
 			return (tile1 & 0x02) == 0x02 && dir != 0;

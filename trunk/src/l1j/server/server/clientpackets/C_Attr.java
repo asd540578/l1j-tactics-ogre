@@ -73,15 +73,18 @@ public class C_Attr extends ClientBasePacket {
 
 	public C_Attr(byte abyte0[], ClientThread clientthread) throws Exception {
 		super(abyte0);
+		readH(); // 3.51C未知的功能
+		@SuppressWarnings("unused")
+		int count = readD(); // 紀錄世界中發送YesNo的次數
 		int i = readH();
+		String name ;
 		int c;
-		String name;
 
 		L1PcInstance pc = clientthread.getActiveChar();
 
 		switch (i) {
 		case 97: // %0が血盟に加入したがっています。承諾しますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance joinPc = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getTempID());
 			pc.setTempID(0);
@@ -155,7 +158,7 @@ public class C_Attr extends ClientBasePacket {
 		case 217: // %0血盟の%1があなたの血盟との戦争を望んでいます。戦争に応じますか？（Y/N）
 		case 221: // %0血盟が降伏を望んでいます。受け入れますか？（Y/N）
 		case 222: // %0血盟が戦争の終結を望んでいます。終結しますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance enemyLeader = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getTempID());
 			if (enemyLeader == null) {
@@ -191,7 +194,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 252: // %0%sがあなたとアイテムの取引を望んでいます。取引しますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance trading_partner = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getTradeID());
 			if (trading_partner != null) {
@@ -210,7 +213,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 321: // また復活したいですか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance resusepc1 = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getTempID());
 			pc.setTempID(0);
@@ -238,7 +241,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 322: // また復活したいですか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance resusepc2 = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getTempID());
 			pc.setTempID(0);
@@ -270,7 +273,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 325: // 動物の名前を決めてください：
-			c = readC(); // ?
+			c = readH(); // ?
 			name = readS();
 			L1PetInstance pet = (L1PetInstance) L1World.getInstance()
 					.findObject(pc.getTempID());
@@ -279,7 +282,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 512: // 家の名前は？
-			c = readC(); // ?
+			c = readH(); // ?
 			name = readS();
 			int houseId = pc.getTempID();
 			pc.setTempID(0);
@@ -293,7 +296,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 630: // %0%sがあなたと決闘を望んでいます。応じますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance fightPc = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getFightId());
 			if (c == 0) {
@@ -309,7 +312,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 653: // 離婚をするとリングは消えてしまいます。離婚を望みますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance target653 = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getPartnerId());
 			if (c == 0) { // No
@@ -330,7 +333,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 654: // %0%sあなたと結婚したがっています。%0と結婚しますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance partner = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getTempID());
 			pc.setTempID(0);
@@ -358,7 +361,7 @@ public class C_Attr extends ClientBasePacket {
 
 		// コールクラン
 		case 729: // 君主が呼んでいます。召喚に応じますか？（Y/N）
-			c = readC();
+			c = readH();
 			if (c == 0) { // No
 				;
 			} else if (c == 1) { // Yes
@@ -367,7 +370,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 738: // 経験値を回復するには%0のアデナが必要です。経験値を回復しますか？
-			c = readC();
+			c = readH();
 			if (c == 0) { // No
 				;
 			} else if (c == 1 && pc.getExpRes() == 1) { // Yes
@@ -392,7 +395,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 951: // チャットパーティー招待を許可しますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance chatPc = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getPartyID());
 			if (chatPc != null) {
@@ -419,7 +422,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 953: // パーティー招待を許可しますか？（Y/N）
-			c = readC();
+			c = readH();
 			L1PcInstance target = (L1PcInstance) L1World.getInstance()
 					.findObject(pc.getPartyID());
 			if (target != null) {
@@ -451,7 +454,7 @@ public class C_Attr extends ClientBasePacket {
 			break;
 
 		case 479: // どの能力値を向上させますか？（str、dex、int、con、wis、cha）
-			if (readC() == 1) {
+			if (readH() == 1) {
 				String s = readS();
 				if (!(pc.getLevel() - 50 > pc.getBonusStats())) {
 					return;

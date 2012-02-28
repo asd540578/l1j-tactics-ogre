@@ -90,6 +90,7 @@ public class GameServer extends Thread {
 	private ServerSocket _serverSocket;
 	private static Logger _log = Logger.getLogger(GameServer.class.getName());
 	private LoginController _loginController;
+	private static int YesNoCount = 0;
 
 	@Override
 	public void run() {
@@ -374,5 +375,10 @@ public class GameServer extends Thread {
 
 		_shutdownThread.interrupt();
 		_shutdownThread = null;
+	}
+
+	public static int getYesNoCount() {
+		YesNoCount += 1;
+		return YesNoCount;
 	}
 }

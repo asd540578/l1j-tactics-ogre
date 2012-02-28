@@ -458,6 +458,38 @@ public class C_Attr extends ClientBasePacket {
 			}
 			break;
 
+		case 954: // 玩家 %0%s 邀請ｨ`加入自動分配隊伍？(Y/N)
+				c = readC();
+				L1PcInstance target2 = (L1PcInstance) L1World.getInstance().findObject(pc.getPartyID());
+				if (target2 != null) {
+					if (c == 0) { // No
+						target2.sendPackets(new S_ServerMessage(423, pc.getName())); // %0%s
+																				// 拒U}了ｨ`的邀請。
+						pc.setPartyID(0);
+					}
+					else if (c == 1) { // Yes
+						if (target2.isInParty()) {
+							// 隊長組隊中
+							if (target2.getParty().isVacancy() || target2.isGm()) {
+								// 組隊是空的
+								target2.getParty().addMember(pc);
+							}
+							else {
+								// 組隊滿了
+								target2.sendPackets(new S_ServerMessage(417)); // `O的隊伍已經滿了，無法再接受隊員。
+							}
+						}
+						else {
+							// 還沒有組隊，建立一個新組隊
+							L1Party party = new L1Party();
+							party.addMember(target2);
+							party.addMember(pc);
+							target2.sendPackets(new S_ServerMessage(424, pc.getName())); // %0%s
+																						// 加入了ｨ`的隊伍。
+						}
+					}
+				}
+				break;
 		case 479: // どの能力値を向上させますか？（str、dex、int、con、wis、cha）
 			if (readC() == 1) {
 				String s = readS();

@@ -73,7 +73,7 @@ public class C_CreateParty extends ClientBasePacket {
 						targetPc.sendPackets(new S_Message_YN(953, pc.getName()));
 						break;
 					case 1:
-						targetPc.sendPackets(new S_Message_YN(953, pc.getName()));
+						targetPc.sendPackets(new S_Message_YN(954, pc.getName()));
 						break;
 					}
 				}

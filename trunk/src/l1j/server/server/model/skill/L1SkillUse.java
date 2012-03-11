@@ -71,6 +71,7 @@ import l1j.server.server.model.poison.L1DamagePoison;
 import l1j.server.server.model.trap.L1WorldTraps;
 import l1j.server.server.random.RandomGenerator;
 import l1j.server.server.random.RandomGeneratorFactory;
+import l1j.server.server.serverpackets.S_AttackPacketForNpc;
 import l1j.server.server.serverpackets.S_ChangeHeading;
 import l1j.server.server.serverpackets.S_ChangeName;
 import l1j.server.server.serverpackets.S_ChangeShape;
@@ -1605,7 +1606,7 @@ public class L1SkillUse
 /* t.s 2012/2/5 mod start */
 //		if (castgfx == 0)
 /*   t.s 2012/2/5 mod end   */
-		if (castgfx == 0 || _skill.getId() >= 20000)
+		if (castgfx == 0 || _skill.getSkillId() >= 20000)
 		{
 			return; // 表示するグラフィックが無い
 		}
@@ -3244,8 +3245,9 @@ public class L1SkillUse
 				else if (_skillId >= 20000 && _skillId <= 30000)
 				{
 					_user.setHeading(_user.targetDirection(_target.getX(), _target.getY()));
-					_user.broadcastPacket(new S_UseAttackSkill(_user, _target.getId(),
-						_skill.getCastGfx(), _target.getX(), _target.getY(), _skill.getActionId()));
+					_user.broadcastPacket(new S_AttackPacketForNpc(_target, _user.getId(),
+					 _skill.getActionId()));
+					// スキルエフェクトクラスにエフェクト表示・ダメージ処理は任せる
 					SkillBase.createSkillEffect(_user , _target, _skillId, 1);
 
 					return;

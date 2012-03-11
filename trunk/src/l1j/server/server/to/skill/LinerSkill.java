@@ -38,7 +38,7 @@ public class LinerSkill extends SkillBase
 		final int mapid = _attacker.getMapId();
 
 		// スキルエフェクト開始地点の定義
-		final L1Location loc1 = new L1Location(_attacker.getX()
+		final L1Location start = new L1Location(_attacker.getX()
 				+ HEADING_TABLE_X[_attacker.getHeading()], _attacker.getY()
 				+ HEADING_TABLE_Y[_attacker.getHeading()], mapid);
 
@@ -46,19 +46,19 @@ public class LinerSkill extends SkillBase
 		if (_target == null)
 		{
 			// スキルエフェクト終端地点の定義
-			final L1Location loc2 = new L1Location(_attacker.getX()
+			final L1Location end = new L1Location(_attacker.getX()
 					+ HEADING_TABLE_X[_attacker.getHeading()]
 					* _effect.getLineRadius(), _attacker.getY()
 					+ HEADING_TABLE_Y[_attacker.getHeading()]
 					* _effect.getLineRadius(), mapid);
-			doAction(loc1 ,loc2 ,mapid);
+			doAction(start ,end ,mapid);
 		}
 
 		// ターゲット有
 		if (_target != null)
 		{
 			// スキルエフェクト中間地点の定義（ターゲット）
-			final L1Location loc2 = new L1Location(_target.getX(),
+			final L1Location half = new L1Location(_target.getX(),
 					_target.getY(), mapid);
 
 			// スキルエフェクト終端地点の定義(SKILL_LINE_RADIUS分)
@@ -82,12 +82,12 @@ public class LinerSkill extends SkillBase
 			{
 				y_slope = 0;
 			}
-			final L1Location loc3 = new L1Location(_attacker.getX() + x_slope
+			final L1Location end = new L1Location(_attacker.getX() + x_slope
 					* _effect.getLineRadius(), _attacker.getY() + y_slope
 					* _effect.getLineRadius(), mapid);
 			// ロケーションを元にルート計算してエフェクト表示
-			doAction(loc1, loc2, mapid);
-			doAction(loc2, loc3, mapid);
+			doAction(start, half, mapid);
+			doAction(half, end, mapid);
 		}
 	}
 

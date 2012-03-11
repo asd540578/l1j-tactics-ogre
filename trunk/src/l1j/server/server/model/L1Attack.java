@@ -197,13 +197,6 @@ public class L1Attack {
 
 	private double _skillDamage = 0;
 
-	/* t.s add start 2011/08/21 */
-	// NPCを作成するたびに追加が必要
-	private Integer[] archersNpcId = new Integer[] { 45019, 81032, 81035,
-			81038, 81041 };
-
-	/* t.s add end 2011/08/21 */
-
 	public void setLeverage(int i) {
 		_leverage = i;
 	}
@@ -1813,12 +1806,7 @@ public class L1Attack {
 		/* t.s add start 2011/08/21 */
 		/* 敵が弓を放つ際のモーションを正常に表示させる */
 		if (bowActId > 0) {
-			for (Integer id : archersNpcId) {
-				if (id.equals(_npc.getNpcTemplate().get_npcId())) {
-					actId = ActionCodes.ACTION_BowAttack;
-					break;
-				}
-			}
+			actId = ActionCodes.ACTION_BowAttack;
 		}
 		/* t.s add end 2011/08/21 */
 

@@ -174,7 +174,7 @@ public final class Config {
 
 
 	@Configure(file = SERVER, key = "AnnouncementsCycleTime")
-	public static int Announcements_Cycle_Time;
+	public static int Announcements_Cycle_Time = 6;
 
 	@Configure(file = SERVER, key = "AnnounceTimeDisplay")
 	public static boolean Announcements_Cycle_Modify_Time;

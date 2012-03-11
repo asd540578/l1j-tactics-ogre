@@ -2521,8 +2521,10 @@ public class L1SkillUse
 							4917, 4918, 4919, 4950, 6087, 6140, 6145, 6150,
 							6155, 6160, 6269, 6272, 6275, 6278, 6826, 6827,
 							6836, 6837, 6846, 6847, 6856, 6857, 6866, 6867,
-							6876, 6877, 6886, 6887
+							6876, 6877, 6886, 6887,	8900, 8913, 9225, 9226,
+							8860, 8786, 8792, 8798, 8804, 8808, 2435
 					};
+
 					/* t.s 2011/09/08 mod start */
 					/* モンスター側にもTAを実装するため分岐 */
 					if (_user instanceof L1PcInstance)
@@ -2566,10 +2568,9 @@ public class L1SkillUse
 							return;
 						}
 
-						L1PcInstance target_pc = (L1PcInstance) _target;
 						for (int i = 3; i > 0; i--)
 						{ // targetはPC想定
-							target_pc.onAction((L1NpcInstance) _user,
+							_target.onAction((L1NpcInstance) _user,
 									TRIPLE_ARROW);
 						}
 						_user.broadcastPacket(new S_SkillSound(_user.getId(),

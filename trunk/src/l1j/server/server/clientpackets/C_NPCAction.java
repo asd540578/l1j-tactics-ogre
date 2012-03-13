@@ -633,7 +633,6 @@ public class C_NPCAction extends ClientBasePacket {
 				}
 			}
 		} else if (((L1NpcInstance) obj).getNpcTemplate().get_npcId() == 91328) { // 象牙の塔秘密研究室
-			if (s.equalsIgnoreCase("enter")) { // 部屋・ホールに入る
 				// -
 				// ユキ
 				// /
@@ -670,7 +669,6 @@ public class C_NPCAction extends ClientBasePacket {
 				 * } } }
 				 */
 				htmlid = "";
-			}
 		} else if (s.equalsIgnoreCase("openigate")) { // ゲートキーパー / 城門を開ける
 			L1NpcInstance npc = (L1NpcInstance) obj;
 			openCloseGate(pc, npc.getNpcTemplate().get_npcId(), true);

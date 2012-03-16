@@ -2624,12 +2624,11 @@ public class L1SkillUse
 					}
 					else if (_user instanceof L1NpcInstance)
 					{ // ここから追加処理
-						L1PcInstance pc = (L1PcInstance) _target;
 						for (int i = 3; i > 0; i--)
 						{
-							pc.onAction((L1NpcInstance) _user, FOE_SLAYER);
+							_target.onAction((L1NpcInstance) _user, FOE_SLAYER);
 						}
-						_user.broadcastPacket(new S_SkillSound(pc.getId(), 6509));
+						_user.broadcastPacket(new S_SkillSound(_target.getId(), 6509));
 						_user.broadcastPacket(new S_SkillSound(_user.getId(),
 								7020));
 						/* t.s 2011/09/08 mod end */

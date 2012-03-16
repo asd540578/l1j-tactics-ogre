@@ -1981,7 +1981,7 @@ public class L1Attack {
 					ActionCodes.ACTION_Damage));
 			_pc.broadcastPacket(new S_DoActionGFX(_pc.getId(),
 					ActionCodes.ACTION_Damage));
-		} else if (_calcType == NPC_PC) {
+		} else if (_calcType == NPC_PC || _calcType == NPC_NPC) {
 			int actId = 0;
 			_npc.setHeading(_npc.targetDirection(_targetX, _targetY)); // 向きのセット
 			if (getActId() > 0) {
@@ -2012,7 +2012,7 @@ public class L1Attack {
 			if (_weaponType == 20 || _weaponType == 62 || _weaponType2 == 17) { // 弓、ガントレット、キーリンク
 				isShortDistance = false;
 			}
-		} else if (_calcType == NPC_PC) {
+		} else if (_calcType == NPC_PC || _calcType == NPC_NPC) {
 			boolean isLongRange = (_npc.getLocation().getTileLineDistance(
 					new Point(_targetX, _targetY)) > 1);
 			int bowActId = _npc.getNpcTemplate().getBowActId();
@@ -2045,6 +2045,9 @@ public class L1Attack {
 		else if (_calcType == PC_NPC) {
 			_pc.receiveDamage(_targetNpc, damage, false);
 		}
+		else if (_calcType == NPC_NPC) {
+			_npc.receiveDamage(_targetNpc, damage);
+		}
 	}
 
 	// ●●●● カウンターバリアのダメージを算出 ●●●●
@@ -2053,12 +2056,12 @@ public class L1Attack {
 		L1ItemInstance weapon = null;
 		/* t.s 2012/01/01 add start */
 		// NPCのＣＢ追加に伴うダメージ計算方法の追加
-		L1MonsterInstance enemy = null;
+		L1NpcInstance enemy = null;
 		final double BOSS_CONST = 1.2, ROOT = 0.5;
-		if (_target instanceof L1MonsterInstance) {
-			enemy = (L1MonsterInstance) _target;
+		if (_target instanceof L1NpcInstance) {
+			enemy = (L1NpcInstance) _target;
 		}
-		if (_calcType == PC_NPC) { // √STR * √レベル * Bossフラグ
+		if (_calcType == PC_NPC || _calcType == NPC_NPC) { // √STR * √レベル * Bossフラグ
 			damage = (int) (Math.pow(enemy.getStr(), ROOT)
 					* Math.pow(enemy.getLevel(), ROOT) * (enemy
 					.getNpcTemplate().getBoss() ? BOSS_CONST : 1));

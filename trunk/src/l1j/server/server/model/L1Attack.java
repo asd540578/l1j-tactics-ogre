@@ -1815,7 +1815,7 @@ public class L1Attack {
 		}
 
 		// 距離が2以上、攻撃者の弓のアクションIDがある場合は遠攻撃
-		if (isLongRange && (bowActId > 0)) {
+		if (bowActId > 0) {
 			_npc.broadcastPacket(new S_UseArrowSkill(_npc, _targetId, bowActId,
 					_targetX, _targetY, _isHit));
 		} else {

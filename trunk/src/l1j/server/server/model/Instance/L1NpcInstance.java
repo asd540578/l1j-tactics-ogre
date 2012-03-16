@@ -430,10 +430,16 @@ public class L1NpcInstance extends L1Character {
 					attackTarget(target);
 				}
 			} else { // 攻撃不可能位置
-				if (_mobSkill.useRandomSkill(target)) { // ランダムにスキル使用(mobskill.sqlのTriRndに従わず、発動確率は100%。ただしサモン、強制変身は常にTriRndに従う。)
-					setSleepTime(calcSleepTime(_mobSkill.getSleepTime(),
-							MAGIC_SPEED));
-					return;
+				/* t.s 2012/03/06 add start */
+				// スキル発動率を修正（敵が歩かないので。。。）
+				if (_mobSkill.availableSkills(target, true).isEmpty() == false)
+				{
+				/* t.s 2012/03/06 add end */
+    				if (_mobSkill.useRandomSkill(target)) { // ランダムにスキル使用(mobskill.sqlのTriRndに従わず、発動確率は100%。ただしサモン、強制変身は常にTriRndに従う。)
+    					setSleepTime(calcSleepTime(_mobSkill.getSleepTime(),
+    							MAGIC_SPEED));
+    					return;
+    				}
 				}
 
 				if (getPassispeed() > 0) {
@@ -2351,7 +2357,7 @@ public class L1NpcInstance extends L1Character {
 
 	/*
 	 * ソーシャルアクションが送信された場合に呼び出される
-	 * 
+	 *
 	 * @param actioId ソーシャルアクションID
 	 */
 	public void receiveSocialAction(int actionId) {
@@ -2373,7 +2379,7 @@ public class L1NpcInstance extends L1Character {
 
 	/**
 	 * グループに属するモンスターが死亡した際に判定する。
-	 * 
+	 *
 	 * @param npc
 	 */
 	private void doExecutionWhenNpcDied(L1NpcInstance npc) {
@@ -2394,7 +2400,7 @@ public class L1NpcInstance extends L1Character {
 
 	/**
 	 * ターゲットを設定する
-	 * 
+	 *
 	 * @param cha
 	 *            新しく追加するターゲット
 	 */

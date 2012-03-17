@@ -23,6 +23,7 @@ import java.util.List;
 
 import l1j.server.server.Opcodes;
 import l1j.server.server.model.Instance.L1ItemInstance;
+import l1j.server.server.model.Instance.L1NpcInstance;
 import l1j.server.server.model.Instance.L1PetInstance;
 
 // Referenced classes of package l1j.server.server.serverpackets:
@@ -34,7 +35,7 @@ public class S_PetInventory extends ServerBasePacket {
 
 	private byte[] _byte = null;
 
-	public S_PetInventory(L1PetInstance pet) {
+	public S_PetInventory(L1NpcInstance pet) {
 		List<L1ItemInstance> itemList = pet.getInventory().getItems();
 
 		writeC(Opcodes.S_OPCODE_SHOWRETRIEVELIST);

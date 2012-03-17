@@ -24,8 +24,8 @@ import java.util.logging.Logger;
 
 import l1j.server.server.ClientThread;
 import l1j.server.server.model.L1World;
+import l1j.server.server.model.Instance.L1NpcInstance;
 import l1j.server.server.model.Instance.L1PcInstance;
-import l1j.server.server.model.Instance.L1PetInstance;
 import l1j.server.server.serverpackets.S_PetInventory;
 
 // Referenced classes of package l1j.server.server.clientpackets:
@@ -42,7 +42,7 @@ public class C_PetMenu extends ClientBasePacket {
 
 		int petId = readD();
 
-		L1PetInstance pet = (L1PetInstance) L1World.getInstance().findObject(petId);
+		L1NpcInstance pet = (L1NpcInstance) L1World.getInstance().findObject(petId);
 		L1PcInstance pc = clientthread.getActiveChar();
 
 		if (pet != null && pc != null) {

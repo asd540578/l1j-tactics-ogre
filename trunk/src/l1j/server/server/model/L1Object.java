@@ -37,7 +37,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在するマップのマップIDを返す
-	 * 
+	 *
 	 * @return マップID
 	 */
 	public short getMapId() {
@@ -46,7 +46,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在するマップのマップIDを設定する
-	 * 
+	 *
 	 * @param mapId
 	 *            マップID
 	 */
@@ -56,7 +56,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在するマップを保持するL1Mapオブジェクトを返す
-	 * 
+	 *
 	 */
 	public L1Map getMap() {
 		return _loc.getMap();
@@ -64,7 +64,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在するマップを設定する
-	 * 
+	 *
 	 * @param map
 	 *            オブジェクトが存在するマップを保持するL1Mapオブジェクト
 	 */
@@ -77,7 +77,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトを一意に識別するIDを返す
-	 * 
+	 *
 	 * @return オブジェクトID
 	 */
 	public int getId() {
@@ -86,7 +86,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトを一意に識別するIDを設定する
-	 * 
+	 *
 	 * @param id
 	 *            オブジェクトID
 	 */
@@ -96,7 +96,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在する座標のX値を返す
-	 * 
+	 *
 	 * @return 座標のX値
 	 */
 	public int getX() {
@@ -105,7 +105,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在する座標のX値を設定する
-	 * 
+	 *
 	 * @param x
 	 *            座標のX値
 	 */
@@ -115,7 +115,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在する座標のY値を返す
-	 * 
+	 *
 	 * @return 座標のY値
 	 */
 	public int getY() {
@@ -124,7 +124,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在する座標のY値を設定する
-	 * 
+	 *
 	 * @param y
 	 *            座標のY値
 	 */
@@ -136,7 +136,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが存在する位置を保持する、L1Locationオブジェクトへの参照を返す。
-	 * 
+	 *
 	 * @return 座標を保持する、L1Locationオブジェクトへの参照
 	 */
 	public L1Location getLocation() {
@@ -178,7 +178,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトがプレイヤーの画面内に入った(認識された)際に呼び出される。
-	 * 
+	 *
 	 * @param perceivedFrom
 	 *            このオブジェクトを認識したPC
 	 */
@@ -187,7 +187,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトへのアクションが発生した際に呼び出される
-	 * 
+	 *
 	 * @param actionFrom
 	 *            アクションを起こしたPC
 	 */
@@ -196,7 +196,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトへのアクションが発生した際に呼び出される
-	 * 
+	 *
 	 * @param actionFrom
 	 *            アクションを起こしたPC
 	 * @param skillId
@@ -209,7 +209,7 @@ public class L1Object implements Serializable {
 	/* モンスター側からのTA等を実装するために追加 */
 	/**
 	 * オブジェクトへのアクションが発生した際に呼び出される
-	 * 
+	 *
 	 * @param actionFrom
 	 *            アクションを起こしたNpc
 	 */
@@ -218,7 +218,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトへのアクションが発生した際に呼び出される
-	 * 
+	 *
 	 * @param actionFrom
 	 *            アクションを起こしたモンスター
 	 * @param skillId
@@ -231,7 +231,7 @@ public class L1Object implements Serializable {
 
 	/**
 	 * オブジェクトが話しかけられたとき呼び出される
-	 * 
+	 *
 	 * @param talkFrom
 	 *            話しかけたPC
 	 */

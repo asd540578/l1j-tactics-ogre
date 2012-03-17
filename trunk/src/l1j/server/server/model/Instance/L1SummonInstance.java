@@ -14,6 +14,7 @@ import l1j.server.server.datatables.NpcTable;
 import l1j.server.server.datatables.PetTypeTable;
 import l1j.server.server.model.L1Attack;
 import l1j.server.server.model.L1Character;
+import l1j.server.server.model.L1Magic;
 import l1j.server.server.model.L1World;
 import l1j.server.server.model.inventory.L1Inventory;
 import l1j.server.server.random.RandomGenerator;
@@ -381,6 +382,62 @@ public class L1SummonInstance extends L1NpcInstance {
 		}
 	}
 
+	/* t.s 2011/03/17 add start */
+	/* NPCからのアクションを処理する */
+	@Override
+	public void onAction(L1NpcInstance attacker)
+	{
+		onAction(attacker, 0);
+	}
+
+	@Override
+	public void onAction(L1NpcInstance attacker, int skillId)
+	{
+		// XXX:NullPointerException回避。onActionの引数の型はL1Characterのほうが良い？
+		if (attacker == null)
+		{
+			return;
+		}
+
+		if (getCurrentHp() > 0 && !isDead())
+		{
+			boolean isCounterBarrier = false;
+			L1Attack attack = new L1Attack(attacker, this, skillId);
+			if (attack.calcHit())
+			{
+				if (hasSkillEffect(COUNTER_BARRIER))
+				{
+					L1Magic magic = new L1Magic(this, attacker);
+					boolean isProbability = magic
+							.calcProbabilityMagic(COUNTER_BARRIER);
+					boolean isShortDistance = attack.isShortDistance();
+					if (isProbability && isShortDistance)
+					{
+						isCounterBarrier = true;
+					}
+				}
+				if (!isCounterBarrier)
+				{
+					attack.calcDamage();
+					attack.calcStaffOfMana();
+					attack.addPcPoisonAttack(attacker, this);
+					attack.addChaserAttack();
+				}
+			}
+			if (isCounterBarrier)
+			{
+				attack.actionCounterBarrier();
+				attack.commitCounterBarrier();
+			}
+			else
+			{
+				attack.action();
+				attack.commit();
+			}
+		}
+	}
+
+	/* t.s 2011/03/17 add end */
 	@Override
 	public void onAction(L1PcInstance attacker) {
 		onAction(attacker, 0);

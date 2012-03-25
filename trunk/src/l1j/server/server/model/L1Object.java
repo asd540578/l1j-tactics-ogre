@@ -229,6 +229,21 @@ public class L1Object implements Serializable {
 
 	/* t.s 2011/09/08 add end */
 
+	/* t.s 2012/03/22 add start */
+	/**
+	 * オブジェクトへのアクションが発生した際に呼び出される
+	 *
+	 * @param actionFrom
+	 *            アクションを起こしたモンスター
+	 * @param skillId
+	 *            使用されたスキルID
+	 * @param leverage
+	 *            スキルのダメージ倍率（1/10単位）
+	 */
+	public void onAction(L1NpcInstance attacker, int skillId, int leverage) {
+	}
+	/* t.s 2012/03/22 add end */
+
 	/**
 	 * オブジェクトが話しかけられたとき呼び出される
 	 *

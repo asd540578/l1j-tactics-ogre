@@ -240,4 +240,9 @@ public class NpcTable {
 		}
 		return 0;
 	}
+
+	public Map<String ,Integer> getFamilies()
+	{
+		return _familyTypes;
+	}
 }

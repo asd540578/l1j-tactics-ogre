@@ -1258,6 +1258,61 @@ public class L1PcInstance extends L1Character
 
 	/* t.s 2011/09/08 add end */
 
+	/* t.s 2012/03/22 add add */
+	@Override
+	public void onAction(L1NpcInstance attacker, int skillId ,int leverage)
+	{
+		// XXX:NullPointerException回避。onActionの引数の型はL1Characterのほうが良い？
+		if (attacker == null)
+		{
+			return;
+		}
+		// テレポート処理中
+		if (isTeleport())
+		{
+			return;
+		}
+
+		if (getCurrentHp() > 0 && !isDead())
+		{
+			boolean isCounterBarrier = false;
+			L1Attack attack = new L1Attack(attacker, this, skillId);
+			attack.setLeverage(leverage); // ＭＯＢスキルの倍率をセットする。（例：フォースレ）
+			if (attack.calcHit())
+			{
+				if (hasSkillEffect(COUNTER_BARRIER))
+				{
+					L1Magic magic = new L1Magic(this, attacker);
+					boolean isProbability = magic
+							.calcProbabilityMagic(COUNTER_BARRIER);
+					boolean isShortDistance = attack.isShortDistance();
+					if (isProbability && isShortDistance)
+					{
+						isCounterBarrier = true;
+					}
+				}
+				if (!isCounterBarrier)
+				{
+					attack.calcDamage();
+					attack.calcStaffOfMana();
+					attack.addPcPoisonAttack(attacker, this);
+					attack.addChaserAttack();
+				}
+			}
+			if (isCounterBarrier)
+			{
+				attack.actionCounterBarrier();
+				attack.commitCounterBarrier();
+			}
+			else
+			{
+				attack.action();
+				attack.commit();
+			}
+		}
+	}
+	/* t.s 2012/03/22 add end */
+
 	@Override
 	public void onAction(L1PcInstance attacker)
 	{

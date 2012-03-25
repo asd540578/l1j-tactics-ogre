@@ -2626,7 +2626,8 @@ public class L1SkillUse
 					{ // ここから追加処理
 						for (int i = 3; i > 0; i--)
 						{
-							_target.onAction((L1NpcInstance) _user, FOE_SLAYER);
+							// ＭＯＢスキルの倍率を指定してフォースレを発動する
+							_target.onAction((L1NpcInstance) _user, FOE_SLAYER ,_leverage);
 						}
 						_user.broadcastPacket(new S_SkillSound(_target.getId(), 6509));
 						_user.broadcastPacket(new S_SkillSound(_user.getId(),

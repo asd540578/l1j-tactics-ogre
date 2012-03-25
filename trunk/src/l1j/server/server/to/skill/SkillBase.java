@@ -32,6 +32,7 @@ import l1j.server.server.serverpackets.S_DoActionGFX;
 import l1j.server.server.serverpackets.S_EffectLocation;
 import l1j.server.server.serverpackets.S_SkillSound;
 import l1j.server.server.serverpackets.S_SystemMessage;
+import l1j.server.server.templates.L1MobSkill;
 import l1j.server.server.templates.L1Skill;
 import l1j.server.server.templates.L1SkillEffect;
 import l1j.server.server.types.Point;
@@ -54,6 +55,7 @@ public abstract class SkillBase implements Runnable
 	protected L1Character _center = null;
 	protected L1SkillEffect _effect = null;
 	protected L1Skill _skill = null;
+	protected L1MobSkill _mobskill = null;
 
 	// コンストラクターの定義
 	// protectedにしていたがリフレクションで

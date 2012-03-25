@@ -81,6 +81,7 @@ import java.util.logging.Logger;
 import l1j.server.configure.Config;
 import l1j.server.server.ActionCodes;
 import l1j.server.server.WarTimeController;
+import l1j.server.server.datatables.MobSkillTable;
 import l1j.server.server.datatables.SkillTable;
 import l1j.server.server.model.Instance.L1ItemInstance;
 import l1j.server.server.model.Instance.L1MonsterInstance;
@@ -606,11 +607,8 @@ public class L1Attack {
 		}
 		int rnd = _random.nextInt(100) + 1;
 
-		// NPCの攻撃レンジが10以上の場合で、2以上離れている場合弓攻撃とみなす
-		if (_npc.getNpcTemplate().get_ranged() >= 10
-				&& _hitRate > rnd
-				&& _npc.getLocation().getTileLineDistance(
-						new Point(_targetX, _targetY)) >= 2) {
+		// 弓攻撃ＩＤが存在する場合は距離に関わらず弓攻撃とみなす
+		if (_npc.getNpcTemplate().getBowActId() > 0) {
 			return calcErEvasion();
 		}
 		return _hitRate >= rnd;
@@ -1272,10 +1270,12 @@ public class L1Attack {
 	private int calcNpcPcDamage() {
 		int lvl = _npc.getLevel();
 		double dmg = 0D;
+		int addStatusDmg = (_npc.getNpcTemplate().getBowActId() > 0? _npc.getDex() : _npc.getStr());
+
 		if (lvl < 10) {
-			dmg = _random.nextInt(lvl) + 10D + _npc.getStr() / 2 + 1;
+			dmg = _random.nextInt(lvl) + 10D + addStatusDmg / 2 + 1;
 		} else {
-			dmg = _random.nextInt(lvl) + _npc.getStr() / 2 + 1;
+			dmg = _random.nextInt(lvl) + addStatusDmg / 2 + 1;
 		}
 
 		if (_npc instanceof L1PetInstance) {

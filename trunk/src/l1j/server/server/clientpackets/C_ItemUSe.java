@@ -555,7 +555,7 @@ public class C_ItemUSe extends ClientBasePacket
 				{ // 同じ属性
 					isSameAttr = true;
 				}
-				if (isSameAttr && oldAttrEnchantLevel >= 3)
+				if (isSameAttr && oldAttrEnchantLevel >= 5)
 				{
 					pc.sendPackets(new S_ServerMessage(1453)); // これ以上は強化できません。
 					return;

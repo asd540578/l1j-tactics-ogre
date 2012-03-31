@@ -2571,7 +2571,7 @@ public class L1SkillUse
 						for (int i = 3; i > 0; i--)
 						{ // targetはPC想定
 							_target.onAction((L1NpcInstance) _user,
-									TRIPLE_ARROW);
+									TRIPLE_ARROW ,_leverage);
 						}
 						_user.broadcastPacket(new S_SkillSound(_user.getId(),
 								4394));

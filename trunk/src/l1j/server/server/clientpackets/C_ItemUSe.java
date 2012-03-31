@@ -107,6 +107,7 @@ import l1j.server.server.model.inventory.L1PcInventory;
 import l1j.server.server.model.item.L1ItemId;
 import l1j.server.server.model.item.L1TreasureBox;
 import l1j.server.server.model.poison.L1DamagePoison;
+import l1j.server.server.model.skill.L1SkillId;
 import l1j.server.server.model.skill.L1SkillUse;
 import l1j.server.server.random.RandomGenerator;
 import l1j.server.server.random.RandomGeneratorFactory;
@@ -295,8 +296,9 @@ public class C_ItemUSe extends ClientBasePacket
 				|| itemId == 41429 // 風の武器強化スクロール
 				|| itemId == 41430 // 地の武器強化スクロール
 				|| itemId == 41431 // 水の武器強化スクロール
-				|| itemId == 41432)
-		{ // 火の武器強化スクロール
+				|| itemId == 41432 // 火の武器強化スクロール
+				|| itemId == 80023 )
+		{
 			l = readD();
 		}
 		else if (itemId == 140100 || itemId == 40100 || itemId == 40099
@@ -522,7 +524,7 @@ public class C_ItemUSe extends ClientBasePacket
 				}
 			}
 			else if (itemId == 41429 || itemId == 41430 || itemId == 41431
-					|| itemId == 41432)
+					|| itemId == 41432 || itemId == 80023)
 			{ // 風の武器強化スクロール～火の武器強化スクロール
 				if (l1iteminstance1 == null
 						|| l1iteminstance1.getItem().getType2() != 1)
@@ -551,7 +553,8 @@ public class C_ItemUSe extends ClientBasePacket
 				if (itemId == 41429 && oldAttrEnchantKind == 8
 						|| itemId == 41430 && oldAttrEnchantKind == 1
 						|| itemId == 41431 && oldAttrEnchantKind == 4
-						|| itemId == 41432 && oldAttrEnchantKind == 2)
+						|| itemId == 41432 && oldAttrEnchantKind == 2
+						|| itemId == 80023 && oldAttrEnchantKind == 16)
 				{ // 同じ属性
 					isSameAttr = true;
 				}
@@ -591,6 +594,10 @@ public class C_ItemUSe extends ClientBasePacket
 					else if (itemId == 41432)
 					{ // 火の武器強化スクロール
 						newAttrEnchantKind = 2;
+					}
+					else if(itemId == 80023)
+					{
+						newAttrEnchantKind = 16;
 					}
 					l1iteminstance1.setAttrEnchantKind(newAttrEnchantKind);
 					pc.getInventory().updateItem(l1iteminstance1,
@@ -1116,6 +1123,34 @@ public class C_ItemUSe extends ClientBasePacket
 					UseHeallingPotion(pc, 85, 197);
 					pc.getInventory().removeItem(l1iteminstance, 1);
 				}
+				/* t.s 2012/03/29 add start */
+				else if (itemId >= 60000 && itemId <= 60009) // ＴＯ独自回復アイテム
+				{
+					if(itemId == 60000) // キュアリーフ
+						UseHeallingPotion(pc, 85, 197);
+					if(itemId == 60001) // キュアリーフ + 1
+						UseHeallingPotion(pc, 105, 197);
+					if(itemId == 60002) // キュアリーフ + 2
+						UseHeallingPotion(pc, 75, 197);
+					if(itemId == 60003) // キュアシード
+						UseHeallingPotion(pc, 130, 197);
+					if(itemId == 60004) // キュアペースト
+						UseHeallingPotion(pc, 400, 197);
+
+					if(itemId == 60005) // マジックリーフ
+						UseHeallingMagicPotion(pc, 10, 197);
+					if(itemId == 60006) // マジックリーフ + 1
+						UseHeallingMagicPotion(pc, 25, 197);
+					if(itemId == 60007) // マジックリーフ + 2
+						UseHeallingMagicPotion(pc, 20, 197);
+					if(itemId == 60008) // マジックシード
+						UseHeallingMagicPotion(pc, 40, 197);
+					if(itemId == 60009) // マジックペースト
+						UseHeallingMagicPotion(pc, 100, 197);
+
+					pc.getInventory().removeItem(l1iteminstance, 1);
+				}
+				/* t.s 2012/03/29 add end */
 				else if (itemId == 140506)
 				{ // 祝福されたエントの実
 					UseHeallingPotion(pc, 80, 197);
@@ -4945,7 +4980,7 @@ public class C_ItemUSe extends ClientBasePacket
 
 	private void UseHeallingPotion(L1PcInstance pc, int healHp, int gfxid)
 	{
-		if (pc.hasSkillEffect(71) == true)
+		if (pc.hasSkillEffect(L1SkillId.DECAY_POTION) == true)
 		{ // ディケイ ポーションの状態
 			pc.sendPackets(new S_ServerMessage(698)); // 魔力によって何も飲むことができません。
 			return;
@@ -4966,6 +5001,31 @@ public class C_ItemUSe extends ClientBasePacket
 			healHp /= 2;
 		}
 		pc.setCurrentHp(pc.getCurrentHp() + healHp);
+	}
+
+	private void UseHeallingMagicPotion(L1PcInstance pc, int healMp, int gfxid)
+	{
+		if (pc.hasSkillEffect(L1SkillId.DECAY_POTION) == true)
+		{ // ディケイ ポーションの状態
+			pc.sendPackets(new S_ServerMessage(698)); // 魔力によって何も飲むことができません。
+			return;
+		}
+
+		// アブソルート バリアの解除
+		cancelAbsoluteBarrier(pc);
+
+		pc.sendPackets(new S_SkillSound(pc.getId(), gfxid));
+		pc.broadcastPacket(new S_SkillSound(pc.getId(), gfxid));
+		if (pc.getPotLog() == true)
+		{// TODO POTLOG判定　
+			pc.sendPackets(new S_ServerMessage(77)); // \f1気分が良くなりました。
+		}
+		healMp *= (_randomForGaussian.nextGaussian() / 5.0D) + 1.0D;
+		if (pc.hasSkillEffect(POLLUTE_WATER))
+		{ // ポルートウォーター中は回復量1/2倍
+			healMp /= 2;
+		}
+		pc.setCurrentMp(pc.getCurrentMp() + healMp);
 	}
 
 	private void useGreenPotion(L1PcInstance pc, int itemId)

@@ -36,6 +36,7 @@ import l1j.server.server.datatables.LetterTable;
 import l1j.server.server.datatables.NpcTable;
 import l1j.server.server.datatables.PetTable;
 import l1j.server.server.datatables.RaceTicketTable;
+import l1j.server.server.model.Attribute;
 import l1j.server.server.model.L1EquipmentTimer;
 import l1j.server.server.model.L1ItemOwnerTimer;
 import l1j.server.server.model.L1Object;
@@ -461,6 +462,7 @@ public class L1ItemInstance extends L1Object
 				if (attrEnchantLevel > 0)
 				{
 					String attrStr = null;
+
 					switch (getAttrEnchantKind())
 					{
 					case 1: // 地

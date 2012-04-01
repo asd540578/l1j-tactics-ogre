@@ -23,6 +23,7 @@ import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import l1j.server.server.datatables.MapsTable;
 import l1j.server.server.datatables.NpcTable;
 import l1j.server.server.model.L1Object;
 import l1j.server.server.model.L1World;
@@ -53,10 +54,10 @@ public class L1Loc implements L1CommandExecutor
 			int locx = 0;
 			int locy = 0;
 			short mapid = 0;
-			int gab = 0;
 			StringBuilder msgStr = new StringBuilder();
 			final String BR = System.getProperty("line.separator");
 
+			String mapName;
 			try	// 引数が指定されている場合（＝ＮＰＣ）
 			{
 				StringTokenizer st = new StringTokenizer(arg);
@@ -82,13 +83,11 @@ public class L1Loc implements L1CommandExecutor
 								locx = mobObj.getX();
 								locy = mobObj.getY();
 								mapid = mobObj.getMapId();
-								L1WorldMap.getInstance().getMap(mapid)
-										.getOriginalTile(locx, locy);
-								String msg = String.format(
+								mapName = MapsTable.getInstance().locationname(mapid);
+								msgStr.append(String.format(
 										"NPCID->" + mobObj.getNpcId()
-												+ "   座標->(%d, %d, %d) %d",
-										locx, locy, mapid, gab);
-								msgStr.append(msg + BR);
+												+ "   座標->(%d, %d, %d) [%s]",
+										locx, locy, mapid, mapName) + BR);
 								++count;
 							}
 						}
@@ -102,11 +101,9 @@ public class L1Loc implements L1CommandExecutor
 				locx = pc.getX();
 				locy = pc.getY();
 				mapid = pc.getMapId();
-				gab = L1WorldMap.getInstance().getMap(mapid)
-						.getOriginalTile(locx, locy);
-				String msg = String.format("座標->(%d, %d, %d) %d", locx, locy,
-						mapid, gab);
-				msgStr.append(msg);
+				mapName = MapsTable.getInstance().locationname(mapid);
+				msgStr.append(String.format("座標->(%d, %d, %d) [%s]", locx, locy,
+						mapid, mapName) + BR);
 				msgStr.append(" " + BR);
 			}
 			pc.sendPackets(new S_SystemMessage(msgStr.toString()));

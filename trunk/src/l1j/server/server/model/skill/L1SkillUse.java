@@ -31,6 +31,7 @@ import l1j.server.configure.Config;
 import l1j.server.server.ActionCodes;
 import l1j.server.server.datatables.NpcTable;
 import l1j.server.server.datatables.PolyTable;
+import l1j.server.server.datatables.SkillEffectTable;
 import l1j.server.server.datatables.SkillTable;
 import l1j.server.server.model.L1Awake;
 import l1j.server.server.model.L1CastleLocation;
@@ -109,7 +110,7 @@ import l1j.server.server.serverpackets.S_UseAttackSkill;
 import l1j.server.server.templates.L1BookMark;
 import l1j.server.server.templates.L1Npc;
 import l1j.server.server.templates.L1Skill;
-import l1j.server.server.to.skill.SkillBase;
+import l1j.server.server.to.skill.SkillEffect;
 
 public class L1SkillUse
 {
@@ -154,6 +155,9 @@ public class L1SkillUse
 	private static final int NPC_NPC = 4;
 
 	private ArrayList<TargetStatus> _targetList;
+
+	final static int NEW_SKILL_ID_MIN = 20000;
+	final static int NEW_SKILL_ID_MAX = 30000;
 
 	private static Logger _log = Logger.getLogger(L1SkillUse.class.getName());
 
@@ -1603,10 +1607,8 @@ public class L1SkillUse
 	{
 		int actionId = _skill.getActionId();
 		int castgfx = _skill.getCastGfx();
-/* t.s 2012/2/5 mod start */
-//		if (castgfx == 0)
-/*   t.s 2012/2/5 mod end   */
-		if (castgfx == 0 || _skill.getSkillId() >= 20000)
+
+		if (castgfx == 0)
 		{
 			return; // 表示するグラフィックが無い
 		}
@@ -2156,8 +2158,7 @@ public class L1SkillUse
 // カンタマ反射は独自実装のもの以外
 // （独自実装部分は別の箇所で処理）
 // 					if (isUseCounterMagic(cha))
-					final int NEW_SKILL_ID = 20000;
- 					if (isUseCounterMagic(cha) && _skillId < NEW_SKILL_ID)
+ 					if (isUseCounterMagic(cha) && _skillId < NEW_SKILL_ID_MIN)
 // t.s 2012/02/12 mod end
 
 					{ // カウンターマジックが発動した場合、リストから削除
@@ -2185,7 +2186,7 @@ public class L1SkillUse
 					}
 					if (isSuccess)
 					{ // 成功したがカウンターマジックが発動した場合、リストから削除
-						if (isUseCounterMagic(cha))
+						if (isUseCounterMagic(cha) && _skillId < NEW_SKILL_ID_MIN)
 						{ // カウンターマジックが発動したか
 							iter.remove();
 							continue;
@@ -3248,10 +3249,12 @@ public class L1SkillUse
 					_user.setHeading(_user.targetDirection(_target.getX(), _target.getY()));
 					_user.broadcastPacket(new S_AttackPacketForNpc(_target, _user.getId(),
 					 _skill.getActionId()));
+					if(SkillEffectTable.getInstance().existSkillEffect(_skillId))
+					{
 					// スキルエフェクトクラスにエフェクト表示・ダメージ処理は任せる
-					SkillBase.createSkillEffect(_user , _target, _skillId, 1);
-
-					return;
+						SkillEffect.createSkillEffect(_user , _target, _skillId, 1);
+						return;
+					}
 				}
 				/* t.s 2012/01/28 add end */
 

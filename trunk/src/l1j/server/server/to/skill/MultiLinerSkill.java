@@ -7,7 +7,7 @@ import l1j.server.server.model.L1Character;
 import l1j.server.server.model.L1Location;
 import l1j.server.server.templates.L1SkillEffect;
 
-public class MultiLinerSkill extends SkillBase
+public class MultiLinerSkill extends SkillEffect
 {
 
 	// コンストラクターの定義

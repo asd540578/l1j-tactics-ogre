@@ -741,18 +741,18 @@ public class L1Magic {
 		}
 
 		if (_targetPc.hasSkillEffect(REDUCTION_ARMOR)) {
-			int targetPcLvl = _targetPc.getLevel();
-			if (targetPcLvl < 50) {
-				targetPcLvl = 50;
+			int targetPcLv = _targetPc.getLevel();
+			if (targetPcLv < 70) {
+				targetPcLv = 70;
 			}
-			/* t.s 2011/12/28 mod start */
-			/* ダメリダの計算式を変更 */
-			//dmg -= (targetPcLvl - 50) / 5 + 1;
-			dmg -= (targetPcLvl - 50) / 4 + 1;
-			/* t.s 2011/12/28 mod start */
+			dmg -= (int)((targetPcLv - 70) / 4) * 3 + 3;
 		}
 		if (_targetPc.hasSkillEffect(DRAGON_SKIN)) {
-			dmg -= 2;
+			int targetPcLv = _targetPc.getLevel();
+			if (targetPcLv < 70) {
+				targetPcLv = 70;
+			}
+			dmg -= (int)((targetPcLv - 70) / 5) * 2 + 2;
 		}
 
 		if (_targetPc.hasSkillEffect(PATIENCE)) {

@@ -148,7 +148,7 @@ import l1j.server.server.templates.L1MagicDoll;
 import l1j.server.server.templates.L1Npc;
 import l1j.server.server.templates.L1Pet;
 import l1j.server.server.templates.L1Skill;
-import l1j.server.server.to.skill.SkillBase;
+import l1j.server.server.to.skill.SkillEffect;
 import l1j.server.server.utils.L1ItemUtil;
 import l1j.server.server.utils.L1SpawnUtil;
 
@@ -4338,13 +4338,13 @@ public class C_ItemUSe extends ClientBasePacket
 				/* t.s 2012/01/21 add start */
 				else if (itemId >= 60000 && itemId <= 60096)
 				{
-					SkillBase.createSkillEffect(pc, itemId, 0);
+					SkillEffect.createSkillEffect(pc, itemId, 0);
 				}
 				else if (itemId >= 60097 && itemId <= 60151)
 				{
 					L1Character target = (L1Character)L1World.getInstance().findObject(
 							spellsc_objid);
-					SkillBase.createSkillEffect(pc, target ,itemId, 0);
+					SkillEffect.createSkillEffect(pc, target ,itemId, 0);
 				/* t.s 2012/01/21 add end */
 				}
 				else if (itemId == 49210)

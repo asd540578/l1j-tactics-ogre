@@ -42,9 +42,9 @@ import l1j.server.server.types.Point;
 // ②runSkill()
 // ③スレッドプール経由のrun()
 // の順で実行される。
-public abstract class SkillBase implements Runnable
+public abstract class SkillEffect implements Runnable
 {
-	private static Logger _log = Logger.getLogger(SkillBase.class.getName());
+	private static Logger _log = Logger.getLogger(SkillEffect.class.getName());
 
 	// ランダム値用
 	protected static final Random dice = new Random(System.currentTimeMillis());
@@ -61,7 +61,7 @@ public abstract class SkillBase implements Runnable
 	// protectedにしていたがリフレクションで
 	// getConstructorで取得できなくなったため
 	// publicに変更
-	public SkillBase(L1Character attacker, L1Character target,
+	public SkillEffect(L1Character attacker, L1Character target,
 			L1SkillEffect effect)
 	{
 		this._attacker = attacker; // pcInstanceをクラス変数に代入してメゾットから共有使用可能にする
@@ -167,7 +167,7 @@ public abstract class SkillBase implements Runnable
 						L1Character.class, L1Character.class,
 						L1SkillEffect.class
 				};
-				Constructor<SkillBase> constructor = null;
+				Constructor<SkillEffect> constructor = null;
 				try
 				{
 					constructor = cls.getConstructor(types);

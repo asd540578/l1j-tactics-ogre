@@ -7,7 +7,7 @@ import l1j.server.server.model.L1Character;
 import l1j.server.server.model.L1Location;
 import l1j.server.server.templates.L1SkillEffect;
 
-public class TridentLinerSkill extends SkillBase
+public class TridentLinerSkill extends SkillEffect
 {
 
     // コンストラクターの定義

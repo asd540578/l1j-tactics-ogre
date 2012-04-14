@@ -10,7 +10,7 @@ import l1j.server.server.model.L1Location;
 import l1j.server.server.templates.L1SkillEffect;
 import l1j.server.server.types.Point;
 
-public class RectangleSkill extends SkillBase
+public class RectangleSkill extends SkillEffect
 {
 
 	/**

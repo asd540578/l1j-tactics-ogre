@@ -123,5 +123,19 @@ public class SkillEffectTable
 		}
 		return effects;
 	}
+
+	public boolean existSkillEffect(int id)
+	{
+		boolean exist = false;
+		for (KeyValuePair<Integer, Integer> x : _skill_effect.keySet())
+		{
+			if (x.first.equals(id))
+			{
+				exist = true;
+				break;
+			}
+		}
+		return exist;
+	}
 }
 /* t.s 2011/09/23 add end */

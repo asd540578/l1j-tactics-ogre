@@ -2572,7 +2572,7 @@ public class L1Attack
 		/* t.s 2012/01/01 add start */
 		// NPCのＣＢ追加に伴うダメージ計算方法の追加
 		L1NpcInstance enemy = null;
-		final double BOSS_CONST = 1.2, ROOT = 0.5;
+		final double BOSS_CONST = 1.3, ROOT = 0.55;
 		if (_target instanceof L1NpcInstance)
 		{
 			enemy = (L1NpcInstance) _target;

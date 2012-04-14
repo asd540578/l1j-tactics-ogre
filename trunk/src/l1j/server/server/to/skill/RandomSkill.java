@@ -4,7 +4,7 @@ import l1j.server.server.model.L1Character;
 import l1j.server.server.model.L1Location;
 import l1j.server.server.templates.L1SkillEffect;
 
-public class RandomSkill extends SkillBase
+public class RandomSkill extends SkillEffect
 {
 	// コンストラクターの定義
 	public RandomSkill(L1Character user, L1Character target,

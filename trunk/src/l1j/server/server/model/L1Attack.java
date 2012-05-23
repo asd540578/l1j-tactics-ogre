@@ -1957,11 +1957,13 @@ public class L1Attack
 			}
 			else if (_weaponAttrEnchantKind == Attribute.getAttribute("光"))
 			{ // 光
-				resist = 0;//_targetPc.getWind();
+				resist = (_targetPc.getEarth() + _targetPc.getFire() +
+						 _targetPc.getWater() + _targetPc.getWind()) / 8;//_targetPc.getWind();
 			}
 			else if (_weaponAttrEnchantKind == Attribute.getAttribute("闇"))
 			{ // 闇
-				resist = 0;//_targetPc.getWind();
+				resist = -(_targetPc.getEarth() + _targetPc.getFire() +
+						 _targetPc.getWater() + _targetPc.getWind()) / 8;//_targetPc.getWind();
 			}
 		}
 		else if (_calcType == PC_NPC)

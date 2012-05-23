@@ -82,7 +82,7 @@ public class C_UseSkill extends ClientBasePacket {
 				result = pc.getAcceleratorChecker().checkInterval(
 						AcceleratorChecker.ACT_TYPE.SPELL_NODIR);
 			}
-			if (result == AcceleratorChecker.R_DISPOSED) {
+			if (result == AcceleratorChecker.R_DISCONNECTED) {
 				return;
 			}
 		}

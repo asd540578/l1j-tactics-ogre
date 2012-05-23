@@ -2169,20 +2169,21 @@ public class L1PcInstance extends L1Character
 					getInventory().tradeItem(item, lostCount,
 							lastPc.getInventory());
 
+					final int offset = 2198; // 2200行目に配置したので-2して2198
 					// 死亡者（単騎）への送信メッセージ
 					if (null == this.getParty())
 					{
-						// 2525 -> %0に%1%oを奪われました。
-						S_ServerMessage lostMsg = new S_ServerMessage(2525,
+						// 2200 -> %0に%1%oを奪われました。
+						S_ServerMessage lostMsg = new S_ServerMessage(offset,
 								lastPc.getName(), itemName);
 
 						this.sendPackets(lostMsg);
 					}
 					else
 					{ // 死亡者のパーティーへの送信メッセージ
-						// 2526 -> %0が%1に%2%oを奪われました
+						// 2201 -> %0が%1に%2%oを奪われました
 						S_ServerMessage lostPartyMsg = new S_ServerMessage(
-								2526, this.getName(), lastPc.getName(),
+								offset+1, this.getName(), lastPc.getName(),
 								itemName);
 						for (L1PcInstance member : lastPc.getParty()
 								.getMembers())
@@ -2193,15 +2194,15 @@ public class L1PcInstance extends L1Character
 					// 取得者（単騎）へのメッセージ
 					if (null == lastPc.getParty())
 					{
-						// 2527 -> %0から%1%oを奪いました。
-						S_ServerMessage getMsg = new S_ServerMessage(2527,
+						// 2202 -> %0から%1%oを奪いました。
+						S_ServerMessage getMsg = new S_ServerMessage(offset+2,
 								this.getName(), itemName);
 						lastPc.sendPackets(getMsg);
 					}
 					else
 					{ // 取得者のパーティーへのメッセージ
-						// 2528 -> %0が%1から%2%oを奪いました。
-						S_ServerMessage getPartyMsg = new S_ServerMessage(2528,
+						// 2203 -> %0が%1から%2%oを奪いました。
+						S_ServerMessage getPartyMsg = new S_ServerMessage(offset+3,
 								lastPc.getName(), this.getName(), itemName);
 						for (L1PcInstance member : lastPc.getParty()
 								.getMembers())

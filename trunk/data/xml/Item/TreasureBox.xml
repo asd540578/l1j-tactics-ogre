@@ -5,165 +5,180 @@
 	<!--Chanceの単位は%(0.0001%まで指定可)。合計で100%になるように設定する。-->
 	<!-- 上級トロフィー（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60186">
-		<Item ItemId="60201" Count="1" Chance="50" /> <!-- 武器の箱（ランクＡ） -->		
-		<Item ItemId="60206" Count="1" Chance="50" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60201" Count="1" Chance="40" /> <!-- 武器の箱（ランクＡ） -->		
+		<Item ItemId="60206" Count="1" Chance="40" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60185" Count="50" Chance="20" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60187">
-		<Item ItemId="60201" Count="1" Chance="50" /> <!-- 武器の箱（ランクＡ） -->		
-		<Item ItemId="60206" Count="1" Chance="50" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60201" Count="1" Chance="25" /> <!-- 武器の箱（ランクＡ） -->		
+		<Item ItemId="60206" Count="1" Chance="25" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60185" Count="40" Chance="50" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60188">
-		<Item ItemId="60201" Count="1" Chance="50" /> <!-- 武器の箱（ランクＡ） -->		
-		<Item ItemId="60206" Count="1" Chance="50" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60201" Count="1" Chance="10" /> <!-- 武器の箱（ランクＡ） -->		
+		<Item ItemId="60206" Count="1" Chance="10" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60185" Count="30" Chance="80" /> <!-- ゴート -->		
 	</TreasureBox>
 	
 
 	<!-- 上級トロフィー（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60189">
-		<Item ItemId="60202" Count="1" Chance="50" /> <!-- 武器の箱（ランクＢ） -->		
-		<Item ItemId="60207" Count="1" Chance="50" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60202" Count="1" Chance="40" /> <!-- 武器の箱（ランクＢ） -->		
+		<Item ItemId="60207" Count="1" Chance="40" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60185" Count="40" Chance="20" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60190">
-		<Item ItemId="60202" Count="1" Chance="50" /> <!-- 武器の箱（ランクＢ） -->		
-		<Item ItemId="60207" Count="1" Chance="50" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60202" Count="1" Chance="25" /> <!-- 武器の箱（ランクＢ） -->		
+		<Item ItemId="60207" Count="1" Chance="25" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60185" Count="30" Chance="50" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60191">
-		<Item ItemId="60202" Count="1" Chance="50" /> <!-- 武器の箱（ランクＢ） -->		
-		<Item ItemId="60207" Count="1" Chance="50" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60202" Count="1" Chance="10" /> <!-- 武器の箱（ランクＢ） -->		
+		<Item ItemId="60207" Count="1" Chance="10" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60185" Count="20" Chance="80" /> <!-- ゴート -->		
 	</TreasureBox>
 	
 
 	<!-- 上級トロフィー（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60192">
-		<Item ItemId="60203" Count="1" Chance="50" /> <!-- 武器の箱（ランクＣ） -->		
-		<Item ItemId="60208" Count="1" Chance="50" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60203" Count="1" Chance="40" /> <!-- 武器の箱（ランクＣ） -->		
+		<Item ItemId="60208" Count="1" Chance="40" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60185" Count="30" Chance="20" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60193">
-		<Item ItemId="60203" Count="1" Chance="50" /> <!-- 武器の箱（ランクＣ） -->		
-		<Item ItemId="60208" Count="1" Chance="50" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60203" Count="1" Chance="25" /> <!-- 武器の箱（ランクＣ） -->		
+		<Item ItemId="60208" Count="1" Chance="25" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60185" Count="20" Chance="50" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60194">
-		<Item ItemId="60203" Count="1" Chance="50" /> <!-- 武器の箱（ランクＣ） -->		
-		<Item ItemId="60208" Count="1" Chance="50" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60203" Count="1" Chance="10" /> <!-- 武器の箱（ランクＣ） -->		
+		<Item ItemId="60208" Count="1" Chance="10" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60185" Count="2" Chance="80" /> <!-- ゴート -->		
 	</TreasureBox>
 	
 
 	<!-- 上級トロフィー（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60195">
-		<Item ItemId="60204" Count="1" Chance="50" /> <!-- 武器の箱（ランクＤ） -->		
-		<Item ItemId="60209" Count="1" Chance="50" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60204" Count="1" Chance="40" /> <!-- 武器の箱（ランクＤ） -->		
+		<Item ItemId="60209" Count="1" Chance="40" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60110" Count="1" Chance="20" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60196">
-		<Item ItemId="60204" Count="1" Chance="50" /> <!-- 武器の箱（ランクＤ） -->		
-		<Item ItemId="60209" Count="1" Chance="50" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60204" Count="1" Chance="25" /> <!-- 武器の箱（ランクＤ） -->		
+		<Item ItemId="60209" Count="1" Chance="25" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60110" Count="1" Chance="50" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60197">
-		<Item ItemId="60204" Count="1" Chance="50" /> <!-- 武器の箱（ランクＤ） -->		
-		<Item ItemId="60209" Count="1" Chance="50" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60204" Count="1" Chance="10" /> <!-- 武器の箱（ランクＤ） -->		
+		<Item ItemId="60209" Count="1" Chance="10" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60110" Count="1" Chance="80" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 
 
 	<!-- 上級トロフィー（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60198">
-		<Item ItemId="60205" Count="1" Chance="50" /> <!-- 武器の箱（ランクＥ） -->		
-		<Item ItemId="60210" Count="1" Chance="50" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60205" Count="1" Chance="40" /> <!-- 武器の箱（ランクＥ） -->		
+		<Item ItemId="60210" Count="1" Chance="40" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60110" Count="1" Chance="20" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60199">
-		<Item ItemId="60205" Count="1" Chance="50" /> <!-- 武器の箱（ランクＥ） -->		
-		<Item ItemId="60210" Count="1" Chance="50" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60205" Count="1" Chance="25" /> <!-- 武器の箱（ランクＥ） -->		
+		<Item ItemId="60210" Count="1" Chance="25" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60110" Count="1" Chance="50" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60200">
-		<Item ItemId="60205" Count="1" Chance="50" /> <!-- 武器の箱（ランクＥ） -->		
-		<Item ItemId="60210" Count="1" Chance="50" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60205" Count="1" Chance="10" /> <!-- 武器の箱（ランクＥ） -->		
+		<Item ItemId="60210" Count="1" Chance="10" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60110" Count="1" Chance="80" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 
 
 	<!-- 武器の箱（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60201">	
-		<Item ItemId="508"  Count="1" Chance="2" /> <!-- ドラゴンファング-->
-		<Item ItemId="509"  Count="1" Chance="2" /> <!-- ベンダバール-->
-		<Item ItemId="608"  Count="1" Chance="2" /> <!-- アンビシオン-->
-		<Item ItemId="609"  Count="1" Chance="2" /> <!-- ブリュンヒルド-->
-		<Item ItemId="610"  Count="1" Chance="2" /> <!-- ダイダロスブレード-->
-		<Item ItemId="611"  Count="1" Chance="2" /> <!-- オラシオン-->
-		<Item ItemId="709"  Count="1" Chance="2" /> <!-- バルムンク-->
-		<Item ItemId="710"  Count="1" Chance="2" /> <!-- 伊舎那-->
-		<Item ItemId="711"  Count="1" Chance="2" /> <!-- デュランダル-->
-		<Item ItemId="811"  Count="1" Chance="2" /> <!-- イグニス-->
-		<Item ItemId="812"  Count="1" Chance="2" /> <!-- ゼピュロス-->
-		<Item ItemId="813"  Count="1" Chance="2" /> <!-- ベンティスカ-->
-		<Item ItemId="911"  Count="1" Chance="2" /> <!-- ルーンアックス-->
-		<Item ItemId="912"  Count="1" Chance="2" /> <!-- カルディア-->
-		<Item ItemId="913"  Count="1" Chance="2" /> <!-- イグドラシル-->
-		<Item ItemId="914"  Count="1" Chance="2" /> <!-- グラキエース-->
-		<Item ItemId="915"  Count="1" Chance="2" /> <!-- アクアハンマー-->
-		<Item ItemId="916"  Count="1" Chance="2" /> <!-- サンシオン-->
-		<Item ItemId="1010"  Count="1" Chance="2" /> <!-- 覚一-->
-		<Item ItemId="1011"  Count="1" Chance="2" /> <!-- 雷火-->
-		<Item ItemId="1012"  Count="1" Chance="2" /> <!-- 迦楼羅-->
-		<Item ItemId="1110"  Count="1" Chance="2" /> <!-- 阿修羅-->
-		<Item ItemId="1111"  Count="1" Chance="2" /> <!-- 三日月宗近-->
-		<Item ItemId="1112"  Count="1" Chance="2" /> <!-- 数珠丸恒次-->
-		<Item ItemId="1214"  Count="1" Chance="2" /> <!-- リプルズロッド-->
-		<Item ItemId="1215"  Count="1" Chance="2" /> <!-- 娑伽羅-->
-		<Item ItemId="1305"  Count="1" Chance="2" /> <!-- ダイダロスバレット-->
-		<Item ItemId="1306"  Count="1" Chance="2" /> <!-- カルミード-->
-		<Item ItemId="1307"  Count="1" Chance="2" /> <!-- イウサール-->
-		<Item ItemId="1411"  Count="1" Chance="2" /> <!-- 烈火の弓-->
-		<Item ItemId="1412"  Count="1" Chance="2" /> <!-- 砂塵の弓-->
-		<Item ItemId="1413"  Count="1" Chance="2" /> <!-- ジィルガの魔弓-->
+		<Item ItemId="508"  Count="1" Chance="3" /> <!-- ドラゴンファング-->
+		<Item ItemId="509"  Count="1" Chance="3" /> <!-- ベンダバール-->
+		<Item ItemId="608"  Count="1" Chance="3" /> <!-- アンビシオン-->
+		<Item ItemId="609"  Count="1" Chance="3" /> <!-- ブリュンヒルド-->
+		<Item ItemId="610"  Count="1" Chance="3" /> <!-- ダイダロスブレード-->
+		<Item ItemId="611"  Count="1" Chance="3" /> <!-- オラシオン-->
+		<Item ItemId="709"  Count="1" Chance="3" /> <!-- バルムンク-->
+		<Item ItemId="710"  Count="1" Chance="3" /> <!-- 伊舎那-->
+		<Item ItemId="711"  Count="1" Chance="3" /> <!-- デュランダル-->
+		<Item ItemId="811"  Count="1" Chance="3" /> <!-- イグニス-->
+		<Item ItemId="812"  Count="1" Chance="3" /> <!-- ゼピュロス-->
+		<Item ItemId="813"  Count="1" Chance="3" /> <!-- ベンティスカ-->
+		<Item ItemId="911"  Count="1" Chance="3" /> <!-- ルーンアックス-->
+		<Item ItemId="912"  Count="1" Chance="3" /> <!-- カルディア-->
+		<Item ItemId="913"  Count="1" Chance="3" /> <!-- イグドラシル-->
+		<Item ItemId="914"  Count="1" Chance="3" /> <!-- グラキエース-->
+		<Item ItemId="915"  Count="1" Chance="3" /> <!-- アクアハンマー-->
+		<Item ItemId="916"  Count="1" Chance="3" /> <!-- サンシオン-->
+		<Item ItemId="1010"  Count="1" Chance="3" /> <!-- 覚一-->
+		<Item ItemId="1011"  Count="1" Chance="3" /> <!-- 雷火-->
+		<Item ItemId="1012"  Count="1" Chance="3" /> <!-- 迦楼羅-->
+		<Item ItemId="1110"  Count="1" Chance="3" /> <!-- 阿修羅-->
+		<Item ItemId="1111"  Count="1" Chance="3" /> <!-- 三日月宗近-->
+		<Item ItemId="1112"  Count="1" Chance="3" /> <!-- 数珠丸恒次-->
+		<Item ItemId="1214"  Count="1" Chance="3" /> <!-- リプルズロッド-->
+		<Item ItemId="1215"  Count="1" Chance="3" /> <!-- 娑伽羅-->
+		<Item ItemId="1305"  Count="1" Chance="3" /> <!-- ダイダロスバレット-->
+		<Item ItemId="1306"  Count="1" Chance="3" /> <!-- カルミード-->
+		<Item ItemId="1307"  Count="1" Chance="3" /> <!-- イウサール-->
+		<Item ItemId="1411"  Count="1" Chance="3" /> <!-- 烈火の弓-->
+		<Item ItemId="1412"  Count="1" Chance="3" /> <!-- 砂塵の弓-->
+		<Item ItemId="1413"  Count="1" Chance="3" /> <!-- ジィルガの魔弓-->
 		<Item ItemId="1505"  Count="1" Chance="2" /> <!-- ヘルハウンドクロー-->
-		<Item ItemId="1506"  Count="1" Chance="34" /> <!-- トゥエルノ-->
+		<Item ItemId="1506"  Count="1" Chance="2" /> <!-- トゥエルノ-->
 	</TreasureBox>
 
 	<!-- 武器の箱（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60202">	
-		<Item ItemId="505"  Count="1" Chance="2" /> <!-- マローダーナイフ-->
+		<Item ItemId="505"  Count="1" Chance="3" /> <!-- マローダーナイフ-->
 		<Item ItemId="506"  Count="1" Chance="2" /> <!-- プレデターナイフ-->
 		<Item ItemId="507"  Count="1" Chance="2" /> <!-- ソロトル-->
-		<Item ItemId="604"  Count="1" Chance="2" /> <!-- ライトニングソード-->
-		<Item ItemId="605"  Count="1" Chance="2" /> <!-- ロンバルディア-->
+		<Item ItemId="604"  Count="1" Chance="3" /> <!-- ライトニングソード-->
+		<Item ItemId="605"  Count="1" Chance="3" /> <!-- ロンバルディア-->
 		<Item ItemId="606"  Count="1" Chance="2" /> <!-- アイスブレード-->
 		<Item ItemId="607"  Count="1" Chance="2" /> <!-- ニフリートソード-->
-		<Item ItemId="705"  Count="1" Chance="2" /> <!-- デセールブレード-->
+		<Item ItemId="705"  Count="1" Chance="3" /> <!-- デセールブレード-->
 		<Item ItemId="706"  Count="1" Chance="2" /> <!-- ガイアブレード-->
 		<Item ItemId="707"  Count="1" Chance="2" /> <!-- クサナギブレード-->
 		<Item ItemId="708"  Count="1" Chance="2" /> <!-- ノトス-->
-		<Item ItemId="807"  Count="1" Chance="2" /> <!-- アースジャベリン-->
+		<Item ItemId="807"  Count="1" Chance="3" /> <!-- アースジャベリン-->
 		<Item ItemId="808"  Count="1" Chance="2" /> <!-- コルヌリコルヌ-->
 		<Item ItemId="809"  Count="1" Chance="2" /> <!-- ホーリーランス-->
-		<Item ItemId="810"  Count="1" Chance="2" /> <!-- ヴォルケイトス-->
+		<Item ItemId="810"  Count="1" Chance="3" /> <!-- ヴォルケイトス-->
 		<Item ItemId="905"  Count="1" Chance="2" /> <!-- ドラゴンアックス-->
 		<Item ItemId="906"  Count="1" Chance="2" /> <!-- グラムロック-->
 		<Item ItemId="907"  Count="1" Chance="2" /> <!-- スターダスト-->
 		<Item ItemId="908"  Count="1" Chance="2" /> <!-- プロクス-->
 		<Item ItemId="909"  Count="1" Chance="2" /> <!-- ボレアス-->
 		<Item ItemId="910"  Count="1" Chance="2" /> <!-- サタンブローバー-->
-		<Item ItemId="1006"  Count="1" Chance="2" /> <!-- 釵-->
+		<Item ItemId="1006"  Count="1" Chance="3" /> <!-- 釵-->
 		<Item ItemId="1007"  Count="1" Chance="2" /> <!-- 獅子吼-->
 		<Item ItemId="1008"  Count="1" Chance="2" /> <!-- 夜叉-->
 		<Item ItemId="1009"  Count="1" Chance="2" /> <!-- 梵天-->
-		<Item ItemId="1106"  Count="1" Chance="2" /> <!-- 柏太刀-->
+		<Item ItemId="1106"  Count="1" Chance="3" /> <!-- 柏太刀-->
 		<Item ItemId="1107"  Count="1" Chance="2" /> <!-- 祢々切丸-->
 		<Item ItemId="1108"  Count="1" Chance="2" /> <!-- 獅子王-->
 		<Item ItemId="1109"  Count="1" Chance="2" /> <!-- 大典太光世-->
-		<Item ItemId="1208"  Count="1" Chance="2" /> <!-- ウインドワンド-->
+		<Item ItemId="1208"  Count="1" Chance="3" /> <!-- ウインドワンド-->
 		<Item ItemId="1209"  Count="1" Chance="2" /> <!-- アースワンド-->
 		<Item ItemId="1210"  Count="1" Chance="2" /> <!-- サンダーワンド-->
 		<Item ItemId="1211"  Count="1" Chance="2" /> <!-- アクアワンド-->
 		<Item ItemId="1212"  Count="1" Chance="2" /> <!-- ファイアワンド-->
 		<Item ItemId="1213"  Count="1" Chance="2" /> <!-- アイスワンド-->
-		<Item ItemId="1302"  Count="1" Chance="2" /> <!-- セントクロスボウ-->
+		<Item ItemId="1302"  Count="1" Chance="3" /> <!-- セントクロスボウ-->
 		<Item ItemId="1303"  Count="1" Chance="2" /> <!-- イクリール-->
 		<Item ItemId="1304"  Count="1" Chance="2" /> <!-- ソニックバレット-->
 		<Item ItemId="1405"  Count="1" Chance="2" /> <!-- 凍土の弓-->
@@ -172,76 +187,76 @@
 		<Item ItemId="1408"  Count="1" Chance="2" /> <!-- ガルーダの弓-->
 		<Item ItemId="1409"  Count="1" Chance="2" /> <!-- 雷神の弓-->
 		<Item ItemId="1410"  Count="1" Chance="2" /> <!-- インドラの弓-->
-		<Item ItemId="1504"  Count="1" Chance="12" /> <!-- ドラゴンクロー-->
+		<Item ItemId="1504"  Count="1" Chance="2" /> <!-- ドラゴンクロー-->
 	</TreasureBox>
 
 	<!-- 武器の箱（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60203">	
-		<Item ItemId="503"  Count="1" Chance="2" /> <!-- ダマスカスダガー-->
-		<Item ItemId="504"  Count="1" Chance="2" /> <!-- ブリリアントダガー-->
-		<Item ItemId="603"  Count="1" Chance="2" /> <!-- ダマスクソード-->
-		<Item ItemId="704"  Count="1" Chance="2" /> <!-- ダマスクブレード-->
-		<Item ItemId="805"  Count="1" Chance="2" /> <!-- ダマスカススピア-->
-		<Item ItemId="806"  Count="1" Chance="2" /> <!-- ポールアックス-->
-		<Item ItemId="904"  Count="1" Chance="2" /> <!-- バルブリガン-->
-		<Item ItemId="1004"  Count="1" Chance="2" /> <!-- 忍刀-->
-		<Item ItemId="1005"  Count="1" Chance="2" /> <!-- 月鎌-->
-		<Item ItemId="1104"  Count="1" Chance="2" /> <!-- 戒杖刀-->
-		<Item ItemId="1105"  Count="1" Chance="2" /> <!-- 兜斬丸-->
-		<Item ItemId="1205"  Count="1" Chance="2" /> <!-- ダマスカスメイス-->
-		<Item ItemId="1206"  Count="1" Chance="2" /> <!-- 回復の杖-->
-		<Item ItemId="1207"  Count="1" Chance="2" /> <!-- マリーツァの杖-->
-		<Item ItemId="1301"  Count="1" Chance="2" /> <!-- ダマスカスクロス-->
-		<Item ItemId="1403"  Count="1" Chance="2" /> <!-- ダマスカスボウ-->
-		<Item ItemId="1404"  Count="1" Chance="2" /> <!-- クレシェンテ-->
-		<Item ItemId="1502"  Count="1" Chance="2" /> <!-- カタール-->
-		<Item ItemId="1503"  Count="1" Chance="64" /> <!-- ダマスカスクロー-->
+		<Item ItemId="503"  Count="1" Chance="6" /> <!-- ダマスカスダガー-->
+		<Item ItemId="504"  Count="1" Chance="5" /> <!-- ブリリアントダガー-->
+		<Item ItemId="603"  Count="1" Chance="6" /> <!-- ダマスクソード-->
+		<Item ItemId="704"  Count="1" Chance="5" /> <!-- ダマスクブレード-->
+		<Item ItemId="805"  Count="1" Chance="5" /> <!-- ダマスカススピア-->
+		<Item ItemId="806"  Count="1" Chance="5" /> <!-- ポールアックス-->
+		<Item ItemId="904"  Count="1" Chance="5" /> <!-- バルブリガン-->
+		<Item ItemId="1004"  Count="1" Chance="6" /> <!-- 忍刀-->
+		<Item ItemId="1005"  Count="1" Chance="5" /> <!-- 月鎌-->
+		<Item ItemId="1104"  Count="1" Chance="5" /> <!-- 戒杖刀-->
+		<Item ItemId="1105"  Count="1" Chance="5" /> <!-- 兜斬丸-->
+		<Item ItemId="1205"  Count="1" Chance="5" /> <!-- ダマスカスメイス-->
+		<Item ItemId="1206"  Count="1" Chance="5" /> <!-- 回復の杖-->
+		<Item ItemId="1207"  Count="1" Chance="5" /> <!-- マリーツァの杖-->
+		<Item ItemId="1301"  Count="1" Chance="6" /> <!-- ダマスカスクロス-->
+		<Item ItemId="1403"  Count="1" Chance="6" /> <!-- ダマスカスボウ-->
+		<Item ItemId="1404"  Count="1" Chance="5" /> <!-- クレシェンテ-->
+		<Item ItemId="1502"  Count="1" Chance="5" /> <!-- カタール-->
+		<Item ItemId="1503"  Count="1" Chance="5" /> <!-- ダマスカスクロー-->
 	</TreasureBox>
 	
 	<!-- 武器の箱（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60204">	
-		<Item ItemId="501"  Count="1" Chance="2" /> <!-- バトルナイフ-->
-		<Item ItemId="502"  Count="1" Chance="2" /> <!-- バルダーダガー-->
-		<Item ItemId="601"  Count="1" Chance="2" /> <!-- シャムシール-->
-		<Item ItemId="602"  Count="1" Chance="2" /> <!-- バルダーソード-->
-		<Item ItemId="702"  Count="1" Chance="2" /> <!-- バルダーブレード-->
-		<Item ItemId="703"  Count="1" Chance="2" /> <!-- ファルクス-->
-		<Item ItemId="802"  Count="1" Chance="2" /> <!-- バルダースピア-->
-		<Item ItemId="803"  Count="1" Chance="2" /> <!-- スコーピオン-->
-		<Item ItemId="804"  Count="1" Chance="2" /> <!-- バルディッシュ-->
-		<Item ItemId="902"  Count="1" Chance="2" /> <!-- タバルジン-->
-		<Item ItemId="903"  Count="1" Chance="2" /> <!-- ダマスクアックス-->
-		<Item ItemId="1002"  Count="1" Chance="2" /> <!-- 十手-->
-		<Item ItemId="1003"  Count="1" Chance="2" /> <!-- 妖刀-->
-		<Item ItemId="1102"  Count="1" Chance="2" /> <!-- 野太刀-->
-		<Item ItemId="1103"  Count="1" Chance="2" /> <!-- 魔刀-->
-		<Item ItemId="1202"  Count="1" Chance="2" /> <!-- バルダーメイス-->
-		<Item ItemId="1203"  Count="1" Chance="2" /> <!-- 司教の杖-->
-		<Item ItemId="1204"  Count="1" Chance="2" /> <!-- 魔術師の杖-->
-		<Item ItemId="1300"  Count="1" Chance="2" /> <!-- バルダークロス-->
-		<Item ItemId="1401"  Count="1" Chance="2" /> <!-- グレートボウ-->
-		<Item ItemId="1402"  Count="1" Chance="2" /> <!-- バルダーボウ-->
-		<Item ItemId="1501"  Count="1" Chance="58" /> <!-- バルダークロー-->
+		<Item ItemId="501"  Count="1" Chance="5" /> <!-- バトルナイフ-->
+		<Item ItemId="502"  Count="1" Chance="5" /> <!-- バルダーダガー-->
+		<Item ItemId="601"  Count="1" Chance="4" /> <!-- シャムシール-->
+		<Item ItemId="602"  Count="1" Chance="5" /> <!-- バルダーソード-->
+		<Item ItemId="702"  Count="1" Chance="4" /> <!-- バルダーブレード-->
+		<Item ItemId="703"  Count="1" Chance="5" /> <!-- ファルクス-->
+		<Item ItemId="802"  Count="1" Chance="4" /> <!-- バルダースピア-->
+		<Item ItemId="803"  Count="1" Chance="5" /> <!-- スコーピオン-->
+		<Item ItemId="804"  Count="1" Chance="4" /> <!-- バルディッシュ-->
+		<Item ItemId="902"  Count="1" Chance="5" /> <!-- タバルジン-->
+		<Item ItemId="903"  Count="1" Chance="4" /> <!-- ダマスクアックス-->
+		<Item ItemId="1002"  Count="1" Chance="5" /> <!-- 十手-->
+		<Item ItemId="1003"  Count="1" Chance="5" /> <!-- 妖刀-->
+		<Item ItemId="1102"  Count="1" Chance="4" /> <!-- 野太刀-->
+		<Item ItemId="1103"  Count="1" Chance="4" /> <!-- 魔刀-->
+		<Item ItemId="1202"  Count="1" Chance="5" /> <!-- バルダーメイス-->
+		<Item ItemId="1203"  Count="1" Chance="4" /> <!-- 司教の杖-->
+		<Item ItemId="1204"  Count="1" Chance="4" /> <!-- 魔術師の杖-->
+		<Item ItemId="1300"  Count="1" Chance="5" /> <!-- バルダークロス-->
+		<Item ItemId="1401"  Count="1" Chance="5" /> <!-- グレートボウ-->
+		<Item ItemId="1402"  Count="1" Chance="5" /> <!-- バルダーボウ-->
+		<Item ItemId="1501"  Count="1" Chance="4" /> <!-- バルダークロー-->
 	</TreasureBox>
 
 	<!-- 武器の箱（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60205">	
-		<Item ItemId="500"  Count="1" Chance="2" /> <!-- ミニマムダガー-->
-		<Item ItemId="600"  Count="1" Chance="2" /> <!-- ショートソード-->
-		<Item ItemId="700"  Count="1" Chance="2" /> <!-- ブロードソード-->
-		<Item ItemId="701"  Count="1" Chance="2" /> <!-- ツヴァイハンダー-->
-		<Item ItemId="800"  Count="1" Chance="2" /> <!-- ブロンズスピア-->
-		<Item ItemId="801"  Count="1" Chance="2" /> <!-- スレンダースピア-->
-		<Item ItemId="900"  Count="1" Chance="2" /> <!-- ハンドアックス-->
-		<Item ItemId="901"  Count="1" Chance="2" /> <!-- バルダーアックス-->
-		<Item ItemId="1000"  Count="1" Chance="2" /> <!-- 匕首-->
-		<Item ItemId="1001"  Count="1" Chance="2" /> <!-- 脇差-->
-		<Item ItemId="1100"  Count="1" Chance="2" /> <!-- 太刀-->
-		<Item ItemId="1101"  Count="1" Chance="2" /> <!-- 鋸刀-->
-		<Item ItemId="1200"  Count="1" Chance="2" /> <!-- 僧侶の杖-->
-		<Item ItemId="1201"  Count="1" Chance="2" /> <!-- 魔道士の杖-->
-		<Item ItemId="1400"  Count="1" Chance="2" /> <!-- ショートボウ-->
-		<Item ItemId="1500"  Count="1" Chance="70" /> <!-- アイアンクロー-->
+		<Item ItemId="500"  Count="1" Chance="6" /> <!-- ミニマムダガー-->
+		<Item ItemId="600"  Count="1" Chance="6" /> <!-- ショートソード-->
+		<Item ItemId="700"  Count="1" Chance="7" /> <!-- ブロードソード-->
+		<Item ItemId="701"  Count="1" Chance="6" /> <!-- ツヴァイハンダー-->
+		<Item ItemId="800"  Count="1" Chance="6" /> <!-- ブロンズスピア-->
+		<Item ItemId="801"  Count="1" Chance="7" /> <!-- スレンダースピア-->
+		<Item ItemId="900"  Count="1" Chance="7" /> <!-- ハンドアックス-->
+		<Item ItemId="901"  Count="1" Chance="6" /> <!-- バルダーアックス-->
+		<Item ItemId="1000"  Count="1" Chance="6" /> <!-- 匕首-->
+		<Item ItemId="1001"  Count="1" Chance="7" /> <!-- 脇差-->
+		<Item ItemId="1100"  Count="1" Chance="6" /> <!-- 太刀-->
+		<Item ItemId="1101"  Count="1" Chance="6" /> <!-- 鋸刀-->
+		<Item ItemId="1200"  Count="1" Chance="6" /> <!-- 僧侶の杖-->
+		<Item ItemId="1201"  Count="1" Chance="6" /> <!-- 魔道士の杖-->
+		<Item ItemId="1400"  Count="1" Chance="6" /> <!-- ショートボウ-->
+		<Item ItemId="1500"  Count="1" Chance="6" /> <!-- アイアンクロー-->
 	</TreasureBox>
 
 
@@ -345,80 +360,80 @@
 		<Item ItemId="30812"  Count="1" Chance="2" /> <!-- ウイングリング-->
 		<Item ItemId="30814"  Count="1" Chance="2" /> <!-- スパークリング-->
 		<Item ItemId="30815"  Count="1" Chance="2" /> <!-- グリーシーリング-->
-		<Item ItemId="30903"  Count="1" Chance="2" /> <!-- プラチナベルト-->
+		<Item ItemId="30903"  Count="1" Chance="3" /> <!-- プラチナベルト-->
 		<Item ItemId="31000"  Count="1" Chance="2" /> <!-- 猛獣のピアス-->
-		<Item ItemId="31001"  Count="1" Chance="2" /> <!-- 黒蜂のピアス-->
+		<Item ItemId="31001"  Count="1" Chance="3" /> <!-- 黒蜂のピアス-->
 		<Item ItemId="31003"  Count="1" Chance="2" /> <!-- 剣闘士のピアス-->
 		<Item ItemId="31005"  Count="1" Chance="2" /> <!-- 串刺公のピアス-->
-		<Item ItemId="31007"  Count="1" Chance="2" /> <!-- 三日月のピアス-->
+		<Item ItemId="31007"  Count="1" Chance="3" /> <!-- 三日月のピアス-->
 		<Item ItemId="31009"  Count="1" Chance="2" /> <!-- 聖者のピアス-->
-		<Item ItemId="31010"  Count="1" Chance="2" /> <!-- 蛇蠍のピアス-->
+		<Item ItemId="31010"  Count="1" Chance="3" /> <!-- 蛇蠍のピアス-->
 		<Item ItemId="31013"  Count="1" Chance="2" /> <!-- 息吹のピアス-->
-		<Item ItemId="31015"  Count="1" Chance="2" /> <!-- 射手のピアス-->
+		<Item ItemId="31015"  Count="1" Chance="3" /> <!-- 射手のピアス-->
 		<Item ItemId="31102"  Count="1" Chance="2" /> <!-- 雷獣の首飾り-->
-		<Item ItemId="31105"  Count="1" Chance="8" /> <!-- 氷結の首飾り-->
+		<Item ItemId="31105"  Count="1" Chance="3" /> <!-- 氷結の首飾り-->
 	</TreasureBox>
 
 	<!-- 防具の箱（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60208">	
-		<Item ItemId="30005"  Count="1" Chance="2" /> <!-- ダマスカスシールド-->
-		<Item ItemId="30006"  Count="1" Chance="2" /> <!-- ドラゴンスケイル-->
-		<Item ItemId="30007"  Count="1" Chance="2" /> <!-- ロゼンジシールド-->
-		<Item ItemId="30008"  Count="1" Chance="2" /> <!-- ドレッドシールド-->
-		<Item ItemId="30023"  Count="1" Chance="2" /> <!-- マジックブック-->
-		<Item ItemId="30104"  Count="1" Chance="2" /> <!-- ダマスカスメイル-->
-		<Item ItemId="30105"  Count="1" Chance="2" /> <!-- ドラゴンメイル-->
-		<Item ItemId="30203"  Count="1" Chance="2" /> <!-- 魔術師のローブ-->
-		<Item ItemId="30204"  Count="1" Chance="2" /> <!-- 魔導師のローブ-->
-		<Item ItemId="30302"  Count="1" Chance="2" /> <!-- プロテクション クローク-->
-		<Item ItemId="30402"  Count="1" Chance="2" /> <!-- ダマスカスヘルム-->
-		<Item ItemId="30506"  Count="1" Chance="2" /> <!-- ダマスカスミトン-->
-		<Item ItemId="30508"  Count="1" Chance="2" /> <!-- ドラゴンスリープ-->
-		<Item ItemId="30604"  Count="1" Chance="2" /> <!-- ダマスクスレギンス-->
-		<Item ItemId="30702"  Count="1" Chance="2" /> <!-- ダマスクスシャツ-->
-		<Item ItemId="30902"  Count="1" Chance="2" /> <!-- 鋼のベルト-->
-		<Item ItemId="31100"  Count="1" Chance="2" /> <!-- 疾風の首飾り-->
-		<Item ItemId="31101"  Count="1" Chance="2" /> <!-- 大地の首飾り-->
-		<Item ItemId="31103"  Count="1" Chance="2" /> <!-- 瀑布の首飾り-->
-		<Item ItemId="31104"  Count="1" Chance="62" /> <!-- 火竜の首飾り-->
+		<Item ItemId="30005"  Count="1" Chance="5" /> <!-- ダマスカスシールド-->
+		<Item ItemId="30006"  Count="1" Chance="5" /> <!-- ドラゴンスケイル-->
+		<Item ItemId="30007"  Count="1" Chance="5" /> <!-- ロゼンジシールド-->
+		<Item ItemId="30008"  Count="1" Chance="5" /> <!-- ドレッドシールド-->
+		<Item ItemId="30023"  Count="1" Chance="5" /> <!-- マジックブック-->
+		<Item ItemId="30104"  Count="1" Chance="5" /> <!-- ダマスカスメイル-->
+		<Item ItemId="30105"  Count="1" Chance="5" /> <!-- ドラゴンメイル-->
+		<Item ItemId="30203"  Count="1" Chance="5" /> <!-- 魔術師のローブ-->
+		<Item ItemId="30204"  Count="1" Chance="5" /> <!-- 魔導師のローブ-->
+		<Item ItemId="30302"  Count="1" Chance="5" /> <!-- プロテクション クローク-->
+		<Item ItemId="30402"  Count="1" Chance="5" /> <!-- ダマスカスヘルム-->
+		<Item ItemId="30506"  Count="1" Chance="5" /> <!-- ダマスカスミトン-->
+		<Item ItemId="30508"  Count="1" Chance="5" /> <!-- ドラゴンスリープ-->
+		<Item ItemId="30604"  Count="1" Chance="5" /> <!-- ダマスクスレギンス-->
+		<Item ItemId="30702"  Count="1" Chance="5" /> <!-- ダマスクスシャツ-->
+		<Item ItemId="30902"  Count="1" Chance="5" /> <!-- 鋼のベルト-->
+		<Item ItemId="31100"  Count="1" Chance="5" /> <!-- 疾風の首飾り-->
+		<Item ItemId="31101"  Count="1" Chance="5" /> <!-- 大地の首飾り-->
+		<Item ItemId="31103"  Count="1" Chance="5" /> <!-- 瀑布の首飾り-->
+		<Item ItemId="31104"  Count="1" Chance="5" /> <!-- 火竜の首飾り-->
 	</TreasureBox>
 	
 	<!-- 防具の箱（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60209">	
-		<Item ItemId="30002"  Count="1" Chance="2" /> <!-- サークルシールド-->
-		<Item ItemId="30003"  Count="1" Chance="2" /> <!-- スパイクシールド-->
-		<Item ItemId="30004"  Count="1" Chance="2" /> <!-- バルダーシールド-->
-		<Item ItemId="30102"  Count="1" Chance="2" /> <!-- バルダーメイル-->
-		<Item ItemId="30103"  Count="1" Chance="2" /> <!-- ブリガンダイン-->
-		<Item ItemId="30201"  Count="1" Chance="2" /> <!-- チェイン ローブ-->
-		<Item ItemId="30202"  Count="1" Chance="2" /> <!-- バルダー ローブ-->
-		<Item ItemId="30300"  Count="1" Chance="2" /> <!-- マイティ クローク-->
-		<Item ItemId="30301"  Count="1" Chance="2" /> <!-- マジカル クローク-->
-		<Item ItemId="30401"  Count="1" Chance="2" /> <!-- バルダーヘルム-->
-		<Item ItemId="30503"  Count="1" Chance="2" /> <!-- バルダーガントレット-->
-		<Item ItemId="30504"  Count="1" Chance="2" /> <!-- ノマドブレイザー-->
-		<Item ItemId="30505"  Count="1" Chance="2" /> <!-- オーバーガード-->
-		<Item ItemId="30602"  Count="1" Chance="2" /> <!-- チェインレギンス-->
-		<Item ItemId="30603"  Count="1" Chance="2" /> <!-- バルダーレギンス-->
-		<Item ItemId="30701"  Count="1" Chance="2" /> <!-- バルダーシャツ-->
-		<Item ItemId="30901"  Count="1" Chance="68" /> <!-- 鉄のベルト-->
+		<Item ItemId="30002"  Count="1" Chance="6" /> <!-- サークルシールド-->
+		<Item ItemId="30003"  Count="1" Chance="6" /> <!-- スパイクシールド-->
+		<Item ItemId="30004"  Count="1" Chance="6" /> <!-- バルダーシールド-->
+		<Item ItemId="30102"  Count="1" Chance="6" /> <!-- バルダーメイル-->
+		<Item ItemId="30103"  Count="1" Chance="6" /> <!-- ブリガンダイン-->
+		<Item ItemId="30201"  Count="1" Chance="6" /> <!-- チェイン ローブ-->
+		<Item ItemId="30202"  Count="1" Chance="6" /> <!-- バルダー ローブ-->
+		<Item ItemId="30300"  Count="1" Chance="6" /> <!-- マイティ クローク-->
+		<Item ItemId="30301"  Count="1" Chance="5" /> <!-- マジカル クローク-->
+		<Item ItemId="30401"  Count="1" Chance="6" /> <!-- バルダーヘルム-->
+		<Item ItemId="30503"  Count="1" Chance="6" /> <!-- バルダーガントレット-->
+		<Item ItemId="30504"  Count="1" Chance="6" /> <!-- ノマドブレイザー-->
+		<Item ItemId="30505"  Count="1" Chance="5" /> <!-- オーバーガード-->
+		<Item ItemId="30602"  Count="1" Chance="6" /> <!-- チェインレギンス-->
+		<Item ItemId="30603"  Count="1" Chance="6" /> <!-- バルダーレギンス-->
+		<Item ItemId="30701"  Count="1" Chance="6" /> <!-- バルダーシャツ-->
+		<Item ItemId="30901"  Count="1" Chance="6" /> <!-- 鉄のベルト-->
 	</TreasureBox>
 
 	<!-- 防具の箱（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60210">	
-		<Item ItemId="30000"  Count="1" Chance="2" /> <!-- バックラー-->
-		<Item ItemId="30001"  Count="1" Chance="2" /> <!-- ベルターシールド-->
-		<Item ItemId="30100"  Count="1" Chance="2" /> <!-- レザーアーマー-->
-		<Item ItemId="30101"  Count="1" Chance="2" /> <!-- チェインメイル-->
-		<Item ItemId="30200"  Count="1" Chance="2" /> <!-- ローブ-->
-		<Item ItemId="30400"  Count="1" Chance="2" /> <!-- ブロンズヘルム-->
-		<Item ItemId="30500"  Count="1" Chance="2" /> <!-- レザーグローブ-->
-		<Item ItemId="30501"  Count="1" Chance="2" /> <!-- レザースリーブ-->
-		<Item ItemId="30502"  Count="1" Chance="2" /> <!-- ガントレット-->
-		<Item ItemId="30600"  Count="1" Chance="2" /> <!-- リネンスロップス-->
-		<Item ItemId="30601"  Count="1" Chance="2" /> <!-- レザーレギンス-->
-		<Item ItemId="30700"  Count="1" Chance="2" /> <!-- レザーシャツ-->
-		<Item ItemId="30900"  Count="1" Chance="76" /> <!-- 皮のベルト-->
+		<Item ItemId="30000"  Count="1" Chance="8" /> <!-- バックラー-->
+		<Item ItemId="30001"  Count="1" Chance="7" /> <!-- ベルターシールド-->
+		<Item ItemId="30100"  Count="1" Chance="8" /> <!-- レザーアーマー-->
+		<Item ItemId="30101"  Count="1" Chance="8" /> <!-- チェインメイル-->
+		<Item ItemId="30200"  Count="1" Chance="8" /> <!-- ローブ-->
+		<Item ItemId="30400"  Count="1" Chance="8" /> <!-- ブロンズヘルム-->
+		<Item ItemId="30500"  Count="1" Chance="8" /> <!-- レザーグローブ-->
+		<Item ItemId="30501"  Count="1" Chance="7" /> <!-- レザースリーブ-->
+		<Item ItemId="30502"  Count="1" Chance="8" /> <!-- ガントレット-->
+		<Item ItemId="30600"  Count="1" Chance="8" /> <!-- リネンスロップス-->
+		<Item ItemId="30601"  Count="1" Chance="7" /> <!-- レザーレギンス-->
+		<Item ItemId="30700"  Count="1" Chance="8" /> <!-- レザーシャツ-->
+		<Item ItemId="30900"  Count="1" Chance="7" /> <!-- 皮のベルト-->
 	</TreasureBox>
 
 </TreasureBoxList>

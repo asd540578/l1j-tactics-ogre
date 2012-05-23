@@ -1,2 +1,1 @@
-This is the public service announcement.
-This is a only a test.
+定期アナウンスメッセージ

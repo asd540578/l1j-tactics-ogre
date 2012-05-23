@@ -76,6 +76,7 @@ import l1j.server.server.datatables.PetTable;
 import l1j.server.server.datatables.PolyTable;
 import l1j.server.server.datatables.ResolventTable;
 import l1j.server.server.datatables.SkillTable;
+import l1j.server.server.model.Attribute;
 import l1j.server.server.model.Getback;
 import l1j.server.server.model.L1CastleLocation;
 import l1j.server.server.model.L1Character;
@@ -297,7 +298,9 @@ public class C_ItemUSe extends ClientBasePacket
 				|| itemId == 41430 // 地の武器強化スクロール
 				|| itemId == 41431 // 水の武器強化スクロール
 				|| itemId == 41432 // 火の武器強化スクロール
-				|| itemId == 80023 )
+				|| itemId == 80047 // 光の武器強化スクロール
+				|| itemId == 80048 // 闇の武器強化スクロール
+				)
 		{
 			l = readD();
 		}
@@ -524,7 +527,8 @@ public class C_ItemUSe extends ClientBasePacket
 				}
 			}
 			else if (itemId == 41429 || itemId == 41430 || itemId == 41431
-					|| itemId == 41432 || itemId == 80023)
+					|| itemId == 41432 || itemId == 80047 || itemId == 80048
+)
 			{ // 風の武器強化スクロール～火の武器強化スクロール
 				if (l1iteminstance1 == null
 						|| l1iteminstance1.getItem().getType2() != 1)
@@ -554,7 +558,8 @@ public class C_ItemUSe extends ClientBasePacket
 						|| itemId == 41430 && oldAttrEnchantKind == 1
 						|| itemId == 41431 && oldAttrEnchantKind == 4
 						|| itemId == 41432 && oldAttrEnchantKind == 2
-						|| itemId == 80023 && oldAttrEnchantKind == 16)
+						|| itemId == 80047 && oldAttrEnchantKind == Attribute.getAttribute("光")
+						|| itemId == 80048 && oldAttrEnchantKind == Attribute.getAttribute("闇"))
 				{ // 同じ属性
 					isSameAttr = true;
 				}
@@ -595,9 +600,13 @@ public class C_ItemUSe extends ClientBasePacket
 					{ // 火の武器強化スクロール
 						newAttrEnchantKind = 2;
 					}
-					else if(itemId == 80023)
-					{
-						newAttrEnchantKind = 16;
+					else if(itemId == 80047)
+					{ // 光の武器強化スクロール
+						newAttrEnchantKind = Attribute.getAttribute("光");
+					}
+					else if(itemId == 80048)
+					{ // 闇の武器強化スクロール
+						newAttrEnchantKind = Attribute.getAttribute("闇");
 					}
 					l1iteminstance1.setAttrEnchantKind(newAttrEnchantKind);
 					pc.getInventory().updateItem(l1iteminstance1,
@@ -4334,18 +4343,6 @@ public class C_ItemUSe extends ClientBasePacket
 						// 。
 					}
 					pc.getInventory().removeItem(l1iteminstance, 1);
-				}
-				/* t.s 2012/01/21 add start */
-				else if (itemId >= 60000 && itemId <= 60096)
-				{
-					SkillEffect.createSkillEffect(pc, itemId, 0);
-				}
-				else if (itemId >= 60097 && itemId <= 60151)
-				{
-					L1Character target = (L1Character)L1World.getInstance().findObject(
-							spellsc_objid);
-					SkillEffect.createSkillEffect(pc, target ,itemId, 0);
-				/* t.s 2012/01/21 add end */
 				}
 				else if (itemId == 49210)
 				{ // プロケルの1番目の指令書

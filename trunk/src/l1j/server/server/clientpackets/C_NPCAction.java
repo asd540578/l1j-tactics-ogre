@@ -1990,8 +1990,8 @@ public class C_NPCAction extends ClientBasePacket {
 		else if (((L1NpcInstance) obj).getNpcTemplate().get_npcId() == 70997) {
 			// ありがとう、旅立ちます
 			if (s.equalsIgnoreCase("0")) {
-				final int[] item_ids = { 41146, 4, 20322, 173, 40743, };
-				final int[] item_amounts = { 1, 1, 1, 1, 500, };
+				final int[] item_ids = { 41146,40743, };
+				final int[] item_amounts = { 1, 500, };
 				for (int i = 0; i < item_ids.length; i++) {
 					L1ItemInstance item = pc.getInventory().storeItem(
 							item_ids[i], item_amounts[i]);

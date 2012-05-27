@@ -983,8 +983,7 @@ public class L1Magic {
 
 		magicDamage *= coefficient;
 
-//		if (_calcType == PC_PC || _calcType == NPC_PC) { // 連続魔法ダメージ軽減
-		if (_calcType == PC_PC) { // 連続魔法ダメージ軽減
+		if (_calcType == PC_PC || _calcType == NPC_PC) { // 連続魔法ダメージ軽減
 			long nowTime = System.currentTimeMillis();
 			long oldTime = _targetPc.getOldTime();
 

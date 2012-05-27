@@ -55,6 +55,12 @@ public class S_ShopSellList extends ServerBasePacket
 
 		L1TaxCalculator calc = new L1TaxCalculator(npcId);
 		L1Shop shop = ShopTable.getInstance().get(npcId);
+		// ショップにアイテム未配置の場合の例外回避
+		if(shop == null)
+		{
+			writeH(0);
+			return;
+		}
 		List<L1ShopItem> shopItems = shop.getSellingItems();
 
 		writeH(shopItems.size());

@@ -312,6 +312,46 @@ public class L1World {
 		return result;
 	}
 
+	public ArrayList<L1Object> getVisibleCenterBoxObjects(L1Object object,
+			int heading, int width, int height) {
+		int x = object.getX();
+		int y = object.getY();
+		int map = object.getMapId();
+		L1Location location = object.getLocation();
+		ArrayList<L1Object> result = new ArrayList<L1Object>();
+
+		if (map <= MAX_MAP_ID) {
+			for (L1Object element : _visibleObjects[map].values()) {
+				if (element.equals(object)) {
+					continue;
+				}
+				if (map != element.getMapId()) {
+					continue;
+				}
+
+				// 同じ座標に重なっている場合は範囲内とする
+				if (location.isSamePoint(element.getLocation())) {
+					result.add(element);
+					continue;
+				}
+
+				int x_min = location.getX() - width;
+				int x_max = location.getX() + width;
+				int y_min = location.getY() - height;
+				int y_max = location.getY() + height;
+
+				if(x_min <= element.getX() && x_max >= element.getX() &&
+						y_min <= element.getY() && y_max >= element.getY())
+				{
+					result.add(element);
+				}
+			}
+		}
+
+		return result;
+	}
+
+
 	public ArrayList<L1Object> getVisibleObjects(L1Object object) {
 		return getVisibleObjects(object, -1);
 	}

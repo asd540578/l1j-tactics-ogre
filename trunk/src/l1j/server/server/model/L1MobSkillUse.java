@@ -335,7 +335,7 @@ public class L1MobSkillUse
 		{
 			// 範囲攻撃
 			ArrayList<L1Object> objs = L1World.getInstance()
-					.getVisibleBoxObjects(_attacker, _attacker.getHeading(),
+					.getVisibleCenterBoxObjects(_attacker, _attacker.getHeading(),
 							areaWidth, areaHeight);
 
 			for (L1Object obj : objs)

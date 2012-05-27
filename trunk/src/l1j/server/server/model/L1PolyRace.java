@@ -564,7 +564,7 @@ public class L1PolyRace {
 		if (pc.hasSkillEffect(POLY_EFFECT)) {
 			return;
 		}
-		pc.setSkillEffect(POLY_EFFECT, 4 * 1000);
+		pc.setSkillEffect(POLY_EFFECT, 4 * 1000 ,0);
 
 		int i = _random.nextInt(polyList.length);
 		L1PolyMorph.doPoly(pc, polyList[i], 30, L1PolyMorph.MORPH_BY_NPC);
@@ -578,12 +578,12 @@ public class L1PolyRace {
 
 	// 加速処理（加速パネル　ブレイブ速度２倍） start
 	private void speedUp(L1PcInstance pc, int x, int y) {
-		pc.setSkillEffect(SPEED_EFFECT, 15 * 1000);
+		pc.setSkillEffect(SPEED_EFFECT, 15 * 1000 ,0);
 		int time = 15;
 		int objectId = pc.getId();
 		pc.sendPackets(new S_SkillBrave(objectId, 5, time));
-		pc.setSkillEffect(L1SkillId.STATUS_BRAVE, time * 1000);
-		pc.setSkillEffect(L1SkillId.STATUS_BRAVE2, time * 1000);
+		pc.setSkillEffect(L1SkillId.STATUS_BRAVE, time * 1000 ,0);
+		pc.setSkillEffect(L1SkillId.STATUS_BRAVE2, time * 1000 ,0);
 		pc.setBraveSpeed(1);
 		/**
 		 * XXX pc.broadcastPacket(new S_SkillBrave(objectId, 5, time))!!!
@@ -598,11 +598,11 @@ public class L1PolyRace {
 
 	// 加速処理（変身パネル用　ヘイスト速度） start
 	private void speedUp2(L1PcInstance pc, int x, int y) {
-		pc.setSkillEffect(SPEED_EFFECT2, 15 * 1000);
+		pc.setSkillEffect(SPEED_EFFECT2, 15 * 1000 ,0);
 		int time = 30;
 		int objectId = pc.getId();
 		pc.sendPackets(new S_SkillHaste(objectId, 1, time));
-		pc.setSkillEffect(L1SkillId.STATUS_HASTE, time * 1000);
+		pc.setSkillEffect(L1SkillId.STATUS_HASTE, time * 1000 ,0);
 		pc.setMoveSpeed(1);
 	}
 

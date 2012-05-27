@@ -42,7 +42,7 @@ public class L1HpBar implements L1CommandExecutor {
 	@Override
 	public void execute(L1PcInstance pc, String cmdName, String arg) {
 		if (arg.equalsIgnoreCase("on")) {
-			pc.setSkillEffect(GMSTATUS_HPBAR, 0);
+			pc.setSkillEffect(GMSTATUS_HPBAR, 0 ,0);
 		} else if (arg.equalsIgnoreCase("off")) {
 			pc.removeSkillEffect(GMSTATUS_HPBAR);
 

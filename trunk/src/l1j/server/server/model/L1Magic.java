@@ -983,7 +983,8 @@ public class L1Magic {
 
 		magicDamage *= coefficient;
 
-		if (_calcType == PC_PC || _calcType == NPC_PC) { // 連続魔法ダメージ軽減
+//		if (_calcType == PC_PC || _calcType == NPC_PC) { // 連続魔法ダメージ軽減
+		if (_calcType == PC_PC) { // 連続魔法ダメージ軽減
 			long nowTime = System.currentTimeMillis();
 			long oldTime = _targetPc.getOldTime();
 
@@ -1035,7 +1036,9 @@ public class L1Magic {
 		}
 		if (_calcType == PC_PC || _calcType == PC_NPC) { // アバターによる追加ダメージ
 			if (_pc.hasSkillEffect(ILLUSION_AVATAR)) {
-				magicDamage += 10;
+				int level = _pc.getSkillEffectLevel(ILLUSION_AVATAR);
+				magicDamage += (level > 70)? (level - 70) / 3 + 15 : 15;
+
 			}
 		}
 

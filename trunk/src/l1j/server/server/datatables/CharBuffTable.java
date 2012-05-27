@@ -56,18 +56,19 @@ public class CharBuffTable {
 	}
 
 	private static void store(int objId, int skillId, int time, int polyId,
-			int attrKind) {
+			int attrKind ,int userLevel) {
 		java.sql.Connection con = null;
 		PreparedStatement pstm = null;
 		try {
 			con = L1DatabaseFactory.getInstance().getConnection();
 			pstm = con
-					.prepareStatement("INSERT INTO character_buffs SET char_obj_id=?, skill_id=?, remaining_time=?, poly_id=?, attr_kind=?");
+					.prepareStatement("INSERT INTO character_buffs SET char_obj_id=?, skill_id=?, remaining_time=?, poly_id=?, attr_kind=? ,user_level=?");
 			pstm.setInt(1, objId);
 			pstm.setInt(2, skillId);
 			pstm.setInt(3, time);
 			pstm.setInt(4, polyId);
 			pstm.setInt(5, attrKind);
+			pstm.setInt(6, userLevel);
 			pstm.execute();
 		} catch (SQLException e) {
 			_log.log(Level.SEVERE, e.getLocalizedMessage(), e);
@@ -111,7 +112,7 @@ public class CharBuffTable {
 		}
 
 		store(buff.getCharcterId(), buff.getSkillId(), buff.getRemainingTime(),
-				buff.getPolyId(), buff.getAttrKind());
+				buff.getPolyId(), buff.getAttrKind() ,pc.getSkillEffectLevel(skillId));
 		return true;
 	}
 
@@ -126,7 +127,7 @@ public class CharBuffTable {
 				if (skillId == SHAPE_CHANGE) {
 					polyId = pc.getTempCharGfx();
 				}
-				store(pc.getId(), skillId, timeSec, polyId, 0);
+				store(pc.getId(), skillId, timeSec, polyId, 0 ,pc.getSkillEffectLevel(skillId));
 			}
 		}
 	}
@@ -138,8 +139,9 @@ public class CharBuffTable {
 		int remainingTime = rs.getInt("remaining_time");
 		int polyId = rs.getInt("poly_id");
 		int attrKind = rs.getInt("attr_kind");
+		int userLevel = rs.getInt("user_level");
 		return new L1CharacterBuff(charcterId, skillId, remainingTime, polyId,
-				attrKind);
+				attrKind ,userLevel);
 	}
 
 	public static List<L1CharacterBuff> findByCharacterId(int id) {

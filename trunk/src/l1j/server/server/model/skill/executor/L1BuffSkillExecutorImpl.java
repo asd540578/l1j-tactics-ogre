@@ -7,22 +7,18 @@ import l1j.server.server.templates.L1CharacterBuff;
 public abstract class L1BuffSkillExecutorImpl extends L1SkillExecutorImpl
 		implements L1BuffSkillExecutor {
 
-	protected L1Character target;
-	protected L1Character user;
-
-	public L1Character getTarget()
+	// リストア時にバッファの術者レベルを指定して呼び出し特殊な処理を行う。
+	// 通常のスキルは、ここで記述している通りの通常実装している処理を呼び出す。
+	@Override
+	public void addEffect(int userLevel ,L1Character target ,int durationSeconds)
 	{
-		return target;
+		addEffect(null ,target ,durationSeconds);
 	}
 
-	public L1Character getUser()
-	{
-		return user;
-	}
-
+	// バッファの術者レベルを指定してスキルエフェクトを呼び出すように変更
 	@Override
 	public void restoreEffect(L1PcInstance target, L1CharacterBuff buff) {
-		addEffect(null, target, buff.getRemainingTime());
+		addEffect(buff.getUserLevel(), target, buff.getRemainingTime());
 	}
 
 	@Override

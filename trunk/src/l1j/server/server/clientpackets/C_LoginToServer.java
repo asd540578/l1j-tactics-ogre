@@ -396,7 +396,7 @@ public class C_LoginToServer extends ClientBasePacket {
 		if (exe == null) {
 			return false;
 		}
-		pc.setSkillEffect(buff.getSkillId(), buff.getRemainingTime() * 1000);
+		pc.setSkillEffect(buff.getSkillId(), buff.getRemainingTime() * 1000 ,buff.getUserLevel());
 		exe.restoreEffect(pc, buff);
 		return true;
 	}
@@ -420,33 +420,33 @@ public class C_LoginToServer extends ClientBasePacket {
 							remainingTime));
 					pc.broadcastPacket(new S_SkillBrave(pc.getId(), 1, 0));
 					pc.setBraveSpeed(1);
-					pc.setSkillEffect(skillId, remainingTime * 1000);
+					pc.setSkillEffect(skillId, remainingTime * 1000 ,0);
 				}
 			} else if (skillId == STATUS_ELFBRAVE) { // エルヴンワッフル
 				pc.sendPackets(new S_SkillBrave(pc.getId(), 3, remainingTime));
 				pc.broadcastPacket(new S_SkillBrave(pc.getId(), 3, 0));
 				pc.setBraveSpeed(1);
-				pc.setSkillEffect(skillId, remainingTime * 1000);
+				pc.setSkillEffect(skillId, remainingTime * 1000 ,0);
 			} else if (skillId == STATUS_RIBRAVE) { // ユグドラの実
 				pc.sendPackets(new S_SkillSound(pc.getId(), 7110));
 				pc.broadcastPacket(new S_SkillSound(pc.getId(), 7110));
-				pc.setSkillEffect(skillId, remainingTime * 1000);
+				pc.setSkillEffect(skillId, remainingTime * 1000 ,0);
 			} else if (skillId == STATUS_HASTE) { // グリーン ポーション
 				if (pc.getMiniGamePlaying() == 0) {
 					pc.sendPackets(new S_SkillHaste(pc.getId(), 1,
 							remainingTime));
 					pc.broadcastPacket(new S_SkillHaste(pc.getId(), 1, 0));
 					pc.setMoveSpeed(1);
-					pc.setSkillEffect(skillId, remainingTime * 1000);
+					pc.setSkillEffect(skillId, remainingTime * 1000 ,0);
 				} else if (pc.getMiniGamePlaying() == 1) {
 					pc.setMiniGamePlaying(0);
 				}
 			} else if (skillId == STATUS_BLUE_POTION) { // ブルーポーション
 				pc.sendPackets(new S_SkillIconGFX(34, remainingTime));
-				pc.setSkillEffect(skillId, remainingTime * 1000);
+				pc.setSkillEffect(skillId, remainingTime * 1000 ,0);
 			} else if (skillId == STATUS_CHAT_PROHIBITED) { // チャット禁止
 				pc.sendPackets(new S_SkillIconGFX(36, remainingTime));
-				pc.setSkillEffect(skillId, remainingTime * 1000);
+				pc.setSkillEffect(skillId, remainingTime * 1000 ,0);
 			} else {
 				L1SkillUse l1skilluse = new L1SkillUse();
 				l1skilluse.handleCommands(clientthread.getActiveChar(),

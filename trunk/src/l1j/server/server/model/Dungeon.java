@@ -282,7 +282,7 @@ public class Dungeon {
 
 			if (teleportable) {
 				// 2秒間は無敵（アブソルートバリア状態）にする。
-				pc.setSkillEffect(ABSOLUTE_BARRIER, 2000);
+				pc.setSkillEffect(ABSOLUTE_BARRIER, 2000 ,0);
 				pc.stopHpRegeneration();
 				pc.stopMpRegeneration();
 				pc.stopHpRegenerationByDoll(); // TODO マジックドール HPR停止

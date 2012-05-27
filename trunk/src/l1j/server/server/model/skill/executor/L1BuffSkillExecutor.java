@@ -8,6 +8,8 @@ public interface L1BuffSkillExecutor {
 
 	public void addEffect(L1Character user, L1Character target, int durationSeconds);
 
+	public void addEffect(int userLevel ,L1Character target ,int durationSeconds);
+
 	public void restoreEffect(L1PcInstance target, L1CharacterBuff buff);
 
 	public void removeEffect(L1Character target);

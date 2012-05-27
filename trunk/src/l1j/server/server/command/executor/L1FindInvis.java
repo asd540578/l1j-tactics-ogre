@@ -39,7 +39,7 @@ public class L1FindInvis implements L1CommandExecutor {
 	@Override
 	public void execute(L1PcInstance pc, String cmdName, String arg) {
 		if (arg.equalsIgnoreCase("on")) {
-			pc.setSkillEffect(GMSTATUS_FINDINVIS, 0);
+			pc.setSkillEffect(GMSTATUS_FINDINVIS, 0 ,0);
 			pc.removeAllKnownObjects();
 			pc.updateObject();
 		} else if (arg.equalsIgnoreCase("off")) {

@@ -140,11 +140,11 @@ public class L1Cube extends TimerTask {
 
 			if (_cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) _cha;
-				pc.setSkillEffect(STATUS_FREEZE, 1000);
+				pc.setSkillEffect(STATUS_FREEZE, 1000 ,0);
 				pc.sendPackets(new S_Paralysis(S_Paralysis.TYPE_BIND, true));
 			} else if (_cha instanceof L1MonsterInstance) {
 				L1MonsterInstance mob = (L1MonsterInstance) _cha;
-				mob.setSkillEffect(STATUS_FREEZE, 1000);
+				mob.setSkillEffect(STATUS_FREEZE, 1000 ,0);
 				mob.setParalyzed(true);
 			}
 		} else if (_skillId == STATUS_CUBE_SHOCK_TO_ENEMY) {
@@ -156,7 +156,7 @@ public class L1Cube extends TimerTask {
 // L1PcInstance pc = (L1PcInstance) _cha;
 // pc.sendPackets(new S_SPMR(pc));
 // }
-			_cha.setSkillEffect(STATUS_MR_REDUCTION_BY_CUBE_SHOCK, 4000);
+			_cha.setSkillEffect(STATUS_MR_REDUCTION_BY_CUBE_SHOCK, 4000 ,0);
 		} else if (_skillId == STATUS_CUBE_BALANCE) {
 			if (_timeCounter % 4 == 0) {
 				int newMp = _cha.getCurrentMp() + 5;

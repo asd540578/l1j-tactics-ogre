@@ -1215,7 +1215,7 @@ public class C_NPCAction extends ClientBasePacket {
 				pc.sendPackets(new S_SkillSound(pc.getId(), 755));
 				pc.broadcastPacket(new S_SkillSound(pc.getId(), 755));
 				pc.setMoveSpeed(1);
-				pc.setSkillEffect(STATUS_HASTE, 1600 * 1000);
+				pc.setSkillEffect(STATUS_HASTE, 1600 * 1000 ,0);
 				htmlid = ""; // ウィンドウを消す
 			}
 		}
@@ -1463,7 +1463,7 @@ public class C_NPCAction extends ClientBasePacket {
 				if (pc.hasSkillEffect(STATUS_CURSE_YAHEE)) {
 					pc.sendPackets(new S_ServerMessage(79)); // \f1何も起きませんでした。
 				} else {
-					pc.setSkillEffect(STATUS_CURSE_BARLOG, 1020 * 1000);
+					pc.setSkillEffect(STATUS_CURSE_BARLOG, 1020 * 1000 ,0);
 					pc.sendPackets(new S_SkillIconAura(221, 1020, 2));
 					pc.sendPackets(new S_SkillSound(pc.getId(), 750));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(), 750));
@@ -1648,7 +1648,7 @@ public class C_NPCAction extends ClientBasePacket {
 				if (pc.hasSkillEffect(STATUS_CURSE_BARLOG)) {
 					pc.sendPackets(new S_ServerMessage(79)); // \f1何も起きませんでした。
 				} else {
-					pc.setSkillEffect(STATUS_CURSE_YAHEE, 1020 * 1000);
+					pc.setSkillEffect(STATUS_CURSE_YAHEE, 1020 * 1000 ,0);
 					pc.sendPackets(new S_SkillIconAura(221, 1020, 1));
 					pc.sendPackets(new S_SkillSound(pc.getId(), 750));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(), 750));

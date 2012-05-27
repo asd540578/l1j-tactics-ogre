@@ -30,7 +30,7 @@ public class L1BuffUtil {
 	private static Logger _log = Logger.getLogger(L1BuffUtil.class.getName());
 
 	public static void haste(L1PcInstance pc, int timeMillis) {
-		pc.setSkillEffect(STATUS_HASTE, timeMillis);
+		pc.setSkillEffect(STATUS_HASTE, timeMillis ,0);
 
 		int objId = pc.getId();
 		pc.sendPackets(new S_SkillHaste(objId, 1, timeMillis / 1000));
@@ -77,7 +77,7 @@ public class L1BuffUtil {
 			pc.setBraveSpeed(0);
 		}
 
-		pc.setSkillEffect(STATUS_BRAVE, timeMillis);
+		pc.setSkillEffect(STATUS_BRAVE, timeMillis ,0);
 
 		int objId = pc.getId();
 		pc.sendPackets(new S_SkillBrave(objId, 1, timeMillis / 1000));

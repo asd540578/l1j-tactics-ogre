@@ -64,32 +64,33 @@ public class L1LocNPC implements L1CommandExecutor
 					.getAllVisibleObjects();
 			int count = 0;
 
-				// 引数と一致する名前のモンスターを抽出し、座標を取得する。
-				msgStr.append("-- モンスターサーチ --" + BR);
-				msgStr.append(BR);
-				msgStr.append("モンスター名：" + targetName + BR);
-				for (L1Object obj : objList.values())
+			// 引数と一致する名前のモンスターを抽出し、座標を取得する。
+			msgStr.append("-- モンスターサーチ --" + BR);
+			msgStr.append(BR);
+			msgStr.append("モンスター名：" + targetName + BR);
+			for (L1Object obj : objList.values())
+			{
+				if (obj instanceof L1MonsterInstance)
 				{
-					if (obj instanceof L1MonsterInstance)
+					L1MonsterInstance mobObj = (L1MonsterInstance) obj;
+					String mobName = mobObj.getName().replace(" " ,"");
+					if (mobName.equals(targetName))
 					{
-						L1MonsterInstance mobObj = (L1MonsterInstance) obj;
-						String mobName = mobObj.getName().replace(" " ,"");
-						if (mobName.equals(targetName))
-						{
-							locx = mobObj.getX();
-							locy = mobObj.getY();
-							mapid = mobObj.getMapId();
-							mapName = MapsTable.getInstance().locationname(mapid);
-							msgStr.append(String.format(
-									"NPCID->" + mobObj.getNpcId()
-											+ "   座標->(%d, %d, %d) [%s]",
-									locx, locy, mapid, mapName) + BR);
-							++count;
-						}
+						locx = mobObj.getX();
+						locy = mobObj.getY();
+						mapid = mobObj.getMapId();
+						mapName = MapsTable.getInstance().locationname(mapid);
+						msgStr.append(String.format(
+								"NPCID->" + mobObj.getNpcId()
+										+ "   座標->(%d, %d, %d) [%s]",
+								locx, locy, mapid, mapName) + BR);
+						++count;
 					}
 				}
-				msgStr.append(Integer.toString(count) + " Hit!!" + BR);
-				msgStr.append(" " + BR);
+			}
+			msgStr.append(Integer.toString(count) + " Hit!!" + BR);
+			msgStr.append(" " + BR);
+			pc.sendPackets(new S_SystemMessage(msgStr.toString()));
 		}
 		catch (Exception e)
 		{

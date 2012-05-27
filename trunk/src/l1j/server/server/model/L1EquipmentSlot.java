@@ -113,7 +113,7 @@ public class L1EquipmentSlot {
 		if (itemId == 20077 || itemId == 20062 || itemId == 120077) {
 			if (!_owner.hasSkillEffect(INVISIBILITY)) {
 				_owner.killSkillEffectTimer(BLIND_HIDING);
-				_owner.setSkillEffect(INVISIBILITY, 0);
+				_owner.setSkillEffect(INVISIBILITY, 0 ,_owner.getLevel());
 				_owner.sendPackets(new S_Invis(_owner.getId(), 1));
 				_owner.broadcastPacketForFindInvis(new S_RemoveObject(_owner),
 						false);

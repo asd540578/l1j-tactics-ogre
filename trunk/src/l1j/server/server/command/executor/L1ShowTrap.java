@@ -40,7 +40,7 @@ public class L1ShowTrap implements L1CommandExecutor {
 	@Override
 	public void execute(L1PcInstance pc, String cmdName, String arg) {
 		if (arg.equalsIgnoreCase("on")) {
-			pc.setSkillEffect(GMSTATUS_SHOWTRAPS, 0);
+			pc.setSkillEffect(GMSTATUS_SHOWTRAPS, 0 ,0);
 		} else if (arg.equalsIgnoreCase("off")) {
 			pc.removeSkillEffect(GMSTATUS_SHOWTRAPS);
 

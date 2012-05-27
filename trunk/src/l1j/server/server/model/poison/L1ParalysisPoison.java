@@ -41,7 +41,7 @@ public class L1ParalysisPoison extends L1Poison {
 	private class ParalysisPoisonTimer extends Thread {
 		@Override
 		public void run() {
-			_target.setSkillEffect(STATUS_POISON_PARALYZING, 0);
+			_target.setSkillEffect(STATUS_POISON_PARALYZING, 0 ,0);
 
 			try {
 				Thread.sleep(_delay); // 麻痺するまでの猶予時間を待つ。
@@ -73,7 +73,7 @@ public class L1ParalysisPoison extends L1Poison {
 		@Override
 		public void run() {
 			_target.killSkillEffectTimer(STATUS_POISON_PARALYZING);
-			_target.setSkillEffect(STATUS_POISON_PARALYZED, 0);
+			_target.setSkillEffect(STATUS_POISON_PARALYZED, 0 ,0);
 			try {
 				Thread.sleep(_time);
 			} catch (InterruptedException e) {

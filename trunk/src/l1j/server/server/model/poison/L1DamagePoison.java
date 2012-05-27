@@ -84,7 +84,7 @@ public class L1DamagePoison extends L1Poison {
 	}
 
 	private void doInfection() {
-		_target.setSkillEffect(STATUS_POISON, 30000);
+		_target.setSkillEffect(STATUS_POISON, 30000 ,0);
 		_target.setPoisonEffect(1);
 
 		if (isDamageTarget(_target)) {

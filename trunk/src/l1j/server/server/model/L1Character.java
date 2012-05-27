@@ -65,6 +65,7 @@ public class L1Character extends L1Object {
 	private final Map<Integer, L1NpcInstance> _petlist = new HashMap<Integer, L1NpcInstance>();
 	private final Map<Integer, L1DollInstance> _dolllist = new HashMap<Integer, L1DollInstance>();
 	private final Map<Integer, L1SkillTimer> _skillEffect = new HashMap<Integer, L1SkillTimer>();
+	private final Map<Integer, Integer> _skillEffectLevel = new HashMap<Integer, Integer>();
 	private final Map<Integer, L1ItemDelay.ItemDelayTimer> _itemdelay = new HashMap<Integer, L1ItemDelay.ItemDelayTimer>();
 	private final Map<Integer, L1FollowerInstance> _followerlist = new HashMap<Integer, L1FollowerInstance>();
 
@@ -462,13 +463,14 @@ public class L1Character extends L1Object {
 	 * @param timeMillis
 	 *            追加する効果の持続時間。無限の場合は0。
 	 */
-	private void addSkillEffect(int skillId, int timeMillis) {
+	private void addSkillEffect(int skillId, int timeMillis ,int userLevel) {
 		L1SkillTimer timer = null;
 		if (0 < timeMillis) {
 			timer = L1SkillTimerCreator.create(this, skillId, timeMillis);
 			timer.begin();
 		}
 		_skillEffect.put(skillId, timer);
+		_skillEffectLevel.put(skillId, userLevel);
 	}
 
 	/**
@@ -480,8 +482,10 @@ public class L1Character extends L1Object {
 	 *            設定する効果のスキルID。
 	 * @param timeMillis
 	 *            設定する効果の持続時間。無限の場合は0。
+	 * @param userLevel
+	 * 			  術者のレベル。
 	 */
-	public void setSkillEffect(int skillId, int timeMillis) {
+	public void setSkillEffect(int skillId, int timeMillis ,int userLevel) {
 		if (hasSkillEffect(skillId)) {
 			int remainingTimeMills = getSkillEffectTimeSec(skillId) * 1000;
 
@@ -489,10 +493,10 @@ public class L1Character extends L1Object {
 			if (remainingTimeMills >= 0
 					&& (remainingTimeMills < timeMillis || timeMillis == 0)) {
 				killSkillEffectTimer(skillId);
-				addSkillEffect(skillId, timeMillis);
+				addSkillEffect(skillId, timeMillis ,userLevel);
 			}
 		} else {
-			addSkillEffect(skillId, timeMillis);
+			addSkillEffect(skillId, timeMillis ,userLevel);
 		}
 	}
 
@@ -507,6 +511,7 @@ public class L1Character extends L1Object {
 		if (timer != null) {
 			timer.end();
 		}
+		_skillEffectLevel.remove(skillId);
 	}
 
 	/**
@@ -520,6 +525,7 @@ public class L1Character extends L1Object {
 		if (timer != null) {
 			timer.kill();
 		}
+		_skillEffectLevel.remove(skillId);
 	}
 
 	/**
@@ -532,6 +538,7 @@ public class L1Character extends L1Object {
 			}
 		}
 		_skillEffect.clear();
+		_skillEffectLevel.clear();
 	}
 
 	/**
@@ -558,6 +565,22 @@ public class L1Character extends L1Object {
 			return -1;
 		}
 		return timer.getRemainingTime();
+	}
+
+	/**
+	 * キャラクターのスキルをかけた術者のレベルを返す。
+	 *
+	 * @param skillId
+	 * @return
+	 */
+	public int getSkillEffectLevel(int skillId)
+	{
+		Integer userLevel = _skillEffectLevel.get(skillId);
+		if(userLevel == null)
+		{
+			return -1;
+		}
+		return userLevel;
 	}
 
 	private boolean _isSkillDelay = false;

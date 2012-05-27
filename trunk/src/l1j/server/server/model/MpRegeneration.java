@@ -68,7 +68,8 @@ public class MpRegeneration extends TimerTask {
 			baseMpr += 5;
 		}
 		if (_pc.hasSkillEffect(CONCENTRATION)) { // コンセントレーション中
-			baseMpr += 2;
+			int mpr = (_pc.getSkillEffectLevel(CONCENTRATION) - 70) / 4 + 2;
+			baseMpr += mpr;
 		}
 		if (L1HouseLocation.isInHouse(_pc.getX(), _pc.getY(), _pc.getMapId())) {
 			baseMpr += 3;

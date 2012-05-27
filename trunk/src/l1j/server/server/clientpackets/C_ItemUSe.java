@@ -3208,7 +3208,7 @@ public class C_ItemUSe extends ClientBasePacket
 					}
 					if (itemId == 40057)
 					{ // フローティングアイ肉
-						pc.setSkillEffect(STATUS_FLOATING_EYE, 0);
+						pc.setSkillEffect(STATUS_FLOATING_EYE, 0,0);
 					}
 					pc.sendPackets(new S_ServerMessage(76, l1iteminstance
 							.getItem().getIdentifiedNameId()));
@@ -4084,7 +4084,7 @@ public class C_ItemUSe extends ClientBasePacket
 					{
 						pc.removeSkillEffect(STATUS_HOLY_MITHRIL_POWDER);
 					}
-					pc.setSkillEffect(STATUS_HOLY_WATER, 900 * 1000);
+					pc.setSkillEffect(STATUS_HOLY_WATER, 900 * 1000 ,0);
 					pc.sendPackets(new S_SkillSound(pc.getId(), 190));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(), 190));
 					pc.sendPackets(new S_ServerMessage(1141));
@@ -4102,7 +4102,7 @@ public class C_ItemUSe extends ClientBasePacket
 					{
 						pc.removeSkillEffect(STATUS_HOLY_WATER);
 					}
-					pc.setSkillEffect(STATUS_HOLY_MITHRIL_POWDER, 900 * 1000);
+					pc.setSkillEffect(STATUS_HOLY_MITHRIL_POWDER, 900 * 1000 ,0);
 					pc.sendPackets(new S_SkillSound(pc.getId(), 190));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(), 190));
 					pc.sendPackets(new S_ServerMessage(1142));
@@ -4117,7 +4117,7 @@ public class C_ItemUSe extends ClientBasePacket
 						// 。
 						return;
 					}
-					pc.setSkillEffect(STATUS_HOLY_WATER_OF_EVA, 900 * 1000);
+					pc.setSkillEffect(STATUS_HOLY_WATER_OF_EVA, 900 * 1000 ,0);
 					pc.sendPackets(new S_SkillIconAura(221, 900, 5));
 					pc.sendPackets(new S_SkillSound(pc.getId(), 190));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(), 190));
@@ -4399,7 +4399,7 @@ public class C_ItemUSe extends ClientBasePacket
 				}
 				else if (itemId == 49168)
 				{ // XXX 破壊の秘薬　
-					pc.setSkillEffect(STATUS_DESTRUCTION_NOSTRUM, 600 * 1000);
+					pc.setSkillEffect(STATUS_DESTRUCTION_NOSTRUM, 600 * 1000 ,0);
 					pc.sendPackets(new S_SkillIconAura(221, 600, 6));
 					pc.sendPackets(new S_SkillSound(pc.getId(), 190));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(), 190));
@@ -5134,7 +5134,7 @@ public class C_ItemUSe extends ClientBasePacket
 			pc.sendPackets(new S_SkillHaste(pc.getId(), 1, time));
 			pc.broadcastPacket(new S_SkillHaste(pc.getId(), 1, 0));
 			pc.setMoveSpeed(1);
-			pc.setSkillEffect(STATUS_HASTE, time * 1000);
+			pc.setSkillEffect(STATUS_HASTE, time * 1000 ,0);
 		}
 	}
 
@@ -5265,13 +5265,13 @@ public class C_ItemUSe extends ClientBasePacket
 			pc.broadcastPacket(new S_SkillBrave(pc.getId(), 3, 0));
 			pc.sendPackets(new S_SkillSound(pc.getId(), 751));
 			pc.broadcastPacket(new S_SkillSound(pc.getId(), 751));
-			pc.setSkillEffect(STATUS_ELFBRAVE, time * 1000);
+			pc.setSkillEffect(STATUS_ELFBRAVE, time * 1000 ,0);
 		}
 		else if (item_id == 49158)
 		{ // ユグドラの実
 			pc.sendPackets(new S_SkillSound(pc.getId(), 7110));
 			pc.broadcastPacket(new S_SkillSound(pc.getId(), 7110));
-			pc.setSkillEffect(STATUS_RIBRAVE, time * 1000);
+			pc.setSkillEffect(STATUS_RIBRAVE, time * 1000 ,0);
 		}
 		else
 		{
@@ -5279,7 +5279,7 @@ public class C_ItemUSe extends ClientBasePacket
 			pc.broadcastPacket(new S_SkillBrave(pc.getId(), 1, 0));
 			pc.sendPackets(new S_SkillSound(pc.getId(), 751));
 			pc.broadcastPacket(new S_SkillSound(pc.getId(), 751));
-			pc.setSkillEffect(STATUS_BRAVE, time * 1000);
+			pc.setSkillEffect(STATUS_BRAVE, time * 1000 ,0);
 		}
 		// pc.sendPackets(new S_SkillSound(pc.getId(), 751));
 		// pc.broadcastPacket(new S_SkillSound(pc.getId(), 751));
@@ -5315,7 +5315,7 @@ public class C_ItemUSe extends ClientBasePacket
 		pc.sendPackets(new S_SkillSound(pc.getId(), 190));
 		pc.broadcastPacket(new S_SkillSound(pc.getId(), 190));
 
-		pc.setSkillEffect(STATUS_BLUE_POTION, time * 1000);
+		pc.setSkillEffect(STATUS_BLUE_POTION, time * 1000 ,0);
 
 		pc.sendPackets(new S_ServerMessage(1007)); // MPの回復速度が速まります。
 	}
@@ -5351,7 +5351,7 @@ public class C_ItemUSe extends ClientBasePacket
 		pc.sendPackets(new S_SkillSound(pc.getId(), 750));
 		pc.broadcastPacket(new S_SkillSound(pc.getId(), 750));
 
-		pc.setSkillEffect(STATUS_WISDOM_POTION, time * 1000);
+		pc.setSkillEffect(STATUS_WISDOM_POTION, time * 1000 ,0);
 	}
 
 	private void useBlessOfEva(L1PcInstance pc, int item_id)
@@ -5395,7 +5395,7 @@ public class C_ItemUSe extends ClientBasePacket
 		pc.sendPackets(new S_SkillIconBlessOfEva(pc.getId(), time));
 		pc.sendPackets(new S_SkillSound(pc.getId(), 190));
 		pc.broadcastPacket(new S_SkillSound(pc.getId(), 190));
-		pc.setSkillEffect(STATUS_UNDERWATER_BREATH, time * 1000);
+		pc.setSkillEffect(STATUS_UNDERWATER_BREATH, time * 1000 ,0);
 	}
 
 	private void useBlindPotion(L1PcInstance pc)
@@ -5428,7 +5428,7 @@ public class C_ItemUSe extends ClientBasePacket
 			pc.sendPackets(new S_CurseBlind(1));
 		}
 
-		pc.setSkillEffect(CURSE_BLIND, time * 1000);
+		pc.setSkillEffect(CURSE_BLIND, time * 1000 ,0);
 	}
 
 	private boolean usePolyScroll(L1PcInstance pc, int item_id, String s)

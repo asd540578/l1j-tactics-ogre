@@ -152,7 +152,9 @@ class L1SkillStop {
 		} else if (skillId == BLESSED_ARMOR) { // ブレスド アーマー
 			cha.addAc(3);
 		} else if (skillId == EARTH_BLESS) { // アース ブレス
-			cha.addAc(7);
+			final int ac = (cha.getSkillEffectLevel(EARTH_BLESS) > 70)?
+					(cha.getSkillEffectLevel(EARTH_BLESS) - 70) / 4 + 7 : 7;
+			cha.addAc(ac);
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
 				pc.sendPackets(new S_SkillIconShield(7, 0));
@@ -194,13 +196,17 @@ class L1SkillStop {
 				pc.sendPackets(new S_OwnCharAttrDef(pc));
 			}
 		} else if (skillId == IRON_SKIN) { // アイアン スキン
-			cha.addAc(10);
+			final int ac = (cha.getSkillEffectLevel(IRON_SKIN) > 70)?
+							(cha.getSkillEffectLevel(IRON_SKIN) - 70) / 3 + 10 : 10;
+			cha.addAc(ac);
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
 				pc.sendPackets(new S_SkillIconShield(10, 0));
 			}
 		} else if (skillId == EARTH_SKIN) { // アース スキン
-			cha.addAc(6);
+			final int ac = (cha.getSkillEffectLevel(EARTH_SKIN) > 70)?
+							(cha.getSkillEffectLevel(EARTH_SKIN) - 70) / 5 + 6 : 6;
+			cha.addAc(ac);
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
 				pc.sendPackets(new S_SkillIconShield(6, 0));
@@ -297,19 +303,25 @@ class L1SkillStop {
 		} else if (skillId == ILLUSION_LICH) { // イリュージョン：リッチ
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
-				pc.addSp(-2);
+				int sp = (pc.getSkillEffectLevel(ILLUSION_LICH) > 70) ?
+						(pc.getSkillEffectLevel(ILLUSION_LICH) - 70) / 7 + 2 : 2;
+				pc.addSp(-sp);
 				pc.sendPackets(new S_SPMR(pc));
 			}
 		} else if (skillId == ILLUSION_DIA_GOLEM) { // イリュージョン：ダイアモンドゴーレム
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
-				pc.addAc(20);
+				final int ac = (pc.getSkillEffectLevel(ILLUSION_DIA_GOLEM) > 70)?
+						((pc.getSkillEffectLevel(ILLUSION_DIA_GOLEM) - 70) / 4) * 2 + 20 : 20;
+				pc.addAc(ac);
 			}
 		} else if (skillId == ILLUSION_AVATAR) { // イリュージョン：アバター
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) cha;
-				pc.addDmgup(-10);
-				pc.addBowDmgup(-10);
+				int dmgUP = (pc.getSkillEffectLevel(ILLUSION_AVATAR) > 70)?
+								(pc.getSkillEffectLevel(ILLUSION_AVATAR) - 70) / 2 + 10 : 10;
+				pc.addDmgup(-dmgUP);
+				pc.addBowDmgup(-dmgUP);
 			}
 		}
 

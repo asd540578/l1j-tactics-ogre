@@ -6000,7 +6000,7 @@ public class L1PcInstance extends L1Character
 		{
 			if (_chatCount >= 3)
 			{
-				setSkillEffect(STATUS_CHAT_PROHIBITED, 120 * 1000);
+				setSkillEffect(STATUS_CHAT_PROHIBITED, 120 * 1000 ,0);
 				sendPackets(new S_SkillIconGFX(36, 120));
 				sendPackets(new S_ServerMessage(153));
 				// \f3迷惑なチャット流しをしたので、今後2分間チャットを行うことはできません。
@@ -6177,7 +6177,7 @@ public class L1PcInstance extends L1Character
 		return _isShapeChange;
 	}
 
-	private boolean _Potlog = true;
+	private boolean _Potlog = false;
 
 	public void setPotLog(boolean i)
 	{

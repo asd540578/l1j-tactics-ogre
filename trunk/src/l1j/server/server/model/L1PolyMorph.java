@@ -242,7 +242,7 @@ public class L1PolyMorph {
 			}
 
  			pc.killSkillEffectTimer(SHAPE_CHANGE);
-			pc.setSkillEffect(SHAPE_CHANGE, timeSecs * 1000);
+			pc.setSkillEffect(SHAPE_CHANGE, timeSecs * 1000 ,0);
 			if (pc.getTempCharGfx() != polyId) { // 同じ変身の場合はアイコン送信以外が必要ない
 				L1ItemInstance weapon = pc.getWeapon();
 				// 変身によって武器が外れるか
@@ -273,7 +273,7 @@ public class L1PolyMorph {
 		} else if (cha instanceof L1MonsterInstance) {
 			L1MonsterInstance mob = (L1MonsterInstance) cha;
 			mob.killSkillEffectTimer(SHAPE_CHANGE);
-			mob.setSkillEffect(SHAPE_CHANGE, timeSecs * 1000);
+			mob.setSkillEffect(SHAPE_CHANGE, timeSecs * 1000 ,0);
 			if (mob.getTempCharGfx() != polyId) { // 同じ変身の場合はアイコン送信以外が必要ない
 				mob.setTempCharGfx(polyId);
 				mob.broadcastPacket(new S_ChangeShape(mob.getId(), polyId));

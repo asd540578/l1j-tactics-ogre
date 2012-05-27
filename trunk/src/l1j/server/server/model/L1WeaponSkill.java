@@ -168,7 +168,7 @@ public class L1WeaponSkill {
 			if (skill != null && skill.getTarget().equals("buff")) {
 				if (!isFreeze(cha)) { // 凍結状態orカウンターマジック中
 					cha.setSkillEffect(skillId,
-							weaponSkill.getSkillTime() * 1000);
+							weaponSkill.getSkillTime() * 1000 ,0);
 				}
 			}
 		}
@@ -377,7 +377,8 @@ public class L1WeaponSkill {
 				+ pc.getOriginalMagicDamage();
 
 		if (pc.hasSkillEffect(ILLUSION_AVATAR)) {
-			dmg += 10;
+			int level = pc.getSkillEffectLevel(ILLUSION_AVATAR);
+			dmg += (level > 70) ? (level - 70) / 3 + 15 : 15;
 		}
 
 		if (pc.getWeapon().getItem().getItemId() == 270) {
@@ -565,7 +566,7 @@ public class L1WeaponSkill {
 
 				if (cha instanceof L1PcInstance) {
 					L1PcInstance targetPc = (L1PcInstance) cha;
-					targetPc.setSkillEffect(STATUS_FREEZE, time);
+					targetPc.setSkillEffect(STATUS_FREEZE, time , 0);
 					targetPc.sendPackets(new S_Paralysis(S_Paralysis.TYPE_BIND,
 							true));
 					targetPc.sendPackets(new S_DoActionGFX(targetPc.getId(),
@@ -577,7 +578,7 @@ public class L1WeaponSkill {
 						|| cha instanceof L1SummonInstance
 						|| cha instanceof L1PetInstance) {
 					L1NpcInstance targetNpc = (L1NpcInstance) cha;
-					targetNpc.setSkillEffect(STATUS_FREEZE, time);
+					targetNpc.setSkillEffect(STATUS_FREEZE, time ,0);
 					targetNpc.setParalyzed(true);
 					targetNpc.broadcastPacket(new S_DoActionGFX(targetNpc
 							.getId(), ActionCodes.ACTION_Damage));
@@ -723,7 +724,7 @@ public class L1WeaponSkill {
 					cha.getX(), cha.getY(), cha.getMapId());
 			if (cha instanceof L1PcInstance) {
 				L1PcInstance targetPc = (L1PcInstance) cha;
-				targetPc.setSkillEffect(STATUS_FREEZE, fettersTime);
+				targetPc.setSkillEffect(STATUS_FREEZE, fettersTime ,0);
 				targetPc.sendPackets(new S_SkillSound(targetPc.getId(), 4184));
 				targetPc.broadcastPacket(new S_SkillSound(targetPc.getId(),
 						4184));
@@ -733,7 +734,7 @@ public class L1WeaponSkill {
 					|| cha instanceof L1SummonInstance
 					|| cha instanceof L1PetInstance) {
 				L1NpcInstance npc = (L1NpcInstance) cha;
-				npc.setSkillEffect(STATUS_FREEZE, fettersTime);
+				npc.setSkillEffect(STATUS_FREEZE, fettersTime ,0);
 				npc.broadcastPacket(new S_SkillSound(npc.getId(), 4184));
 				npc.setParalyzed(true);
 			}

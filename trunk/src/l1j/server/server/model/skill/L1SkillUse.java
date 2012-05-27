@@ -1427,7 +1427,7 @@ public class L1SkillUse
 			{
 				if (_skillId == INVISIBILITY)
 				{ // インビジビリティ
-					cha.setSkillEffect(INVISIBILITY, 0);
+					cha.setSkillEffect(INVISIBILITY, 0 ,_user.getLevel());
 				}
 				return;
 			}
@@ -1479,7 +1479,7 @@ public class L1SkillUse
 			return;
 		}
 
-		cha.setSkillEffect(_skillId, buffDuration);
+		cha.setSkillEffect(_skillId, buffDuration ,_user.getLevel());
 
 		if (cha instanceof L1PcInstance && repetition)
 		{ // 対象がPCで既にスキルが重複している場合
@@ -3086,7 +3086,7 @@ public class L1SkillUse
 						if (cha instanceof L1PcInstance)
 						{
 							L1PcInstance targetPc = (L1PcInstance) cha;
-							targetPc.setSkillEffect(STATUS_FREEZE, time);
+							targetPc.setSkillEffect(STATUS_FREEZE, time ,_user.getLevel());
 							targetPc.sendPackets(new S_Paralysis(
 									S_Paralysis.TYPE_BIND, true));
 						}
@@ -3095,7 +3095,7 @@ public class L1SkillUse
 								|| cha instanceof L1PetInstance)
 						{
 							L1NpcInstance npc = (L1NpcInstance) cha;
-							npc.setSkillEffect(STATUS_FREEZE, time);
+							npc.setSkillEffect(STATUS_FREEZE, time ,_user.getLevel());
 							npc.setParalyzed(true);
 						}
 					}
@@ -3167,34 +3167,43 @@ public class L1SkillUse
 							L1PcInstance pc = (L1PcInstance) cha;
 							// 本鯖では、メッセージは無いが一応表示させておく
 							pc.sendPackets(new S_ServerMessage(697));
-							pc.setSkillEffect(SILENCE, _confusionDuration);
+							pc.setSkillEffect(SILENCE, _confusionDuration ,_user.getLevel());
 						}
 						else if (cha instanceof L1MonsterInstance
 								|| cha instanceof L1SummonInstance
 								|| cha instanceof L1PetInstance)
 						{
 							L1NpcInstance npc = (L1NpcInstance) cha;
-							npc.setSkillEffect(SILENCE, _confusionDuration);
+							npc.setSkillEffect(SILENCE, _confusionDuration ,_user.getLevel());
 						}
 					}
 				}
 				else if (_skillId == PHANTASM)
 				{ // ファンタズム　TODO
-					int time = _skill.getBuffDuration() * 1000;
+					int random = RandomGeneratorFactory.getSharedRandom().nextInt(3);
+					int time = (random * 1000) + _skill.getBuffDuration() * 400;
 					if (cha instanceof L1PcInstance)
 					{
 						L1PcInstance targetPc = (L1PcInstance) cha;
-						targetPc.setSkillEffect(FOG_OF_SLEEPING, time);
-						targetPc.sendPackets(new S_Paralysis(
-								S_Paralysis.TYPE_SLEEP, true));
+/*
+ * 						targetPc.setSkillEffect(, time ,_user.getLevel());
+ *						targetPc.sendPackets(new S_Paralysis(
+ *								S_Paralysis.TYPE_SLEEP, true));
+ */
+						targetPc.setSkillEffect(STATUS_FREEZE, time ,0);
+						targetPc.sendPackets(new S_Paralysis(S_Paralysis.TYPE_BIND,
+								true));
 					}
 					else if (cha instanceof L1MonsterInstance
 							|| cha instanceof L1SummonInstance
 							|| cha instanceof L1PetInstance)
 					{
 						L1NpcInstance npc = (L1NpcInstance) cha;
-						npc.setSkillEffect(FOG_OF_SLEEPING, time);
-						npc.setSleeped(true);
+/*
+ * 						npc.setSkillEffect(FOG_OF_SLEEPING, time ,_user.getLevel());
+ *						npc.setSleeped(true);
+ */
+						npc.setSkillEffect(STATUS_FREEZE, time ,_user.getLevel());
 					}
 				}
 				else if (_skillId == ARM_BREAKER)
@@ -3229,7 +3238,7 @@ public class L1SkillUse
 							if (cha instanceof L1PcInstance)
 							{
 								L1PcInstance pc = (L1PcInstance) cha;
-								pc.setSkillEffect(ARM_BREAKER, time);
+								pc.setSkillEffect(ARM_BREAKER, time ,_user.getLevel());
 								pc.sendPackets(new S_SkillIconGFX(74,
 										(time / 3)));
 							}
@@ -3239,7 +3248,7 @@ public class L1SkillUse
 								|| cha instanceof L1PetInstance)
 						{
 							L1NpcInstance npc = (L1NpcInstance) cha;
-							npc.setSkillEffect(ARM_BREAKER, time);
+							npc.setSkillEffect(ARM_BREAKER, time ,_user.getLevel());
 						}
 					}
 				}
@@ -3812,7 +3821,8 @@ public class L1SkillUse
 					else if (_skillId == EARTH_BLESS)
 					{ // アース ブレス
 						L1PcInstance pc = (L1PcInstance) cha;
-						pc.addAc(-7);
+						final int ac = (_user.getLevel() > 70)? (_user.getLevel() - 70) / 4 + 7 : 7;
+						pc.addAc(-ac);
 						pc.sendPackets(new S_SkillIconShield(7,
 								buffIconDuration));
 					}
@@ -3880,14 +3890,16 @@ public class L1SkillUse
 					else if (_skillId == IRON_SKIN)
 					{ // アイアン スキン
 						L1PcInstance pc = (L1PcInstance) cha;
-						pc.addAc(-10);
+						final int ac = (_user.getLevel() > 70)? (_user.getLevel() - 70) / 3 + 10 : 10;
+						pc.addAc(-ac);
 						pc.sendPackets(new S_SkillIconShield(10,
 								buffIconDuration));
 					}
 					else if (_skillId == EARTH_SKIN)
 					{ // アース スキン
 						L1PcInstance pc = (L1PcInstance) cha;
-						pc.addAc(-6);
+						final int ac = (_user.getLevel() > 70)? (_user.getLevel() - 70) / 5 + 6 : 6;
+						pc.addAc(-ac);
 						pc.sendPackets(new S_SkillIconShield(6,
 								buffIconDuration));
 					}
@@ -4057,19 +4069,23 @@ public class L1SkillUse
 					else if (_skillId == ILLUSION_LICH)
 					{ // イリュージョン：リッチ
 						L1PcInstance pc = (L1PcInstance) cha;
-						pc.addSp(2);
+						int sp = (_user.getLevel() > 70) ? (_user.getLevel() - 70) / 7 + 2 : 2;
+						pc.addSp(sp);
 						pc.sendPackets(new S_SPMR(pc));
 					}
 					else if (_skillId == ILLUSION_DIA_GOLEM)
 					{ // イリュージョン：ダイアモンドゴーレム
 						L1PcInstance pc = (L1PcInstance) cha;
-						pc.addAc(-20);
+						int ac = (_user.getLevel() > 70) ?
+								((_user.getLevel() - 70) / 4) * 2 + 20 : 20;
+						pc.addAc(-ac);
 					}
 					else if (_skillId == ILLUSION_AVATAR)
 					{ // イリュージョン：アバター
 						L1PcInstance pc = (L1PcInstance) cha;
-						pc.addDmgup(10);
-						pc.addBowDmgup(10);
+						int dmgUP = (pc.getLevel() > 70)? (pc.getLevel() - 70) / 2 + 10 : 10;
+						pc.addDmgup(dmgUP);
+						pc.addBowDmgup(dmgUP);
 					}
 					else if (_skillId == INSIGHT)
 					{ // インサイト

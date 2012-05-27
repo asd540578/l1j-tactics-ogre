@@ -49,7 +49,7 @@ public class L1ChatNG implements L1CommandExecutor {
 
 			if (tg != null) {
 				tg.setSkillEffect(STATUS_CHAT_PROHIBITED,
-						time * 60 * 1000);
+						time * 60 * 1000 ,0);
 				tg.sendPackets(new S_SkillIconGFX(36, time * 60));
 				tg.sendPackets(new S_ServerMessage(286, String.valueOf(time))); // \f3ゲームに適合しない行動であるため、今後%0分間チャットを禁じます。
 				pc.sendPackets(new S_ServerMessage(287, name)); // %0のチャットを禁じました。

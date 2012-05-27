@@ -1877,7 +1877,7 @@ public class L1NpcInstance extends L1Character {
 		broadcastPacket(new S_SkillHaste(getId(), 1, time));
 		broadcastPacket(new S_SkillSound(getId(), 191));
 		setMoveSpeed(1);
-		setSkillEffect(STATUS_HASTE, time * 1000);
+		setSkillEffect(STATUS_HASTE, time * 1000 ,0);
 	}
 
 	// アイテムの使用判定及び使用

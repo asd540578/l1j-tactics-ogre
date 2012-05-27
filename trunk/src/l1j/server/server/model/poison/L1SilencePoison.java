@@ -44,7 +44,7 @@ public class L1SilencePoison extends L1Poison {
 		_target.setPoisonEffect(1);
 		sendMessageIfPlayer(_target, 310);
 
-		_target.setSkillEffect(STATUS_POISON_SILENCE, 0);
+		_target.setSkillEffect(STATUS_POISON_SILENCE, 0 ,0);
 	}
 
 	@Override

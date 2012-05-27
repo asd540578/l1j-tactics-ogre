@@ -191,12 +191,12 @@ public class L1Cooking {
 
 		int durationSeconds = skill.getBuffDuration();
 		exe.addEffect(null, pc, durationSeconds);
-		pc.setSkillEffect(cookingId, durationSeconds * 1000);
+		pc.setSkillEffect(cookingId, durationSeconds * 1000 ,0);
 	}
 
 	/**
 	 * <code>pc</code>のそばに焚き火があるか。
-	 * 
+	 *
 	 * @return true - 焚き火があった。<br>
 	 *         false - 焚き火が無かった。
 	 */
@@ -214,7 +214,7 @@ public class L1Cooking {
 
 	/**
 	 * 必要な材料を所有しているか調べる。
-	 * 
+	 *
 	 * @return true - 必要な量の材料を所有している<br>
 	 *         false - 必要な材料が不足している
 	 */
@@ -251,7 +251,7 @@ public class L1Cooking {
 		if (pc.hasSkillEffect(COOKING_NOW)) {
 			return;
 		}
-		pc.setSkillEffect(COOKING_NOW, 3 * 1000);
+		pc.setSkillEffect(COOKING_NOW, 3 * 1000 ,0);
 
 		L1CookingRecipe recipe = CookingRecipeTable.findById(cookNo);
 		List<L1CookingIngredient> ingredients = recipe.getIngredients();

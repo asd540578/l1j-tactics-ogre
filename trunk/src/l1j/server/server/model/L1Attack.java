@@ -1185,7 +1185,8 @@ public class L1Attack
 		}
 		if (_pc.hasSkillEffect(ARM_BREAKER))
 		{ // ＰＣがアームブレイカ―中。
-			dmg -= 5;
+			 dmg -= (_pc.getSkillEffectLevel(ARM_BREAKER) > 70)?
+					 (_pc.getSkillEffectLevel(ARM_BREAKER) - 70) / 3 + 4 : 4;
 		}
 
 		dmg -= _targetPc.getDamageReductionByArmor(); // 防具によるダメージ軽減
@@ -1224,25 +1225,20 @@ public class L1Attack
 			dmg -= 5;
 		}
 
+		final int targetPcLevel = _targetPc.getLevel();
 		/* t.s 2011/09/16 mod start */
 		/* ダメリダ調整 */
 		if (_targetPc.hasSkillEffect(REDUCTION_ARMOR))
 		{
-			int targetPcLvl = _targetPc.getLevel();
-			if (targetPcLvl < 50)
-			{
-				targetPcLvl = 50;
-			}
-			// dmg -= (targetPcLvl - 50) / 5 + 1;
-			dmg -= (targetPcLvl - 50) / 5 + 3;
+			dmg -= (targetPcLevel > 70)? ((targetPcLevel - 70) / 4) * 4 + 3 : 3;
 		}
 		if (_targetPc.hasSkillEffect(DRAGON_SKIN))
 		{
-			dmg -= 7;
+			dmg -= (targetPcLevel > 70)? ((targetPcLevel - 70) / 4 ) * 2 + 2 : 2;
 		}
 		if (_targetPc.hasSkillEffect(PATIENCE))
 		{
-			dmg -= 4;
+			dmg -= (targetPcLevel > 70)? (targetPcLevel - 70) / 4 + 1 : 1;
 		}
 		/* t.s 2011/09/16 mod end */
 		if (_targetPc.hasSkillEffect(IMMUNE_TO_HARM))
@@ -1840,19 +1836,19 @@ public class L1Attack
 			{
 				_pc.killSkillEffectTimer(STATUS_WEAKNESS_EXPOSURE_LV1);
 				_pc.removeSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV1);
-				_pc.setSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV2, 15000);
+				_pc.setSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV2, 15000 ,0);
 				_pc.sendPackets(new S_SkillIconGFX(75, 2));
 			}
 			else if (_pc.hasSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV2))
 			{
 				_pc.killSkillEffectTimer(STATUS_WEAKNESS_EXPOSURE_LV2);
 				_pc.removeSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV2);
-				_pc.setSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV3, 15000);
+				_pc.setSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV3, 15000 ,0);
 				_pc.sendPackets(new S_SkillIconGFX(75, 3));
 			}
 			else
 			{
-				_pc.setSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV1, 15000);
+				_pc.setSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV1, 15000 ,0);
 				_pc.sendPackets(new S_SkillIconGFX(75, 1));
 			}
 		}
@@ -1910,6 +1906,9 @@ public class L1Attack
 	// ●●●● 武器の属性強化による追加ダメージ算出 ●●●●
 	private int calcAttrEnchantDmg()
 	{
+		if(_pc.getWeapon() == null)
+			return 0;
+
 		int damage = 0;
 		L1Weapon weapon = (L1Weapon) _pc.getWeapon().getItem();
 		int dmgModifier = weapon.getDmgModifier();

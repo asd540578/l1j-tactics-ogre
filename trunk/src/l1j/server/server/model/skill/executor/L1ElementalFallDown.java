@@ -70,6 +70,6 @@ public class L1ElementalFallDown extends L1BuffSkillExecutorImpl {
 		int skillId = _skill.getSkillId();
 		int remainingTime = pc.getSkillEffectTimeSec(skillId);
 		return new L1CharacterBuff(pc.getId(), skillId, remainingTime, 0, pc
-				.getAddAttrKind());
+				.getAddAttrKind() ,0);
 	}
 }

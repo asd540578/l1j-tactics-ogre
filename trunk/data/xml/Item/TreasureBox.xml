@@ -6,100 +6,100 @@
 	<!-- 上級トロフィー（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60186">
 		<Item ItemId="60201" Count="1" Chance="40" /> <!-- 武器の箱（ランクＡ） -->		
-		<Item ItemId="60206" Count="1" Chance="40" /> <!-- 防具の箱（ランクＡ） -->		
-		<Item ItemId="60185" Count="50" Chance="20" /> <!-- ゴート -->		
+		<Item ItemId="60206" Count="1" Chance="50" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60185" Count="50" Chance="10" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60187">
 		<Item ItemId="60201" Count="1" Chance="25" /> <!-- 武器の箱（ランクＡ） -->		
-		<Item ItemId="60206" Count="1" Chance="25" /> <!-- 防具の箱（ランクＡ） -->		
-		<Item ItemId="60185" Count="40" Chance="50" /> <!-- ゴート -->		
+		<Item ItemId="60206" Count="1" Chance="35" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60185" Count="40" Chance="40" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＡ） -->
 	<TreasureBox Type="RANDOM" ItemId="60188">
 		<Item ItemId="60201" Count="1" Chance="10" /> <!-- 武器の箱（ランクＡ） -->		
-		<Item ItemId="60206" Count="1" Chance="10" /> <!-- 防具の箱（ランクＡ） -->		
-		<Item ItemId="60185" Count="30" Chance="80" /> <!-- ゴート -->		
+		<Item ItemId="60206" Count="1" Chance="20" /> <!-- 防具の箱（ランクＡ） -->		
+		<Item ItemId="60185" Count="30" Chance="70" /> <!-- ゴート -->		
 	</TreasureBox>
 	
 
 	<!-- 上級トロフィー（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60189">
 		<Item ItemId="60202" Count="1" Chance="40" /> <!-- 武器の箱（ランクＢ） -->		
-		<Item ItemId="60207" Count="1" Chance="40" /> <!-- 防具の箱（ランクＢ） -->		
-		<Item ItemId="60185" Count="40" Chance="20" /> <!-- ゴート -->		
+		<Item ItemId="60207" Count="1" Chance="50" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60185" Count="40" Chance="10" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60190">
 		<Item ItemId="60202" Count="1" Chance="25" /> <!-- 武器の箱（ランクＢ） -->		
-		<Item ItemId="60207" Count="1" Chance="25" /> <!-- 防具の箱（ランクＢ） -->		
-		<Item ItemId="60185" Count="30" Chance="50" /> <!-- ゴート -->		
+		<Item ItemId="60207" Count="1" Chance="35" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60185" Count="30" Chance="40" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＢ） -->
 	<TreasureBox Type="RANDOM" ItemId="60191">
 		<Item ItemId="60202" Count="1" Chance="10" /> <!-- 武器の箱（ランクＢ） -->		
-		<Item ItemId="60207" Count="1" Chance="10" /> <!-- 防具の箱（ランクＢ） -->		
-		<Item ItemId="60185" Count="20" Chance="80" /> <!-- ゴート -->		
+		<Item ItemId="60207" Count="1" Chance="20" /> <!-- 防具の箱（ランクＢ） -->		
+		<Item ItemId="60185" Count="20" Chance="70" /> <!-- ゴート -->		
 	</TreasureBox>
 	
 
 	<!-- 上級トロフィー（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60192">
 		<Item ItemId="60203" Count="1" Chance="40" /> <!-- 武器の箱（ランクＣ） -->		
-		<Item ItemId="60208" Count="1" Chance="40" /> <!-- 防具の箱（ランクＣ） -->		
-		<Item ItemId="60185" Count="30" Chance="20" /> <!-- ゴート -->		
+		<Item ItemId="60208" Count="1" Chance="50" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60185" Count="20" Chance="10" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60193">
 		<Item ItemId="60203" Count="1" Chance="25" /> <!-- 武器の箱（ランクＣ） -->		
-		<Item ItemId="60208" Count="1" Chance="25" /> <!-- 防具の箱（ランクＣ） -->		
-		<Item ItemId="60185" Count="20" Chance="50" /> <!-- ゴート -->		
+		<Item ItemId="60208" Count="1" Chance="35" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60185" Count="15" Chance="40" /> <!-- ゴート -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＣ） -->
 	<TreasureBox Type="RANDOM" ItemId="60194">
 		<Item ItemId="60203" Count="1" Chance="10" /> <!-- 武器の箱（ランクＣ） -->		
-		<Item ItemId="60208" Count="1" Chance="10" /> <!-- 防具の箱（ランクＣ） -->		
-		<Item ItemId="60185" Count="2" Chance="80" /> <!-- ゴート -->		
+		<Item ItemId="60208" Count="1" Chance="20" /> <!-- 防具の箱（ランクＣ） -->		
+		<Item ItemId="60185" Count="5" Chance="70" /> <!-- ゴート -->		
 	</TreasureBox>
 	
 
 	<!-- 上級トロフィー（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60195">
 		<Item ItemId="60204" Count="1" Chance="40" /> <!-- 武器の箱（ランクＤ） -->		
-		<Item ItemId="60209" Count="1" Chance="40" /> <!-- 防具の箱（ランクＤ） -->		
-		<Item ItemId="60110" Count="1" Chance="20" /> <!-- 雑鉱石 -->		
+		<Item ItemId="60209" Count="1" Chance="50" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60110" Count="1" Chance="10" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60196">
 		<Item ItemId="60204" Count="1" Chance="25" /> <!-- 武器の箱（ランクＤ） -->		
-		<Item ItemId="60209" Count="1" Chance="25" /> <!-- 防具の箱（ランクＤ） -->		
-		<Item ItemId="60110" Count="1" Chance="50" /> <!-- 雑鉱石 -->		
+		<Item ItemId="60209" Count="1" Chance="35" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60110" Count="1" Chance="40" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＤ） -->
 	<TreasureBox Type="RANDOM" ItemId="60197">
 		<Item ItemId="60204" Count="1" Chance="10" /> <!-- 武器の箱（ランクＤ） -->		
-		<Item ItemId="60209" Count="1" Chance="10" /> <!-- 防具の箱（ランクＤ） -->		
-		<Item ItemId="60110" Count="1" Chance="80" /> <!-- 雑鉱石 -->		
+		<Item ItemId="60209" Count="1" Chance="20" /> <!-- 防具の箱（ランクＤ） -->		
+		<Item ItemId="60110" Count="1" Chance="70" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 
 
 	<!-- 上級トロフィー（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60198">
 		<Item ItemId="60205" Count="1" Chance="40" /> <!-- 武器の箱（ランクＥ） -->		
-		<Item ItemId="60210" Count="1" Chance="40" /> <!-- 防具の箱（ランクＥ） -->		
-		<Item ItemId="60110" Count="1" Chance="20" /> <!-- 雑鉱石 -->		
+		<Item ItemId="60210" Count="1" Chance="50" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60110" Count="1" Chance="10" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 中級トロフィー（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60199">
 		<Item ItemId="60205" Count="1" Chance="25" /> <!-- 武器の箱（ランクＥ） -->		
-		<Item ItemId="60210" Count="1" Chance="25" /> <!-- 防具の箱（ランクＥ） -->		
-		<Item ItemId="60110" Count="1" Chance="50" /> <!-- 雑鉱石 -->		
+		<Item ItemId="60210" Count="1" Chance="35" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60110" Count="1" Chance="40" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 	<!-- 下級トロフィー（ランクＥ） -->
 	<TreasureBox Type="RANDOM" ItemId="60200">
 		<Item ItemId="60205" Count="1" Chance="10" /> <!-- 武器の箱（ランクＥ） -->		
-		<Item ItemId="60210" Count="1" Chance="10" /> <!-- 防具の箱（ランクＥ） -->		
-		<Item ItemId="60110" Count="1" Chance="80" /> <!-- 雑鉱石 -->		
+		<Item ItemId="60210" Count="1" Chance="20" /> <!-- 防具の箱（ランクＥ） -->		
+		<Item ItemId="60110" Count="1" Chance="70" /> <!-- 雑鉱石 -->		
 	</TreasureBox>
 
 
@@ -303,10 +303,8 @@
 		<Item ItemId="30805"  Count="1" Chance="2" /> <!-- 敏速の指輪-->
 		<Item ItemId="30806"  Count="1" Chance="2" /> <!-- 忌避の指輪-->
 		<Item ItemId="30807"  Count="1" Chance="2" /> <!-- 知性の指輪-->
-		<Item ItemId="30808"  Count="1" Chance="1" /> <!-- 精神の指輪-->
-		<Item ItemId="30809"  Count="1" Chance="1" /> <!-- 障魔の指輪-->
-		<Item ItemId="30810"  Count="1" Chance="1" /> <!-- 幸運の指輪-->
-		<Item ItemId="30813"  Count="1" Chance="1" /> <!-- ワープリング-->
+		<Item ItemId="30808"  Count="1" Chance="2" /> <!-- 精神の指輪-->
+		<Item ItemId="30809"  Count="1" Chance="2" /> <!-- 障魔の指輪-->
 		<Item ItemId="30904"  Count="1" Chance="1" /> <!-- オリハルコンベルト-->
 		<Item ItemId="30906"  Count="1" Chance="1" /> <!-- 炎のオーブ-->
 		<Item ItemId="30907"  Count="1" Chance="1" /> <!-- 水のオーブ-->

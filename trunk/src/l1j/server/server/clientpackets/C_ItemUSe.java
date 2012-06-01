@@ -176,6 +176,10 @@ public class C_ItemUSe extends ClientBasePacket
 			return;
 		}
 		L1ItemInstance l1iteminstance = pc.getInventory().getItem(itemObjid);
+		if(l1iteminstance == null)
+		{
+			return;
+		}
 
 		if (l1iteminstance.getItem().getUseType() == -1)
 		{ // none:使用できないアイテム
@@ -1252,6 +1256,7 @@ public class C_ItemUSe extends ClientBasePacket
 					{
 						pc.sendPackets(new S_ServerMessage(79)); // \f1何も起きませんでした。
 					}
+					
 					pc.getInventory().removeItem(l1iteminstance, 1);
 				}
 				else if (itemId == 49158)
@@ -3176,7 +3181,7 @@ public class C_ItemUSe extends ClientBasePacket
 						|| itemId == 49044 || itemId == 49045
 						|| itemId == 49046 || itemId == 49047)
 				{
-					pc.getInventory().removeItem(l1iteminstance, 1);
+//					pc.getInventory().removeItem(l1iteminstance, 1);
 					// XXX 食べ物毎の満腹度(100単位で変動)
 					short foodvolume1 = (short) (l1iteminstance.getItem()
 							.getFoodVolume() / 10);
@@ -5149,6 +5154,19 @@ public class C_ItemUSe extends ClientBasePacket
 		// アブソルート バリアの解除
 		cancelAbsoluteBarrier(pc);
 
+		if (item_id == L1ItemId.POTION_OF_EMOTION_BRAVERY
+			|| item_id == L1ItemId.B_POTION_OF_EMOTION_BRAVERY
+			|| item_id == 49158 || item_id == 40068 || item_id == 140068
+			|| item_id == 40031 || item_id == 40733
+		)
+		if (pc.hasSkillEffect(HOLY_WALK))
+		{ // ホーリーウォークとは重複しない
+			pc.killSkillEffectTimer(HOLY_WALK);
+			pc.sendPackets(new S_SkillBrave(pc.getId(), 0, 0));
+			pc.broadcastPacket(new S_SkillBrave(pc.getId(), 0, 0));
+			pc.setBraveSpeed(0);
+		}
+		
 		int time = 0;
 		if (item_id == L1ItemId.POTION_OF_EMOTION_BRAVERY)
 		{ // ブレイブ ポーション

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <BossCycleList>
 	<!-- Baseは基準日を指定する場合に使用。省略時はDate=サーバ起動日,Time=0:00 -->
 	<!-- Cycleは周期を指定する。(それぞれ日、時、分の組み合わせで指定可能)  -->
@@ -9,6 +9,10 @@
 			<Cycle Period="1d2h31m" Start="3h30m" End="1d5m" />
 		</BossCycle>
 	-->
+	<BossCycle Name="FF">
+		<Base Date="2008/5/18" Time="0:00" />
+		<Cycle Period="2h" Start="30m"/>
+	</BossCycle>
 	<BossCycle Name="DK">
 		<Base Date="2008/5/18" Time="0:00" />
 		<Cycle Period="7h" Start="3h30m"/>

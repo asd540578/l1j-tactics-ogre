@@ -64,9 +64,9 @@ public class L1DescribeNPC implements L1CommandExecutor
 			msg.append(" " + BR);
 			msg.append("名前:" + npc.get_name() + (npc.getBoss()? "(ボス)" : "") + BR);
 			msg.append("所属:" + npc.get_family() + BR);
-			msg.append("レベル:" + npc.get_level() + "(" + npc.get_randomlevel() + ")" + BR);
-			msg.append("性向値:" + npc.get_lawful() + "(" + npc.get_randomlawful() + ")" + BR);
-			msg.append("経験値:" + npc.get_exp() + "(" + npc.get_randomexp() + ")" + BR);
+			msg.append("レベル:" + npc.get_level() + "(±" + npc.get_randomlevel() + ")" + BR);
+			msg.append("性向値:" + npc.get_lawful() + "(±" + npc.get_randomlawful() + ")" + BR);
+			msg.append("経験値:" + npc.get_exp() + "(±" + npc.get_randomexp() + ")" + BR);
 			msg.append("NPCID:" + npc.get_npcId() + BR);
 			msg.append("GFXID:" + npc.get_gfxid() + BR);
 			msg.append("S/B:" + npc.get_size());
@@ -81,42 +81,31 @@ public class L1DescribeNPC implements L1CommandExecutor
 			msg.append("CON:" + npc.get_con() + " ");
 			msg.append("WIS:" + npc.get_wis() + " ");
 			msg.append(" " + BR);
-			msg.append("AC:" + npc.get_ac() + "(" + npc.get_randomac() + ") ");
+			msg.append("AC:" + npc.get_ac() + "(±" + npc.get_randomac() + ") ");
 			msg.append("MR:" + npc.get_mr() + " ");
 			msg.append(" " + BR);
-			msg.append("HP: " + npc.get_hp() + "(" + npc.get_randomhp() + ") ");
-			msg.append("MP: " + npc.get_mp() + "(" + npc.get_randommp() + ") ");
+			msg.append("HP: " + npc.get_hp() + "(±" + npc.get_randomhp() + ") ");
+			msg.append("MP: " + npc.get_mp() + "(±" + npc.get_randommp() + ") ");
 			msg.append(" " + BR);
-			msg.append("HPR: " + npc.get_hpr() + "(" + npc.get_hprinterval() + "msec) ");
-			msg.append("MPR: " + npc.get_mpr() + "(" + npc.get_mprinterval() + "msec) ");
+			msg.append("HPR: " + npc.get_hpr() + "(" + npc.get_hprinterval() / (double)1000.0+ "秒) ");
+			msg.append("MPR: " + npc.get_mpr() + "(" + npc.get_mprinterval() / (double)1000.0+ "秒) ");
 			msg.append(" " + BR + BR);
 			msg.append("攻撃速度:" + npc.get_atkspeed() + BR);
 			msg.append("攻撃速度（補助）:" + npc.getAltAtkSpeed() + BR);
 			msg.append("魔法速度:" + npc.getAtkMagicSpeed() + BR);
 			msg.append("魔法速度（補助）:" + npc.getSubMagicSpeed() + BR);
-			msg.append("軽減ダメージ:" + npc.get_damagereduction() + BR);
-
-			msg.append("攻撃距離:" + npc.get_ranged() + BR);
-			msg.append("TU:" + ((npc.get_IsTU() == true)? "可" : "不可") + BR);
-			msg.append("Erase:" + ((npc.get_IsErase() == true)? "可" : "不可") + BR);
-			msg.append("家族とアクティブ:" + npc.get_agrofamily() + BR);
-			msg.append("麻痺攻撃:" + npc.get_paralysisatk() + BR);
 			msg.append("移動速度:" + npc.get_passispeed() + BR);
+			msg.append("軽減ダメージ:" + npc.get_damagereduction() + BR);
+			msg.append("攻撃距離:" + npc.get_ranged() + BR);
+			msg.append("ターンアンデット:" + ((npc.get_IsTU() == true)? "可" : "不可") + BR);
+			msg.append("イレース:" + ((npc.get_IsErase() == true)? "可" : "不可") + BR);
+			msg.append("麻痺攻撃:" + npc.get_paralysisatk() + BR);
 			msg.append("毒攻撃:" + npc.get_poisonatk() + BR);
 			msg.append(" " + BR);
-			npc.get_size();
 			msg.append("種別:" + ((npc.get_undead() == 1)? "アンデット" : "通常") + BR);
 			msg.append("弱点属性:" + Attribute.getAttribute(npc.get_weakAttr()) + BR);
 			msg.append(" " + BR);
-			msg.append("リーダーチェンジ:" + npc.getChangeHead() + BR);
-			msg.append("実体:" + npc.getImpl() + BR);
-			msg.append("カルマ:" + npc.getKarma() + BR);
-			msg.append("変身グラフィック:" + npc.getTransformGfxId() + BR);
-			msg.append("変身先:" + npc.getTransformId() + BR);
-			msg.append("ライトサイズ:" + npc.getLightSize() + BR);
-			msg.append(" " + BR);
-
-			msg.append("スキル" + BR);
+			msg.append("[スキル]" + BR);
 			int count = 0;
 			for(int i = 0; i < skills.size();++i)
 			{

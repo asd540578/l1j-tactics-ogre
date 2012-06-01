@@ -3452,12 +3452,12 @@ public class L1PcInstance extends L1Character
 		{ // 指定レベル
 			if (getMapId() == 777)
 			{ // 見捨てられた者たちの地(影の神殿)
-				L1Teleport.teleport(this, 34043, 32184, (short) 4, 5, true); // 象牙の塔前
+			//	L1Teleport.teleport(this, 34043, 32184, (short) 4, 5, true); // 象牙の塔前
 			}
 			else if (getMapId() == 778 || getMapId() == 779)
 			{
 				// 見捨てられた者たちの地、欲望の洞窟)
-				L1Teleport.teleport(this, 32608, 33178, (short) 4, 5, true); // WB
+			//	L1Teleport.teleport(this, 32608, 33178, (short) 4, 5, true); // WB
 			}
 		}
 	}

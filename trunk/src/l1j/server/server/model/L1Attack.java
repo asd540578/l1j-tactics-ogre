@@ -1309,7 +1309,7 @@ public class L1Attack
 		}
 		else
 		{
-			weaponDamage = _random.nextInt(weaponMaxDamage) + 1;
+			weaponDamage = _random.nextInt(weaponMaxDamage+1) + 1;
 		}
 		if (_pc.hasSkillEffect(SOUL_OF_FLAME))
 		{

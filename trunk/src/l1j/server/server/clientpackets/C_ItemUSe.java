@@ -1256,7 +1256,7 @@ public class C_ItemUSe extends ClientBasePacket
 					{
 						pc.sendPackets(new S_ServerMessage(79)); // \f1何も起きませんでした。
 					}
-					
+
 					pc.getInventory().removeItem(l1iteminstance, 1);
 				}
 				else if (itemId == 49158)
@@ -3148,6 +3148,12 @@ public class C_ItemUSe extends ClientBasePacket
 				}
 				else if (itemId >= 60151 && itemId <= 60184)
 				{
+					L1Skill _skill = SkillTable.getInstance().findBySkillId(L1SkillId.ABSOLUTE_BARRIER);
+					pc.setSkillEffect(L1SkillId.ABSOLUTE_BARRIER, 8000, 0);
+					_skill.newBuffSkillExecutor().addEffect(pc, pc, 0);
+					int castgfx = _skill.getCastGfx();
+					pc.sendPackets(new S_SkillSound(pc.getId(), castgfx));
+					pc.broadcastPacket(new S_SkillSound(pc.getId(),castgfx));
 					useToiTeleportAmulet(pc, itemId, l1iteminstance);
 					/* t.s add end 2011.08.20 */
 				}
@@ -5154,6 +5160,7 @@ public class C_ItemUSe extends ClientBasePacket
 		// アブソルート バリアの解除
 		cancelAbsoluteBarrier(pc);
 
+		// t.s バグ対応
 		if (item_id == L1ItemId.POTION_OF_EMOTION_BRAVERY
 			|| item_id == L1ItemId.B_POTION_OF_EMOTION_BRAVERY
 			|| item_id == 49158 || item_id == 40068 || item_id == 140068
@@ -5166,7 +5173,7 @@ public class C_ItemUSe extends ClientBasePacket
 			pc.broadcastPacket(new S_SkillBrave(pc.getId(), 0, 0));
 			pc.setBraveSpeed(0);
 		}
-		
+
 		int time = 0;
 		if (item_id == L1ItemId.POTION_OF_EMOTION_BRAVERY)
 		{ // ブレイブ ポーション

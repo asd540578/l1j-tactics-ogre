@@ -74,6 +74,8 @@ class CharStatusCommand implements TelnetCommand {
 		result.append("CurrentHp: " + cha.getCurrentHp() + "\r\n");
 		result.append("MaxMp: " + cha.getMaxMp() + "\r\n");
 		result.append("CurrentMp: " + cha.getCurrentMp() + "\r\n");
+		result.append("STR INT DEX AC :"
+				+ cha.getStr() + " ," + cha.getDex() + " ," + cha.getInt() + cha.getAc());;
 		return new TelnetCommandResult(CMD_OK, result.toString());
 	}
 }

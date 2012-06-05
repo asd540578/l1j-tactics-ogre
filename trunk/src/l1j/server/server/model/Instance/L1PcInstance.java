@@ -3247,8 +3247,23 @@ public class L1PcInstance extends L1Character
 
 	public void setRegenState(int state)
 	{
-		_mpRegen.setState(state);
-		_hpRegen.setState(state);
+		if(_mpRegen == null)
+		{
+			_mpRegen = new MpRegeneration(this);
+		}
+		else
+		{
+			_mpRegen.setState(state);
+		}
+
+		if(_hpRegen == null)
+		{
+			_hpRegen = new HpRegeneration(this);
+		}
+		else
+		{
+			_hpRegen.setState(state);
+		}
 	}
 
 	public double getMaxWeight()

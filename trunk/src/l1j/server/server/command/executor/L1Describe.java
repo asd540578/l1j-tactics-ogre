@@ -21,11 +21,9 @@ package l1j.server.server.command.executor;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import l1j.server.server.datatables.NpcTable;
-import l1j.server.server.model.Attribute;
+import l1j.server.server.model.L1World;
 import l1j.server.server.model.Instance.L1PcInstance;
 import l1j.server.server.serverpackets.S_SystemMessage;
-import l1j.server.server.templates.L1Npc;
 
 public class L1Describe implements L1CommandExecutor
 {
@@ -43,6 +41,80 @@ public class L1Describe implements L1CommandExecutor
 	@Override
 	public void execute(L1PcInstance pc, String cmdName, String arg)
 	{
+		if(pc.isGm())
+		{
+			try
+			{
+				StringTokenizer st = new StringTokenizer(arg);
+				L1PcInstance cha = L1World.getInstance().getPlayer(st.nextToken());
+				if(cha == null)
+				{
+					return;
+				}
+				StringBuilder msg = new StringBuilder();
+				final String BR = System.getProperty("line.separator");
+
+				int hpr = 0, mpr = 0;
+				hpr = cha.getHpr() + cha.getInventory().hpRegenPerTick();
+				mpr = cha.getMpr() + cha.getInventory().mpRegenPerTick();
+
+				msg.append("-- キャラクター --" + BR);
+				msg.append(" " + BR);
+				msg.append("名前:" + cha.getName() + BR);
+				msg.append("所属クラン:" + cha.getClanname() + BR);
+				msg.append("所持アイテム数:" + cha.getInventory().getSize() + BR);
+				msg.append("エリクサー使用回数:" + cha.getElixirStats() + BR);
+				msg.append(" "+ BR);
+
+				msg.append("-- ステータス --" + BR);
+				msg.append(" " + BR);
+				msg.append("STR:" + cha.getStr() + " ");
+				msg.append("DEX:" + cha.getDex() + " ");
+				msg.append("INT:" + cha.getInt() + " ");
+				msg.append(" " + BR);
+				msg.append("CON:" + cha.getCon() + " ");
+				msg.append("WIS:" + cha.getWis() + " ");
+				msg.append("CHA:" + cha.getCha() + " ");
+				msg.append(" " + BR);
+				msg.append("AC:" + cha.getAc() + " ");
+				msg.append("MR:" + cha.getMr() + " ");
+				msg.append("SP:" + cha.getSp() + " ");
+				msg.append("ER:" + cha.getEr() + " ");
+				msg.append(" " + BR);
+				msg.append("HPR: " + hpr + " ");
+				msg.append("MPR: " + mpr + " ");
+				msg.append("Karma:" + cha.getKarma() + " ");
+				msg.append(" " + BR + BR);
+				msg.append("近距離ダメージ:" + cha.getDmgup() + " ");
+				msg.append("近距離命中:" + cha.getHitup() + " ");
+				msg.append(" " + BR);
+				msg.append("遠距離ダメージ:" + cha.getBowDmgup() + " ");
+				msg.append("遠距離命中:" + cha.getBowHitup() + " ");
+				msg.append(" " + BR);
+				msg.append("軽減ダメージ:" + cha.getDamageReductionByArmor() + " / ");
+				msg.append(" " + BR + BR);
+				msg.append("凍結耐性:" + cha.getRegistFreeze() + " ");
+				msg.append("スタン耐性:" + cha.getRegistStun() + " ");
+				msg.append(" " + BR);
+				msg.append("石化耐性:" + cha.getRegistStone() + " ");
+				msg.append("睡眠耐性:" + cha.getRegistSleep() + " ");
+				msg.append(" " + BR);
+				msg.append("ホールド耐性:" + cha.getRegistSustain() + " ");
+				msg.append("暗闇耐性:" + cha.getRegistBlind() + " ");
+				msg.append(" " + BR + BR);
+				msg.append("火耐性:" + cha.getFire());
+				msg.append("水耐性:" + cha.getWater());
+				msg.append("土耐性:" + cha.getEarth());
+				msg.append("風耐性:" + cha.getWind());
+				msg.append(" " + BR + BR);
+
+				pc.sendPackets(new S_SystemMessage(msg.toString()));
+			}
+			catch (Exception e)
+			{
+				pc.sendPackets(new S_SystemMessage(cmdName + " コマンドエラー"));
+			}
+		}
 		try
 		{
 			StringBuilder msg = new StringBuilder();

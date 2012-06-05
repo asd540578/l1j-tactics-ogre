@@ -149,6 +149,10 @@ public class L1AddSkill implements L1CommandExecutor {
 				{
 					L1Skill l1skills = SkillTable.getInstance().findBySkillId(
 							cnt); // スキル情報を取得
+					if(l1skills == null) // スキルが存在しない場合は次へ進む
+					{
+						continue;
+					}
 					skill_name = l1skills.getName();
 					skill_id = l1skills.getSkillId();
 					SkillTable.getInstance().spellMastery(object_id, skill_id,

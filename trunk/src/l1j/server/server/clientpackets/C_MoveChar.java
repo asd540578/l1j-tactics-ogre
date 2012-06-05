@@ -53,6 +53,7 @@ public class C_MoveChar extends ClientBasePacket {
 	}
 
 	// 移動
+	@SuppressWarnings("unused")
 	public C_MoveChar(byte decrypt[], ClientThread client)
 			throws Exception {
 		super(decrypt);
@@ -81,9 +82,10 @@ public class C_MoveChar extends ClientBasePacket {
 		pc.killSkillEffectTimer(MEDITATION);
 		pc.setCallClanId(0); // コールクランを唱えた後に移動すると召喚無効
 
-		if (!pc.hasSkillEffect(ABSOLUTE_BARRIER)) { // アブソルートバリア中ではない
-			pc.setRegenState(REGENSTATE_MOVE);
-		}
+   		if (!pc.hasSkillEffect(ABSOLUTE_BARRIER)) { // アブソルートバリア中ではない
+   			pc.setRegenState(REGENSTATE_MOVE);
+   		}
+
 		pc.getMap().setPassable(pc.getLocation(), true);
 
 		if (CLIENT_LANGUAGE == 3) { // Taiwan Only

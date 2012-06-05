@@ -841,7 +841,7 @@ public class C_NPCAction extends ClientBasePacket {
 				pc.sendPackets(new S_SelectTarget(cha.getId()));
 			}
 		} else if (s.equalsIgnoreCase("select")) { // 競売掲示板のリストをクリック
-			pc.sendPackets(new S_AuctionBoardRead(objid, s2));
+		//	pc.sendPackets(new S_AuctionBoardRead(objid, s2));
 		} else if (s.equalsIgnoreCase("map")) { // アジトの位置を確かめる
 			pc.sendPackets(new S_HouseMap(objid, s2));
 		} else if (s.equalsIgnoreCase("apply")) { // 競売に参加する

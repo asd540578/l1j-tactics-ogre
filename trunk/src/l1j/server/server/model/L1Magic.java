@@ -323,16 +323,23 @@ public class L1Magic {
 			}
 		}
 
-		// アースバインド中はWB、キャンセレーション以外無効
+		// WBかカーパラはMOB相手には無効
+		if (skillId == WEAPON_BREAK || skillId == CURSE_PARALYZE) {
+			if(_calcType == PC_NPC)
+			{
+				return false;
+			}
+		}
+		// アースバインド中はキャンセレーション以外無効
 		if (_calcType == PC_PC || _calcType == NPC_PC) {
 			if (_targetPc.hasSkillEffect(EARTH_BIND)) {
-				if (skillId != WEAPON_BREAK && skillId != CANCELLATION) {
+				if (skillId != CANCELLATION) {
 					return false;
 				}
 			}
 		} else {
 			if (_targetNpc.hasSkillEffect(EARTH_BIND)) {
-				if (skillId != WEAPON_BREAK && skillId != CANCELLATION) {
+				if (skillId != CANCELLATION) {
 					return false;
 				}
 			}
@@ -343,6 +350,14 @@ public class L1Magic {
 		int rnd = _random.nextInt(100) + 1;
 		if (probability > 90) {
 			probability = 90; // 最高成功率を90%とする。
+		}
+
+		if(_calcType == PC_PC)
+		{
+			if(probability < 4)
+			{
+				probability = 4;
+			}
 		}
 
 		if (probability >= rnd) {
@@ -554,7 +569,7 @@ public class L1Magic {
 					diceCount = getMagicBonus() + getMagicLevel() - 1;
 				}
 			} else {
-				diceCount = getMagicBonus() + getMagicLevel();
+				diceCount = Math.min(getMagicBonus(),18) + getMagicLevel();
 			}
 			if (diceCount < 1) {
 				diceCount = 1;
@@ -570,7 +585,15 @@ public class L1Magic {
 				probability += 2 * _pc.getOriginalMagicHit();
 			}
 
-			probability -= getTargetMr();
+			if(getTargetMr() >= 160)
+			{
+				probability -= 160;
+				probability -= (getTargetMr() - 160) / 6;
+			}
+			else
+			{
+				probability -= getTargetMr();
+			}
 
 			if (skillId == TAMING_MONSTER) {
 				double probabilityRevision = 1;

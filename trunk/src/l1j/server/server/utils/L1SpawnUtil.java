@@ -105,7 +105,7 @@ public class L1SpawnUtil {
 			L1World.getInstance().addVisibleObject(mob);
 			L1Object object = L1World.getInstance().findObject(mob.getId());
 			L1MonsterInstance newnpc = (L1MonsterInstance) object;
-			newnpc.set_storeDroped(true); // 召喚されたモンスターはドロップ無し
+			newnpc.set_storeDroped(false); // 召喚されたモンスターはドロップ無し
 			if (summonId == 45061 // カーズドスパルトイ
 					|| summonId == 45161 // スパルトイ
 					|| summonId == 45181 // スパルトイ

@@ -292,7 +292,6 @@
 		<Item ItemId="30513"  Count="1" Chance="2" /> <!-- ジィルガの魔手-->
 		<Item ItemId="30606"  Count="1" Chance="2" /> <!-- メイジトラウザ-->
 		<Item ItemId="30610"  Count="1" Chance="2" /> <!-- フロートシューズ-->
-		<Item ItemId="30611"  Count="1" Chance="2" /> <!-- ワープシューズ-->
 		<Item ItemId="30613"  Count="1" Chance="2" /> <!-- プレーテルブーツ-->
 		<Item ItemId="30616"  Count="1" Chance="2" /> <!-- スナイパーゲートル-->
 		<Item ItemId="30800"  Count="1" Chance="2" /> <!-- 戦士の指輪-->
@@ -317,8 +316,8 @@
 		<Item ItemId="31011"  Count="1" Chance="1" /> <!-- 文豪のピアス-->
 		<Item ItemId="31012"  Count="1" Chance="1" /> <!-- 恋歌のピアス-->
 		<Item ItemId="31014"  Count="1" Chance="1" /> <!-- 狩人のピアス-->
-		<Item ItemId="31108"  Count="1" Chance="1" /> <!-- 青光の首飾り-->
-		<Item ItemId="31109"  Count="1" Chance="1" /> <!-- 紅光の首飾り-->
+		<Item ItemId="31108"  Count="1" Chance="2" /> <!-- 青光の首飾り-->
+		<Item ItemId="31109"  Count="1" Chance="2" /> <!-- 紅光の首飾り-->
 	</TreasureBox>
 
 	<!-- 防具の箱（ランクＢ） -->

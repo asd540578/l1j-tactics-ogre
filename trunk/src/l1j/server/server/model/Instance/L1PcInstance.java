@@ -116,6 +116,7 @@ import l1j.server.server.serverpackets.S_CharVisualUpdate;
 import l1j.server.server.serverpackets.S_Disconnect;
 import l1j.server.server.serverpackets.S_DoActionGFX;
 import l1j.server.server.serverpackets.S_DoActionShop;
+import l1j.server.server.serverpackets.S_Emblem;
 import l1j.server.server.serverpackets.S_Exp;
 import l1j.server.server.serverpackets.S_Fishing;
 import l1j.server.server.serverpackets.S_HPMeter;
@@ -602,9 +603,9 @@ public class L1PcInstance extends L1Character
 	public void sendVisualEffectAtLogin()
 	{
 		// S_Emblemの送信はC_Clanに移行
-		// for (L1Clan clan : L1World.getInstance().getAllClans()) {
-		// sendPackets(new S_Emblem(clan.getClanId()));
-		// }
+		for (L1Clan clan : L1World.getInstance().getAllClans()) {
+		sendPackets(new S_Emblem(clan.getClanId()));
+		}
 
 		if (getClanid() != 0)
 		{ // クラン所属
@@ -6202,6 +6203,18 @@ public class L1PcInstance extends L1Character
 	public boolean getPotLog()
 	{
 		return _Potlog;
+	}
+
+	private boolean _PartyDroplog = true;
+
+	public void setPartyDropLog(boolean i)
+	{
+		_PartyDroplog = i;
+	}
+
+	public boolean getPartyDropLog()
+	{
+		return _PartyDroplog;
 	}
 
 	private boolean _Droplog = true;

@@ -1523,12 +1523,14 @@ public class L1Character extends L1Object {
 			return 19;
 		} else if (i <= 50) {
 			return 21;
-		} else if(i <= 53)
+		} else if (i <= 52) {
+			return 23;
+		} else if(i <= 57)
 		{
-			return i - 22; //52-30=22
+			return i - 24; // 53-24=29
 		}
 		else {
-			return 30;
+			return 33;
 		}
 	}
 

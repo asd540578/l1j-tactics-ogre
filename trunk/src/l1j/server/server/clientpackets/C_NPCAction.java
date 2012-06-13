@@ -4403,14 +4403,14 @@ public class C_NPCAction extends ClientBasePacket {
 			htmlid = "";
 		} else if ((((L1NpcInstance) obj).getNpcTemplate().get_npcId() >= 81353)
 				&& (((L1NpcInstance) obj).getNpcTemplate().get_npcId() <= 81363)) {
-			int[] skills = new int[10];
+			int[] skills = new int[7];
 			char s1 = s.charAt(0);
 			switch(s1){
 			case 'b':
-				skills = new int[] {43, 79, 151, 158, 160, 206, 211, 216, 115, 149};
+				skills = new int[] {43, 79, 158, 160, 206,  115, 149};
 				break;
 			case 'a':
-				skills = new int[] {43, 79, 151, 158, 160, 206, 211, 216, 115, 148};
+				skills = new int[] {43, 79, 158, 160, 206,  115 ,115};
 				break;
 			}
 			if (s.equalsIgnoreCase("a") || s.equalsIgnoreCase("b")){

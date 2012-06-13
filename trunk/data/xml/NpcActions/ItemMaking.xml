@@ -1,438 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NpcActionList>
-	<!--動物の皮を売る-->
-	<Action Name="request adena2">
-		<MakeItem>
-			<Item Amount="2" ItemId="40308"/>
-			<Material Amount="1" ItemId="40405"/>
-		</MakeItem>
-	</Action>
-	<!--高級皮革を売る-->
-	<Action Name="request adena30">
-		<MakeItem>
-			<Item Amount="30" ItemId="40308"/>
-			<Material Amount="1" ItemId="40406"/>
-		</MakeItem>
-	</Action>
-	<!--ランプメタルを売る-->
-	<Action Name="request adena5">
-		<MakeItem>
-			<Item Amount="5" ItemId="40308"/>
-			<Material Amount="1" ItemId="40408"/>
-		</MakeItem>
-	</Action>
-	<!--ボーンピースを売る-->
-	<Action Name="request adena10">
-		<MakeItem>
-			<Item Amount="10" ItemId="40308"/>
-			<Material Amount="1" ItemId="40407"/>
-		</MakeItem>
-	</Action>
 	<!--ダーク クロスボウ-->
 	<Action Name="request dark crossbow">
 		<MakeItem>
-			<Item Amount="1" ItemId="168"/>
-			<Material Amount="100" ItemId="40321"/>
-			<Material Amount="10" ItemId="40322"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="30" ItemId="40406"/>
+<Item Amount="1" ItemId="612"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ダーク クロウ-->
 	<Action Name="request dark claw">
 		<MakeItem>
-			<Item Amount="1" ItemId="158"/>
-			<Material Amount="100" ItemId="40321"/>
-			<Material Amount="5" ItemId="40322"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="10" ItemId="40406"/>
+<Item Amount="1" ItemId="613"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ダーク デュアルブレード-->
 	<Action Name="request dark dualblade">
 		<MakeItem>
-			<Item Amount="1" ItemId="75"/>
-			<Material Amount="100" ItemId="40321"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="20" ItemId="40406"/>
+<Item Amount="1" ItemId="712"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--シルバー クロウ-->
 	<Action Name="request silver claw">
 		<MakeItem>
-			<Item Amount="1" ItemId="157"/>
-			<Material Amount="1" ItemId="158"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="10" ItemId="40406"/>
-			<Material Amount="40" ItemId="40321"/>
-			<Material Amount="1" ItemId="40323"/>
-			<Material Amount="1" ItemId="40044"/>
-			<Material Amount="30" ItemId="40467"/>
+<Item Amount="1" ItemId="713"/>	<Material Amount="15" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--シルバー デュアルブレード-->
 	<Action Name="request silver dualblade">
 		<MakeItem>
-			<Item Amount="1" ItemId="74"/>
-			<Material Amount="1" ItemId="75"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="20" ItemId="40406"/>
-			<Material Amount="50" ItemId="40321"/>
-			<Material Amount="1" ItemId="40323"/>
-			<Material Amount="1" ItemId="40044"/>
-			<Material Amount="20" ItemId="40467"/>
+<Item Amount="1" ItemId="814"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ブラインド クロスボウ-->
 	<Action Name="request blind crossbow">
 		<MakeItem>
-			<Item Amount="1" ItemId="177"/>
-			<Material Amount="1" ItemId="168"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="30" ItemId="40406"/>
-			<Material Amount="100" ItemId="40322"/>
-			<Material Amount="20" ItemId="40323"/>
+<Item Amount="1" ItemId="815"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ブラインド クロウ-->
 	<Action Name="request blind claw">
 		<MakeItem>
-			<Item Amount="1" ItemId="162"/>
-			<Material Amount="1" ItemId="158"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="10" ItemId="40406"/>
-			<Material Amount="100" ItemId="40322"/>
-			<Material Amount="10" ItemId="40323"/>
+<Item Amount="1" ItemId="917"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ブラインド デュアルブレード-->
 	<Action Name="request blind dualblade">
 		<MakeItem>
-			<Item Amount="1" ItemId="81"/>
-			<Material Amount="1" ItemId="75"/>
-			<Material Amount="10" ItemId="40408"/>
-			<Material Amount="20" ItemId="40406"/>
-			<Material Amount="100" ItemId="40322"/>
-			<Material Amount="5" ItemId="40323"/>
+<Item Amount="1" ItemId="918"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント グレートソード-->
 	<Action Name="request ancient greatsword">
 		<MakeItem>
-			<Item Amount="1" ItemId="67"/>
-			<Material Amount="1" ItemId="17"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="919"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント ソード-->
 	<Action Name="request ancient sword">
 		<MakeItem>
-			<Item Amount="1" ItemId="68"/>
-			<Material Amount="1" ItemId="18"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="1013"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント ボーガン-->
 	<Action Name="request ancient bowgun">
 		<MakeItem>
-			<Item Amount="1" ItemId="182"/>
-			<Material Amount="1" ItemId="167"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="1014"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント プレートメイル-->
 	<Action Name="request ancient plate mail">
 		<MakeItem>
-			<Item Amount="1" ItemId="20095"/>
-			<Material Amount="1" ItemId="20143"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="1113"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント レザーアーマー-->
 	<Action Name="request ancient leather armor">
 		<MakeItem>
-			<Item Amount="1" ItemId="20092"/>
-			<Material Amount="1" ItemId="20140"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="1114"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント ローブ-->
 	<Action Name="request ancient robe">
 		<MakeItem>
-			<Item Amount="1" ItemId="20093"/>
-			<Material Amount="1" ItemId="20141"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="1216"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エンシェント スケイルメイル-->
 	<Action Name="request ancient scale mail">
 		<MakeItem>
-			<Item Amount="1" ItemId="20094"/>
-			<Material Amount="1" ItemId="20142"/>
-			<Material Amount="1" ItemId="40076"/>
+<Item Amount="1" ItemId="1217"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--フェアリーダスト / ネルファ-->
 	<Action Name="request fairydust">
 		<MakeItem>
-			<Item Amount="20" ItemId="40520"/>
-			<Material Amount="1" ItemId="40515"/>
+<Item Amount="1" ItemId="1308"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ボウ / ネルファ-->
 	<Action Name="request bow">
 		<MakeItem>
-			<Item Amount="1" ItemId="172"/>
-			<Material Amount="1" ItemId="40507"/>
-			<Material Amount="5" ItemId="40502"/>
+<Item Amount="1" ItemId="1414"/>	<Material Amount="10" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--エルヴン ボウ / ネルファ-->
 	<Action Name="request elven bow">
 		<MakeItem>
-			<Item Amount="1" ItemId="170"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="2" ItemId="40502"/>
-			<Material Amount="2" ItemId="40504"/>
-			<Material Amount="20" ItemId="40494"/>
+<Item Amount="1" ItemId="1415"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--クロス ボウ / ネルファ-->
 	<Action Name="request crossbow">
 		<MakeItem>
-			<Item Amount="1" ItemId="180"/>
-			<Material Amount="8" ItemId="40521"/>
-			<Material Amount="20" ItemId="40495"/>
-			<Material Amount="30" ItemId="40503"/>
-			<Material Amount="3" ItemId="40509"/>
+<Item Amount="1" ItemId="1507"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ロング ボウ / ネルファ-->
 	<Action Name="request yumi">
 		<MakeItem>
-			<Item Amount="1" ItemId="181"/>
-			<Material Amount="40" ItemId="40495"/>
-			<Material Amount="5" ItemId="40504"/>
-			<Material Amount="1" ItemId="100"/>
-			<Material Amount="6" ItemId="40509"/>
-			<Material Amount="2" ItemId="40051"/>
-			<Material Amount="1" ItemId="40048"/>
+<Item Amount="1" ItemId="30017"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--アロー / ネルファ-->
 	<Action Name="request arrow">
 		<MakeItem>
-			<Item Amount="100" ItemId="40743"/>
-			<Material Amount="10" ItemId="40507"/>
+<Item Amount="1" ItemId="30018"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--ミスリルの矢 / ネルファ-->
 	<Action Name="request mithril arrow">
 		<MakeItem>
-			<Item Amount="2000" ItemId="40746"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="100" ItemId="40494"/>
-			<Material Amount="1" ItemId="40779"/>
+<Item Amount="1" ItemId="30026"/>	<Material Amount="10" ItemId="60117"/>	<Material Amount="20" ItemId="60040"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--オリハルコンアロー / ネルファ-->
 	<Action Name="request oriharukon arrow">
 		<MakeItem>
-			<Item Amount="5000" ItemId="40748"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="100" ItemId="40508"/>
-			<Material Amount="1" ItemId="40779"/>
+<Item Amount="1" ItemId="30119"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン ダガー / ネルファ-->
 	<Action Name="request elven dagger">
 		<MakeItem>
-			<Item Amount="1" ItemId="5"/>
-			<Material Amount="5" ItemId="40507"/>
-			<Material Amount="20" ItemId="40494"/>
+<Item Amount="1" ItemId="30120"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--メイル ブレイカー / ネルファ-->
 	<Action Name="request mail breaker">
 		<MakeItem>
-			<Item Amount="1" ItemId="22"/>
-			<Material Amount="1" ItemId="3"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="50" ItemId="40503"/>
-			<Material Amount="1" ItemId="89"/>
-			<Material Amount="1" ItemId="40044"/>
+<Item Amount="1" ItemId="30121"/>	<Material Amount="5" ItemId="60150"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン ソード / ネルファ-->
 	<Action Name="request elven short sword">
 		<MakeItem>
-			<Item Amount="1" ItemId="28"/>
-			<Material Amount="1" ItemId="19"/>
-			<Material Amount="5" ItemId="40507"/>
-			<Material Amount="50" ItemId="40503"/>
-			<Material Amount="150" ItemId="40494"/>
+<Item Amount="1" ItemId="30122"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--レイピア / ネルファ-->
 	<Action Name="request rapier">
 		<MakeItem>
-			<Item Amount="1" ItemId="42"/>
-			<Material Amount="1" ItemId="20"/>
-			<Material Amount="25" ItemId="40503"/>
-			<Material Amount="50" ItemId="40508"/>
-			<Material Amount="2" ItemId="40521"/>
-			<Material Amount="1" ItemId="40049"/>
+<Item Amount="1" ItemId="30216"/>	<Material Amount="5" ItemId="60117"/>	<Material Amount="20" ItemId="60134"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--ギサルメ / ネルファ-->
 	<Action Name="request guisarme">
 		<MakeItem>
-			<Item Amount="1" ItemId="97"/>
-			<Material Amount="1" ItemId="3"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="10" ItemId="40503"/>
-			<Material Amount="90" ItemId="40494"/>
+<Item Amount="1" ItemId="30217"/>	<Material Amount="5" ItemId="60117"/>	<Material Amount="20" ItemId="60134"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン スピアー / ネルファ-->
 	<Action Name="request elven spear">
 		<MakeItem>
-			<Item Amount="1" ItemId="99"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="30" ItemId="40503"/>
-			<Material Amount="1" ItemId="89"/>
+<Item Amount="1" ItemId="30307"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60134"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--フォチャード / ネルファ-->
 	<Action Name="request fauchard">
 		<MakeItem>
-			<Item Amount="1" ItemId="104"/>
-			<Material Amount="1" ItemId="99"/>
-			<Material Amount="50" ItemId="40503"/>
-			<Material Amount="60" ItemId="40508"/>
-			<Material Amount="1" ItemId="100"/>
-			<Material Amount="1" ItemId="40049"/>
+<Item Amount="1" ItemId="30308"/>	<Material Amount="5" ItemId="60117"/>	<Material Amount="20" ItemId="60134"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--クラブ / ネルファ-->
 	<Action Name="request club">
 		<MakeItem>
-			<Item Amount="1" ItemId="138"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="5" ItemId="40503"/>
+<Item Amount="1" ItemId="30405"/>	<Material Amount="5" ItemId="60117"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60032"/>			
 		</MakeItem>
 	</Action>
 	<!--バトル アックス / ネルファ-->
 	<Action Name="request battle axe">
 		<MakeItem>
-			<Item Amount="1" ItemId="143"/>
-			<Material Amount="1" ItemId="3"/>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="5" ItemId="40503"/>
-			<Material Amount="60" ItemId="40494"/>
+<Item Amount="1" ItemId="30408"/>	<Material Amount="5" ItemId="60150"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--ウッドン アーマー / ネルファ-->
 	<Action Name="request wooden armor">
 		<MakeItem>
-			<Item Amount="1" ItemId="20097"/>
-			<Material Amount="2" ItemId="40505"/>
-			<Material Amount="5" ItemId="40519"/>
+<Item Amount="1" ItemId="30514"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60032"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン ブレスト プレート / ネルファ-->
 	<Action Name="request elven breast plate">
 		<MakeItem>
-			<Item Amount="1" ItemId="20139"/>
-			<Material Amount="2" ItemId="40504"/>
-			<Material Amount="10" ItemId="40502"/>
+<Item Amount="1" ItemId="30515"/>	<Material Amount="5" ItemId="60149"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60032"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン チェーン メイル / ネルファ-->
 	<Action Name="request elven chain mail">
 		<MakeItem>
-			<Item Amount="1" ItemId="20137"/>
-			<Material Amount="4" ItemId="40497"/>
-			<Material Amount="80" ItemId="40495"/>
+<Item Amount="1" ItemId="30614"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60028"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン プレート メイル / ネルファ-->
 	<Action Name="request elven plate mail">
 		<MakeItem>
-			<Item Amount="1" ItemId="20138"/>
-			<Material Amount="8" ItemId="40509"/>
-			<Material Amount="20" ItemId="40495"/>
-			<Material Amount="1" ItemId="40052"/>
+<Item Amount="1" ItemId="30615"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60028"/>	<Material Amount="20" ItemId="60027"/>			
 		</MakeItem>
 	</Action>
 	<!--ウッドンシールド / ネルファ-->
 	<Action Name="request wooden shield">
 		<MakeItem>
-			<Item Amount="1" ItemId="20222"/>
-			<Material Amount="5" ItemId="40507"/>
-			<Material Amount="1" ItemId="40505"/>
-			<Material Amount="5" ItemId="40503"/>
+<Item Amount="1" ItemId="30816"/>	<Material Amount="5" ItemId="60114"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン シールド / ネルファ-->
 	<Action Name="request elven shield">
 		<MakeItem>
-			<Item Amount="1" ItemId="20236"/>
-			<Material Amount="1" ItemId="20222"/>
-			<Material Amount="2" ItemId="40497"/>
-			<Material Amount="5" ItemId="40503"/>
+<Item Amount="1" ItemId="30905"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60028"/>	<Material Amount="20" ItemId="60121"/>			
 		</MakeItem>
 	</Action>
 	<!--エルヴン レザー ヘルム / ネルファ-->
 	<Action Name="request elven leather helm">
 		<MakeItem>
-			<Item Amount="1" ItemId="20035"/>
-			<Material Amount="1" ItemId="40521"/>
-			<Material Amount="2" ItemId="40505"/>
-			<Material Amount="10" ItemId="40519"/>
-			<Material Amount="20" ItemId="40503"/>
+<Item Amount="1" ItemId="30910"/>	<Material Amount="50" ItemId="60150"/>	<Material Amount="50" ItemId="60025"/>	<Material Amount="50" ItemId="60024"/>	<Material Amount="50" ItemId="60026"/>	<Material Amount="50" ItemId="60027"/>	<Material Amount="50" ItemId="60028"/>
 		</MakeItem>
 	</Action>
 	<!--ブレス オブ エルム / ネルファ-->
 	<Action Name="request bless of elm">
 		<MakeItem>
-			<Item Amount="1" ItemId="20033"/>
-			<Material Amount="1" ItemId="20035"/>
-			<Material Amount="3" ItemId="40509"/>
-			<Material Amount="150" ItemId="40495"/>
-			<Material Amount="5" ItemId="40318"/>
-			<Material Amount="1" ItemId="40048"/>
-			<Material Amount="1" ItemId="40051"/>
-			<Material Amount="1" ItemId="40050"/>
+<Item Amount="1" ItemId="31016"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>			
 		</MakeItem>
 	</Action>
 	<!--ブレイサー / ネルファ-->
 	<Action Name="request bracer">
 		<MakeItem>
-			<Item Amount="1" ItemId="20191"/>
-			<Material Amount="3" ItemId="40505"/>
-			<Material Amount="20" ItemId="40495"/>
+<Item Amount="1" ItemId="31106"/>	<Material Amount="5" ItemId="60150"/>	<Material Amount="20" ItemId="60051"/>	<Material Amount="5" ItemId="60052"/>	<Material Amount="10" ItemId="60042"/>		
 		</MakeItem>
 	</Action>
 	<!--パワー グローブ / ネルファ-->
 	<Action Name="request power gloves">
 		<MakeItem>
-			<Item Amount="1" ItemId="20187"/>
-			<Material Amount="20" ItemId="40495"/>
-			<Material Amount="5" ItemId="40504"/>
-			<Material Amount="1" ItemId="40513"/>
-			<Material Amount="1" ItemId="40048"/>
+<Item Amount="1" ItemId="31107"/>	<Material Amount="5" ItemId="60150"/>	<Material Amount="20" ItemId="60051"/>	<Material Amount="5" ItemId="60052"/>	<Material Amount="10" ItemId="60032"/>		
 		</MakeItem>
 	</Action>
 	<!--エルヴン クローク / ネルファ-->
 	<Action Name="request elven cloak">
 		<MakeItem>
-			<Item Amount="1" ItemId="20073"/>
-			<Material Amount="2" ItemId="40318"/>
-			<Material Amount="120" ItemId="40520"/>
-			<Material Amount="10" ItemId="40495"/>
+<Item Amount="1" ItemId="510"/>	<Material Amount="10" ItemId="60150"/>	<Material Amount="20" ItemId="60024"/>	<Material Amount="20" ItemId="60025"/>	<Material Amount="20" ItemId="60026"/>	<Material Amount="20" ItemId="60027"/>	<Material Amount="20" ItemId="60028"/>
 		</MakeItem>
 	</Action>
+
+
+<!-- オリジナルアイテムここまで -->
+<!-- オリジナルアイテムここまで -->
+<!-- オリジナルアイテムここまで -->
+<!-- オリジナルアイテムここまで -->
+
+
 	<!--ロウ ブーツ / ネルファ-->
 	<Action Name="request low boots">
 		<MakeItem>
@@ -464,40 +297,6 @@
 			<Item Amount="1" ItemId="21107"/>
 		</MakeItem>
 	</Action>
-	<!--シルバー アロー / ロビンウッド-->
-	<Action Name="request silver arrow" NpcId="70840">
-		<MakeItem>
-			<Material Amount="1" ItemId="173"/>
-			<Material Amount="1" ItemId="21107"/>
-			<Material Amount="1" ItemId="40507"/>
-			<Item Amount="200" ItemId="40744"/>
-		</MakeItem>
-	</Action>
-	<!--地図：エルフの森 / エスト-->
-	<Action Name="request elvenforest map" NpcId="70847">
-		<MakeItem>
-			<Material Amount="1" ItemId="40507"/>
-			<Item Amount="1" ItemId="40378"/>
-		</MakeItem>
-	</Action>
-	<!--エントの実 / ルーディエル-->
-	<Action Name="request a fruit of ent">
-		<MakeItem>
-			<Item Amount="1" ItemId="40506"/>
-			<Material Amount="1" ItemId="40514"/>
-			<Material Amount="1" ItemId="40511"/>
-		</MakeItem>
-	</Action>
-	<!--サイハの弓 / タラス-->
-	<Action Name="request bow of sayha">
-		<MakeItem>
-			<Item Amount="1" ItemId="190"/>
-			<Material Amount="1" ItemId="181"/>
-			<Material Amount="30" ItemId="40491"/>
-			<Material Amount="50" ItemId="40498"/>
-			<Material Amount="15" ItemId="40394"/>
-		</MakeItem>
-	</Action>
 	<!--ウィザードの服 / モーリア-->
 	<Action Name="request magician dress">
 		<MakeItem>
@@ -517,36 +316,6 @@
 			<Material Amount="1" ItemId="40457"/>
 			<Material Amount="1" ItemId="40456"/>
 			<Material Amount="1" ItemId="40455"/>
-		</MakeItem>
-	</Action>
-	<!--Tシャツ / ハーバード-->
-	<Action Name="request t-shirt">
-		<MakeItem>
-			<Item Amount="1" ItemId="20085"/>
-			<Material Amount="3" ItemId="40456"/>
-			<Material Amount="2" ItemId="40455"/>
-			<Material Amount="10" ItemId="40457"/>
-			<Material Amount="30000" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--マジッククローク / ハーバード-->
-	<Action Name="request cloak of magic resistance">
-		<MakeItem>
-			<Item Amount="1" ItemId="20056"/>
-			<Material Amount="10" ItemId="40456"/>
-			<Material Amount="2" ItemId="40455"/>
-			<Material Amount="1" ItemId="40457"/>
-			<Material Amount="1000" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--プロテクション クローク / ハーバード-->
-	<Action Name="request cloak of protection">
-		<MakeItem>
-			<Item Amount="1" ItemId="20063"/>
-			<Material Amount="5" ItemId="40456"/>
-			<Material Amount="5" ItemId="40455"/>
-			<Material Amount="10" ItemId="40457"/>
-			<Material Amount="20000" ItemId="40308"/>
 		</MakeItem>
 	</Action>
 	<!--アイアン グローブ / ヘクター-->
@@ -602,71 +371,6 @@
 			<Material Amount="500" ItemId="40308"/>
 		</MakeItem>
 	</Action>
-	<!--ランプスチール / ヘクター or クプ-->
-	<Action Name="request lump of steel">
-		<MakeItem>
-			<Item Amount="1" ItemId="40779"/>
-			<Material Amount="5" ItemId="40899"/>
-			<Material Amount="5" ItemId="40408"/>
-			<Material Amount="500" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--ツルギ / イベルビン-->
-	<Action Name="request tsurugi">
-		<MakeItem>
-			<Item Amount="1" ItemId="57"/>
-			<Material Amount="500" ItemId="40508"/>
-			<Material Amount="5" ItemId="40052"/>
-			<Material Amount="5" ItemId="40055"/>
-			<Material Amount="5" ItemId="40054"/>
-			<Material Amount="5" ItemId="40053"/>
-			<Material Amount="30" ItemId="40460"/>
-		</MakeItem>
-	</Action>
-	<!--レッド ドラゴン スケイル メイル / イベルビン-->
-	<Action Name="request red dragon armor">
-		<MakeItem>
-			<Item Amount="1" ItemId="20159"/>
-			<Material Amount="15" ItemId="40393"/>
-			<Material Amount="1000" ItemId="40508"/>
-			<Material Amount="500" ItemId="40495"/>
-			<Material Amount="10" ItemId="40460"/>
-			<Material Amount="5" ItemId="40053"/>
-		</MakeItem>
-	</Action>
-	<!--ブルー ドラゴン スケイル メイル / イベルビン-->
-	<Action Name="request blue dragon armor">
-		<MakeItem>
-			<Item Amount="1" ItemId="20127"/>
-			<Material Amount="15" ItemId="40395"/>
-			<Material Amount="1000" ItemId="40508"/>
-			<Material Amount="500" ItemId="40495"/>
-			<Material Amount="10" ItemId="40460"/>
-			<Material Amount="5" ItemId="40055"/>
-		</MakeItem>
-	</Action>
-	<!--ホワイト ドラゴン スケイル メイル / イベルビン-->
-	<Action Name="request azure dragon armor">
-		<MakeItem>
-			<Item Amount="1" ItemId="20156"/>
-			<Material Amount="15" ItemId="40394"/>
-			<Material Amount="1000" ItemId="40508"/>
-			<Material Amount="500" ItemId="40495"/>
-			<Material Amount="10" ItemId="40460"/>
-			<Material Amount="5" ItemId="40054"/>
-		</MakeItem>
-	</Action>
-	<!--グリーン ドラゴン スケイル メイル / イベルビン-->
-	<Action Name="request green dragon armor">
-		<MakeItem>
-			<Item Amount="1" ItemId="20146"/>
-			<Material Amount="15" ItemId="40396"/>
-			<Material Amount="1000" ItemId="40508"/>
-			<Material Amount="500" ItemId="40495"/>
-			<Material Amount="10" ItemId="40460"/>
-			<Material Amount="5" ItemId="40052"/>
-		</MakeItem>
-	</Action>
 	<!--ミスリル / フェアリー, フェアリー クイーン-->
 	<Action Name="request lump of pure mithril">
 		<MakeItem>
@@ -680,52 +384,6 @@
 			<Item Amount="1" ItemId="40521"/>
 			<Material Amount="5" ItemId="40495"/>
 			<Material Amount="40" ItemId="40520"/>
-		</MakeItem>
-	</Action>
-	<!--マジック フルート / ナルエン-->
-	<Action Name="request magic flute">
-		<MakeItem>
-			<Item Amount="1" ItemId="40493"/>
-			<Material Amount="1" ItemId="40505"/>
-			<Material Amount="10" ItemId="40508"/>
-		</MakeItem>
-	</Action>
-	<!--ミスリル プレート / パン-->
-	<Action Name="request mithril plate">
-		<MakeItem>
-			<Item Amount="1" ItemId="40497"/>
-			<Material Amount="50" ItemId="40494"/>
-			<Material Amount="1" ItemId="40504"/>
-		</MakeItem>
-	</Action>
-	<!--オリハルコン プレート / パン-->
-	<Action Name="request oriharukon plate">
-		<MakeItem>
-			<Item Amount="1" ItemId="40509"/>
-			<Material Amount="30" ItemId="40508"/>
-			<Material Amount="1" ItemId="40504"/>
-		</MakeItem>
-	</Action>
-	<!--糸 / アラクネ-->
-	<Action Name="request thread">
-		<MakeItem>
-			<Item Amount="1" ItemId="40502"/>
-			<Material Amount="1" ItemId="40519"/>
-		</MakeItem>
-	</Action>
-	<!--ミスリルの糸 / アラクネ-->
-	<Action Name="request mithril thread">
-		<MakeItem>
-			<Item Amount="1" ItemId="40495"/>
-			<Material Amount="1" ItemId="40502"/>
-			<Material Amount="5" ItemId="40494"/>
-		</MakeItem>
-	</Action>
-	<!--アラクネの抜け殻 / アラクネ-->
-	<Action Name="request ecdysis of arachne">
-		<MakeItem>
-			<Item Amount="1" ItemId="40504"/>
-			<Material Amount="3" ItemId="40505"/>
 		</MakeItem>
 	</Action>
 	<!--オリハルコン / フェアリー クイーン-->
@@ -862,56 +520,6 @@
 			<Material Amount="30" ItemId="40050"/>
 			<Material Amount="5" ItemId="40169"/>
 			<Material Amount="50000" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--ボーン ヘルム / 骨細工師-->
-	<Action Name="request skull helmet">
-		<MakeItem>
-			<Item Amount="1" ItemId="20045"/>
-			<Material Amount="1" ItemId="20002"/>
-			<Material Amount="10" ItemId="40407"/>
-			<Material Amount="800" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--ボーン アーマー / 骨細工師-->
-	<Action Name="request bone armor">
-		<MakeItem>
-			<Item Amount="1" ItemId="20124"/>
-			<Material Amount="1" ItemId="20145"/>
-			<Material Amount="20" ItemId="40407"/>
-			<Material Amount="500" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--ボーン シールド / 骨細工師-->
-	<Action Name="request bone shield">
-		<MakeItem>
-			<Item Amount="1" ItemId="20221"/>
-			<Material Amount="1" ItemId="20241"/>
-			<Material Amount="15" ItemId="40407"/>
-			<Material Amount="800" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--エヴァの祝福 / エブロール-->
-	<Action Name="request bless of eva">
-		<MakeItem>
-			<Item Amount="1" ItemId="40032"/>
-			<Material Amount="300" ItemId="40308"/>
-		</MakeItem>
-	</Action>
-	<!--エヴァのシールド / エブロール-->
-	<Action Name="request shield of eva">
-		<MakeItem>
-			<Item Amount="1" ItemId="20235"/>
-			<Material Amount="1" ItemId="20231"/>
-			<Material Amount="100" ItemId="40041"/>
-			<Material Amount="10" ItemId="40395"/>
-		</MakeItem>
-	</Action>
-	<!--マーメイドの鱗 / エブロール-->
-	<Action Name="request adena" NpcId="70872">
-		<MakeItem>
-			<Item Amount="200" ItemId="40308"/>
-			<Material Amount="1" ItemId="40041"/>
 		</MakeItem>
 	</Action>
 	<!--ダークネス デュアルブレード / カリフ-->

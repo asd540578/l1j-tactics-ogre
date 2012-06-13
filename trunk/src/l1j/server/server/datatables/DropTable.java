@@ -291,7 +291,13 @@ public class DropTable {
 															&& member.getCurrentHp() > 0 && !member.isDead()) {
 														member.getInventory().storeItem(itemId, memberItemCount);
 														for (L1PcInstance pc : player.getParty().getMembers()) {
-															pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), member.getName()));
+															// t.s 2012/06/14 mod start
+															// pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), member.getName()));
+															if(pc.getPartyDropLog() == true)
+															{
+																pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), member.getName()));
+															}
+															// t.s 2012/06/14 mod end
 														}
 														if (otherCount > 0) {
 															item.setCount(memberItemCount);
@@ -303,12 +309,24 @@ public class DropTable {
 												isPartyShare = true;
 											} else {
 												for (L1PcInstance pc : player.getParty().getMembers()) {
-													pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), player.getName()));
+													// t.s 2012/06/14 mod start
+													// pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), member.getName()));
+													if(pc.getPartyDropLog() == true)
+													{
+														pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), player.getName()));
+													}
+													// t.s 2012/06/14 mod end
 												}
 											}
 										} else {
 											for (L1PcInstance element : partyMember) {
-												element.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), player.getName()));
+												// t.s 2012/06/14 mod start
+												// pc.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), member.getName()));
+												if(element.getPartyDropLog() == true)
+												{
+													element.sendPackets(new S_ServerMessage(813, npc.getName(), item.getLogName(), player.getName()));
+												}
+												// t.s 2012/06/14 mod end
 											}
 										}
 									} else {

@@ -2526,7 +2526,8 @@ public class L1MerchantInstance extends L1NpcInstance {
 					htmlid = "aras7";
 				}
 			} else if (npcid == 70838) { // ネルファ
-				if (pc.isCrown() || pc.isKnight() || pc.isWizard()
+/* t.s 2012/06/10 mod start
+ 				if (pc.isCrown() || pc.isKnight() || pc.isWizard()
 						|| pc.isDragonKnight() || pc.isIllusionist()) {
 					htmlid = "nerupam1";
 				} else if (pc.isDarkelf() && (pc.getLawful() <= -1)) {
@@ -2536,6 +2537,8 @@ public class L1MerchantInstance extends L1NpcInstance {
 				} else if (pc.isElf()) {
 					htmlid = "nerupae1";
 				}
+ t.s 2012/06/10 mod end */
+					htmlid = "nerupae1";
 			} else if (npcid == 80094) { // 祭壇
 				if (pc.isIllusionist()) {
 					htmlid = "altar1";
@@ -3141,26 +3144,26 @@ public class L1MerchantInstance extends L1NpcInstance {
 	 * pc.sendPackets(new S_SkillSound(pc.getId(), 755)); pc.broadcastPacket(new
 	 * S_SkillSound(pc.getId(), 755)); pc.setMoveSpeed(1);
 	 * pc.setSkillEffect(STATUS_HASTE, 1600 * 1000);
-	 * 
+	 *
 	 * pc.setCurrentHp(pc.getMaxHp()); if (pc.getLevel() < 13) {
 	 * pc.setCurrentMp(pc.getMaxMp()); } pc.sendPackets(new
 	 * S_ServerMessage(77)); pc.sendPackets(new S_SkillSound(pc.getId(), 830));
 	 * break;
-	 * 
+	 *
 	 * case 2:// ヘイスト pc.sendPackets(new S_ServerMessage(183));
 	 * pc.sendPackets(new S_SkillHaste(pc.getId(), 1, 1600));
 	 * pc.broadcastPacket(new S_SkillHaste(pc.getId(), 1, 0));
 	 * pc.sendPackets(new S_SkillSound(pc.getId(), 755)); pc.broadcastPacket(new
 	 * S_SkillSound(pc.getId(), 755)); pc.setMoveSpeed(1);
 	 * pc.setSkillEffect(STATUS_HASTE, 1600 * 1000); break;
-	 * 
+	 *
 	 * case 3:// ホーリーウエポン if (pc.getWeapon() == null) { pc.sendPackets(new
 	 * S_ServerMessage(79)); } else { for (L1ItemInstance item :
 	 * pc.getInventory().getItems()) { if (pc.getWeapon().equals(item)) {
 	 * L1SkillUse l1skilluse = new L1SkillUse(); l1skilluse.handleCommands(pc,
 	 * HOLY_WEAPON, pc.getId(), pc.getX(), pc.getY(), null, 0,
 	 * L1SkillUse.TYPE_SPELLSC); break; } } } break;
-	 * 
+	 *
 	 * default: break; } }
 	 */
 	/*

@@ -282,7 +282,7 @@ public class L1EffectInstance extends L1NpcInstance {
 					pc.sendPackets(new S_SkillSound(pc.getId(), castGfx2));
 				}
 				cha.broadcastPacket(new S_SkillSound(cha.getId(), castGfx2));
-				cha.setSkillEffect(STATUS_CUBE_IGNITION_TO_ENEMY, CUBE_TIME ,pc.getLevel());
+				cha.setSkillEffect(STATUS_CUBE_IGNITION_TO_ENEMY, CUBE_TIME ,cha.getLevel());
 				L1Cube cube = new L1Cube(effect, cha,
 						STATUS_CUBE_IGNITION_TO_ENEMY);
 				cube.begin();
@@ -294,7 +294,7 @@ public class L1EffectInstance extends L1NpcInstance {
 					pc.sendPackets(new S_SkillSound(pc.getId(), castGfx2));
 				}
 				cha.broadcastPacket(new S_SkillSound(cha.getId(), castGfx2));
-				cha.setSkillEffect(STATUS_CUBE_QUAKE_TO_ENEMY, CUBE_TIME ,pc.getLevel());
+				cha.setSkillEffect(STATUS_CUBE_QUAKE_TO_ENEMY, CUBE_TIME ,cha.getLevel());
 				L1Cube cube = new L1Cube(effect, cha,
 						STATUS_CUBE_QUAKE_TO_ENEMY);
 				cube.begin();
@@ -306,7 +306,7 @@ public class L1EffectInstance extends L1NpcInstance {
 					pc.sendPackets(new S_SkillSound(pc.getId(), castGfx2));
 				}
 				cha.broadcastPacket(new S_SkillSound(cha.getId(), castGfx2));
-				cha.setSkillEffect(STATUS_CUBE_SHOCK_TO_ENEMY, CUBE_TIME ,pc.getLevel());
+				cha.setSkillEffect(STATUS_CUBE_SHOCK_TO_ENEMY, CUBE_TIME ,cha.getLevel());
 				L1Cube cube = new L1Cube(effect, cha,
 						STATUS_CUBE_SHOCK_TO_ENEMY);
 				cube.begin();
@@ -318,7 +318,7 @@ public class L1EffectInstance extends L1NpcInstance {
 					pc.sendPackets(new S_SkillSound(pc.getId(), castGfx2));
 				}
 				cha.broadcastPacket(new S_SkillSound(cha.getId(), castGfx2));
-				cha.setSkillEffect(STATUS_CUBE_BALANCE, CUBE_TIME ,pc.getLevel());
+				cha.setSkillEffect(STATUS_CUBE_BALANCE, CUBE_TIME ,cha.getLevel());
 				L1Cube cube = new L1Cube(effect, cha, STATUS_CUBE_BALANCE);
 				cube.begin();
 			}

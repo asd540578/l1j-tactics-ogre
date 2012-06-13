@@ -81,6 +81,14 @@ public class L1Describe implements L1CommandExecutor
 				msg.append("SP:" + cha.getSp() + " ");
 				msg.append("ER:" + cha.getEr() + " ");
 				msg.append(" " + BR);
+				msg.append("HP: " + cha.getCurrentHp() + " ");
+				msg.append("HP(MAX): " + cha.getMaxHp() + " ");
+				msg.append("HP(Base): " + cha.getBaseMaxHp());
+				msg.append(" " + BR);
+				msg.append("MP: " + cha.getCurrentMp() + " ");
+				msg.append("MP(MAX): " + cha.getMaxMp() + " ");
+				msg.append("MP(Base): " + cha.getBaseMaxMp());
+				msg.append(" " + BR);
 				msg.append("HPR: " + hpr + " ");
 				msg.append("MPR: " + mpr + " ");
 				msg.append("Karma:" + cha.getKarma() + " ");
@@ -115,70 +123,77 @@ public class L1Describe implements L1CommandExecutor
 				pc.sendPackets(new S_SystemMessage(cmdName + " コマンドエラー"));
 			}
 		}
-		try
+		else
 		{
-			StringBuilder msg = new StringBuilder();
-			final String BR = System.getProperty("line.separator");
-			int hpr = 0, mpr = 0;
+    		try
+    		{
+    			StringBuilder msg = new StringBuilder();
+    			final String BR = System.getProperty("line.separator");
+    			int hpr = 0, mpr = 0;
 
-			hpr = pc.getHpr() + pc.getInventory().hpRegenPerTick();
-			mpr = pc.getMpr() + pc.getInventory().mpRegenPerTick();
+    			hpr = pc.getHpr() + pc.getInventory().hpRegenPerTick();
+    			mpr = pc.getMpr() + pc.getInventory().mpRegenPerTick();
 
-			msg.append("-- キャラクター --" + BR);
-			msg.append(" " + BR);
-			msg.append("名前:" + pc.getName() + BR);
-			msg.append("所属クラン:" + pc.getClanname() + BR);
-			msg.append("所持アイテム数:" + pc.getInventory().getSize() + BR);
-			msg.append("エリクサー使用回数:" + pc.getElixirStats() + BR);
-			msg.append(" "+ BR);
+    			msg.append("-- キャラクター --" + BR);
+    			msg.append(" " + BR);
+    			msg.append("名前:" + pc.getName() + BR);
+    			msg.append("所属クラン:" + pc.getClanname() + BR);
+    			msg.append("所持アイテム数:" + pc.getInventory().getSize() + BR);
+    			msg.append("エリクサー使用回数:" + pc.getElixirStats() + BR);
+    			msg.append(" "+ BR);
 
-			msg.append("-- ステータス --" + BR);
-			msg.append(" " + BR);
-			msg.append("STR:" + pc.getStr() + " ");
-			msg.append("DEX:" + pc.getDex() + " ");
-			msg.append("INT:" + pc.getInt() + " ");
-			msg.append(" " + BR);
-			msg.append("CON:" + pc.getCon() + " ");
-			msg.append("WIS:" + pc.getWis() + " ");
-			msg.append("CHA:" + pc.getCha() + " ");
-			msg.append(" " + BR);
-			msg.append("AC:" + pc.getAc() + " ");
-			msg.append("MR:" + pc.getMr() + " ");
-			msg.append("SP:" + pc.getSp() + " ");
-			msg.append("ER:" + pc.getEr() + " ");
-			msg.append(" " + BR);
-			msg.append("HPR: " + hpr + " ");
-			msg.append("MPR: " + mpr + " ");
-			msg.append("Karma:" + pc.getKarma() + " ");
-			msg.append(" " + BR + BR);
-			msg.append("近距離ダメージ:" + pc.getDmgup() + " ");
-			msg.append("近距離命中:" + pc.getHitup() + " ");
-			msg.append(" " + BR);
-			msg.append("遠距離ダメージ:" + pc.getBowDmgup() + " ");
-			msg.append("遠距離命中:" + pc.getBowHitup() + " ");
-			msg.append(" " + BR);
-			msg.append("軽減ダメージ:" + pc.getDamageReductionByArmor() + " / ");
-			msg.append(" " + BR + BR);
-			msg.append("凍結耐性:" + pc.getRegistFreeze() + " ");
-			msg.append("スタン耐性:" + pc.getRegistStun() + " ");
-			msg.append(" " + BR);
-			msg.append("石化耐性:" + pc.getRegistStone() + " ");
-			msg.append("睡眠耐性:" + pc.getRegistSleep() + " ");
-			msg.append(" " + BR);
-			msg.append("ホールド耐性:" + pc.getRegistSustain() + " ");
-			msg.append("暗闇耐性:" + pc.getRegistBlind() + " ");
-			msg.append(" " + BR + BR);
-			msg.append("火耐性:" + pc.getFire());
-			msg.append("水耐性:" + pc.getWater());
-			msg.append("土耐性:" + pc.getEarth());
-			msg.append("風耐性:" + pc.getWind());
-			msg.append(" " + BR + BR);
+    			msg.append("-- ステータス --" + BR);
+    			msg.append(" " + BR);
+    			msg.append("STR:" + pc.getStr() + " ");
+    			msg.append("DEX:" + pc.getDex() + " ");
+    			msg.append("INT:" + pc.getInt() + " ");
+    			msg.append(" " + BR);
+    			msg.append("CON:" + pc.getCon() + " ");
+    			msg.append("WIS:" + pc.getWis() + " ");
+    			msg.append("CHA:" + pc.getCha() + " ");
+    			msg.append(" " + BR);
+    			msg.append("AC:" + pc.getAc() + " ");
+    			msg.append("MR:" + pc.getMr() + " ");
+    			msg.append("SP:" + pc.getSp() + " ");
+    			msg.append("ER:" + pc.getEr() + " ");
+    			msg.append(" " + BR);
+				msg.append("BaseHP: " + pc.getBaseMaxHp());
+				msg.append("HP: " + pc.getCurrentHp() + "/" + pc.getMaxHp());
+				msg.append("BaseMP: " + pc.getBaseMaxMp());
+				msg.append("MP: " + pc.getCurrentMp() + "/" + pc.getMaxMp());
+    			msg.append("HPR: " + hpr + " ");
+    			msg.append("MPR: " + mpr + " ");
+    			msg.append("Karma:" + pc.getKarma() + " ");
+    			msg.append(" " + BR + BR);
+    			msg.append("近距離ダメージ:" + pc.getDmgup() + " ");
+    			msg.append("近距離命中:" + pc.getHitup() + " ");
+    			msg.append(" " + BR);
+    			msg.append("遠距離ダメージ:" + pc.getBowDmgup() + " ");
+    			msg.append("遠距離命中:" + pc.getBowHitup() + " ");
+    			msg.append(" " + BR);
+    			msg.append("軽減ダメージ:" + pc.getDamageReductionByArmor() + " / ");
+    			msg.append(" " + BR + BR);
+    			msg.append("凍結耐性:" + pc.getRegistFreeze() + " ");
+    			msg.append("スタン耐性:" + pc.getRegistStun() + " ");
+    			msg.append(" " + BR);
+    			msg.append("石化耐性:" + pc.getRegistStone() + " ");
+    			msg.append("睡眠耐性:" + pc.getRegistSleep() + " ");
+    			msg.append(" " + BR);
+    			msg.append("ホールド耐性:" + pc.getRegistSustain() + " ");
+    			msg.append("暗闇耐性:" + pc.getRegistBlind() + " ");
+    			msg.append(" " + BR + BR);
+    			msg.append("火耐性:" + pc.getFire());
+    			msg.append("水耐性:" + pc.getWater());
+    			msg.append("土耐性:" + pc.getEarth());
+    			msg.append("風耐性:" + pc.getWind());
+    			msg.append(" " + BR + BR);
 
-			pc.sendPackets(new S_SystemMessage(msg.toString()));
-		}
-		catch (Exception e)
-		{
-			pc.sendPackets(new S_SystemMessage(cmdName + " コマンドエラー"));
+    			pc.sendPackets(new S_SystemMessage(msg.toString()));
+    		}
+    		catch (Exception e)
+    		{
+    			pc.sendPackets(new S_SystemMessage(cmdName + " コマンドエラー"));
+    		}
 		}
 	}
 }

@@ -323,8 +323,8 @@ public class L1Magic {
 			}
 		}
 
-		// WBかカーパラはMOB相手には無効
-		if (skillId == WEAPON_BREAK || skillId == CURSE_PARALYZE) {
+		// WBかカーパラかスローはMOB相手には無効
+		if (skillId == WEAPON_BREAK || skillId == CURSE_PARALYZE || skillId == SLOW) {
 			if(_calcType == PC_NPC)
 			{
 				return false;
@@ -354,9 +354,9 @@ public class L1Magic {
 
 		if(_calcType == PC_PC)
 		{
-			if(probability < 4)
+			if(probability < 2)
 			{
-				probability = 4;
+				probability = 2;
 			}
 		}
 
@@ -485,8 +485,20 @@ public class L1Magic {
 			}
 		} else if (skillId == SHOCK_STUN || skillId == MASS_SHOCK_STUN) {
 			// 成功確率は 基本確率 + LV差1毎に+-2%
-			probability = l1skills.getProbabilityValue()
-					+ (attackLevel - defenseLevel) * 2;
+			// t.s 2012/06/10 mod start
+			// probability = l1skills.getProbabilityValue()
+			// + (attackLevel - defenseLevel) * 2;
+			// t.s 2012/06/10 mod end
+			if(_calcType == PC_NPC)
+			{
+    			probability = l1skills.getProbabilityValue()
+				+ (attackLevel - (defenseLevel + 5)) * 2;
+			}
+			else
+			{
+    			probability = l1skills.getProbabilityValue()
+    					+ (attackLevel - defenseLevel) * 2;
+			}
 
 			// オリジナルINTによる魔法命中
 			if (_calcType == PC_PC || _calcType == PC_NPC) {
@@ -557,19 +569,19 @@ public class L1Magic {
 			} else {
 				probability = l1skills.getProbabilityValue() + 20;
 			}
-		} else {
+		} else if (skillId == DARKNESS){ // Ｄネスは対ＭＯＢ用
 			int dice = l1skills.getProbabilityDice();
 			int diceCount = 0;
-			if (_calcType == PC_PC || _calcType == PC_NPC) {
+			if (_calcType == PC_PC) { // 対人はその他確率魔法と同等
 				if (_pc.isWizard()) {
-					diceCount = getMagicBonus() + getMagicLevel() + 1;
+					diceCount = Math.min(getMagicBonus()-5,15) + getMagicLevel() + 1;
 				} else if (_pc.isElf()) {
-					diceCount = getMagicBonus() + getMagicLevel() - 1;
+					diceCount = Math.min(getMagicBonus()-5,15) + getMagicLevel() - 1;
 				} else {
-					diceCount = getMagicBonus() + getMagicLevel() - 1;
+					diceCount = Math.min(getMagicBonus()-5,15) + getMagicLevel() - 1;
 				}
-			} else {
-				diceCount = Math.min(getMagicBonus(),18) + getMagicLevel();
+			} else { // ＭＯＢへの魔法だけ確率をアップ
+				diceCount = Math.min(getMagicBonus()-3,20) + getMagicLevel();
 			}
 			if (diceCount < 1) {
 				diceCount = 1;
@@ -582,13 +594,130 @@ public class L1Magic {
 
 			// オリジナルINTによる魔法命中
 			if (_calcType == PC_PC || _calcType == PC_NPC) {
-				probability += 2 * _pc.getOriginalMagicHit();
+			//	probability += 2 * _pc.getOriginalMagicHit();
 			}
 
 			if(getTargetMr() >= 160)
 			{
-				probability -= 160;
-				probability -= (getTargetMr() - 160) / 6;
+				probability -= 150;
+				probability -= (getTargetMr() - 150) / 3;
+			}
+			else
+			{
+				probability -= getTargetMr();
+			}
+		} else if (skillId == SLOW){ // そこそこかかってもいい系
+			int dice = l1skills.getProbabilityDice();
+			int diceCount = 0;
+			if (_calcType == PC_PC) {
+				if (_pc.isWizard()) {
+					diceCount = Math.min(getMagicBonus()-5,17) + getMagicLevel() + 1;
+				} else if (_pc.isElf()) {
+					diceCount = Math.min(getMagicBonus()-5,17) + getMagicLevel() - 1;
+				} else {
+					diceCount = Math.min(getMagicBonus()-5,17) + getMagicLevel() - 1;
+				}
+			} else {
+				diceCount = Math.min(getMagicBonus()-2,15) + getMagicLevel();
+			}
+			if (diceCount < 1) {
+				diceCount = 1;
+			}
+
+			for (int i = 0; i < diceCount; i++) {
+				probability += (_random.nextInt(dice) + 1);
+			}
+			probability = probability * getLeverage() / 10;
+
+			// オリジナルINTによる魔法命中
+			if (_calcType == PC_PC || _calcType == PC_NPC) {
+			//	probability += 2 * _pc.getOriginalMagicHit();
+			}
+
+			if(getTargetMr() >= 160)
+			{
+				probability -= 150;
+				probability -= (getTargetMr() - 150) / 3;
+			}
+			else
+			{
+				probability -= getTargetMr();
+			}
+		} else if (skillId == FOG_OF_SLEEPING || skillId == MANA_DRAIN){ // あまりかかって欲しくない系
+			int dice = l1skills.getProbabilityDice();
+			int diceCount = 0;
+			if (_calcType == PC_PC || _calcType == PC_NPC) {
+				if (_pc.isWizard()) {
+					diceCount = Math.min(getMagicBonus()-5,14) + getMagicLevel() + 1;
+				} else if (_pc.isElf()) {
+					diceCount = Math.min(getMagicBonus()-5,14) + getMagicLevel() - 1;
+				} else {
+					diceCount = Math.min(getMagicBonus()-5,14) + getMagicLevel() - 1;
+				}
+			} else {
+				diceCount = Math.min(getMagicBonus()-2,15) + getMagicLevel();
+			}
+			if (diceCount < 1) {
+				diceCount = 1;
+			}
+
+			for (int i = 0; i < diceCount; i++) {
+				probability += (_random.nextInt(dice) + 1);
+			}
+			probability = probability * getLeverage() / 10;
+
+			// オリジナルINTによる魔法命中
+			if (_calcType == PC_PC || _calcType == PC_NPC) {
+			//	probability += 2 * _pc.getOriginalMagicHit();
+			}
+
+			if(getTargetMr() >= 160)
+			{
+				probability -= 150;
+				probability -= (getTargetMr() - 150) / 3;
+			}
+			else
+			{
+				probability -= getTargetMr();
+			}
+
+			// ＭＲが100以上ある場合は最大5％にする。（イレース無でほぼかからないよう）
+			if(_calcType == PC_PC && getTargetMr() >= 100)
+			{
+				probability = Math.min(probability ,5);
+			}
+		} else { // その他ちょっとかかってもいい系（キャンセ等）
+			int dice = l1skills.getProbabilityDice();
+			int diceCount = 0;
+			if (_calcType == PC_PC || _calcType == PC_NPC) {
+				if (_pc.isWizard()) {
+					diceCount = Math.min(getMagicBonus()-5,15) + getMagicLevel() + 1;
+				} else if (_pc.isElf()) {
+					diceCount = Math.min(getMagicBonus()-5,15) + getMagicLevel() - 1;
+				} else {
+					diceCount = Math.min(getMagicBonus()-5,15) + getMagicLevel() - 1;
+				}
+			} else {
+				diceCount = Math.min(getMagicBonus(),16) + getMagicLevel();
+			}
+			if (diceCount < 1) {
+				diceCount = 1;
+			}
+
+			for (int i = 0; i < diceCount; i++) {
+				probability += (_random.nextInt(dice) + 1);
+			}
+			probability = probability * getLeverage() / 10;
+
+			// オリジナルINTによる魔法命中
+			if (_calcType == PC_PC || _calcType == PC_NPC) {
+//				probability += 2 * _pc.getOriginalMagicHit();
+			}
+
+			if(getTargetMr() >= 160)
+			{
+				probability -= 150;
+				probability -= (getTargetMr() - 150) / 3;
 			}
 			else
 			{

@@ -297,6 +297,7 @@ public abstract class SkillEffect implements Runnable
 				try
 				{
 					magic = new L1Magic(_attacker, judgement_target);
+					// ほんとはSetLeverageしないといけなかった...
 					damage = magic.calcMagicDamage(_skill.getSkillId());
 				}
 				catch (Exception e)

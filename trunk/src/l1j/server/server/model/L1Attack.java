@@ -1818,15 +1818,15 @@ public class L1Attack
 		{
 			if (_pc.hasSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV1))
 			{
-				dmg += 3;
+				dmg += 5;
 			}
 			else if (_pc.hasSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV2))
 			{
-				dmg += 6;
+				dmg += 12;
 			}
 			else if (_pc.hasSkillEffect(STATUS_WEAKNESS_EXPOSURE_LV3))
 			{
-				dmg += 9;
+				dmg += 20;
 			}
 		}
 		else if (_weaponType2 == 18

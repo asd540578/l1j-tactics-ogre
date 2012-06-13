@@ -51,7 +51,7 @@ public class L1AddSkill implements L1CommandExecutor {
 			if (pc.isCrown()) {
 				pc.sendPackets(new S_AddSkill(255, 255, 0, 0, 0, 0, 0, 0, 0, 0,
 						0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
-				for (cnt = 1; cnt <= 16; cnt++) // LV1~2魔法
+				for (cnt = 1; cnt <= 48; cnt++) // LV1~2魔法
 				{
 					L1Skill l1skills = SkillTable.getInstance().findBySkillId(
 							cnt); // スキル情報を取得
@@ -69,6 +69,10 @@ public class L1AddSkill implements L1CommandExecutor {
 					SkillTable.getInstance().spellMastery(object_id, skill_id,
 							skill_name, 0, 0); // DBに登録
 				}
+		
+				pc.sendPackets(new S_AddSkill(255, 255, 127, 255, 255, 255, 0,
+						0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 3, 255, 255, 255, 255,
+						0, 0, 0, 0, 0, 0));
 			} else if (pc.isKnight()) {
 				pc.sendPackets(new S_AddSkill(255, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 						192, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));

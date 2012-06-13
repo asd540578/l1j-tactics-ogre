@@ -440,7 +440,8 @@ public class L1SkillUse
 				pc.sendPackets(new S_ServerMessage(285)); // \f1その状態では魔法を使えません。
 				return false;
 			}
-
+// t.s 2012/06/10 del start
+/*
 			// DIGはロウフルでのみ使用可
 			if (_skillId == DISINTEGRATE && pc.getLawful() < 500)
 			{
@@ -448,7 +449,8 @@ public class L1SkillUse
 				pc.sendPackets(new S_ServerMessage(352, "$967")); // この魔法を利用するには性向値が%0でなければなりません。
 				return false;
 			}
-
+*/
+// t.s 2012/06/10 del end
 			// 同じキューブは効果範囲外であれば配置可能
 			if (_skillId == CUBE_IGNITION || _skillId == CUBE_QUAKE
 					|| _skillId == CUBE_SHOCK || _skillId == CUBE_BALANCE)
@@ -2802,7 +2804,7 @@ public class L1SkillUse
 				{
 					RandomGenerator random = RandomGeneratorFactory
 							.getSharedRandom();
-					int stunTime = (random.nextInt(26) + 15) * 100;
+					int stunTime = (random.nextInt(25) + 15) * 100;
 					_shockStunDuration = stunTime;
 					L1EffectSpawn.getInstance().spawnEffect(81162,
 							_shockStunDuration, cha.getX(), cha.getY(),
@@ -2977,10 +2979,12 @@ public class L1SkillUse
 						// ヘイストアイテム装備時はヘイスト関連のスキルが何も掛かっていないはずなのでここで解除
 						if (pc.getHasteItemEquipped() > 0)
 						{
-							pc.setMoveSpeed(0);
-							pc.sendPackets(new S_SkillHaste(pc.getId(), 0, 0));
-							pc.broadcastPacket(new S_SkillHaste(pc.getId(), 0,
-									0));
+// t.s 2012/6/12 del start 
+//							pc.setMoveSpeed(0);
+//							pc.sendPackets(new S_SkillHaste(pc.getId(), 0, 0));
+//							pc.broadcastPacket(new S_SkillHaste(pc.getId(), 0,
+//									0));
+// t.s 2012/6/12 del end 
 						}
 					}
 					cha.removeSkillEffect(STATUS_FREEZE); // Freeze解除
@@ -3104,7 +3108,7 @@ public class L1SkillUse
 				{ // ボーンブレイク
 					RandomGenerator random = RandomGeneratorFactory
 							.getSharedRandom();
-					int stunTime = (random.nextInt(14) + 7) * 100;
+					int stunTime = (random.nextInt(5) + 10) * 100;
 					_boneBreakDuration = stunTime;
 					L1EffectSpawn.getInstance().spawnEffect(91208,
 							_boneBreakDuration, cha.getX(), cha.getY(),

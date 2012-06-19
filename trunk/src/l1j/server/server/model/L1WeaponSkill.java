@@ -302,7 +302,7 @@ public class L1WeaponSkill {
 	public static double getKiringkuDamage(L1PcInstance pc, L1Character cha) {
 		int dmg = 0;
 		int dice = 5;
-		int diceCount = 2;
+		int diceCount = 4;
 		int value = 0;
 		int kiringkuDamage = 0;
 		int charaIntelligence = 0;
@@ -325,14 +325,14 @@ public class L1WeaponSkill {
 		kiringkuDamage += weaponAddDmg;
 
 		int spByItem = pc.getSp() - pc.getTrueSp(); // アイテムによるSP変動
-		charaIntelligence = pc.getInt() + spByItem - 12;
+		charaIntelligence = (int)(pc.getInt() * 1.0) + spByItem - 33;
 		if (charaIntelligence < 1) {
 			charaIntelligence = 1;
 		}
 		double kiringkuCoefficientA = (1.0 + charaIntelligence * 3.0 / 32.0);
 
 		kiringkuDamage *= kiringkuCoefficientA;
-
+/*
 		if (cha instanceof L1PcInstance) { // 連続魔法ダメージ軽減
 			L1PcInstance _targetPc = (L1PcInstance) cha;
 			long nowTime = System.currentTimeMillis();
@@ -370,6 +370,7 @@ public class L1WeaponSkill {
 				_targetPc.setOldTime(nowTime);
 			}
 		}
+*/
 
 		double kiringkuFloor = Math.floor(kiringkuDamage);
 
@@ -380,6 +381,7 @@ public class L1WeaponSkill {
 			int level = pc.getSkillEffectLevel(ILLUSION_AVATAR);
 			dmg += (level > 70) ? (level - 70) / 3 + 15 : 15;
 		}
+
 
 		if (pc.getWeapon().getItem().getItemId() == 270) {
 			pc.sendPackets(new S_SkillSound(pc.getId(), 6983));

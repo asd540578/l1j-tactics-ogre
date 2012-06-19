@@ -426,6 +426,19 @@ public class L1Attack
 				_weaponLarge = weapon.getItem().getDmgLarge();
 				_weaponRange = weapon.getItem().getRange();
 				_weaponBless = weapon.getItem().getBless();
+				// t.s 2012/6/15 add start
+				// イリュで杖の場合はキーリンクに置き換える
+				if(_weaponType == 40 && _pc.isIllusionist())
+				{
+						_weaponType = 58;
+				}
+
+				if(_weaponType2 == 7 && _pc.isIllusionist())
+				{
+					_weaponType2 = 17;
+				}
+				// t.s 2012/6/15 add end
+
 				if (_weaponType != 20 && _weaponType != 62)
 				{
 					_weaponEnchant = weapon.getEnchantLevel()
@@ -878,7 +891,7 @@ public class L1Attack
 
 		if (target.hasSkillEffect(MIRROR_IMAGE))
 		{
-			attackerDice -= 4;
+			attackerDice -= 5;
 		}
 
 		if (target.hasSkillEffect(RESIST_FEAR))
@@ -1145,8 +1158,7 @@ public class L1Attack
 
 		if (_weaponType2 == 17)
 		{ // キーリンク
-			dmg = L1WeaponSkill.getKiringkuDamage(_pc, _target);
-			dmg += calcAttrEnchantDmg();
+			dmg += L1WeaponSkill.getKiringkuDamage(_pc, _target);
 		}
 
 		if (_weaponType != 20 && _weaponType != 62)
@@ -1459,8 +1471,7 @@ public class L1Attack
 
 		if (_weaponType2 == 17)
 		{ // キーリンク
-			dmg = L1WeaponSkill.getKiringkuDamage(_pc, _target);
-			dmg += calcAttrEnchantDmg();
+			dmg += L1WeaponSkill.getKiringkuDamage(_pc, _target);
 		}
 
 		if (_weaponType != 20 && _weaponType != 62)

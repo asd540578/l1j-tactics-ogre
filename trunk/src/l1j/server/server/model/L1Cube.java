@@ -104,15 +104,19 @@ public class L1Cube extends TimerTask {
 
 			if (_cha instanceof L1PcInstance) {
 				L1PcInstance pc = (L1PcInstance) _cha;
-				pc.sendPackets(new S_DoActionGFX(pc.getId(),
-						ActionCodes.ACTION_Damage));
-				pc.broadcastPacket(new S_DoActionGFX(pc.getId(),
-						ActionCodes.ACTION_Damage));
+// t.s 2012/06/15 del start 
+//				pc.sendPackets(new S_DoActionGFX(pc.getId(),
+//						ActionCodes.ACTION_Damage));
+//				pc.broadcastPacket(new S_DoActionGFX(pc.getId(),
+//						ActionCodes.ACTION_Damage));
+// t.s 2012/06/15 del end
 				pc.receiveDamage(_effect, 10, false);
 			} else if (_cha instanceof L1MonsterInstance) {
 				L1MonsterInstance mob = (L1MonsterInstance) _cha;
-				mob.broadcastPacket(new S_DoActionGFX(mob.getId(),
-						ActionCodes.ACTION_Damage));
+// t.s 2012/06/15 del start 
+//				mob.broadcastPacket(new S_DoActionGFX(mob.getId(),
+//						ActionCodes.ACTION_Damage));
+// t.s 2012/06/15 del end
 				mob.receiveDamage(_effect, 10);
 			}
 		} else if (_skillId == STATUS_CUBE_QUAKE_TO_ENEMY) {

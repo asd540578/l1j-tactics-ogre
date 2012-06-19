@@ -62,6 +62,7 @@ public class L1Describe implements L1CommandExecutor
 				msg.append(" " + BR);
 				msg.append("名前:" + cha.getName() + BR);
 				msg.append("所属クラン:" + cha.getClanname() + BR);
+				msg.append("レベル:" + cha.getLevel() + BR);
 				msg.append("所持アイテム数:" + cha.getInventory().getSize() + BR);
 				msg.append("エリクサー使用回数:" + cha.getElixirStats() + BR);
 				msg.append(" "+ BR);
@@ -83,10 +84,12 @@ public class L1Describe implements L1CommandExecutor
 				msg.append(" " + BR);
 				msg.append("HP: " + cha.getCurrentHp() + " ");
 				msg.append("HP(MAX): " + cha.getMaxHp() + " ");
+				msg.append(" " + BR);
 				msg.append("HP(Base): " + cha.getBaseMaxHp());
 				msg.append(" " + BR);
 				msg.append("MP: " + cha.getCurrentMp() + " ");
 				msg.append("MP(MAX): " + cha.getMaxMp() + " ");
+				msg.append(" " + BR);
 				msg.append("MP(Base): " + cha.getBaseMaxMp());
 				msg.append(" " + BR);
 				msg.append("HPR: " + hpr + " ");
@@ -138,6 +141,7 @@ public class L1Describe implements L1CommandExecutor
     			msg.append(" " + BR);
     			msg.append("名前:" + pc.getName() + BR);
     			msg.append("所属クラン:" + pc.getClanname() + BR);
+				msg.append("レベル:" + pc.getLevel() + BR);
     			msg.append("所持アイテム数:" + pc.getInventory().getSize() + BR);
     			msg.append("エリクサー使用回数:" + pc.getElixirStats() + BR);
     			msg.append(" "+ BR);

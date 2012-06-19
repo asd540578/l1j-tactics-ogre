@@ -3154,6 +3154,7 @@ public class C_ItemUSe extends ClientBasePacket
 					int castgfx = _skill.getCastGfx();
 					pc.sendPackets(new S_SkillSound(pc.getId(), castgfx));
 					pc.broadcastPacket(new S_SkillSound(pc.getId(),castgfx));
+
 					useToiTeleportAmulet(pc, itemId, l1iteminstance);
 					/* t.s add end 2011.08.20 */
 				}
@@ -6341,7 +6342,9 @@ public class C_ItemUSe extends ClientBasePacket
 	private void useToiTeleportAmulet(L1PcInstance pc, int itemId,
 			L1ItemInstance item)
 	{
-		boolean isTeleport = false;
+		boolean isTeleport = true;
+		// t.s 2012/06/16 del start
+		/*
 		if (itemId == 40289 || itemId == 40293)
 		{ // 11,51Famulet
 			if (pc.getX() >= 32816 && pc.getX() <= 32821 && pc.getY() >= 32778
@@ -6386,11 +6389,57 @@ public class C_ItemUSe extends ClientBasePacket
 		{
 			isTeleport = true;
 		}
-
+		*/
+		// t.s 2012/06/16 del end
 		if (isTeleport)
 		{
-			L1Teleport.teleport(pc, item.getItem().get_locx(), item.getItem()
-					.get_locy(), item.getItem().get_mapid(), 5, true);
+			final int rand = _random.nextInt(100 + 1);
+			final short mapid = item.getItem().get_mapid();
+			int loc_x = item.getItem().get_locx();
+			int loc_y = item.getItem().get_locy();
+			if(itemId == 60151) // 港町ゴリアテ
+			{
+				if(rand <= 34)
+				{
+					loc_x = 32611;
+					loc_y = 32779;
+				}
+				else if(rand <= 66)
+				{
+					loc_x = 32606;
+					loc_y = 32792;
+				}
+				else if(rand <= 100)
+				{
+					loc_x = 32615;
+					loc_y = 32795;
+				}
+			} else if(itemId == 60155) // マドュラ氷原入口
+			{
+				if(rand <= 50)
+				{
+					loc_x = 32782;
+					loc_y = 32865;
+				}
+				else if(rand <= 100)
+				{
+					loc_x = 32774;
+					loc_y = 32872;
+				}
+			} else if(itemId == 60156) // 古都ライム
+			{
+				if(rand <= 50)
+				{
+					loc_x = 33600;
+					loc_y = 33230;
+				}
+				else if(rand <= 100)
+				{
+					loc_x = 33606;
+					loc_y = 33232;
+				}
+			}
+			L1Teleport.teleport(pc, loc_x, loc_y, mapid, 5, true);
 		}
 		else
 		{

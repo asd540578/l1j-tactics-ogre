@@ -51,6 +51,7 @@ public class L1Who implements L1CommandExecutor {
 				StringBuffer buf = new StringBuffer();
 				for (L1PcInstance each : players) {
 					buf.append(each.getName());
+					buf.append("[" + each.getClanname() + "]");
 					buf.append(" / ");
 					if (buf.length() > 50) {
 						pc.sendPackets(new S_SystemMessage(buf.toString()));

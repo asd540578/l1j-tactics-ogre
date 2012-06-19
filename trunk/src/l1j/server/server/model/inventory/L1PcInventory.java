@@ -223,7 +223,7 @@ public class L1PcInventory extends L1Inventory {
 
 	/**
 	 * インベントリ内のアイテムの状態を更新する。
-	 * 
+	 *
 	 * @param item
 	 *            - 更新対象のアイテム
 	 * @param column
@@ -299,7 +299,7 @@ public class L1PcInventory extends L1Inventory {
 
 	/**
 	 * インベントリ内のアイテムの状態をDBに保存する。
-	 * 
+	 *
 	 * @param item
 	 *            - 更新対象のアイテム
 	 */

@@ -6439,6 +6439,8 @@ public class C_ItemUSe extends ClientBasePacket
 					loc_y = 33232;
 				}
 			}
+    		loc_x += _random.nextInt(3);
+    		loc_y += _random.nextInt(3);
 			L1Teleport.teleport(pc, loc_x, loc_y, mapid, 5, true);
 		}
 		else

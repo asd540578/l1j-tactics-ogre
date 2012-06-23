@@ -3153,7 +3153,7 @@ public class C_ItemUSe extends ClientBasePacket
         			int locY = ((L1EtcItem) l1iteminstance.getItem()).get_locy();
         			short mapId = ((L1EtcItem) l1iteminstance.getItem()).get_mapid();
         			if (locX != 0 && locY != 0)
-        			{ // 各種テレポートスクロール
+        			{
         				if (pc.getMap().isEscapable() || pc.isGm())
         				{
         					L1Skill _skill = SkillTable.getInstance().findBySkillId(L1SkillId.ABSOLUTE_BARRIER);

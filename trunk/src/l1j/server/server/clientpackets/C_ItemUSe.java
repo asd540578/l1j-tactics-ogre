@@ -3146,6 +3146,48 @@ public class C_ItemUSe extends ClientBasePacket
 					useToiTeleportAmulet(pc, itemId, l1iteminstance);
 					/* t.s add start 2011.08.20 */
 				}
+				// t.s 2012/06/23 add start
+				else if (itemId >= 61000 && itemId <= 61003)
+				{
+					int locX = ((L1EtcItem) l1iteminstance.getItem()).get_locx();
+        			int locY = ((L1EtcItem) l1iteminstance.getItem()).get_locy();
+        			short mapId = ((L1EtcItem) l1iteminstance.getItem()).get_mapid();
+        			if (locX != 0 && locY != 0)
+        			{ // 各種テレポートスクロール
+        				if (pc.getMap().isEscapable() || pc.isGm())
+        				{
+        					L1Skill _skill = SkillTable.getInstance().findBySkillId(L1SkillId.ABSOLUTE_BARRIER);
+        					pc.setSkillEffect(L1SkillId.ABSOLUTE_BARRIER, 8000, 0);
+        					_skill.newBuffSkillExecutor().addEffect(pc, pc, 0);
+        					int castgfx = _skill.getCastGfx();
+        					pc.sendPackets(new S_SkillSound(pc.getId(), castgfx));
+        					pc.broadcastPacket(new S_SkillSound(pc.getId(),castgfx));
+
+        					L1Teleport.teleport(pc, locX, locY, mapId,
+        							pc.getHeading(), true);
+        					pc.getInventory().removeItem(l1iteminstance, 1);
+        				}
+        				else
+        				{
+        					pc.sendPackets(new S_ServerMessage(647));
+        				}
+        			}
+        			else
+        			{
+        				if (l1iteminstance.getCount() < 1)
+        				{ // あり得ない？
+        					pc.sendPackets(new S_ServerMessage(329,
+        							l1iteminstance.getLogName())); // \f1%0を持っていません。
+        				}
+        				else
+        				{
+        					pc.sendPackets(new S_ServerMessage(74,
+        							l1iteminstance.getLogName())); // \f1%0
+        					// は使用できません。
+        				}
+        			}
+				}
+				// t.s 2012/06/23 add end
 				else if (itemId >= 60151 && itemId <= 60184)
 				{
 					L1Skill _skill = SkillTable.getInstance().findBySkillId(L1SkillId.ABSOLUTE_BARRIER);

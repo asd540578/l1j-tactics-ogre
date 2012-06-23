@@ -937,16 +937,16 @@ public class L1Character extends L1Object {
 		_level = (int) level;
 	}
 
-	private short _maxHp = 0; // ● ＭＡＸＨＰ（1～32767）
+	private int _maxHp = 0; // ● ＭＡＸＨＰ（1～32767）
 	private int _trueMaxHp = 0; // ● 本当のＭＡＸＨＰ
 
-	public short getMaxHp() {
+	public int getMaxHp() {
 		return _maxHp;
 	}
 
 	public void setMaxHp(int hp) {
 		_trueMaxHp = hp;
-		_maxHp = (short) IntRange.ensure(_trueMaxHp, 1, 32767);
+		_maxHp = IntRange.ensure(_trueMaxHp, 1, 100000);
 		_currentHp = Math.min(_currentHp, _maxHp);
 	}
 

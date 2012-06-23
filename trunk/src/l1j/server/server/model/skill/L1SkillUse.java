@@ -3114,7 +3114,7 @@ public class L1SkillUse
 							_boneBreakDuration, cha.getX(), cha.getY(),
 							cha.getMapId());
 					int chance = (random.nextInt(100) + 1);
-					int probability = (l1skills.getProbabilityValue() - (2 * cha
+					int probability = (l1skills.getProbabilityValue() - (1 * cha
 							.getRegistStun()));
 					// DB ProbabitiyValueからスタン耐性２倍を引く
 					if (chance <= probability)

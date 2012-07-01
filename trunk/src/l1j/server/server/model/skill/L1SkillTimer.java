@@ -146,7 +146,7 @@ class L1SkillStop {
 				pc.sendPackets(new S_Strup(pc, 2, 0));
 			}
 		} else if (skillId == SHADOW_FANG) { // シャドウ ファング
-			cha.addDmgup(-5);
+			cha.addDmgup(-20);
 		} else if (skillId == ENCHANT_WEAPON) { // エンチャント ウェポン
 			cha.addDmgup(-2);
 		} else if (skillId == BLESSED_ARMOR) { // ブレスド アーマー

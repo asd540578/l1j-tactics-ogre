@@ -1,0 +1,114 @@
+113
+2723 929 "milkcow"   ; 젖소 format : image desc(tooltip) actionStr
+2719 930 "deer"      ; 사슴 
+2718 931 "wild boar"  ; 멧돼지
+2720 59 "orc" ; 오크
+2722 267 "bow orc" ; 오크 궁수
+2713 958 "goblin" ; 고블린
+2724 970 "kobolds" ; 코볼트
+2715 58 "dwarf" ; 난쟁이
+2721 266 "orc fighter" ; 오크 전사
+2716 18 "werewolf" ; 늑대인간
+2717 56 "stone golem" ; 돌 골렘
+2714 6 "floating eye" ; 괴물 눈
+2711 960 "giant ant" ; 거대 개미
+2712 961 "giant ant soldier" ; 거대 병정 개미
+2617 325 "bugbear" ; 버그베어
+2616 990 "lycanthrope" ; 라이칸스로프
+2622 986 "skeleton archer polymorph" ; 해골궁수
+2623 987 "skeleton axeman polymorph" ; 해골도끼병
+2624 988 "skeleton pike polymorph" ; 해골창병
+2621 7 "skeleton polymorph" ; 해골"
+2618 318 "spartoi polymorph" ; 스파토이
+2612 504 "ghast" ; 가스트
+2614 317 "ghoul" ; 구울
+2613 496 "gandi orc" ; 간디 오크
+2615 498 "dudamara orc" ; 두다-마라 오크
+2619 494 "atuba orc" ; 아투바 오크
+2620 319 "ungoliant" ; 웅골리언트
+2630 511 "orc scout polymorph" ; 오크 스카우트
+2635 937 "king bugbear" ; 킹 버그베어
+2632 19 "elder" ; 장로
+2625 1393 "minotaur i morph" ; 미노타우르스
+2629 953 "ogre" ; 오우거
+2636 989 "troll" ; 트롤
+2634 646 "cerberus"  ; 켈베로스
+2627 966 "scorpion" ; 스콜피온
+2631 1398 "giant a morph" ; 자이언트
+2628 1786 "yeti morph" ; 에티
+2633 2115 "gelatincube" ; 젤라틴 큐브
+2626 3145 "middle oum" ; 미들오움
+2642 1000 "succubus morph" ; 서큐버스
+2643 1790 "elmor soldier morph" ; 좀비 엘모어 병사
+2641 2099 "bandit bow morph" ; 산적
+2639 1010 "ettin" ; 에틴
+2638 1113 "cyclops" ; 사이클롭스
+2637 1176 "griffon" ; 그리폰
+2640 969 "cockatrice" ; 코카트리스
+2650 992 "dark elder" ; 흑장로
+2644 337 "necromancer3" ; 메르키오르 
+2646 338 "necromancer4" ; 세마
+2645 335 "necromancer1" ; 발터자르
+2649 336 "necromancer2" ; 카스파 
+2648 2445 "assassin" ; 어쌔신
+2647 3119 "darkelf carrier" ; 수송 다크엘프
+2651 2495 "darkelf ranger morph" ; 다크엘프 레인저 
+2652 2112 "lesser demon" ; 레서 데몬
+2653 1787 "elmor general morph" ; 좀비 엘모어 장군 
+2654 306 "baphomet" ;바포메트
+2655 945 "beleth" ;베레스
+2656 2487 "guardian armor morph" ; 가디언 아머
+2659 8588 "darkelf guard morph" ; 다크엘프 가드(활)
+2658 8589 "darkelf spear morph" ; 다크엘프 가드(창) 
+2660 2888 "darkelf wizard morph" ; 다크엘프 위자드
+2657 2106 "great minotaur morph" ; 그레이트 미노타우르스 
+2662 1572 "fire bowman morph" ; 불타는 궁수
+2663 274 "black knight chief morph" ; 커츠
+2664 272 "black knight morph" ; 흑기사 
+2661 1175 "demon" ; 데몬 
+2666 371 "death 52" ; 데스나이트
+2667 8590 "spearm 52" ; 랜스 마스터
+2665 1042 "darkelf 52" ; 다크 엘프
+2669 2114 "barlog 52" ; 발록 
+2668 2885 "general 52" ; 다크엘프 제너럴
+2670 2446 "assassin 52" ; 어쌔신 마스터 
+2671 8591 "neo black knight" ; 다크 나이트 
+2673 8607 "neo black mage" ; 다크 매지스터
+2672 8608 "neo black scouter" ; 다크 레인저
+2674 8609 "neo black assassin" ; 다크 쉐도우
+2677 371 "death 55" ; 데스나이트
+2678 8590 "spearm 55" ; 랜스 마스터
+2675 1042 "darkelf 55" ; 다크 엘프
+2676 2885 "general 55" ; 다크엘프 제너럴
+2679 2114 "barlog 55" ; 발록 
+2680 2446 "assassin 55" ; 어쌔신 마스터 
+2686 8595 "neo silver knight" ; 실버 나이트
+2688 8596 "neo silver mage" ; 실버 매지스터 
+2687 8597 "neo silver scouter" ; 실버 레인저
+2689 8598 "neo silver assassin" ; 실버 쉐도우 
+2683 371 "death 60" ; 데스나이트
+2684 8590 "spearm 60" ; 랜스 마스터 
+2681 1042 "darkelf 60" ; 다크 엘프 
+2682 2885 "general 60" ; 다크엘프 제너럴 
+2685 2114 "barlog 60"  ; 발록 
+2690 2446 "assassin 60" ; 어쌔신 마스터 
+2696 8599 "neo gold knight" ; 소드 마스터 
+2700 8600 "neo gold mage" ; 위자드리 마스터 
+2698 8601 "neo gold scouter" ; 애로우 마스터 
+2697 8602 "neo gold assassin" ; 쉐도우 마스터 
+2693 371 "death 65" ; 데스나이트 
+2694 8590 "spearm 65" ; 랜스 마스터 
+2691 1042 "darkelf 65" ; 다크 엘프 
+2692 2885 "general 65" ; 다크엘프 제너럴 
+2695 2114 "barlog 65" ; 발록
+2699 2446 "assassin 65" ; 어쌔신 마스터 
+2706 8603 "neo platinum knight" ; 아크 나이트 
+2709 8604 "neo platinum mage" ; 아크 위자드 
+2708 8605 "neo platinum scouter" ; 아크 스카우터 
+2707 8606 "neo platinum assassin" ; 아크 쉐도우 
+2703 371 "death 70" ; 데스나이트 
+2704 8590 "spearm 70" ; 랜스 마스터 
+2701 1042 "darkelf 70" ; 다크 엘프 
+2702 2885 "general 70" ; 다크엘프 제너럴 
+2705 2114 "barlog 70" ; 발록 
+2710 2446 "assassin 70" ; 어쌔신 마스터

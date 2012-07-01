@@ -1,0 +1,304 @@
+305
+6
+45 95 209 ; field zone name 0 blue
+10 173 90 ; 1-19 zone 1 green
+174 157 14 ; 20-29 zone 2 yellow
+213 130 23 ; 30-39 zone 3 orange
+222 60 60 ; 40-49 zone 4 red
+133 14 189 ; 50-99 zone 5 purple
+
+; Zone Infomation
+"말하는 섬" 0 0 0 0 0 0 ;Talking Island
+"말하는 섬 던전1층" 1 1 0 0 0 0 ;Talking island dungeon B1
+"말하는 섬 던전2층" 1 2 0 0 0 0 ;Talking island dungeon B2
+"군터의 집" 0 3 0 0 0 0 ;Gunter's house
+"글루딘행 배" 0 5 0 0 0 0 ;Ship talking island to aden world
+"말하는 섬행 배" 0 6 0 0 0 0 ;Ship aden world to talking island
+"글루디오 던전1층" 1 7 0 0 0 0 ;Dungeon in gludio B1
+"글루디오 던전2층" 1 8 0 0 0 0 ;Dungeon in gludio B2
+"글루디오 던전3층" 1 9 0 0 0 0 ;Dungeon in gludio B3
+"글루디오 던전4층" 1 10 0 0 0 0 ;Dungeon in gludio B4
+"글루디오 던전5층" 1 11 0 0 0 0 ;Dungeon in gludio B5
+"글루디오 던전6층" 1 12 0 0 0 0 ;Dungeon in gludio B6
+"글루디오 던전7층" 1 13 0 0 0 0 ;Dungeon in gludio B7
+"지하 통로" 1 14 0 0 0 0 ;Underworld path
+"켄트 내성" 0 15 0 0 0 0 ;Kent inner castle
+"하딘의 연구소" 0 16 0 0 0 0 ;Hardin's lab
+"네루파의 동굴" 0 17 0 0 0 0 ;Nerupa's house
+"듀펠게넌 던전" 0 18 0 0 0 0 ;Dupelgenon dungeon
+"요정숲 던전1층" 1 19 0 0 0 0 ;Dungeon in Elven forest B1
+"요정숲 던전2층" 1 20 0 0 0 0 ;Dungeon in Elven forest B2
+"요정숲 던전3층" 1 21 0 0 0 0 ;Dungeon in Elven forest B3
+"게라드의 시험던전" 1 22 0 0 0 0 ;Gerard test dungeon
+"윈다우드성 던전" 1 23 0 0 0 0 ;Windawood castle dungeon
+"윈다우드성 던전" 2 24 0 0 0 0 ;Windawood castle dungeon
+"수련 던전1층" 1 25 0 0 0 0 ;Dungeon in windawood B1
+"수련 던전2층" 1 26 0 0 0 0 ;Dungeon in windawood B2
+"수련 던전3층" 1 27 0 0 0 0 ;Dungeon in windawood B3
+"수련 던전4층" 2 28 0 0 0 0 ;Dungeon in windawood B4
+"윈다우드 내성" 0 29 0 0 0 0 ;Windawood inner castle
+"용의계곡 던전1층" 2 30 0 0 0 0 ;Dungeon in dragon valley B1
+"용의계곡 던전2층" 2 31 0 0 0 0 ;Dungeon in dragon valley B2
+"용의계곡 던전3층" 2 32 0 0 0 0 ;Dungeon in dragon valley B3
+"용의계곡 던전4층" 2 33 0 0 0 0 ;Dungeon in dragon valley B4
+"용의계곡 던전5층" 2 35 0 0 0 0 ;Dungeon in dragon valley B5
+"용의계곡 던전6층" 2 36 0 0 0 0 ;Dungeon in dragon valley B6
+"안타라스 둥지" 5 37 0 0 0 0 ;Lair of Antharas
+"개미굴" 1 43 0 0 0 0 ;Ant cave
+"개미굴" 1 44 0 0 0 0 ;Ant cave
+"개미굴" 1 45 0 0 0 0 ;Ant cave
+"개미굴" 1 46 0 0 0 0 ;Ant cave
+"개미굴" 1 47 0 0 0 0 ;Ant cave
+"개미굴" 1 48 0 0 0 0 ;Ant cave
+"개미굴" 1 49 0 0 0 0 ;Ant cave
+"개미굴" 1 50 0 0 0 0 ;Ant cave
+"개미굴" 2 51 0 0 0 0 ;Ant cave
+"기란 내성" 0 52 0 0 0 0 ;Giran inner castle
+"기란 던전1층" 1 53 0 0 0 0 ;Dungeon in giran B1
+"기란 던전2층" 1 54 0 0 0 0 ;Dungeon in giran B2
+"기란 던전3층" 1 55 0 0 0 0 ;Dungeon in giran B3
+"기란 던전4층" 1 56 0 0 0 0 ;Dungeon in giran B4
+"노래하는 섬" 0 57 0 0 0 0 ;Singing island
+"숨겨진 계곡" 0 58 0 0 0 0 ;Hidden valley
+"에바왕국 던전1층" 1 59 0 0 0 0 ;Dungeon of Eva kingdom B1
+"에바왕국 던전2층" 1 60 0 0 0 0 ;Dungeon of Eva kingdom B2
+"에바왕국 던전3층" 2 61 0 0 0 0 ;Dungeon of Eva kingdom B3
+"에바의 성지" 0 62 0 0 0 0 ;Sanctury of Eva
+"에바왕국" 1 63 0 0 0 0 ;Kingdom of Eva
+"하이네 내성" 0 64 0 0 0 0 ;Heine inner castle
+"파푸리온 둥지" 5 65 0 0 0 0 ;Lair of Fafurion
+"드워프 동굴" 0 66 0 0 0 0 ;Dwarf cave
+"발라카스 둥지" 5 67 0 0 0 0 ;Lair of Valakas
+"노래하는 섬" 1 68 0 0 0 0 ;Singing island
+"숨겨진 계곡" 1 69 0 0 0 0 ;Hidden valley
+"린드비오르 둥지" 5 4 34065 33053 34017 32948 ;Lair of Lindvior
+"잊혀진 섬" 3 70 0 0 0 0 ;Forgotten island
+"오렌 얼음던전1층" 2 72 0 0 0 0 ;Oren ice dungeon B1
+"오렌 얼음던전2층" 2 73 0 0 0 0 ;Oren ice dungeon B2
+"오렌 얼음던전3층" 2 74 0 0 0 0 ;Oren ice dungeon B3
+"오렌 상아탑 1층" 1 75 0 0 0 0 ;Oren tower of ivory 1F
+"오렌 상아탑 2층" 1 76 0 0 0 0 ;Oren tower of ivory 2F
+"오렌 상아탑 3층" 1 77 0 0 0 0 ;Oren tower of ivory 3F
+"오렌 상아탑 4층" 1 78 0 0 0 0 ;Oren tower of ivory 4F
+"오렌 상아탑 5층" 1 79 0 0 0 0 ;Oren tower of ivory 5F
+"오렌 상아탑 6층" 1 80 0 0 0 0 ;Oren tower of ivory 6F
+"오렌 상아탑 7층" 1 81 0 0 0 0 ;Oren tower of ivory 7F
+"오렌 상아탑 8층" 3 82 0 0 0 0 ;Oren tower of ivory 8F
+"잊혀진 섬행 배" 0 83 0 0 0 0 ;Ship aden world to forgotten island
+"하이네행 배" 0 84 0 0 0 0 ;Ship forgotten island to Aden world
+"노래하는 섬 던전" 1 85 0 0 0 0 ;Singing island dungeon
+"숨겨진 계곡 던전" 1 86 0 0 0 0 ;Hidden valley dungeon
+"수련 동굴" 0 87 0 0 0 0 ;Newbie dungeon
+"기란 콜롯세움" 0 88 0 0 0 0 ;Giran Colosseum
+"기란 콜롯세움" 0 89 0 0 0 0 ;Giran Colosseum
+"기란 콜롯세움" 0 90 0 0 0 0 ;Giran Colosseum
+"말하는 섬 콜롯세움" 0 91 0 0 0 0 ;Talking island Colosseum
+"글루디오 콜롯세움" 0 92 0 0 0 0 ;Gludio Colosseum
+"켄트 콜롯세움" 0 93 0 0 0 0 ;Kent Colosseum
+"윈다우드 콜롯세움" 0 94 0 0 0 0 ;Windawood Colosseum
+"은기사마을 콜롯세움" 0 95 0 0 0 0 ;Silver knight Colosseum
+"발라카스 둥지 콜롯세움" 0 96 0 0 0 0 ;Lair of Valakas Colosseum
+"하이네 콜롯세움" 0 97 0 0 0 0 ;Heine Colosseum
+"웰던 콜롯세움" 0 98 0 0 0 0 ;Welldone Colosseum
+"운영자의 방" 0 99 0 0 0 0 ;Healper's room
+"오만의 탑 1층" 0 101 0 0 0 0 ;Oman tower 1F
+"오만의 탑 2층" 3 102 0 0 0 0 ;Oman tower 2F
+"오만의 탑 3층" 3 103 0 0 0 0 ;Oman tower 3F
+"오만의 탑 4층" 2 104 0 0 0 0 ;Oman tower 4F
+"오만의 탑 5층" 3 105 0 0 0 0 ;Oman tower 5F
+"오만의 탑 6층" 1 106 0 0 0 0 ;Oman tower 6F
+"오만의 탑 7층" 3 107 0 0 0 0 ;Oman tower 7F
+"오만의 탑 8층" 1 108 0 0 0 0 ;Oman tower 8F
+"오만의 탑 9층" 3 109 0 0 0 0 ;Oman tower 9F
+"오만의 탑 10층" 3 110 0 0 0 0 ;Oman tower 10F
+"오만의 탑 11층" 3 111 0 0 0 0 ;Oman tower 11F
+"오만의 탑 12층" 3 112 0 0 0 0 ;Oman tower 12F
+"오만의 탑 13층" 3 113 0 0 0 0 ;Oman tower 13F
+"오만의 탑 14층" 1 114 0 0 0 0 ;Oman tower 14F
+"오만의 탑 15층" 3 115 0 0 0 0 ;Oman tower 15F
+"오만의 탑 16층" 1 116 0 0 0 0 ;Oman tower 16F
+"오만의 탑 17층" 3 117 0 0 0 0 ;Oman tower 17F
+"오만의 탑 18층" 1 118 0 0 0 0 ;Oman tower 18F
+"오만의 탑 19층" 3 119 0 0 0 0 ;Oman tower 19F
+"오만의 탑 20층" 4 120 0 0 0 0 ;Oman tower 20F
+"오만의 탑 21층" 3 121 0 0 0 0 ;Oman tower 21F
+"오만의 탑 22층" 4 122 0 0 0 0 ;Oman tower 22F
+"오만의 탑 23층" 4 123 0 0 0 0 ;Oman tower 23F
+"오만의 탑 24층" 2 124 0 0 0 0 ;Oman tower 24F
+"오만의 탑 25층" 4 125 0 0 0 0 ;Oman tower 25F
+"오만의 탑 26층" 1 126 0 0 0 0 ;Oman tower 26F
+"오만의 탑 27층" 4 127 0 0 0 0 ;Oman tower 27F
+"오만의 탑 28층" 2 128 0 0 0 0 ;Oman tower 28F
+"오만의 탑 29층" 4 129 0 0 0 0 ;Oman tower 29F
+"오만의 탑 30층" 4 130 0 0 0 0 ;Oman tower 30F
+"오만의 탑 31층" 4 131 0 0 0 0 ;Oman tower 31F
+"오만의 탑 32층" 4 132 0 0 0 0 ;Oman tower 32F
+"오만의 탑 33층" 4 133 0 0 0 0 ;Oman tower 33F
+"오만의 탑 34층" 1 134 0 0 0 0 ;Oman tower 34F
+"오만의 탑 35층" 4 135 0 0 0 0 ;Oman tower 35F
+"오만의 탑 36층" 1 136 0 0 0 0 ;Oman tower 36F
+"오만의 탑 37층" 4 137 0 0 0 0 ;Oman tower 37F
+"오만의 탑 38층" 2 138 0 0 0 0 ;Oman tower 38F
+"오만의 탑 39층" 4 139 0 0 0 0 ;Oman tower 39F
+"오만의 탑 40층" 4 140 0 0 0 0 ;Oman tower 40F
+"오만의 탑 41층" 4 141 0 0 0 0 ;Oman tower 41F
+"오만의 탑 42층" 4 142 0 0 0 0 ;Oman tower 42F
+"오만의 탑 43층" 4 143 0 0 0 0 ;Oman tower 43F
+"오만의 탑 44층" 2 144 0 0 0 0 ;Oman tower 44F
+"오만의 탑 45층" 4 145 0 0 0 0 ;Oman tower 45F
+"오만의 탑 46층" 1 146 0 0 0 0 ;Oman tower 46F
+"오만의 탑 47층" 4 147 0 0 0 0 ;Oman tower 47F
+"오만의 탑 48층" 2 148 0 0 0 0 ;Oman tower 48F
+"오만의 탑 49층" 4 149 0 0 0 0 ;Oman tower 49F
+"오만의 탑 50층" 4 150 0 0 0 0 ;Oman tower 50F
+"오만의 탑 51층" 4 151 0 0 0 0 ;Oman tower 51F
+"오만의 탑 52층" 4 152 0 0 0 0 ;Oman tower 52F
+"오만의 탑 53층" 4 153 0 0 0 0 ;Oman tower 53F
+"오만의 탑 54층" 2 154 0 0 0 0 ;Oman tower 54F
+"오만의 탑 55층" 4 155 0 0 0 0 ;Oman tower 55F
+"오만의 탑 56층" 1 156 0 0 0 0 ;Oman tower 56F
+"오만의 탑 57층" 4 157 0 0 0 0 ;Oman tower 57F
+"오만의 탑 58층" 2 158 0 0 0 0 ;Oman tower 58F
+"오만의 탑 59층" 4 159 0 0 0 0 ;Oman tower 59F
+"오만의 탑 60층" 5 160 0 0 0 0 ;Oman tower 60F
+"오만의 탑 61층" 4 161 0 0 0 0 ;Oman tower 61F
+"오만의 탑 62층" 4 162 0 0 0 0 ;Oman tower 62F
+"오만의 탑 63층" 4 163 0 0 0 0 ;Oman tower 63F
+"오만의 탑 64층" 2 164 0 0 0 0 ;Oman tower 64F
+"오만의 탑 65층" 4 165 0 0 0 0 ;Oman tower 65F
+"오만의 탑 66층" 1 166 0 0 0 0 ;Oman tower 66F
+"오만의 탑 67층" 4 167 0 0 0 0 ;Oman tower 67F
+"오만의 탑 68층" 2 168 0 0 0 0 ;Oman tower 68F
+"오만의 탑 69층" 4 169 0 0 0 0 ;Oman tower 69F
+"오만의 탑 70층" 5 170 0 0 0 0 ;Oman tower 70F
+"오만의 탑 71층" 4 171 0 0 0 0 ;Oman tower 71F
+"오만의 탑 72층" 4 172 0 0 0 0 ;Oman tower 72F
+"오만의 탑 73층" 4 173 0 0 0 0 ;Oman tower 73F
+"오만의 탑 74층" 2 174 0 0 0 0 ;Oman tower 74F
+"오만의 탑 75층" 5 175 0 0 0 0 ;Oman tower 75F
+"오만의 탑 76층" 1 176 0 0 0 0 ;Oman tower 76F
+"오만의 탑 77층" 4 177 0 0 0 0 ;Oman tower 77F
+"오만의 탑 78층" 2 178 0 0 0 0 ;Oman tower 78F
+"오만의 탑 79층" 5 179 0 0 0 0 ;Oman tower 79F
+"오만의 탑 80층" 5 180 0 0 0 0 ;Oman tower 80F
+"오만의 탑 81층" 5 181 0 0 0 0 ;Oman tower 81F
+"오만의 탑 82층" 5 182 0 0 0 0 ;Oman tower 82F
+"오만의 탑 83층" 5 183 0 0 0 0 ;Oman tower 83F
+"오만의 탑 84층" 3 184 0 0 0 0 ;Oman tower 84F
+"오만의 탑 85층" 5 185 0 0 0 0 ;Oman tower 85F
+"오만의 탑 86층" 1 186 0 0 0 0 ;Oman tower 86F
+"오만의 탑 87층" 5 187 0 0 0 0 ;Oman tower 87F
+"오만의 탑 88층" 3 188 0 0 0 0 ;Oman tower 88F
+"오만의 탑 89층" 5 189 0 0 0 0 ;Oman tower 89F
+"오만의 탑 90층" 5 190 0 0 0 0 ;Oman tower 90F
+"오만의 탑 91층" 5 191 0 0 0 0 ;Oman tower 91F
+"오만의 탑 92층" 5 192 0 0 0 0 ;Oman tower 92F
+"오만의 탑 93층" 5 193 0 0 0 0 ;Oman tower 93F
+"오만의 탑 94층" 5 194 0 0 0 0 ;Oman tower 94F
+"오만의 탑 95층" 5 195 0 0 0 0 ;Oman tower 95F
+"오만의 탑 96층" 1 196 0 0 0 0 ;Oman tower 96F
+"오만의 탑 97층" 5 197 0 0 0 0 ;Oman tower 97F
+"오만의 탑 98층" 5 198 0 0 0 0 ;Oman tower 98F
+"오만의 탑 99층" 5 199 0 0 0 0 ;Oman tower 99F
+"오만의 탑 100층" 5 200 0 0 0 0 ;Oman tower 100F
+"마법사 퀘스트 던전" 1 201 0 0 0 0 ;Mage quest dungeon
+"마법사 퀘스트 던전" 1 202 0 0 0 0 ;Mage quest dungeon
+"마법사 퀘스트 던전" 1 203 0 0 0 0 ;Mage quest dungeon
+"마법사 퀘스트 던전" 1 204 0 0 0 0 ;Mage quest dungeon
+"다크엘프 던전" 1 209 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 1 210 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 1 211 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 1 212 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 3 213 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 1 214 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 1 215 0 0 0 0 ;Darkelf dungeon
+"다크엘프 던전" 1 216 0 0 0 0 ;Darkelf dungeon
+"뮤턴트 개미 던전" 1 217 0 0 0 0 ;Mutant ant dungeon
+"뮤턴트 개미 던전" 1 218 0 0 0 0 ;Mutant ant dungeon
+"게라드의 시험 던전" 1 221 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 222 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 223 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 224 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 225 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 226 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 227 0 0 0 0 ;Gerard test dungeon
+"게라드의 시험 던전" 1 228 0 0 0 0 ;Gerard test dungeon
+"짐 던전" 0 237 0 0 0 0 ;Jim dungeon
+"아덴 내성" 0 300 0 0 0 0 ;Aden inner castle
+"오만의 탑 지하수로" 0 301 0 0 0 0 ;Oman tower underground path
+"세피아 던전" 0 302 0 0 0 0 ;Sepia dungeon
+"몽환의 섬" 3 303 0 0 0 0 ;Island of phantasm
+"침묵의 동굴" 1 304 0 0 0 0 ;Silence cave
+"블루디카 소굴" 1 305 0 0 0 0 ;Elder cave
+"다크엘프 퀘스트 던전" 1 306 0 0 0 0 ;Dungeon of evil thoughts
+"지하 침공로 1층" 1 307 0 0 0 0 ;Diad route B1
+"지하 침공로 2층" 1 308 0 0 0 0 ;Diad route B2
+"지하 침공로 3층" 1 309 0 0 0 0 ;Diad route B3
+"지옥" 0 666 0 0 0 0 ;The hell
+"Ancient 1F" 1 2000 0 0 0 0
+"Ancient 2F" 4 2001 0 0 0 0
+"Ancient 3F" 4 2002 0 0 0 0
+"Ancient 4F" 3 2003 0 0 0 0
+"오크 숲" 0 4 32511 32191 32960 32537 ;Orcish Forest
+"글루디오" 0 4 32512 32537 32960 33023 ;Gludio
+"윈다우드" 0 4 32512 33023 32960 33535 ;Windawood
+"요정 숲" 0 4 32960 32191 33216 32511 ;Elven Forest
+"켄트" 0 4 32960 32511 33280 33023 ;Kent
+"켄트" 0 4 33088 33023 33280 33087 ; Kent2
+"은기사 마을" 0 4 32960 33023 33088 33087 ;Silver knight Town
+"은기사 마을" 0 4 32959 33087 33280 33535 ;Silver knight Town2
+"용의 계곡" 0 4 33216 32191 33472 32511 ;Dragon valley
+"발라카스 둥지" 0 4 33472 32191 33856 32511 ;Lair of Valakas
+"발라카스 둥지" 0 4 33536 32511 33856 32575 ;Lair of Valakas2
+"기란" 0 4 33280 32511 33536 33023 ;Giran
+"기란" 0 4 33536 32575 33920 33023 ;Giran2
+"하이네" 0 4 33280 33023 33792 33535 ;Heine
+"오렌" 0 4 33856 32191 33920 32575 ;Oren
+"오렌" 0 4 33920 32127 34304 32739 ;Oren2
+"아덴" 0 4 33920 32739 34304 33023 ;Aden
+"아덴" 0 4 33792 33023 34304 33535 ;Aden2
+"여관" 0 17492 0 0 0 0 ;Auberge
+"글루딘 시장" 0 340 0 0 0 0 ;Gludin market
+"기란 시장" 0 350 0 0 0 0 ;Giran market
+"오렌 시장" 0 360 0 0 0 0 ;Oren market
+"은기사 마을 시장" 0 370 0 0 0 0 ;Silver Knight market
+"오움 던전" 0 310 0 0 0 0 ;Oum dungeon
+"디아드 요새" 3 320 0 0 0 0 ;Diad Fortress
+"광물 동굴" 0 330 0 0 0 0 ;Mineral cave
+"켄트성 던전 1층" 3 240 0 0 0 0 ;Kent Castle Dungeon 1F
+"켄트성 던전 2층" 3 241 0 0 0 0 ;Kent Castle Dungeon 2F
+"켄트성 던전 3층" 3 242 0 0 0 0 ;Kent Castle Dungeon 3F
+"켄트성 던전 4층" 4 243 0 0 0 0 ;Kent Castle Dungeon 4F
+"고대 거인의 무덤" 5 400 32728 32853 32788 33016 ;Ruin of Ancient Giant
+"고대 거인의 무덤" 5 400 32787 32905 32860 33014 ;Ruin of Ancient Giant
+"고대 거인의 무덤" 5 400 32767 32827 32798 32854 ;Ruin of Ancient Giant
+"대공동 저항군지역" 3 400 32566 32865 32574 32867 ; 저항지역짜투리이
+"대공동 저항군지역" 3 400 32552 32873 32554 32879 ; 저항지역짜투리일
+"대공동 은둔자지역" 3 400 32890 32677 32899 32682 ; 은둔지역짜투리삼
+"대공동 은둔자지역" 3 400 32890 32677 32899 32683 ; 은둔지역짜투리사
+"대공동 은둔자지역" 3 400 32708 32794 32747 32832 ; 은둔지역사
+"대공동 은둔자지역" 3 400 32536 32958 32552 32991 ; 은둔지역삼
+"대공동 은둔자지역" 3 400 32552 32865 32583 32991 ; 은둔지역이
+"대공동 은둔자지역" 3 400 32698 32650 32735 32717 ; 오움지역
+"대공동 은둔자지역" 3 400 32622 32811 32636 32816 ; 은둔지역짜투리삼
+"대공동 은둔자지역" 3 400 32837 32590 32890 32629 ; 정령지역
+"대공동 은둔자지역" 3 400 32735 32629 32890 32729 ; 오움지역이
+"대공동 은둔자지역" 3 400 32583 32816 32727 33004 ; 은둔자지역일
+"대공동 은둔자지역" 3 400 32817 32852 32863 32871 ; 지저호수지역삼
+"대공동 은둔자지역" 3 400 32918 32923 32996 32999 ; 지저호수지역이
+"대공동 은둔자지역" 3 400 32863 32828 32918 32939 ; 지저호수지역일
+"대공동 저항군지역" 3 400 0 0 0 0 ;Cavern
+"대공동 저항군지역" 3 401 32705 32768 32777 32807 ; 저항지오움연결
+"대공동 은둔자지역" 3 401 32782 32787 32819 32814 ; 은둔지북쪽폐허
+"대공동 은둔자지역" 3 401 32793 32832 32819 32876 ; 은둔지지저호수
+"마족 신전" 5 410 0 0 0 0 ;Sanctuary of Evil
+"지저 호수" 3 420 0 0 0 0 ;Abyss Lake
+"정령의 무덤" 4 430 0 0 0 0 ;Elemental Grave
+"해적섬" 2 440 0 0 0 0 ;Pirate Island
+"해적섬 던전 1층" 2 441 0 0 0 0 ;Pirate Island Dungeon B1
+"해적섬 던전 2층" 2 442 0 0 0 0 ;Pirate Island Dungeon B2
+"해적섬 던전 3층" 3 443 0 0 0 0 ;Pirate Island Dungeon B3
+"해적섬 던전 4층" 3 444 0 0 0 0 ;Pirate Island Dungeon B4
+"숨겨진 선착장" 0 445 0 0 0 0 ;Hidden dock to Pirate island
+"숨겨진 선착장행 배" 0 446 0 0 0 0 ;Ship Pirate island to Hidden dock
+"해적섬행 배" 0 447 0 0 0 0 ;Ship Hidden dock to Pirate island

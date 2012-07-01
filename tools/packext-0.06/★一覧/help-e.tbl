@@ -1,0 +1,70 @@
+69
+\f:Help      \f>F1\f7 or \f>?
+\f:Walk      \f>Arrow keys\f7 or
+          Click on map.
+\f:Turn      \f7Shift click on
+          map.
+\f:Say       \f7Just type or
+          Click on input
+          area.
+\f:Whisper   \f>"
+          Shift click on
+          input area.
+          Enter name or
+          select one using
+          up/down arrows
+          and enter message.
+\f:Shout     \f>!
+          Ctrl click on
+          input area.
+\f:Chat      \f>&
+          Talk at chatting
+          channel. To unsub
+          scribe type \f>/chat
+          \f>off\f7.
+\f:Blood Pledge Chat \f>@
+          Chat only with
+          your blood pledge
+          members.
+\f:Inventory \f>Tab
+\f:Get       \f7Click on item.
+\f:Other     \f7Right click on
+\f: item     \f7item.
+\f:Drop      \f7Drag item from
+          inventory to map.
+\f:Give      \f7Drag item from
+          inventory to other
+          people.
+\f:Use       \f7Double click on
+          item.
+\f:Attack    \f7Ctrl click on
+          target.
+\f:Quit      \f>Ctrl+Q
+\f>/who \f:name
+          Get info about an
+          user.
+\f>/create   \f7Create a new blood
+          pledge. Only for
+          prince or
+          princess.
+\f>/join     \f7Join a blood
+          pledge. In front
+          of the blood
+          pledge leader.
+\f>/leave    \f7Leave your blood
+          pledge.
+\f>/exclude \f:name
+          Exclude a person
+          from conversation.
+          If \f:name\f7 is not
+          given, show list
+          of users currently
+          excluded. To can-
+          cel exclusion,
+          give same command
+          one more.
+\f>/chat on \f7or \f>off
+          Join or leave the
+          chatting channel.
+
+\f:Cancel input  \f>ESC

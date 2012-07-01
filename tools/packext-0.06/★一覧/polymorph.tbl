@@ -1,0 +1,97 @@
+97
+3397 59 "re orc" ;オーク
+3391 511 "re orc scout" ;オークスカウト
+3395 58 "re dwarf" ;ドワーフ
+2614 317 "re ghoul" ;グール
+2621 7 "re skeleton" ;スケルトン"
+2622 986 "re skeleton archer" ;スケルトンアーチャー
+3396 18 "re werewolf" ;ウェアウルフ
+2616 990 "re lycanthrope" ;ライカンスロープ
+2617 325 "re bugbear" ;バグベアー
+3393 960 "re giant ant" ;ジャイアントアント
+3429 961 "re giant ant soldier" ;ジャイアントアントソルジャー
+2620 319 "re ungoliant" ;ドレッドスパイダー
+2612 504 "re ghast" ;ガースト
+3388 1174 "re lizardman" ;リザードマン
+3399 3145 "re middle oum" ;ミドルオーム
+3394 969 "re cockatrice" ;コカトリス
+3401 3511 "re kiwi parrot" ;キウィ パロット
+3402 3379 "re wild fang" ;ワイルド ファング
+3400 3508 "re raccoon" ;ラクーン
+3387 1047 "re owlbear" ;オウルベアー
+3389 1431 "re ratman" ;ラットマン
+3390 1579 "re dragon fly" ;ドラゴン フライ
+3392 1000 "re succubus" ;サキュバス
+3398 2115 "re gelatincube" ;ゼラチンキューブ
+3406 4802 "re guard sword" ;グリーディー ファイター
+3404 3119 "re darkelf carrier" ;キャリング ダークエルフ
+3403 2445 "re darkelf assassin" ;アサシン
+2632 19 "re elder" ;長老
+3405 10816 "re orc axe" ;オーク アックス
+3407 2099 "re bandit bow" ;バンディット
+3411 4807 "re guard chief" ;伯爵親衛隊長
+3410 4801 "re guard spear" ;グリーディー ソルジャー
+3412 3728 "re hose" ;ホセ
+3409 992 "re dark elder" ;ブラック エルダー
+3408 2099 "re bandit axe" ;バンディット
+3413 2495 "re darkelf ranger" ;ダークエルフレンジャー
+3417 3726 "re cargo" ;シュノーヴァ
+3418 2890 "re darkelf spear" ;ダークエルフガード
+3416 3799 "re blaze" ;暗殺団長 ブレイズ
+3415 3141 "re black wizard" ;ブラック ウィザード
+3419 7768 "re dwarf boss" ;ドワーフジェネラル
+3414 2886 "re darkelf thief" ;ダーク エルフ シーフ
+2663 274 "re black knight chief" ;カーツ
+2664 272 "re black knight" ;ブラックナイト
+2670 2446 "re assassin master" ;アサシン マスター
+2654 306 "re baphomet" ;バフォメット
+3420 1393 "re minotaur" ;ミノタウルス
+2659 2890 "re darkelf guard" ;ダークエルフガード
+2666 371 "death 52" ;デスナイト
+2667 8590 "spearm 52" ; ランスマスター
+3422 3524 "re dreik" ;ドレイク
+3423 10609 "re xinclair" ;師団長 シンクレア
+3421 2106 "re great minotaur" ;グレートミノタウルス
+2665 1042 "re darkelf bow" ;ダークエルフ
+2671 8591 "neo black knight" ;ダークナイト
+2673 8607 "neo black mage" ;ダークマジスター
+2672 8608 "neo black scouter" ;ダークレンジャー
+2674 8609 "neo black assassin" ;ダークシャドウ
+2677 371 "death 55" ;デスナイト
+2678 8590 "spearm 55" ; ランスマスター
+2675 1042 "darkelf 55" ;ダークエルフ
+2686 8595 "neo silver knight" ;シルバーナイト
+2688 8596 "neo silver mage" ;シルバーマジスター
+2687 8597 "neo silver scouter" ;シルバーレンジャー
+2689 8598 "neo silver assassin" ;シルバーシャドウ
+2683 371 "death 60" ;デスナイト
+2684 8590 "spearm 60" ; ランスマスター
+2681 1042 "darkelf 60" ;ダークエルフ
+2696 8599 "neo gold knight" ;ソードマスター
+2700 8600 "neo gold mage" ;ウィザードリーマスター
+2698 8601 "neo gold scouter" ;アローマスター
+2697 8602 "neo gold assassin" ;シャドウマスター
+2693 371 "death 65" ;デスナイト
+2694 8590 "spearm 65" ;ランスマスター
+2691 1042 "darkelf 65" ;ダークエルフ
+2706 8603 "neo platinum knight" ;アークナイト
+2709 8604 "neo platinum mage" アークウィザード
+2708 8605 "neo platinum scouter" ;アークスカウター
+2707 8606 "neo platinum assassin" ;アークシャドウ
+2703 371 "death 70" ;デスナイト
+2704 8590 "spearm 70" ;ランスマスター
+2701 1042 "darkelf 70" ;ダークエルフ
+3436 2117 "young ken lauel" ;ケンラウヘル
+3434 2118 "young kelenis" ;ケレニス
+3437 10607 "young helvine" ;ヘルバイン
+3438 10608 "young dantes" ;ダンテス
+3430 371 "death 75" ; デスナイト
+3432 8590 "spearm 75" ; ランスマスター
+3743 1042 "darkelf 75" ;ダークエルフ
+3435 270 "young gunter" ;グンター 
+3439 10605 "young joewoo" ゾウ
+3440 10606 "young gilian" ジリアン
+3441 2441 "young bluedica" ブルディカ
+3431 371 "death 80" デスナイト
+3433 8590 "spearm 80" ランスマスター
+3744 1042 "darkelf 80" ;ダークエルフ

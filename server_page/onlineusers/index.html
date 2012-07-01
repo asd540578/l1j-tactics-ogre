@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>オンラインユーザー</title>
+</head>
+
+<body>
+<!-- ここから -->
+<h2>オンラインユーザー</h2>
+<script src = "jslb_ajax.js" charset = "utf-8"></script>
+<script language="javascript" type="text/javascript">
+<!--//
+function onlineusers(){
+	query = [];
+	sendRequest(onlineusers_loaded,query,'POST','onlineusers.php',true,true);
+}
+function onlineusers_loaded(oj){
+	document.getElementById('onlineusers_view').innerHTML=oj.responseText;
+}
+window.onload = onlineusers();
+//-->
+</script>
+<div id="onlineusers_view"></div>
+<!-- ここまで -->
+
+</body>
+</html>

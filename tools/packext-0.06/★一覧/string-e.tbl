@@ -1,0 +1,1034 @@
+1250
+Prince
+Princess
+Knight
+Knight
+Wizard
+Wizard
+Elf
+Elf
+Dark elf
+Dark elf
+New class
+New class
+Chaotic
+Neutral
+Lawful
+A Prince can be a team leader, good with weapons and armor, but not magic.
+A Princess can be a team leader, good with weapons and armor, but not magic.
+A Knight is good with weapons and armor, but cannot use magic.
+A Wizard knows spells well, but utilizes simple weaponry and light armor only.
+Shade moves fast and stealthy.
+An Elf has high charisma and knows Elvish weapons and armor well.
+A Rogue can steal from others.
+A Technician knows about explosives.
+Select your ID for the game (Korean: 1-6 characters; English: 2-12 characters).
+Select your password (min: 4 characters).
+Enter your password again for verification.
+Select your gender for the game.
+ID
+Password
+Password Confirmation
+Gender
+Male
+Female
+Occupation
+Create
+Cancel
+Create Character
+Login
+Create New...
+Lineage
+Connecting to the server...
+Checking for updated files...
+Connection refused. Maybe the server is down. Try again in five minutes.
+Can't resolve address of %s
+Connection timed out.
+Unknown error %d
+Error
+Connection disconnected.
+Receiving file.
+Can't execute lin.bin.
+Ready to quit? [Y/N] 
+Can't load %s
+Client version mismatch. Download new version.
+Invalid name. Try another name.
+Passwords are different. Enter same password.
+Password too short. Enter at least 8 characters.
+Invalid password. Enter at least 1 non-alphabetical character in the password.
+Account already exists. Try another name.
+Character already exists. Try another name.
+E-mail field is invalid. Enter your e-mail address correctly.
+Country field is invalid. Enter your country name correctly.
+Invalid class.
+Invalid gender.
+Invalid attributes.  Please distribute all the remaining points.
+You have been disconnected.
+Incorrect password.
+The user is already playing.
+Do you really want to delete the character?
+Press F1 for help.
+\f1%0s joined the game.
+\f1%0s left the game.
+\f1%0's connection closed.
+\f3 game will be stopped in %0 seconds. Please quit the game.
+\f1%0 is not playing now.
+You cannot use \f1%0%o.
+\f1Your backpack is full.
+\f1You ate %0.
+\f1You feel better.
+What do you want? 
+\f1Nothing happened.
+Where do you want to go? 
+\f1Current Users: %0
+\f1Your belongings are very heavy and you cannot carry more.
+What will be the name of your Blood Pledge? 
+\f1%0 Blood Pledge has been created.
+\f1Only a Prince or Princess can create a Blood Pledge.
+\f1You have already created a Blood Pledge.
+\f1You cannot join another Blood Pledge! You are a PRINCE!
+\f1You cannot join another Blood Pledge! You are a PRINCESS!
+\f1You have already joined a Blood Pledge.
+\f1%0%d has not created a Blood Pledge yet.
+\f1%0%s is not looking at you.
+\f1%0%d is not a Prince or Princess.
+\f1There is no one there.
+\f1You accepted %0%o as your Blood Pledge member.
+\f1You joined %0 Blood Pledge.
+\f1%0%s rejected your request.
+%0%s wants to join your Blood Pledge. Do you accept? (Y/N)
+\f1Your Blood Pledge name is too long.
+\f1That Blood Pledge name already exists.
+On whom do you want to get revenge? 
+%0%s didn't kill you.
+%0%s wants you to kill %1%o for him/her. Do you accept? (Y/N) 
+You're authorized to get revenge on %1 for %0.
+%0%s promised to kill %1.
+You have already requested three persons to take revenge.
+Visit the Lineage web site at http://www.lineage-us.com.
+Whom do you want to ban?
+\f3%0%s has been banned.
+\f1There is no player named %0.
+\f1You cannot fight while so heavily loaded with belongings.
+\f1You are frozen by the floating eye's gaze.
+\f1You can move again.
+Users Excluded: %0
+None are excluded.
+%0%o has been excluded.
+%0 is no longer excluded.
+You have been excluded by %0.
+%0%s has released your exclusion.
+How many do you want to drop? (1-%u, Enter=all, Esc=cancel)
+File %s has been modified. Please reinstall Lineage.
+How many do you want to pick up? (1-%u, Enter=all, Esc=cancel)
+\ff%0%s puts on %1%o.
+\fF%0%s removes %1%o.
+\f1You are already wearing some armor.
+\f1This item can't be dropped or deleted.
+\f1You cannot wear %0%o over %1.
+\f1You cannot take that off.
+\f1You cannot wield a two-handed weapon while holding a shield.
+\f1You cannot wear a shield while wielding a two-handed weapon.
+\f1You cannot restart while in combat.
+\f1You cannot quit while in combat.
+\f1Autosave.
+Select the item you would like to verify from your item box.
+\f1%0: small monster hit %1, large monster hit %2
+\f1%0: protection %1 armor
+\f1%0: nutrition %1 [weight %2]
+\f1%0: number of uses available %1 [weight %2]
+\f1%0 [weight %1]
+\f1You are too hungry to shout.
+How many do you want to give? (1-%u, Enter=all, Esc=cancel)
+\f1You cannot give something you are wearing.
+\f1You are too far away to give something.
+\f1%0%s gave you %1%o.
+\f1You are already wearing two rings.
+Once a PK, forever a PK. Do you still want to become a PK? (Y/N)
+\f1You are now a PK.
+\f1A cloud of darkness falls upon you.
+\f1You can see again.
+\f1The %0%s is stuck to your hand!
+\f1You can't do that. It seems to be cursed.
+\f1Your %0%s is stuck to your hand!
+\f1You feel a strange mental acuity.
+\f3You cannot chat for 2 minutes because of spamming. 
+\f1The scroll disintegrates.
+\f1You feel like someone is helping you.
+\f1Your hands twitch.
+\f1Your hands itch.
+\f1Your %0%s evaporates.
+\f1Your %0%s violently glows %1 for a while and then evaporates away.
+\f1Your %0%s violently glows %1 for %2 and nothing happens.
+\f1Your %0%s glows %1 for a %2.
+\f1Your skin feels warmer.
+\f1Your skin glows then fades slowly back to its original hue.
+\f1Your %0%s violently glows %1 for a while and then evaporates away.
+\f1Your %0%s violently vibrates for a while and then evaporates away.
+\f1Your %0%1 %2%3 for a %4.
+\f1Your skin itches.
+\f1Your cloak crumbles and turns to dust!
+\f1Your armor turns to dust and falls to the ground!
+\f1Your shirt crumbles into tiny threads and falls apart!
+\f1Your helmet turns to dust and is blown away!
+\f1Your gloves vanish!
+\f1Your boots disintegrate!
+\f1Your shield crumbles away!
+\f1Your %0%s vibrates.
+\f1You feel much better.
+Select a person to resurrect.
+\f1%0%s left %1 Blood Pledge.
+\f1Select a target.
+Enter the name of the monster you wish to polymorph into.
+\f1You cannot polymorph into that monster.
+\f1You cannot wield %0%o.
+\f1Your legs have new energy.
+\f1You are suddenly moving faster.
+\f1You feel yourself slowing down.
+\f3%0%s was kicked out.
+Foreign users should contact linmaster@ncsoft.co.kr to register.
+%0%s cannot accept you as a Blood Pledge member.
+\f1You don't have enough adena.
+\f1You did not buy %0%d.
+Your account is not valid or your account has been suspended. Please contact %s.
+Your account is not currently active pending receipt of money order payment. If you wish immediate access, please create a credit card or Internet check payment account.
+Your usage period has expired. Extend your account at %s.
+There is a problem with your credit card. Please contact %s.
+You do not have the ability to use global chat.
+\f1Please use the following syntax: "/title \f0character_name character_title\f1".
+\f1Blood Pledge members need to reach level 10 to have a title.
+\f1Only a Prince or Princess may bequeath a title to Blood Pledge members.
+\f1Persons who are not Blood Pledge members cannot give titles to others.
+\f1Persons who are not Blood Pledge members must be level 40 to have a title.
+\f1%0%d is not your Blood Pledge.
+\f1%0%s cannot receive a title from you because his/her level is below 10.
+\f1%0%s bequeathed a title to %1 as '%2'.
+\f1Bookmark name is too long.
+\f1%0 is not currently listening to whispering.
+Deposit
+Retrieve
+\f1You need to be a member of a Blood Pledge to use the Blood Pledge warehouse.
+\f1Another Blood Pledge member is using the warehouse. Try again later.
+\f1%0%d cannot be given to someone else or discarded.
+\f1You feel recovered from the poison.
+\f1Your body is going numb slowly.
+\f1Your body has gone numb completely.
+\f1You cannot bookmark this location.
+\f1You cannot teleport while in combat.
+\f1Download the new version if you want to take the boat.
+%1 of Blood Pledge %0 wants a war with your Blood Pledge. Do you accept? (Y/N)
+\f1The lord of Blood Pledge %0 is not online now.
+\f1Only a Prince or Princess can upload the pledge emblem.
+\f1You need a Blood Pledge to upload the pledge emblem.
+Lord of %0 Blood Pledge wants to surrender. Do you accept? (Y/N)
+Lord of %0 Blood Pledge wants to end the war. Do you accept? (Y/N)
+Lord of %0 Blood Pledge wants to form an alliance. Do you accept? (Y/N)
+%0 Blood Pledge declared an alliance with %1 Blood Pledge.
+The alliance between %0 Blood Pledge and %1 Blood Pledge has been broken.
+%0 Blood Pledge declared the war against %1 Blood Pledge.
+The war between %0 Blood Pledge and %1 Blood Pledge has ended.
+%0 Blood Pledge surrendered to %1 Blood Pledge.
+\f1You should wait at least one minute to upload the new emblem.
+You refilled your lantern with the oil.
+%0 Blood Pledge won the war against %1 Blood Pledge.
+\f1A lord below level 15 cannot declare war.
+\f1A lord below level 5 cannot create a Blood Pledge.
+\f1Your Blood Pledge is already at war.
+\f1Your Blood Pledge is at war with Blood Pledge %0 now.
+Blood Pledge %0 declined to make war with your Blood Pledge.
+Blood Pledge %0 declined to accept your proposal.
+You were banned from Blood Pledge %0.
+You cannot leave the Blood Pledge without the permission of your lord.
+You banned %0%o from your Blood Pledge.
+%0%s polymorphed you.
+You are prohibited from chatting now.
+This resident registration number is registered already. Please use your own resident registration number.
+account@ncsoft.co.kr
+http://www.lineage.co.kr/new.html
+billing@ncinteractive.com
+http://www.lineage-us.com/account/
+You cannot play the game with the version you are using. Will execute the auto-download version...
+Your NetsGo ID is already in use. You cannot login now.
+You cannot login without registering a resident registration number. Please register your real name at http://www.lineage.co.kr/account.html.
+Please select the server.
+%0%s wants to exchange items with you. Do you accept? (Y/N)
+%0%d declined to exchange items with you.
+Initiating exchange with %0...
+\f1You can't exchange more than 16 items at a time.
+\f1The transaction was aborted.
+The transaction was completed.
+\f1You are already engaged in a transaction with someone else.
+\f1Individual is already engaged in a transaction with another person.
+\f1There is no one to exchange with.
+\f1Incorrect command.
+%0%d ended up getting lost.
+\f1One character can't carry more than 180 items at a time.
+\f1Your class can't use this item.
+Please select the mercenary to deploy.
+You are not ready yet. Do you still want to fight Blood Pledge %0? (Y/N)
+Members of Blood Pledge %0 are hiding inside the castle. Do you still want to fight them? (Y/N)
+\f1Your %0%s was damaged.
+\f1Prince of %1 Blood Pledge dismissed pledge %0%s.
+\f1You cannot transact because you are too heavily loaded.
+\f1He is unable to trade because he has too many things.
+\f1You must establish a Blood Pledge to declare war.
+For more information on Lineage visit www.lineage.com.
+To check your account status login to www.lineage.com.
+If you are experiencing any issues with the game, please visit support.lineage.com.
+\f1You can't randomly teleport here.
+\f1You are suddenly moving slower.
+\f1You don't have enough MP to use the spell.
+\f1You don't have enough HP to use the spell.
+\f1The spell failed.
+\f1The spell had no effect.
+Select a Blood Pledge member.
+Select an item.
+%0%s cast a spell on you.
+\f1You can't cast a spell in that state.
+\f3You are prohibited from chatting for %0 minutes due to your bad behavior.
+You have prohibited %0 from chatting.
+You can chat now.
+What kind of monster do you want to change it into?
+\f1Your gaze attack failed.
+\f1Your body is going numb quickly.
+You feel stronger.
+You feel that the strength is leaving your body.
+You feel like your body is getting lighter.
+You feel like your body is getting heavier.
+You fell asleep.
+You feel slightly dizzy.
+\f1You can't give up the castle without a fight.
+There are not enough ingredients to use \f1 magic.
+Please select the time for the next siege.
+You are frozen.
+\f1You can't dismiss them.
+The group was dismissed.
+The next time for war has been set to %0.
+\f1You can't change the war time now.
+The time credited to this Internet game room account has expired. Please contact igr@ncinteractive.com to arrange for additional time.
+The remaining usage time is %d hour %d minutes. Please deposit more money before expiration in order to continue receiving service without interruption.
+\f1Your %0%o lost the glow that surrounded it.
+Your total amount of %0 is %1 adena.
+Your tongue is paralyzed. You probably won't be able to speak for a while.
+You can feel your tongue again. You can speak again now.
+You can't learn that spell yet because your magic level is too low.
+That IP address is already in use on another PC. Please contact the Lineage business team (02-2186-3355).
+You feel that you are protected by a mysterious aura.
+The mysterious aura is disappearing.
+\f1You cannot use the spell while so heavily loaded with baggage.
+There are too many users on the server and connection is not possible now. Please try another server.
+You have to be at least level %0 to use this item.
+\f1You can't control more monsters.
+\f1%0's level increased.
+Do you want to be resurrected again? (Y/N)
+Do you want to be resurrected again? (Y/N)
+Currently, this server is not available. Please choose another server.
+You failed to tame it.
+Please give the animal a name:
+You can't change the name once it's been decided.
+That name already exists.
+Please select a proper target.
+\f1You do not have %0%o.
+\f1%0%o cannot be used.
+You can't leave a Blood Pledge during war.
+\f3Administrators and employees do not ask account information or passwords during the game. Please don't reveal such information to others under any circumstances.
+\f1You cannot wear it right now.
+\f1You cannot make transactions while you are invisible.
+This server is a server that cannot be connected to or is a server for which connection is restricted in the respective country.
+You can't pass the dimensional gate due to inauspicious energy.
+\f1Not enough %0%s.
+Your %0%s is recovering.
+\f1You do not have enough materials to exchange for learning %0%o magic.
+\f1You are too far away to put that item there.
+Your password cannot be used anymore. Please change your password now.
+The new password is the same as your old password. Please enter the password again.
+\f1You can't use another item while playing music.
+We have introduced a system where you have to register two questions and answers that only you can answer when changing your password on the Lineage site. This is to protect your current user password or for when you forget or lose your previous password. Please read the notice information on the question registration screen and register a question and answer that only you know. NCsoft does not take any responsibility for any situations which arise due to your failure to abide by this notice information.
+The length of the question is too short. Please use at least 5 characters for the question.
+The length of answer is too short. Please provide an answer of at least 2 characters. 
+You feel like your blood is boiling deep inside your body.
+You feel that you are becoming calmer, and your concentration ability is increasing.
+Your feelings have returned to normal.
+The user license agreement has been changed. A new account cannot be created on this client.
+An external program has modified the client memory space and Lineage is terminating automatically. Please refer to the web site bulletin board for detailed information.
+Your alignment must be %0 to cast this spell.
+You can't summon monsters around here.
+Your account has been suspended due to the report of a stolen account.  To find out more, please access the Lineage Web Site and enter your reference number.  Your reference number is %s.
+Another PC has logged in from the same IP.
+Another player has logged in using the same NetsGo ID.
+Another player has logged in using the same account.
+Connection failed. Please try again after 3 minutes.
+The administrator has terminated this session.
+Who
+Create
+Join
+Leave
+Title
+Bookmark
+Exclude
+Location
+Chat
+Whisper
+Get All
+Autospell
+Smooth
+Obscene
+Sound
+Music
+Chat Box
+Language
+Verify Emblem
+Emblem
+War
+Surrender
+Cease
+Alliance
+Ban
+Cap Name
+Client Only
+Teleport
+Ban User
+Kick
+hsiw
+Summon
+Rain
+Snow
+Fog
+Control
+Silence
+Ver
+Uptime
+Trade
+Pledge
+On
+Off
+obtained %0%o.
+A character below level %0 cannot whisper or do party chatting.
+For the real-name system in Lineage, you have to register your resident registration number and contact information again.
+You have to wait at least a week to delete a character you've created.
+Your money transfer is incomplete. Please try to connect again after 10 minutes. If the problem persists, contact the Lineage help desk.
+You can't leave the pledge while accessing the pledge storage.
+Whom do you want to banish from your party?
+Invite
+Banish from party.
+Leave party.
+Party
+That person is not a member of the same Blood Pledge.
+That person is already a member of a party.
+Only the party leader can give invitations.
+You can't accept any more party members.
+You have dismissed the party.
+You have been banished from the party.
+%0%s left the party.
+There is no one to invite.
+%0%s wants to join the party. Will you accept? (Y/N)
+%0%s refused the party invitation.
+%0%s entered the party.
+You didn't join the party.
+%0%d doesn't belong to the party.
+Only the leader can banish members from the party.
+You have a new letter.
+You can register your account at %s.
+account@ncsoft.co.kr
+http://www.lineage-us.com
+Cray gave you %1%o.
+There are too many recipients.
+There are no recipients.
+Name is too long.
+There is no time remaining on your personal fixed payment service. If you want to continue receiving service, please deposit additional money. To receive deposit confirmation, please call the Lineage business team (02-2186-3355).
+There are %d hours and %d minutes remaining on your personal fixed payment service. If you want to continue receiving fixed payment service without interruption, please deposit additional money before the expiration time.
+All of your account information and connection data are being stored by our company. We have received a report that you are using the Lineage game service in the PC room in order to deliberately avoid PC room usage fees. Regardless of whether you intend or have the ability to pay the PC room fees, using the PC room is a fraud violation of the provisions in Article 347 of the criminal laws. If it is not true that you have committed this offense, please contact our company and resolve it. If you will contact us at 1566-6600 (5) or go to Lineage web site (http://www.lineage.co.kr) customer center anytime, we will explain the details of the report. (This content will not disappear for one minute.)
+You can't ban members during war.
+http://www.lineage.co.kr/new.html
+\f1%0 is flowing with the power of burning fire.
+\f1%0 is flowing with the power of cold water.
+\f1%0%s is trembling with the power of the earth.
+\f1%0's surface is flowing with the power of wind.
+\f1%0%s got hotter and burned out.
+\f1%0%s froze and shattered.
+\f1%0%s vibrates violently and disintegrates into the dust.
+\f1%0%s erodes severely and is scattered into the wind.
+The spirit refused it. It has already been infused with another spirit.
+The spirit was released.
+The spirit refused it.
+%0%s was selected.
+Do you really want to dismiss your pet? (Y/N)
+You gave %0%o.
+Warning! Your game time will expire in %d minutes. Please note that your game will be terminated if the game time runs out. Thank you.
+You feel your heart getting warmer.
+Donate
+Select a weapon.
+Select armor.
+We have received a report that you have deliberately not paid your PC room usage fees. Please contact our office.
+This character may not be used. Please contact the administrator in charge of your server by e-mail.
+\f1You are too hungry to chat.
+%0's condition got better.
+%0%s is as good as new now.
+You can't change the password within the game on this server. Please visit the Lineage web site to do so.
+Users included in the conversation: %0
+No users are included in the conversation.
+%0%o was included in the conversation.
+%0 was released from inclusion.
+Include
+\f1Too many users are included in the conversation.
+\f1Too many users have been blocked.
+Your account has been suspended because: we received a report of payment fraud during personal fixed amount service, we received a payment fraud report through the current fee payment, or your fees have not been paid. Please contact us in order to gain access to your account.
+You already have a castle so you cannot challenge another castle.
+You have to be at least level 25 to declare a castle siege.
+It's not siege time yet.
+You and all your Blood Pledge members should go outside of the castle to declare a siege.
+\f1Only Princes or Princesses can declare war.
+Which attribute do you want to increase (str, dex, int, con, wis, cha)?
+\f1Invalid attribute name. Please enter a correct name.
+\f1The maximum value you can get for one attribute is 25. Please choose another attribute.
+https://secure.lineage-us.com/cgi-bin/account_menu.pl
+Please visit %s to change your password.
+Do you really want to leave your Blood Pledge? (Y/N)
+Please select a spell.
+%0: class %1, level %2, HP %3 [weight %4]
+* Random Location *
+Channel
+You cannot have so many dogs.
+@You cannot use the accounts of other people. @Users may not use the intellectual property of others. <User obligations under the Lineage agreement> Your account has been currently blocked due to a hacking report by %s based on the users agreement. For more information, check the above report number at the hacking report center on the Lineage web site or e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: exploitation of game bugs <User obligations under the Lineage agreement> Your account has been blocked. When bugs are exploited, it can bring about severe service disruptions and undermine the balance of the game. For more information e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: giving or selling your account for money <User obligations under the Lineage agreement> Your account has been blocked. When you buy and sell items for real money it may create side effects such as account abuse, bug exploitation and fraud. For more information e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: trading your game items for real money <User obligations under the Lineage agreement> Your account has been blocked. When you buy and sell items for real money it may create side effects such as account abuse, bug exploitation and fraud. For more information e-mail your server administrator
+Our company operates a Lineage hacking department for the purpose of  customer support. Even though it is called the hacking department, we also deal with account abuse issues. We do not have any legal responsibilities regarding account abuse issues but we are always trying to raise our level of customer service to consistently improve game operations. Recently we have been receiving fake reports, which have been making it difficult to provide the best service possible. We have checked game logs and have not found any basis for your report. The report by %s has been found untrue and the respective account has been suspended. Please check your report again to see if you have made any mistakes in your details and dates. For more information check the hacking report center on the Lineage web site or e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: giving or selling your account for money - transferring or selling your account to someone else for real money <User obligations from the Lineage agreement> Your account has been blocked. When you transact for real money it may create side effects such as account abuse, bug exploitation and fraud. For more information e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: in-game bug exploitation <User obligations from the Lineage agreement> Your account has been blocked. When bugs are exploited, it can bring about severe service disruptions and undermine the balance of the game. If you can explain this bug in detail - and in writing - to the server administrator, he/she will determine whether or not you can have access to your account again.
+@You cannot use our service for the following non-intended purpose: Making fun of or threatening other users, harassing one user constantly or making other users feel uncomfortable. <User obligations from the Lineage agreement> Your account has been blocked. Deceiving other players is an act that causes continuous suffering and inconvenience to other players and interferes with normal game play. For more information e-mail your server administrator.
+Our company operates a Lineage hacking department for the purpose of  customer support. Even though it is called the hacking department we also deal with account abuse issues. We do not have any legal responsibilities regarding account abuse issues but we are always trying to raise our level of customer service to create a better Lineage. Recently we have been receiving fake reports, which have been making it difficult to provide the best service possible. If you do not reply with a copy of your resident registration certificate within 5 days we will consider this matter to be a false report and block the account. Your account has been blocked due to our evaluation of your false report and your account has been suspended. For more information check the hacking report center on the Lineage web site or e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: making fun of and threatening other users, harassing one user constantly or making other users feel uncomfortable. <User obligations from the Lineage agreement> Your account has been blocked. When you interrupt game play you cause other users discomfort, as well as several operational issues. For more information e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: making fun of and threatening other users, harassing one user constantly or making other users feel uncomfortable. <User obligations from the Lineage agreement> Your account has been blocked. The game's Chat Window is not for just one player; it is for everybody to use and share. For more information e-mail your server administrator.
+@You cannot use our service for the following non-intended purpose: without the permission of NC Interactive, changing the Lineage client program, hacking into the Lineage server or changing copyrighted materials on the Lineage website <User obligations from the Lineage agreement> Based on the user agreement your account has been blocked. Using illegal programs or changing the Lineage client program can cause serious problems to the Lineage service. For more information email your server administrator.
+Your account has been blocked per your request. In order to activate your account again you must fax a copy of your resident registration certificate to us at 02-556-6206. When you send us your fax please give us your account information and a brief description why you wanted your account blocked.
+Your account has been blocked due to a report of credit card abuse. For more information regarding this please contact Lineage customer service at 1566-6600.
+Your account has been blocked due to a report of mobile phone payment abuse. For more information please contact the Danal customer center at 1566-3355. Please e-mail your server administrator for any other information.
+The current chat channel is %d.
+You can't put down any more items at that location.
+\f1%0 is not willing to receive an item.
+Receive
+Quit
+The administrator wishes to notify you about something important. Please be patient for just a moment.
+Arrange
+What is the name of your house?
+The house name is too long.
+The house name is invalid.
+Because the house your Blood Pledge owns is located on land in this kingdom, you must pay tax to me in order to keep using it. Accordingly, you must pay %0 adena by %3:00 on %1/%2 to the house servant and they will convey it to me.%n%n
+I heard that you haven't paid the tax (%0 adena) on your house yet. %n If you don't pay the taxes by %3:00 on %1/%2, please keep in mind that I will have no choice but to kick you out of this house.%n%n
+You haven't paid the taxes on your house, in the amount of %0 adena. As I warned you before, I'll have to take this house away from you. I really resent that you are disobeying this kingdom's rules and not respecting its name.%n%n
+Only a lord of a Blood Pledge can use this command.
+Lords who are under level 25 cannot participate in an auction.
+You already own a castle.
+You already own a house.
+You already participated in the siege.
+You are already participating in another house auction.
+Congratulations. %nyou have won the final bid at %0 adena in the auction you participated in. %nNow you can go to the house you have purchased and use all its facilities. %nThank you.%n%n
+I am sorry to say that you failed in the bidding because someone else offered more. %nHere are the %0 adena that you deposited for the auction. %nThank you.%n%n
+You have won the auction but due to certain circumstances you can't own the house. Please understand that we have to take away your ownership of the Pledge House.%nThank you.%n%n
+The house that you have put up for auction has been sold for the final price of %1 adena. %nI'll take off 10%% for my service fees and give you %0 adena. %nThank you.%n%n
+Nobody has offered the amount you asked for your house so the auction has been cancelled. %nYou still own the house. %nThank you.%n%n
+Nobody has offered the amount you have asked for your house so the auction has been cancelled. %nHowever, I can't give the ownership of your house back due to certain circumstances. %nPlease understand.
+You have to pay taxes first.
+\f1The weight of the items in the Trade Window exceeds your partner's carrying limit. You can't exchange that item.
+List of all Pledge Houses in castle %s.
+The lottery ticket you just checked is a loser.
+The lottery ticket you just checked says, "Get one more ticket!"
+You won 500 adena!
+You won 5000 adena!!
+Congratulations! You won 1,000,000 adena!
+\f1You can't escape from here.
+\f1You can't install it there.
+The fee is %d adena.
+Title:
+Author:
+Board Number:
+Enter the title.
+\f1You can't take it off here.
+\f1Your partner is not playing the game now.
+\f1Your partner is playing in an area that you can't go.
+Your partner is playing the game right now.
+Your partner has just logged in.
+Account %0 has just logged in from IP %1.
+Your PK count is %0. If your PK count reaches %1, you will be sent to hell, so be careful.
+Your PK count reached %0.  Now you will be sent to hell. You have to stay here for %1 minutes as punishment.
+\f3NPC server is down. Please take care of it quickly.
+\f3Connection with the cache server was disconnected. Please take care of it quickly.
+http://www.lineage.co.kr/register.html
+account@ncsoft.co.kr
+Violence
+You can't connect to this server.
+\f1You have not done enough good deeds to make up for your bad deed.
+\f1You don't need to cleanse your deeds right now.
+Your PK count has been reduced to %0.
+Your current PK count is %0.
+\f1You can't use it here.
+\f1Your account will expire in %d minutes. If you want to continue without interruption, please extend your account.
+Your account has expired. Your game will be terminated automatically in %d minutes.
+\f1You don't have anything to sell to %0.
+ON
+OFF
+3-SET
+2-SET
+Taller
+Shorter
+ON
+OFF
+Please enter the bitmap file name of the Blood Pledge emblem to check.
+Please enter the file name of the Blood Pledge emblem.
+Please enter the name of the Blood Pledge against which you wish to declare war.
+Please enter the name of the Blood Pledge to which you wish to surrender.
+Please enter the name of the Blood Pledge to which you wish to call a truce.
+Please enter the name of the Blood Pledge with which you wish to form an alliance.
+Double-click on the sword to create a new character.
+Please enter the name of the location to bookmark.
+Please enter the name of the person to include in conversation.
+Please enter the name of the person to block from conversation.
+Please enter the name of the person you are looking for.
+Please enter the name and title of the person to whom you wish to give a title.
+Please enter the name of the language to which you wish to change.
+Who do you wish to add to your friend list?
+Who do you wish to remove from your friend list?
+Trade initiated. Waiting for the response.
+\f1 The scroll is too weak to record that strong of a spell.
+\f1 Your attempt at resurrection has failed because the location is occupied by someone else.
+http://www.lineage-us.com
+center@mail.lineage.com.hk
+OK
+(852-28936288)
+http://www.lineage-us.com
+http://www.lineage-us.com
+(852-28936288)
+http://www.lineage-us.com
+(852-28936288)
+(852-28936288)
+You feel that your whole body is filled with the vitality of the forest.
+Level and Experience (%)
+Armor Class
+Alignment
+Weight Gauge
+Food Gauge
+Time Gauge
+Hit Points : (Present Hit Points)/(Max Hit Points)
+Mana Points : (Present Mana Points)/(Max Mana Points)
+Item/Spell Shortcut : You can use this by pressing the F5 - F12 keys.
+Help Window
+Status Window
+Magic Window
+Item Window
+Community Window
+Options Window
+System Window
+Your account has been suspended because of a report of Internet banking misuse. Please contact the Lineage Customer Center (1566-6600).
+Your account will soon be deleted based on the User Agreement because it has not connected to the game even once during one year. To use your account again, please fax your resident registration card evidencing your identity to 02-556-6206. Please write your account and a brief explanation of the circumstance on the fax. If your account is deleted before we receive your fax and take care of the situation, we will not be able to recover the account.
+Question
+Failed to loot the item.
+Deleting \fZ%s\f> character. To stop, please press the CANCEL button. \fZ%d\f> seconds remaining for deletion.
+Please click the portal to which you would like to move.
+You cannot transport to that place from here.
+That is not a place where youcan be transported.
+Because the customer account was not accessed even one time during the past year, it is scheduled to be deleted soon based on the Users' Agreement. If you wish to use the account again, please fax a resident registration certificate which identifies you to 02-556-6206. Please also include a message on the fax which lists your account and describes the circumstances briefly. If the account deletion takes place before we receive and process your fax, we will not restore the account.
+You cannot use the SMS transmission service. Please check with Lineage Mobile Web for details.
+%0%s challenges you to a duel. Do you accept? (y/n)
+%0%d refused to fight with you.
+Starting the duel with %0...
+\f1You are already fighting.
+\f1That person is already fighting.
+Failed to initialize the music.
+Failed to initialize the sound.
+You must remain in hell for %0 more seconds.
+Lost %0%o. 
+The siege has begun.
+The siege has finished.
+The siege is in progress.
+Has taken control of the castle.
+Has occupied the castle.
+Fight
+%s accepted the duel. The duel has begun.
+The fight has ended.
+You cannot teleport in this location.
+Was unable to send SMS.
+The total number of SMSs that were sent is %d.
+letter
+You need a Blood Pledge to use this service.
+\f1Your ring is not linked. Find your partner and get married first.
+If you divorce, your ring will disappear. Do you really want to divorce? (y/N)
+%0 is asking your hand in marriage. Will you accept?
+Congratulations! %0 has accepted your proposal.
+%0 has rejected your proposal.
+\f1You are already married.
+\f1Your partner is already married.
+\f1You don't have a wedding ring.
+\f1Your partner doesn't have a wedding ring.
+\f1You must be a different sex.
+\f1You are not married.
+Your account has been blocked per your request. In order to activate your account again you must fax a copy of your resident registration certificate to us at 02-556-6206. When you send us your fax please give us your account information and a brief description why you wanted your account blocked.
+I cannot give you the item directly.  Please use the Exchange Window.
+\f1 Blood Pledge cannot be broken while it owns a castle or a pledge house.
+%0%s Became feral.
+%0%s Killed and disappeared.
+Are you sure you want to delete \fQ"%s"\f>?  (Y/N)
+You cannot get rid of a ruler who owns a Blood Pledge.  In order to remove him/her, you should first break up the Blood Pledge.
+     *****Let Us Build A Healthy Game Culture Together.*****
+Your global chat ability is disabled for %0 days.
+You have to be at least level %d to use this item.
+You have to be level %d or less to use this item.
+You feel your soul being cleansed.
+You cannot throw away more than one item.
+\f1Too many bookmarks.
+http://www.lineagechina.com
+You feel the energy of the spirits that was in your body being melted away into the air.
+The strength of %s permeates into every part of your body.
+fire
+water
+wind
+earth
+You cannot learn that line because it is different.
+Your weapon is filled with a holy energy.
+You feel your baggage becoming lighter.
+Somebody is observing your attributes.
+A strong magical defensive wall surrounds you.
+Magical power gathers within a calm atmosphere.
+You feel your magical power being sucked away.
+The area is shrouded in darkness.
+You feel strength leave your body.
+Your weapon is filled with blessing.
+A magical trap was set up.
+You feel energy leave your entire body.
+You feel the energy of life become abundant all around.
+You feel the air change and your magical powers being cut off.
+Your throat is blocked and you can't drink anything.
+Your eyes become clear and you can see a long distance.
+An impenetrable defensive wall appears around you.
+Your resistance to magic has increased.
+In your suffering, you feel your mind becoming clearer.
+Your mind clears and your magical powers overflow.
+Your resistance to spiritual energy increases.
+In your severe suffering, you feel your mind becoming much clearer.
+You have received strong resistance to certain spirits.
+Flames wrap themselves around your weapon.
+Wind encircles your bow.
+Your legs move as fast as the wind.
+You are surrounded by the strength of the land.
+Your legs don't move well and it's as if they've been caught in a vine.
+You feel the scattering of the magical power that was in your body. 
+You can't move your legs at all and it's as if they are stuck in the ground.
+The warm energy of Mother Nature flows into your whole body.
+The area is encased in complete silence.
+Do you really want to rid yourself of your spiritual powers? (y/n)
+\f1Too many buddies.
+The weapon has returned to normal.
+The force that protected you from magic has left.
+The divine protection of the spirit that had been with you has disappeared.
+The power that protected you from the force of the spirits has gone.
+The abundant magical power has disappeared.
+The force of fire in your weapon is gone.
+The force of wind in your weapon is gone.
+The force of earth that protected you has left.
+Permission
+Ban
+Only members with titles can use the Blood Pledge storehouse.
+Your Prince/Princess is calling. Do you agree to be summoned? (y/n)
+Input the name of the Blood Plege member to summon.
+Would you like to participate in the voice chatting session hosted by %0%s? (y/n)
+You cannot host voice chatting on the computer you are currently using.
+You cannot or have declined to participate in %0%s voice chatting.
+The morale of your party has improved.
+The morale of your Blood Pledge members has greatly improved.
+All of your Blood Pledge members have been resurrected by your sacrifice.
+You have lost all of your lives and you have gained invincible strength.
+%0 adena are required for experience recovery. Would you like to recover your experience?
+Cannot recover your experience now.
+For use by Hong Kong.
+IP 30 hours for use by Hong Kong.
+Please enter the file name.
+Level is too low to summon the respective monster.
+Your Blood Pledge member wants to teleport together with you. Would you like to teleport together? (Y/N)
+You have exceeded the set usage time and the game will automatically terminate in a moment. Please logout from a safe place.
+The game has terminated because you exceeded the designated time.
+Customer \f1\f1's remaining time is %d minutes. The set usage time limit is nearly over. Please log out and come back to enjoy the game later.
+Your Blood Pledge member is trying to teleport. Do you agree? (y/n)
+The format of the recipient's number is wrong.
+This server can only be used by customers 12 years of age and above.
+This server can only be used by customers 15 years of age and above. Please use the server for 12-year old users.
+This server can only be used by customers 18 years of age and above. Please use the server for 12-year to 15-year old users.
+https://secure.lineage.co.kr/account/secure/real_name/ssn_validate.asp
+This server can be used after certifying that you are 18 years or older. Please obtain certification that you are 18 years or older at %s.
+You cannot exchange items when they are in a transparent state.
+\f1You are already registered in another village.
+\f1You must be level 10 or higher to register in a village.
+The village in which you are currently registered is %0.
+\f1More time must pass before you can register in a new village. Please try registering again later.
+Your village registration has been cancelled. You can register again after one month.
+%0 adena were paid to you by the village.
+Month
+Day
+%s was selected as the new mayor
+To register as a citizen, a fee of %d adena is required. Register now? (y/n)
+You have either already received your compensation or your level of contribution to the village was insufficient to receive any compensation. Please come back next month.
+There are no village support fees. Please come again next month.
+%0 merged into %1.
+Please confirm. Do you really want to exchange with \f2%s\f>? (y/n)
+If you cancel your registration, five days must pass before you can re-register. Do you really want to cancel your registration? (y/n)
+Alliance Prince
+Guardian Knight
+Ordinary
+Apprenticeship
+Pledge members online
+Pledge members offline
+Need church to propose.
+Set the rank of %s. [Rank = Guardian Knight, Ordinary, Apprenticeship]
+Rank
+\f1Input as follows: "/rank \f0 character name rank [Guardian Knight, Ordinary, Apprenticeship]\f1"
+Input the name and rank of the person whose rank is to be changed. [rank=Guardian Knight, Ordinary, Apprenticeship]
+%s of %s Blood Pledge defeated the Pretender King. 
+%s Blood Pledge has become the new owner of Aden Castle.
+Your rank has been changed.  %.
+You are not the Sovereign anymore.
+Blessing of Eva
+Joining an Alliance deletes your current Blood Pledge storage. Do you want to join?
+Engagement
+Divorce
+Your marriage took place with the blessing of everyone.
+Ring recharged.
+Volume Adjustment
+Background Music
+Sound Effects
+Currently not supported.
+Letter
+At least two characters must be different than in the old password.
+A keyboard driver was detected.
+Would you like to install additional functionality for secure keyboard input?
+(The system must be rebooted after installing additional functionality.)
+Installation is complete.
+The system will reboot.
+The installation failed.
+Continue without using keyboard security.
+The necessary files required for keyboard security are not present.
+(npkeyc.vxd, npkeyc.sys, npkeycs.sys)
+A USB keyboard was detected.
+Show tips at startup.
+The server you selected is exclusively for PC rooms. You can only connect to this server at PC rooms that subscribe to Lineage. Please contact Lineage Customer Support for further details.
+File initialization error related to nProtect has occurred. Log in through the administrator account and run the game. Thank you.
+The Blood Pledge emblem is too small.
+You need a Blood Pledge emblem in order to participate in a siege.
+%2% received %1%o from %0 (party).
+Your weapon is filled with poison and gushes with dangerous energy.
+Your whole body is wrapped in a dark shadow and disappears.
+You pick up magical power hidden in the mineral.
+The fatigue in your legs disappears and your legs feel lighter.
+Your wicked intentions disappear and your mind becomes clear.
+The area around you becomes surrounded in pitch-black darkness.
+You feel a change in the energy in your body.
+You feel an unknown energy in your weapon.
+You feel an unknown energy appear from a deep place in your body.
+Your weapon becomes sharper thanks to the shadow of darkness.
+You feel the physical and mental energy that you've gathered be consumed.
+STR_REMOVE_BLOOD_PLEDGE,
+STR_REMOVE_AVATAR,
+The poisonous energy disappears from your weapon.
+Mental concentration powers disappear.
+The energy surrounding your weapon disappears.
+The power felt inside your body disappears.
+You feel your legs getting heavy.
+Resistance to poison disappears.
+Forced termination because password was changed on the homepage.
+STR_WAREHOUSE_NEED_PASSWD,
+The warehouse password is not correct.
+Suffered '%d' damage from '%s'.
+Caused '%d' damage to '%s'.
+Input the currently set warehouse password (6 characters). Click "OK" without inputting if you haven't set a password yet.
+Input the warehouse password to change/set (6 characters).
+Re-input the warehouse password to change/set (6 characters).
+Please input your warehouse password (6 characters).
+The warehouse password is not correct. Please enter it again.
+Pledge member %0%s has just entered the game.
+Start
+The current time is %s.
+Do you want to delete the selected item? (y/n)
+Is %s correct? (y/n)
+A system reboot is required.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input security card number %d

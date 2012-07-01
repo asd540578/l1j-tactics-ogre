@@ -1,0 +1,461 @@
+1765 - Magic Mark
+1777 - Ifrit Magic E
+1778 - Ifrit Magic Exp
+1793 - Phoenix Magic E
+1911 - Trap One
+1912 - Trap Two
+1990 - Seed Explosion E
+2004 - Valakas Breath
+2011 - Pollen Type Aa
+2012 - Pollen Type Ab
+2013 - Pollen Type Ac
+2014 - Pollen Type Ad
+2015 - Pollen Type Ae
+2016 - Pollen Type Af
+2017 - Pollen Type Ag
+2018 - Pollen Type Ah
+2019 - Pollen Type Ba
+2020 - Pollen Type Bb
+2021 - Pollen Type Bc
+2022 - Pollen Type Bd
+2023 - Pollen Type Ca
+2024 - Pollen Type Cb
+2025 - Pollen Type Cc
+2026 - Pollen Type Da
+2027 - Pollen Type Db
+2028 - Cracker Type Aa
+2029 - Cracker Type Ab
+2030 - Cracker Type Ac
+2031 - Cracker Type Ad
+2032 - Cracker Type Ae
+2033 - Cracker Type Af
+2034 - Cracker Type Ba
+2035 - Cracker Type Bb
+2036 - Cracker Type Bc
+2037 - Cracker Type Bd
+2038 - Cracker Type Be
+2039 - Cracker Type Bf
+2040 - Cracker Type Ca
+2041 - Cracker Type Cb
+2042 - Cracker Type Cc
+2043 - Cracker Type Cd
+2044 - Cracker Type Ce
+2045 - Cracker Type Cf
+2046 - Cracker Type Da
+2047 - Cracker Type Ea
+2048 - Cracker Type Fa
+2049 - Fire Stick Type A
+2051 - Fire Stick Type B
+2053 - Fire Stick Type C
+2055 - Fire Stick Type D
+2059 - Heart Ani
+2066 - Snow Arm
+2127 - Level Up Effect
+2165 - Holy Weapon E
+2166 - Weak Elemental Earth E
+2167 - Weak Elemental Water E
+2168 - Weak Elemental Fire E
+2169 - Weak Elemental Wind E
+2170 - Decrease Weight E
+2171 - Mana Drain Take E
+2172 - Mana Drain Give E
+2173 - Meditation E
+2174 - Counter Magic E
+2175 - Darkness M
+2176 - Bless Weapon E
+2177 - Silence E
+2178 - Blood To Soul E
+2179 - Body To Mind E
+2180 - Clear Mind E
+2181 - Erase Magic E
+2182 - Fire Weapon E
+2183 - Resist Earth E
+2184 - Resist Element E
+2185 - Resist Fire E
+2186 - Resist Magic E
+2187 - Resist Water E
+2188 - Resist Wind E
+2228 - Weakness M
+2229 - Magical Mine E
+2230 - Disease M
+2232 - Decay Potion E
+2233 - Inner Sight E
+2234 - Absolute Barrier E
+2235 - Change Position E
+2236 - Ad Mass Teleport E
+2241 - Area Of Silence E
+2242 - Burning Weapon E
+2243 - Natures Touch E
+2244 - Natures Blessing E
+2245 - Call Of Nature E
+2246 - Wind Shot E
+2247 - Wind Walk E
+2248 - Storm Shot E
+2249 - Earth Skin E
+2250 - Entangle E
+2251 - Earth Bind E
+2252 - Iron Skin E
+2277 - Glowing Aura
+2278 - Blood Pledge
+2279 - Divine Sacrifice
+2280 - Avatar
+2281 - Call Clan
+2285 - Protect From Element
+2286 - Breath Of Fire
+2287 - Bless Of Earth
+2288 - Eye Of Storm
+2423 - Giant Boss Attack E
+2424 - Giant Boss Alt Attack E
+2527 - Lesser Demon Att E Animation
+2537 - Medusa E
+2551 - Lich E Three
+2552 - Lich E Four
+2560 - Gelatincube E Two
+2561 - Gelatincube E One Multi
+2562 - Gelatincube E Two Multi
+2564 - Lindvior Attack E Right
+2565 - Lindvior Attack E Left
+2566 - Lindvior Breath
+2567 - Lindvior Hide E
+2568 - Lindvior Appear E
+2666 - Small Obelisk Red S
+2668 - Small Obelisk Green S
+2670 - Small Obelisk Blue S
+2672 - Small Obelisk White S
+2676 - Big Obelisk Dust
+2677 - Lindvior Hide E Two
+2678 - Lindvior Appear E Two
+3187 - Oman Sculpture B Ani E
+3194 - Oman Sculpture A Ani E
+3198 - Christmas Firework
+3204 - Dice One
+3205 - Dice Two
+3206 - Dice Three
+3207 - Dice Four
+3208 - Dice Five
+3209 - Dice Six
+3229 - Hand Scissors
+3230 - Hand Rock
+3231 - Hand Paper
+3237 - Coin Front
+3238 - Coin Back
+3241 - Compass One
+3242 - Compass Two
+3243 - Compass Three
+3244 - Compass Four
+3455 - Black Scouter E First
+3457 - Black Scouter E Second
+3567 - Black Tigger E Multi
+3571 - Deep Flower Effect
+3576 - Dark Forester E Multi
+3585 - Mole Glow
+3586 - Mole Move
+3646 - Diad Dungeon Gas A
+3647 - Diad Dungeon Gas Land A
+3648 - Diad Dungeon Gas B
+3649 - Diad Dungeon Gas Land B
+3650 - Diad Dungeon Gas C
+3651 - Diad Dungeon Gas Land C
+3658 - Plate Worm Venom E
+3669 - Baranka Basic Summon E
+3670 - Baranka Big Summon E
+3671 - Darkelf Crow Effect
+3680 - Black Ent Monster E
+3741 - Fire Stone Broken Piece
+3742 - Fire Stone
+3743 - Fire Splinter Land
+3755 - Fire Stone Broken Piece Small
+3756 - Fire Splinter Land Small
+3758 - Diad Guard Tower Barrier Center
+3760 - Diad Guard Tower Barrier Back
+3845 - Diad Cannon Plane Big E
+3847 - Diad Cannon Plane Small S
+3972 - Priest Of Corruption I Hand Effect
+3987 - Priest Of Corruption Ii Appear Effect
+3991 - Priest Of Corruption Iv E
+3992 - Priest Of Corruption Iv Appear Effect
+4070 - Corruption Attack A Effect
+4071 - Corruption Attack B Effect
+4072 - Corruption Magic A Effect S
+4073 - Corruption Magic B Effect M
+4074 - Corruption Magic C Effect S
+4075 - Corruption Magic C Effect M
+4076 - Corruption Die Effect
+4077 - Priest Of Corruption Effect
+4080 - Blue Tale Laser
+4135 - Stand Raccoon E
+4159 - Antaras Effect Boom
+4161 - Valakas Effect Start
+4162 - Valakas Effect Boom
+4165 - Fafurion Effect Boom
+4167 - Lindvior Effect Boom
+4170 - Mambo Rabbit V E
+4173 - Mambo Rabbit R E
+4176 - Mambo Rabbit B E
+4194 - High Lizardman E
+4221 - Dreik Attack E
+4222 - Dreik Altattack E
+4223 - Dreik Spell Circle
+4226 - Dreik Death Effect
+4229 - Mambo Rabbit V Attack E
+4230 - Mambo Rabbit R Attack E
+4231 - Mambo Rabbit B Attack E
+4239 - High Lizardman Boom
+4326 - Corruption Magic E
+4373 - Ariorc Attack I E
+4374 - Ariorc Attack Ii E
+4375 - Ariorc Attack Iii E
+4376 - Ariorc Die Smoke
+4433 - Ariorc Boom
+4469 - Ariorc Second Magic E
+4471 - Ariorc Second Ball Magic Boom
+4492 - Kent Mercenary Wizard Effect
+4499 - Spirid Magic Hit
+4508 - Spirid Quarter Magic Hit
+4525 - Priest Of Chaos Two Flying Spear End
+4535 - Helvine Undedly Fire
+4537 - Helvine Undedly Fire Boom
+4538 - Helvine Deadfall Sign
+4540 - Helvine Summoned Hell
+4541 - Helvine Berserker
+4546 - Priest Of Chaos Three Magic E
+4548 - Priest Of Chaos Three Magic Explosion
+4549 - Helvine Die E
+4554 - Priest Of Chaos One Hold Spear
+4565 - Baphomet Two E
+4566 - Baphomet Attack Three E
+4567 - Baphomet Die E
+4568 - Baeckg E
+4572 - Shadow Of Flame Morph Effect
+4573 - Shadow Of Flame Effect
+4578 - Priest Of Death Two Attack One E
+4580 - Priest Of Death Two Attack One Bomb
+4581 - Priest Of Death Two Attack Two
+4589 - Death Attack Two ES
+4590 - Death Attack Two EM
+4591 - Death Attack Three E
+4593 - Death Attack Three Hit
+4594 - Death Dead E
+4598 - Chaos Attack Three E
+4600 - Chaos Attack Three Bomb
+4601 - Chaos Attack Four E
+4602 - Chaos Dead E
+4606 - Dark Avenger Attack Three E
+4611 - Guard Assassin Attack Three E
+4624 - Hell Creature Attack One E
+4627 - Cripers Attack One E
+4628 - Cripers Attack Two E
+4630 - Cripers Attack Two Hit E
+4631 - Blood Knight E
+4646 - Hellbound Attack E
+4647 - Hellbound Die E
+4651 - CrimesonDrake E
+4654 - Beleth Attack Three E
+4656 - Beleth Attack Three Bomb
+4661 - DarkOverlord Attack One Hell ExplosionExplosion
+4662 - DarkOverlord Attack Two Magic Circle
+4663 - DarkOverlord Attack Two Magic Circle
+4674 - Bleeed Necromancer Attack One Explosion Explosion
+4675 - Bleeed Necromancer Attack Two Magic Circle
+4676 - Bleeed Necromancer Attack Three Magic Circle
+4686 - Big Mouse Attack Two E
+4695 - Undead Succubus Attack Two E
+4697 - Undead Succubus Attack Two Bomb E
+4700 - Hese Magic E
+4704 - Kait Attack One E
+4705 - Kait Attack Two E
+4707 - Kait Attack Two Bomb
+4730 - Guardian Eruption Boom
+4748 - Cargo Attack Two E
+4750 - Cargo Attack Two Bomb E
+4768 - Japan Event Rabbit E
+4770 - Japan Event Rabbit Carrot E
+4781 - Shadow Of Flame First Attack One E
+4782 - Shadow Of Flame First Attack Two Fly
+4783 - Shadow Of Flame First Attack Four Bomb
+4784 - Shadow Of Flame Two Attack Two E
+4785 - Shadow Of Flame Two Attack One E
+4792 - Mammon Attack Two E
+4793 - Mammon Attack Three E
+4795 - Mammon Attack Three Bomb E
+4798 - Robberbone Knife Attack Two E
+4825 - Oren Teleport
+4828 - Assassin Of Dark Attack Two E
+4829 - Shadow Of Flame First Attack Four E
+4833 - Xinclair Spell One E
+4835 - Xinclair Spell One Bomb E
+4837 - Xinclair Spell Two Bomb One
+4839 - Baunti Spell One E
+4841 - Baunti Spell One Bomb E
+4843 - Baunti Spell Two Bomb One
+4845 - Karmiel Spell One E
+4847 - Karmiel Spell One Bomb E
+4849 - Karmiel Spell Two Bomb One
+4853 - Taros Count Spell E
+4856 - Heart Ani
+4858 - Taros Count Spell Bomb E
+4891 - Seeds Guardian Blue Bomb
+4895 - Seeds Guardian Red Bomb
+4899 - Seeds Guardian White Bomb
+4903 - Seeds Guardian Yellow Bomb
+4907 - Seeds Guardian Dark Bomb
+4946 - Dwarf Castle Mole Move
+5010 - Attack Four E
+5011 - Attack Three E
+5013 - Attack Three Bomb E
+5134 - High Tiger Attack Three E
+5135 - Episode Five Lastavard Event Princess Bronze
+5137 - Episode Five Lastavard Event Prince Bronze
+5139 - Episode Five Lastavard Event Monarch Male Bronze
+5141 - Episode Five Lastavard Event Monarch Female Bronze
+5143 - Episode Five Lastavard Event Knight Male Bronze
+5145 - Episode Five Lastavard Event Knight Female Bronze
+5156 - Episode Five Lastavard Event Elf Male Bronze
+5158 - Episode Five Lastavard Event Elf Female Bronze
+5160 - Episode Five Lastavard Event Darkelf Man Bronze
+5162 - Episode Five Lastavard Event Darkelf Female Bronze
+5188 - Crazy Cow First Attack E
+5191 - Crazy Cow Third Attack Bomb Two E
+5193 - Crazy Cow Second Attack Bomb E
+5196 - Worldcup Event Soccer Ball Damage Effect
+5201 - Magician Attack Three Action E
+5202 - Magician Attack Three Bomb E
+5215 - Maya Second Attack Fly E
+5216 - Maya Third Attack E
+5233 - Taiwan Sixth Event Firework
+5261 - Thupon Spell Attack Four E
+5263 - Thupon Spell Attack Four Ee
+5268 - Mushussu Third Attack E
+5272 - Small Mushussu Third Attack E
+5276 - Tiames First Attack E
+5277 - Tiames Second Attack E
+5278 - Tiames Third Attack E
+5279 - Tiames Die E
+5280 - Tiames First Attack Bomb E
+5287 - Ramias Third Attack E
+5288 - Ramias Fourth Attack E
+5295 - Endias Third Attack E
+5296 - Endias Die E
+5300 - Edea Attack Three E
+5302 - Edea Attack Three Fly Bomb
+5303 - Edea Die E
+5304 - Curse Of Body
+5306 - Curse Of Body E
+5319 - Silvasous Air Attack Three E
+5322 - Silvasous Air Attack One Spear Hold
+5326 - Silvasous Water Attack Three E
+5329 - Silvasous Water Attack One Spear Hold
+5333 - Silvasous Fire Attack Three E
+5336 - Silvasous Fire Attack One Spear Hold
+5340 - Silvasous Earth Attack Three E
+5343 - Silvasous Earth Attack One Spear Hold
+5345 - Cave Of Desires Eye One
+5346 - Cave Of Desires Eye Two
+5367 - Viatas Attack Two E
+5369 - Viatas Attack Three Bomb E
+5372 - Viatas Die E
+5376 - Keina Attack Three E
+5377 - Keina Attack Three E Two
+5378 - Keina Die E
+5410 - Asheous Eel Attack Two Bomb
+5414 - Drowned Woman Die E
+5417 - Drowned Woman Attack Three Bomb E
+5436 - Dagon Eruption End
+5439 - Dagon Small Eruption End
+5444 - Otu Attack Three E
+5446 - Otu Attack Three Bomb E
+5450 - Sael Attack Four E
+5452 - Sael Attack Four Bomb E
+5453 - Sael Die E
+5454 - Dantes
+5456 - Cave Of Desire Fire Gate
+5457 - Cave Of Desire Earth Gate
+5458 - Cave Of Desire Air Gate
+5459 - Cave Of Desire Water Gate
+5460 - Cave Of Desire Barlog Gate
+5465 - Pazuzu After Attack One E
+5467 - Pazuzu After Attack One Bomb E
+5468 - Pazuzu After Attack Two E
+5470 - Pazuzu After Attack Two Bomb E
+5473 - Barod Attack Two E
+5475 - Barod Attack Three Bomb E
+5476 - Barod Attack Four Magic E
+5477 - Barod Die E
+5480 - Baromes Attack One E
+5482 - Baromes Attack Three E
+5483 - Baromes Die E
+5486 - Drowned Man Die E
+5487 - Drowned Man Attack Two E
+5510 - Barlog Attack Three E
+5514 - Barlog After Attack Three E
+5515 - Barlog After Attack Four E
+5519 - Cursed Wizard Attack One E
+5520 - Cursed Wizard Attack Two E
+5522 - Cursed Wizard Attack Two Bomb E
+5523 - Cursed Wizard Attack Three E
+5525 - Cursed Wizard Attack Four E
+5527 - Cursed Wizard Die E
+5528 - Pazuzu Attack One E
+5532 - Cursed Fighter Attack Three E
+5533 - Cursed Fighter Die E
+5550 - Great King Squid Attack Three E
+5556 - Half Fish Attack Three E
+5557 - Half Fish Attack Four E
+5562 - Cursed Fighter Attack Four Bomb E
+5569 - Attendant Attack One E
+5571 - Attendant Attack One Bomb E
+5572 - Attendant Attack Two E
+5573 - Attendant Die E
+5576 - Noname Attack One Damage
+5578 - Noname Attack Two Front Damage
+5580 - Noname Attack Two Back Damage
+5616 - Kirtaz Earth Quake
+5623 - Kirtaz Attack One E
+5624 - Kirtaz Attack Two E
+5625 - Kirtaz Attack Three E
+5626 - Kirtaz Reactionready
+5627 - Kirtaz Reactionbreath
+5628 - Kirtaz Reactionreturn
+5629 - Kirtaz Die E
+5633 - Cursed Knight Attack Three Ground E
+5635 - Cursed Knight Attack Four E
+5638 - Kirtaz Attack Five E
+5640 - Kirtaz Attack Five E Two
+5643 - Cursed Knight Attack Four Ground E
+5649 - Halloween Pumpkin Breath E
+5650 - Halloween Pumpkin Death E
+5651 - Kirtaz Storm
+5653 - Noname Bomb
+5659 - Pazuzu Small After Attack One E
+5661 - Pazuzu Small After Attack One Bomb E
+5662 - Pazuzu Small After Attack Two E
+5664 - Pazuzu Small After Attack Two Bomb E
+5665 - Pazuzu Small Attack One E
+5722 - Cursed Knight Attack Three E
+5763 - Manekineco Attack One E
+5770 - Shellman Attack Three E
+5772 - Shellman Attack Four Bomb E
+5775 - Shellman Attack One And Two Spear Hold
+5788 - Giant Warm Attack Two E
+5792 - Giant Warm Attack Four Fly E
+5793 - Giant Warm Die E
+5794 - Dagon Small Death
+5795 - Mushussu Small Death
+5796 - Pazuzu After Small Death
+5797 - Silvasous Air Small Death
+5798 - Silvasous Water Small Death
+5799 - Silvasous Fire Small Death
+5800 - Silvasous Earth Small Death
+5808 - Hydra Attack Two Bomb E
+5809 - Hydra Attack Three Bomb E
+5823 - Cafu Attack Three Bomb E
+5825 - Additional Fire
+5826 - Striker Gale
+5829 - Aqua Protect
+5830 - Pollute Water
+5831 - Solid Carriage
+5832 - Counter Barrier
+5833 - Soul Of Flame
+5846 - Counter Barrier Damage E
+5848 - Cafu Eruption End
+5865 - Epsix Event Knight

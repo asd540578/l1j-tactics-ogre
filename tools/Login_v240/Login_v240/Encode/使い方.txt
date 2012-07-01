@@ -1,0 +1,4 @@
+暗号化する時の手順
+①暗号化ファイル（pack.properties）を作成
+②pack.propertiesが存在する状態でEncode
+③pack.propertiesをServerのconfigフォルダへ置く

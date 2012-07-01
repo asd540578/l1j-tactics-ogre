@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+	<meta http-equiv="content-style-type" content="text/css">
+	<title>L1J Tactics-Server</title>
+	<link rel="stylesheet" type="text/css" href="csstemplate/style.css">
+</head>
+<body id="INDEX">
+	<div id="PAGETOP">
+		<!--================-->
+		<!--　　ヘッダー　　-->
+		<!--================-->
+		<div id="HEADER">
+			<h1>
+				L1J Tactics-Server</h1>
+			<ul id="PAN">
+				<li>index</li>
+			</ul>
+		</div>
+		<hr>
+		<!--================-->
+		<!--　　メニュー　　-->
+		<!--================-->
+		<div id="MENU">
+			<h2>
+				menu</h2>
+			<ul>
+				<li id="MENU01"><a href="index.html">index</a></li>
+				<li id="MENU02"><a href="rule.html">rule</a></li>
+				<li id="MENU03"  class="menu-on"><a href="about.html">about</a></li>
+				<li id="MENU04"><a href="andmore.html">and more</a></li>
+				<li id="MENU05"><a href="quest.html">quest</a></li>
+				<li id="MENU06"><a href="ranking.html">web tool</a></li>
+				<li id="MENU07"><a href="guide.html">guide</a></li>
+			</ul>
+		</div>
+		<hr>
+		<!--================-->
+		<!--　　記事部分　　-->
+		<!--================-->
+		<div id="KIZI">
+			<h2>
+				レート等</h2>
+			<div class="text">
+				<p>
+					<div style="margin-left: 2em;">
+					<strong>Alter Settings</strong>
+						<table width="150" border="1">
+							<tr>
+								<td> アデナ</td>
+								<td> x 60</td>
+							</tr>
+							<tr>
+								<td> Exp</td>
+								<td> x 3000</td>
+							</tr>
+							<tr>
+								<td> Drop</td>
+								<td> x 5</td>
+							</tr>
+							<tr>
+								<td>Weight</td>
+								<td> x 1</td>
+							</tr>
+							<tr>
+								<td> OE 防具</td>
+								<td> 20%</td>
+							</tr>
+							<tr>
+								<td> OE 武器</td>
+								<td> 30%</td>
+							</tr>
+							<tr>
+								<td> 属性強化</td>
+								<td> 100%</td>
+							</tr>
+							<tr>
+								<td> PT上限</td>
+								<td> 12人</td>
+							</tr>
+						</table>
+					</div>
+				</p>
+				<br>
+				<p>
+					<div style="margin-left: 2em;">
+					<strong>
+						Character Settings</strong>
+						<table width="200" border="1">
+							<tr>
+								<td>
+									<b>Class</b></td>
+								<td>
+									<b>HP</b></td>
+								<td>
+									<b>MP</b></td>
+							</tr>
+							<tr>
+								<td>
+									Crown</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+							<tr>
+								<td>
+									Knight</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+							<tr>
+								<td>
+									Wizard</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+							<tr>
+								<td>
+									Elf</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+							<tr>
+								<td>
+									DarkElf</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+							<tr>
+								<td>
+									DragonKnight</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+							<tr>
+								<td>
+									Illutionist</td>
+								<td>
+									9999</td>
+								<td>
+									9999</td>
+							</tr>
+						</table>
+					</div>
+				</p>
+				<ul class="modori">
+					<li><a href="#PAGETOP">TOP</a></li>
+				</ul>
+			</div>
+			<hr>
+			<h2>
+				仕様等</h2>
+			<div class="text">
+				<ul>
+					<li><strong>始めに</strong></li>
+					この鯖でやることは雑魚とボスと人をひたすら狩るだけです。<br>
+					面倒なクエスト等は一切用意していません。<br>
+					<br>
+				</ul>
+				<ul>
+					<li><strong>お金</strong></li>
+					このサーバーでは、ゴートという単位が存在します。<br>
+					1ゴートは100ｋアデナに相当します。<br>
+					敵からは、アデナではなくゴートをドロップします。<br>
+					<br>
+<!--
+					<li><strong>ステータス</strong></li>
+					ステータスの効果が変更されています。<br>
+					<div style="margin-left: 2em;">
+						<table>
+							<tr>
+								<td width="50">
+									Str</td>
+								<td>
+									Str値2毎に近接打撃+1。Str10毎に近接命中+1。</td>
+							</tr>
+							<tr>
+								<td>
+									Dex</td>
+								<td>
+									Dex2毎に近接命中+1。Dex値3毎に遠距離打撃+1、遠距離命中+1。</td>
+							</tr>
+							<tr>
+								<td>
+									Con</td>
+								<td>
+									16からステ2毎にACボーナス 24移行は１毎に＋１</td>
+							</tr>
+							<tr>
+								<td>
+									Int</td>
+								<td>
+									変更点なし。</td>
+							</tr>
+							<tr>
+								<td>
+									Wis</td>
+								<td>
+									(Wis値-25)x2 MPR追加。</td>
+							</tr>
+							<tr>
+								<td valign="top">
+									Cha</td>
+								<td>
+									(Cha値-5)%で近接ダメージ1.8倍のクリティカル発動。<br>
+									(Cha/3)%でダメージ1.5倍の魔法クリティカル発動。<br>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</ul>
+				<ul>
+					<strong><li>クラスチェンジ（これ実装する）</li></strong>
+					既存のクラスに加え、新規クラスを用意しています。<br>
+					一定条件を満たすとクラスチェンジが可能です。<br>
+					<br>
+					<strong>Prince/Princess</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+					<strong>Knight</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+					<strong>Wizard</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+					<strong>DarkElf</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+					<strong>Elf</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+					<strong>DragonKnight</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+					<strong>Illusionist</strong>
+					<table width="400" border="1">
+						<tr>
+							<td width="100">
+								<b>Class Rank</b></td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Lower</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+						<tr>
+							<td>
+								Higher</td>
+							<td width="100">
+								<font color="red"><b>Chaotic</b></font></td>
+							<td width="100">
+								<font color="green"><b>Newtral</b></font></td>
+							<td width="100">
+								<font color="blue"><b>Lawful</b></font></td>
+						</tr>
+					</table>
+					<br>
+				</ul>
+-->					
+				</ul>
+<!--
+				<ul>
+					<strong><li>削除アイテム</li></strong>
+					<u><b>全体</b></u>
+					<p class="margin_left">
+							既存の武器を全て削除。<br>
+							既存の防具の多くを削除。<br>
+							既存のポーション系を削除。<br>
+					</p>
+					<u><b>個別</b></u>
+					<p class="margin_left">
+					強化スクロールの店売りを削除。<br>
+					敵から入手して下さい。
+					</p>
+				</ul>
+-->
+				<ul>
+					<strong><li>対人関連</li></strong>
+					[Ｋ／Ｄ]<br>
+					Ｋ／Ｄを個別にカウントします。<br>
+					<br>
+					[死亡時　その１]<br>
+					ＭＯＢで死亡すると2.5%ロストします。<br>
+					ＰＣで死亡すると5%ロストします。<br>
+					また、ＰＣに殺されるとＰＫログが流れます。<br>
+					<br>
+					[死亡時　その２]<br>
+					ＰＫでドロップが発生した場合は、ＬＡを取った人がアイテムを取得します。<br>
+					アイテム取得時は、ＭＯＢドロップと同様にメッセージが表示されます。<br>
+					<br>
+					[バックアタック]<br>
+					対象をバックアタック（斜め後ろ含む）した場合は、<br>
+					一定の攻撃成功値及び追加打撃値が加わります。<br>
+					弓は対象外です。<br>
+					<br>
+				</ul>
+				<ul>
+					<strong><li>ＰＴ関連</li></strong>
+					ＰＴリーダー以外でも招待が可能です。
+					<br>
+				</ul>
+				<ul>
+					<strong><li>武器について</li></strong>
+					ほとんどの武器が、火力と攻撃成功率が反比例します。<br>
+					<br>
+				</ul>
+				<ul>
+					<strong><li>武器属性について</li></strong>
+					火、水、地、風、光、闇の6種類があります。<br>
+					また、5段階の強化が可能です。<br>
+					<br>
+					<table border = 1 width = 400>
+						<tr align = "center">
+							<td>段階</td><td>火</td><td>水</td><td>風</td><td>地</td><td>光</td><td>闇</td>
+						</tr>
+						<tr align = "center">
+							<td>1</td><td>火の</td><td>水の</td><td>風の</td><td>地の</td><td>光の</td><td>闇の</td>						
+						</tr>
+						<tr align = "center">
+							<td>2</td><td>紅蓮の</td><td>水鏡の</td><td>疾風の</td><td>砂塵の</td><td>光輝の</td><td>暗黒の</td>						
+						</tr>
+						<tr align = "center">
+							<td>3</td><td>煉獄の</td><td>氷河の</td><td>烈空の</td><td>地裂の</td><td>月光の</td><td>常闇の</td>						
+						</tr>
+						<tr align = "center">
+							<td>4</td><td>灼熱の</td><td>氷海の</td><td>竜巻の</td><td>烈震の</td><td>閃光の</td><td>漆黒の</td>						
+						</tr>
+						<tr align = "center">
+							<td>5</td><td>劫火の</td><td>氷土の</td><td>風刃の</td><td>激震の</td><td>煌めきの</td><td>深淵の</td>						
+						</tr>					
+					</table>
+					<br>
+					ダメージは固定ではなく、下記表の通り計算を行います。<br>
+					また、光・闇の属性は火・水・風・地の属性を基にレジストの計算を行います。<br>
+					<br>
+					<table border = 1>
+						<tr align = "center">
+							<td>段階</td><td>固定ダメージ<br>（基礎値*倍率）
+									</td><td>ランダムダメージ<br>（武器追加ダメージ*倍率）</td>
+						</tr>
+						<tr align = "center">
+							<td>1</td><td>0.1</td><td>0.04</td>						
+						</tr>
+						<tr align = "center">
+							<td>2</td><td>0.1</td><td>0.09</td>						
+						</tr>
+						<tr align = "center">
+							<td>3</td><td>0.1</td><td>0.15</td>						
+						</tr>
+						<tr align = "center">
+							<td>4</td><td>0.1</td><td>0.22</td>						
+						</tr>
+						<tr align = "center">
+							<td>5</td><td>0.1</td><td>0.30</td>						
+						</tr>					
+					</table>
+					
+					
+					<br>
+				</ul>
+				<ul>
+					<strong><li>クラス別コメント</li></strong>
+					変更点を簡単に記載します。<br>
+					基準と記載するものは、レベルから70引いた数字を基に、<br>
+					何かしら計算するものと考えて下さい。<br>
+					デバフ系は軒並み効果アップ継続時間ダウンで<br>
+					バフ系は軒並み効果アップ継続時間アップしています。<br>
+					<br>
+					[ナイト]<br>
+					片手の火力が上がってるので、<br>
+					スタン＋片手でかなりＫＩＬＬが取りやすいと思います。<br>
+					ＣＢ無敵ゲーになるとつまらないので、ＣＢの確率を下げました。<br>
+					<br>					
+					ＣＢ→確率低下<br>
+					スタン→秒数アップ<br>
+					リダク→リダク値アップ＋基準<br>
+					<br>
+					
+					[ダークエルフ]<br>
+					タイマン最強クラス。（多分）<br>
+					ＣＢがあってもナイトを吹っ飛ばせます。<br>
+					<br>
+
+					[ドラゴンナイト]<br>
+					槍や斧をかなり強化したので、是非使って欲しいクラス。。。<br>
+					火力的にはＤＥにも劣りません。<br>
+					魔法はレベルよるものが多いので、極めれば強くなると思います。<br>
+					<br>
+					
+					ドラゴンスキン→リダク値アップ＋基準<br>
+					ガードブレイク→AC低下アップ＋基準<br>
+					モータルボディ→基礎値＋基準<br>
+					ホラーオブデス→基礎値＋基準<br>
+					<br>
+					
+					[ウィズ]<br>
+					ＨＷ→128秒<br>
+					高ＳＰ装備が多いので、多分十分強いです。<br>
+					<br>
+					
+					[エルフ]<br>
+					盾と片手弓を充実させたので、両手弓以外も使ってみて下さい。<br>
+					スキン→基礎値＋基準<br>
+					ポルート・バインド・イレース・ゲイル→時間低下<br>
+					<br>
+
+					[イリュ]
+					イリュージョン系魔法の大幅強化してます。<br>
+					この鯖の武器の特性上、ＡＣが物を言うのでダイアゴレが重宝すると思います。<br>
+					オーガ→基礎値＋基準<br>
+					ダイア→基礎値＋基準<br>
+					アバター→基礎値＋基準<br>
+					<br>
+				</ul>
+				<ul class="modori">
+					<li><a href="#PAGETOP">TOP</a></li>
+				</ul>
+
+<!--
+				<ul>
+					<strong><li>クラン（これ実装したい）</li></strong>
+					ランクを<b>ガーディアン</b>に設定するとプリでなくてもJoinさせることが可能です。<br>
+					/Rank 名前 ガーディアン<br>
+				</ul>
+				<ul>
+					<strong><li>パーティ（これ実装する）</li></strong>
+					パーティーリーダーでなくてもパーティに招待可能です。<br>
+					また、リーダーがプリで画面内に同時にいるとき経験値に30%のボーナスがつきます。<br>
+				</ul>
+				<ul>
+					<strong><li>クエスト関係（クエストは他に考える）</li></strong>
+					ショッピングモールのクエスト請負人からクエストの買い取りが出来ます。<br>
+					クエストブックをダブルクリックで必要なモノの情報が得られます。<br>
+					クエスト完了で経験値やアデナ、アイテムなどの報酬が得られます。<br>
+				</ul>
+				<ul>
+					<strong><li>スキル（魔法）</li></strong>
+					各クラスで独自スキルを用意します。<br>
+					しばらく実装は先送り、スキル枠あいてるのは上位用です。<br>
+				</ul>
+				<ul>
+					<strong><li>ショッピングモール（実装する）</li></strong>
+					色々なNPCが配置されています。<br>
+					また、この場所でのみ個人商店の出店が可能です。<br>
+					/shop または /商店
+				</ul>
+-->
+			</div>
+			<hr>
+			<h2>開放コマンド</h2>
+			<div class="text">
+				<ul>
+					<li><strong>.desc</strong></li>
+					自分のステータスを確認出来ます。<br>
+					<br>
+				</ul>
+				<ul>
+					<li><strong>.descnpc ＮＰＣ名称</strong></li>
+					ＮＰＣのステータスを確認出来ます。<br>
+					例）.descnpc 彩雲のオルバ<br>
+					<br>
+				</ul>
+				<ul>
+					<li><strong>.potlog on/off</strong></li>
+					ＰＯＴＬＯＧの表示非表示を変更します。<br>
+					例）.potlog off<br>
+					<br>
+				</ul>
+				<ul>
+					<li><strong>.droplog on/off</strong></li>
+					ＤＲＯＰＬＯＧの表示非表示を変更します。<br>
+					例）.droplog off<br>
+					<br>
+				</ul>				
+				<ul>
+					<li><strong>.addskill</strong></li>
+					全スキルを習得します。<br>
+					<br>
+				</ul>				
+				<ul>
+					<li><strong>.loc</strong></li>
+					自分の位置を確認できます。<br>
+					<br>
+				</ul>
+			</div>			
+		</div>
+		<!--================-->
+		<!--　　フッター　　-->
+		<!--================-->
+		<div id="FOOTER">
+			<ul>
+				<li id="FOOTER01"><a href="#PAGETOP">TOP</a></li>
+				<li id="FOOTER03">
+					<address>
+						<a href="mailto:dummy@gmail.com">Copyright&nbsp; (c)&nbsp;ogre&nbsp;All Right
+							Reserved.</a></address>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript"><!--
+var fhp_c_pc = navigator.userAgent.toLowerCase();
+var fhp_ie = ((fhp_c_pc.indexOf("msie") != -1) && (fhp_c_pc.indexOf("opera") == -1));
+var fhp_cs, fhp_wt, fhp_dm;
+
+if (fhp_ie) {
+        fhp_cs = document.charset;
+}else{
+        fhp_cs = document.characterSet;
+}
+fhp_dm = encodeURI(document.location);
+
+fhp_wt = "";
+fhp_wt = '<' + 'script src="http://web.fc2.com/header.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '" charset="UTF-8"><' + '/script>';
+fhp_wt += '<' + 'script src="http://web.fc2.com/footer/footer.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '"><' + '/script>';
+document.write(fhp_wt);
+//--></script>
+</body>
+</html>

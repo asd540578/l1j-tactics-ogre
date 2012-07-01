@@ -891,7 +891,7 @@ public class L1Attack
 
 		if (target.hasSkillEffect(MIRROR_IMAGE))
 		{
-			attackerDice -= 5;
+			attackerDice -= 3;
 		}
 
 		if (target.hasSkillEffect(RESIST_FEAR))
@@ -1202,7 +1202,12 @@ public class L1Attack
 		}
 
 		dmg -= _targetPc.getDamageReductionByArmor(); // 防具によるダメージ軽減
-
+		/* t.s 2012/06/29 add start */
+		// Conによってダメージのリダクションを発生させる
+		// リダクション値：0～(Con-18)の乱数
+		int conReduction = (_targetPc.getCon() > 18)? _targetPc.getCon() - 18 : 0;
+		dmg -= _random.nextInt(conReduction + 1);
+		/* t.s 2012/06/29 add end */
 		// TODO マジックドール效果 - ダメージリダクション
 		dmg -= L1MagicDoll.getDamageReductionByDoll(_targetPc);
 

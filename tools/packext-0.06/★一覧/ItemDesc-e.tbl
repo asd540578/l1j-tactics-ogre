@@ -1,0 +1,602 @@
+5159
+9 Tender meat inside the tough skin of the floating eye. It is usually used as a material for spells and has the power to enhance the senses of a person who consumes it.
+10 Sates ones hunger. One cannot recover when one is hungry.
+14 Restores the imbiber's physical strength a little.
+15 Restores the imbiber's physical strength a bit.
+16 Blinds the imbiber for a moment, but protects the imbiber from all kinds of gazing attacks.
+17 Enables the imbiber move faster for a while.
+18 Creates any item when used, but the number of uses is limited.
+19 Creates random monsters when used, though some monsters can't be created by this wand.
+20 Polymorphs the target into a random monster when used. Target can choose the monster if wearing a Ring of Polymorph Control.
+21 Attacks one's enemy by calling lightning when used.
+22 Identifies the abilities of an item when used.
+23 Teleports the user to a random location when used. If the scroll is blessed or the user is wearing a Ring of Teleport Control, the option of teleporting to a location that has been previously bookmarked will be given.
+24 Removes a curse from an item or another PC when used.
+25 Enchants a weapon, thus making the weapon stronger.
+26 Enchants a piece of body armor, giving the armor stronger protection ability.
+27 Destroys a piece of currently worn random armor.
+28 Resurrects a dead monster or person.
+52 The door key of the second level of the Cave of the Demon on the Talking Island.
+64 Gives the wearer the ability to choose a previously bookmarked location for teleportation when used with a scroll or spell of Teleportation.
+65 Gives the wearer the ability to change into a monster of the wearer's choice when used with a Wand of Polymorph.
+68 Stronger arrow than regular arrows. Also, some monsters are particularly vulnerable to the arrows.
+86 Fills the imbiber's body with energy so that he is able to move quickly for a set period of time. This food only has an effect on Elves.
+104 Shirt made of pelts that can be worn underneath armor. Safely enchants to +4.
+105 Cloak made by Elves, which boosts Elven recovery ability. Safely enchants to +6.
+110 Renders the wearer invisible to other PCs and monsters. This effect only lasts while the wearer does not do any aggressive movement, such as attacking.
+111 This raises the wearer's magic resistance.  The more it is bestowed with magic, the higher the magic resistance.
+114 Shield made by Elves, which has some power to resist magic. Safely enchants to +6.
+119 Shield with a mirror-like surface.  It has strong magic resistance against the gaze of certain monsters. Safely enchants to +4.
+121 Claw of Arachnevil. Has no special powers.
+123 Special long sword that has the power to raise strength.
+126 Potion that removes all poisons from the imbiber.
+130 Restores the imbiber's HP significantly.
+139 A magic crown forged for nobility. Only a Prince or Princess can wear this; it increases the WIS and CHR of the wearer. If the owner is killed, this item always falls to the ground.
+142 Normally an insignificant dagger, but is bestowed with a curse which has a small chance of killing any opponent.
+152 Unique sword made by Lord Porche.
+162 Teleports user to the nearest village.
+167 Chain mail that raises the wearer's magic resistance (MR). The more it is bestowed with magic, the higher the magic resistance. Safely enchants to +4.
+229 Helmet that raises the wearer's magic resistance (MR). The more it is bestowed with magic, the higher the magic resistance. Safely enchants to +4.
+230 Gives +1 bonus damage to attack spells.
+231 Gives +3 bonus damage to attack spells.
+232 Increases spell power by +1.
+233 A weapon bestowed with a special spell that increases the ability for physical attack, but at the sacrifice of bonus magic.
+234 Increases magic resistance (MR) slightly.
+235 A durable sword designed to pierce the toughest of defenses without being damaged.
+237 The present shared with neighbors according to the old custom to celebrate the biggest holiday in Aden called the Founding Anniversary of Einhasad. There is a saying that well-behaved people can get a present from the great god herself on the founding anniversary day at dawn.
+238 Teleports the user and the user's nearby pledge members to a random location. User can choose the location if wearing a Ring of Teleport Control.
+248 Twig of ent, derived from one of the protectors of the Elven Forest. It has healing properties and works on all kinds of poisons.
+249 The juice obtained from a fungus. Used as an ingredient for various spells or poisons.
+250 Blood of ogre, which is known as the source of the ogre's great power.
+256 Precious metal made by the Fairy Queen. If used on damaged weapons, it reduces the damage level by a certain rate.
+260 Gives the wearer +2 Hit Bonus to missile attacks. Safely enchants to +4.
+261 Strengthened fairy wings which teleport the user to the nearest town.
+262 Magical flute that summons monsters.
+275 The helmet named after an ancient Elven hero. Increases dexterity by +1. Safely enchants to +6.
+276 This is much like a sword and can pierce seams in armor and boasts great accuracy.
+279 Fruit of ent, derived from one of the protectors of the Elven Forest. Increases physical strength recovery greatly when eaten.
+280 The glove made with the ogre's blood. Increases strength when worn. Safely enchants to +4.
+282 The necklace of Dupelgenon, the wandering Wizard.
+284 Elven sword imbued with magic resistance ability by the Mother of the Forest and Elves, the highest elder of the Elven Forest.
+285 Elven sword imbued with dexterity ability improvement by the Mother of the Forest and Elves, the highest elder in the Elven Forest.
+286 Elven sword imbued with spell improvement power by the Mother of the Forest and Elves, the highest elder in the Elven Forest.
+289 Shield imbued with magic that raises magic resistance (MR). Safely enchants to +4.
+291 This is a helm created especially so that the wearer can use healing spells. With this helm, spells can be cast at half the normal MP amount. Safely enchants to +4.
+292 This is a helm created especially so that the wearer can use speed enhancement spells. With this helm, spells can be cast at half the normal MP amount. Safely enchants to +4.
+293 This is a helm created especially so that the wearer can use strength and power magic. With this helm, spells can be cast at half the normal MP amount. Safely enchants to +4.
+294 Scroll containing hints to solve the quest in Gerard's training dungeon.
+295 An ordinary key. This key can be used to enter the Werewolf's Room in the training dungeon made by Gerard, a Knight of the House of the Silver Knight.
+296 Potion that draws courage from deep inside and makes the imbiber act faster in battle for a certain period of time. This is effective only for Knights.
+297 Potion that calms the imbiber's heart, increases concentration and makes spells much more effective. This potion is effective only for Wizards.
+299 Scroll that enables the user to polymorph into the monster which the user names. But the duration is only for 20-30 minutes.
+300 Wand that forcefully transports the target to a random location one screen away.
+301 Wand that forcefully transports the target to a random location on the screen.
+302 Wand that takes away the target's ability to chat for a while.
+303 Wand that makes the target sleep for a fixed period of time. The target made to sleep will wake up after a certain time elapses or when attacked.
+304 Gives night vision to the wearer, even if there is no source of light. Safely enchants to +4.
+305 Large shield that protects the whole body. It is most effective against flying weapons. But two hands are needed to use it and thus weapons can't be used while holding it.
+306 Necklace that raises strength by 1.
+307 Necklace that raises dexterity by 1.
+308 Necklace that raises physical constitution by 1.
+309 Necklace that raises intelligence by 1.
+310 Necklace that raises wisdom by 1.
+311 Necklace that raises charisma by 1.
+314 Necklace that raises maximum HP by 20.
+342 Staff that takes a bit of the target's MP each time the target is hit.
+343 Whistle that can be used to call tamed dogs to come nearby.
+345 Bone parts from the spartoi.
+346 Elven sword imbued with life energy improvement ability by the Mother of the Forest and Elves, the highest elder in the Elven Forest.
+347 Elven bow imbued with dexterity improvement ability by the Mother of the Forest and Elves, the highest elder in the Elven Forest.
+348 Item that can repair damaged weapons.
+357 Magic stationery for sending duplicate letters to everyone in the Blood Pledge at the same time.
+361 Dog collar that shows who is the owner of a domesticated dog. If this collar is exchanged with someone else, the ownership of the dog is transferred too.
+365 Iron Gloves that give good protection against physical attack. Safely enchants to +4.
+366 A knight's helm that gives good protection against physical attack. Safely enchants to +4.
+367 A heavy knight's shield that gives good protection against physical attack. Safely enchants to +4.
+368 Iron Boots that give good protections against physical attack. Safely enchants to +4.
+369 Iron Plate that provides good protection. It provides maximum benifit when worn as part of the complete iron set. Safely enchants to +4.
+371 A natural herb that increases speed when consumed.
+385 A magical cap. When equiped as a set, the wearer's total mana is increased. Safely enchants to +4.
+386 A magical robe. When equiped as a set, the wearer's total mana is increased. Safely enchants to +4.
+403 Armor made of water dragon scales. Has resistance to water elemental.
+404 Armor made of land dragon scales. Has resistance to earth elemental.
+405 Armor made of fire dragon scales. Has resistance to fire elemental.
+406 Armor made of wind dragon scales. Has resistance to wind elemental.
+411 Scroll that transports the user to the nearest village.
+417 Allows the user to breathe underwater for thirty minutes and blocks loss of HP.
+418 Allows the imbiber to breathe underwater for ten minutes and blocks loss of HP.
+654 Plate mail surrounded by a strong energy.
+655 Leather armor surrounded by a strong energy.
+656 Robe surrounded by a strong energy.
+657 Scale mail surrounded by a strong energy.
+658 One can summon any monster at will when wearing this ring.
+659 Great sword from which a strong energy can be felt. 
+660 One-handed sword from which a strong energy can be felt.
+661 Bow from which a strong energy can be felt.
+662 This is a helm created especially so that one can use the magic of dexterity. With this helm, you can cast haste at half the normal MP amount.
+663 This is a helm created especially so that one can use the magic of dexterity. With this helm, greater haste can be cast at half the normal MP amount.
+666 Shield having a red eye. It has strong magic resistance against the gaze of certain monsters.
+667 As this is mail that was made for the ancient Knights, it cannot be enhanced by a scroll of enchant armor.
+668 As this is mail that was made for the ancient Elves, it cannot be enhanced by a scroll of enchant armor.
+669 As this is mail that was created for the ancient Wizards, it cannot be enhanced by a scroll of enchant armor.
+670 As this is mail that was created for the ancient Princes and Princesses, it cannot be enhanced by a scroll of enchant armor.
+671 As this is a great sword that was made for the ancient ones, it cannot be enhanced by a sroll of enchant weapon.
+672 As this is a sword that was made for the ancient ones, it cannot be enhanced by a scroll of enchant weapon.
+673 This one-handed bow used by the ancients has high accuracy.
+711 Is a staff that recovers MP very quickly.
+716 Magical water dragon scale armor. Strong resistance to water elemental and also has a little magical power for physical recovery.
+717 Magical land dragon scale armor. Strong resistance to earth elemental and also has a little magical power for physical recovery.
+718 Magical fire dragon scale armor. Strong resistance to fire elemental and also has a little magical power for physical recovery.
+719 Magical wind dragon scale armor. Strong resistance to wind elemental and also has a little magical power for physical recovery.
+758 It is one part of the key that goes into the room of the ancient devil that is sealed and is something that is definitely needed later.
+759 It is one part of the key that goes into the room of the ancient devil that is sealed and is something that is definitely needed later.
+760 This is something that will definitely be needed later and is an item that dominated something ancient. It only exhibits its original functionality in certain areas.
+768 Glove from which a strong energy is felt.
+769 It is a cloak that helps you recover MP very quickly.
+770 A belt that has a feeling of strong power and energy.
+771 This is something that will definitely be needed later and is an item that dominated something ancient. It only exhibits its original functionality in certain areas.
+772 This is something that will definitely be needed later and is an item that dominated something ancient. It only exhibits its original functionality in certain areas.
+775 This is a ring that proves your marriage. If you wear this ring, you'll be able to teleport with your spouse.
+776 This is a ring that proves your marriage. If you wear this ring, you'll be able to teleport with your spouse.
+783 As the sword used by Varlok, you'll probably be able to use it after putting it through a special refining process. This is an item needed by a Knight.
+784 You feel strong magical energy coming from the Eye of Varlok. This is an item needed by a Wizard.
+785 The Claw of Varlok is incredibly strong and you will probably be able to produce something... This is an item needed by an Elf.
+786 You feel the flames of hell through the Heart of Varlok. This is an item needed by a Prince/Princess.
+787 This sword, from which the wrath of Varlok is felt, has been specially refined to be extremely durable. It cannot be damaged in any way.
+788 This crystal ball, from which the energy of the magic of Varlok is felt, increases maximum MP and intelligence.
+789 This bow, from which the sharpness of Varlok is felt, has been specially refined and is extremely powerful on undead.
+790 This sword, from which the sharpness of Varlok is felt, is encased in powerful energy.
+791 This weapon, from which the immortality of Varlok is felt, has been specially refined and is extremely powerful.
+792 This is the key used by the Ancient Prince to seal Varlok.
+793 This is the key used by the Ancient Knight to seal Varlok.
+794 This is the key used by the Ancient Elf to seal Varlok.
+795 This is the key used by the Ancient Wizard to seal Varlok.
+796 No one knows who made it but it is known as the key that determines the fate of the world.
+797 This item was manufactured long ago in order to seal Varlok. We don't know who made it but such items continue to be produced by someone.
+798 This is a ring that proves your marriage. If you wear this ring, you'll be able to teleport with your spouse.
+799 This is a ring that proves your marriage. If you wear this ring, you'll be able to teleport with your spouse.
+802 Hit Points are slightly recovered after drinking it.
+803 Hit Points are slightly recovered after drinking it.
+804 Hit Points are slightly recovered after drinking it.
+806 Members of a Blood Pledge that has a castle or pledge house are teleported to the pledge house if this is used.
+808 Sealed Tower of Insolence Teleport Charm 11F. Can be used if unsealed.
+809 Sealed Tower of Insolence Teleport Charm 21F. Can be used if unsealed.
+810 Sealed Tower of Insolence Teleport Charm 31F. Can be used if unsealed.
+811 Sealed Tower of Insolence Teleport Charm 41F. Can be used if unsealed.
+816 A mask used by assassins. Safely enchants to +6.
+817 Head of the Orc Elder, priest of the Orcs.
+818 Gloves used by assassins. Safely enchants to +6.
+819 It is too tightly tied to get open.
+820 A hit list of murders near Gludio enchanted with the sorcery of an ancient assassin.
+821 A hit list of murders in Fire-Field Farmers Town enchanted with the sorcery of an ancient assassin.
+822 A hit list of murders in Kent Village enchanted with the sorcery of an ancient assassin.
+823 A hit list of murders in Woodbec Village enchanted with the sorcery of an ancient assassin.
+824 A hit list of murders in Heine City enchanted with the sorcery of an ancient assassin.
+825 A hit list of murders in Aden City enchanted with the sorcery of an ancient assassin.
+826 A hit list of murders in Giran City enchanted with the sorcery of an ancient assassin.
+827 A hit list bag sealed with magic.
+828 Death covenant certificate.
+829 Boots used by assassins, these increase the speed of HP recovery. Safely enchants to +4.
+830 Head of Yeti that catches and eats livestock.
+831 Bottle containing fowl-smelling fungus poison.
+832 The following sentence is written in very small indistinct letters: "The Mark of Darkness will deliver you."
+833 Ingredient needed for manufacturing the legendary Assassin's Sword.
+834 Document regarding the Overseer of Death.
+835 Assassin Master's secret box.
+836 A stone filled with noble energy. It's nature can be changed with Purify Stone, a dark spirit magic spell of the Dark Elves.
+837 Dark Stone. It's nature can be changed with Purify Stone, a dark spirit magic spell of the Dark Elves. It is also used as an ingredient to make something.
+838 Brave Stone. It's nature can be changed with Purify Stone, a dark spirit magic spell of the Dark Elves. It is also used as an ingredient to make something.
+839 Wise Stone. It's nature can be changed with Purify Stone, a dark spirit magic spell of the Dark Elves. It is also used as an ingredient to make something.
+840 Kaiser Stone. The highest level of refinement made with the dark spirit magic spell Purify Stone. It is used as an ingredient to make something.
+841 A stone filled with the energy of the spirits. It becomes a crystal with attributes if a certain response is given.
+842 A crystal filled with the energy of fire. It is used as an ingredient to make something.
+843 A crystal filled with the energy of water. It is used as an ingredient to make something.
+844 A crystal filled with the energy of wind. It is used as an ingredient to make something.
+845 A crystal filled with the energy of earth. It is used as an ingredient to make something.
+846 Edoryu of Assassin. Made by refining Dark Stone.
+847 Claw of Assassin. Made by refining Dark Stone.
+848 Dark Elf Crossbow. Made by refining Dark Stone.
+849 Edoryu of Assassin. Made by refining silver.
+850 Claw of Assassin. Made by refining silver.
+851 Edoryu of Assassin. Made by refining Brave Stone.
+852 Claw of Assassin. Made by refining Brave Stone.
+853 Dark Elf Crossbow. Made by refining Brave Stone.
+854 Edoryu of Assassin. Made by refining Kaiser Stone.
+855 Claw of Assassin. Made by refining Kaiser Stone.
+856 Dark Elf Crossbow. Made by refining Kaiser Stone.
+857 Edoryu made by refining bronze. Not very strong.
+858 Edoryu made by refining steel. Strong.
+859 Edoryu for Assassin.
+860 Edoryu for assassinations. Small and discreet.
+861 Strongest Edoryu. Very strong and cannot be damaged.
+862 Claw made by refining bronze. Not very capable.
+863 Claw made by refining steel. Strong.
+864 Claw for Assassin.
+865 Claw for assassinations. Small and discreet.
+866 Strongest Claw. Very strong and cannot be damaged.
+867 Assassin's Dagger. Can be thrown a long distance.
+868 Strong but soft gloves for using throwing knives.
+869 Dark Elf Cloak. Lightweight, making it ideal for assassins.
+870 Dark Elf Robe. Increases hit point recovery when worn. 
+871 Dark Elf Gloves. Increases accuracy when worn.
+872 Dark Elf Headband. Increases mana recovery when worn.
+873 Dark Elf Boots. Increases DEX, but decreases health, when worn.
+874 Cloak made of silver threads. Has resistance to magic, as well as the power to recover mana.
+875 Cloak filled with the magic of fire. Has resistance to fire magic, as well as the power to recover mana.
+876 Cloak filled with the magic of water. Has resistance to water magic, as well as the power to recover mana.
+877 Cloak filled with the magic of wind. Has resistance to wind magic, as well as the power to recover mana.
+878 Cloak filled with the magic of earth. Has resistance to earth magic, as well as the power to recover mana.
+915 A lesser healing potion used by the ancients. The power of long ago is felt.
+916 A healing potion used by the ancients. The power of long ago is felt.
+917 A greater healing potion used by the ancients. The power of long ago is felt.
+918 Rice cake traditionally made and eaten on special occasions. It is sweet and delicious and helps in recovering mana.
+919 Rice-cake with mugwort traditionally made and eaten on special occasions. It is sweet and delicious and helps significantly in recovering mana.
+920 Traditional snack of the ancients, it is sweet and delicious; helps in recovering mana.
+921 Traditional snack of the ancients, it is sweet and delicious; helps significantly in recovering mana.
+922 Tower of Insolence Teleport Charm 11F. Can teleport straight to the 11th floor if used inside the magic area on the 1st floor.
+923 Tower of Insolence Teleport Charm 21F. Can teleport straight to the 21st floor if used inside the magic area on the 1st floor.
+924 Tower of Insolence Teleport Charm 31F. Can teleport straight to the 31st floor if used inside the magic area on the 1st floor.
+925 Tower of Insolence Teleport Charm 41F. Can teleport straight to the 41st floor if used inside the magic area on the 1st floor.
+926 Ingredient to manufacture Black King weapons. Can be made with black bloodstain.
+927 Crystallization of Dark Elf Blood. Refine it to make Tear of Gran Kain.
+928 Magic leather made from Cimaera Skin. Has the properties of fire.
+929 Magic leather made from Cimaera Skin. Has the properties of water.
+930 Magic leather made from Cimaera Skin. Has the properties of wind.
+931 Magic leather made from Cimaera Skin. Has the properties of earth.
+932 Ball of silver yarn. Used as an ingredient for making a silver circlet.
+933 Silver hand of a pocketwatch. Used as an ingredient for making ball of silver yarn.
+934 Circlet made with silver and gem magic. Has various magical effects.
+935 Scale of Ramia. Used as an ingredient for making something. 
+936 Magical belt that increases HP when worn. Can be made by the alchemist Rumiel.
+937 Magical belt that increases MP when worn. Can be made by the alchemist Rumiel.
+938 Magical belt that increases HP and MP when worn. Can be made by the alchemist Rumiel.
+939 Zombie Heart. Can be exchanged for Crystal of Wisdom if taken to Beyond.
+940 Crystal that has magical powers. Used as an ingredient for making Amulet of Wisdom.
+941 Small cold crystal pieces associated with ice. Can be made into an amulet by polishing and threading together.
+942 Amulet that has magical powers. Raises the magic level of the Wizard that wears it.
+969 Fruit that grows in the southern pole across the sea. Brings about a special occurence if fed to a pet.
+970 Item that will receive the call of Aden again someday.
+971 Item that will receive the call of Aden again someday.
+973 Item that will receive the call of Aden again someday.
+975 A rare cloak that cannot be obtained again. It has an unknown energy that is different than the energy of this world.
+976
+978 Robe on which the magical power of the dark elder is inscribed. Raises MP recovery rate.
+979 Sandals on which the magical power of the dark elder is inscribed. Raises MP recovery rate.
+980 Cap on which the magical power of Baltuzar is inscribed. Raises MP recovery rate.
+981 Cap on which the magical power of Caspa is inscribed. Raises maximum MP by 25 points.
+982 Cap on which the magical power of Merkyor is inscribed. Raises INT by 1 point.
+983 Cap on which the magical power of Sema is inscribed. Raises maximum MP by 15 points and increases MP recovery rate.
+984 The painful energy of unrequitted love wells up from within your soul.
+985 The painful energy of unrequitted love wells up from within your soul.
+986 Magnificent sandals from which the allure of the Ice Queen is felt. As it is a dazzling adornment, it charms the eye that beholds it. Raises maximum HP by 50 points.
+987 Magnificent dress from which the allure of the Ice Queen is felt. As it is a dazzling adornment, it charms the eye that beholds it. Raises maximum HP by 50 points.
+988 Staff on which the magical power and allure of the Ice Queen are inscribed.
+989 Left-hand ring of a doppelganger boss. A character receives the curse of doppelganger and is changed into a skeleton when wearing this ring.
+990 Right-hand ring of a doppelganger boss. A character receives the curse of doppelganger and is changed into an orc warrior when wearing this ring.
+991 Necklace of a doppelganger boss. A character receives the curse of doppelganger and is changed into a werewolf when wearing this ring.
+992 This sword was used by a death knight to kill a dragon; however, it was cursed by the dragon and weakened. The anger of the death knight brings about a strong explosion.
+993 Sword taken from Ronde, the successor to Bludika, by a death knight. The wrath of Ronde summons up a huge thorny vine.
+994 It's a spear designed to beat edoryu swords, and it's sealed.
+995 It's an axe designed to beat claws, and it's sealed.
+996 Sword produced from demon bones and depraved souls filled with feelings of revenge.
+997 Claw produced from demon bones and angry souls filled with hate.
+998 Staff on which the power of demon is inscribed.
+999 Magical armor made by an unknown person. Demonstrates strong resistance to poison and light magic.
+1000 Staff on which the magical power of Baphomet is inscribed
+1001 Magical boots made by an unknown person. Has slight resistance to scrolls of enchant armor.
+1002 Staff on which the magical power of Beleth is inscribed.
+1003 Cloak in which the mysterious power of the giant ant queen is contained. If worn by an Elf, physical strength recovery rate is increased.
+1004 The mysterious power of the giant ant queen raises the physical strength limit.
+1005 Bowgun created by the ancient Elves to use against the giant ant queen.
+1006 Sword created by the ancient Dark Elves to use against the giant ant queen.
+1007 Gloves used by Kurtz. Cursed by someone.
+1008 Armor used by Kurtz. Cursed by someone.
+1009 Boots used by Kurtz. Cursed by someone.
+1010 Helmet used by Kurtz. Cursed by someone.
+1011 Sword used by Kurtz. Cursed by someone.
+1013 Broken Claw of Antharas. You can get a 1st Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1014 Eye of Antharas. You can get a 2nd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1015 Blood of Antharas. You can get a 3rd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1016 Antharas Flesh. You can get a 4th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1017 Heart of Antharas. You can get a 5th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1018 Bone of Antharas. You can get a 6th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1019 Fang of Antharas. You can get a 7th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1021 Broken Claw of Valakas. You can get a 1st Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1022 Eye of Valakas. You can get a 2nd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1023 Blood of Valakas. You can get a 3rd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1024 Valakas Flesh. You can get a 4th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1025 Heart of Valakas. You can get a 5th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1026 Bone of Valakas. You can get a 6th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1027 Fang of Valakas. You can get a 7th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1029 Boken Claw of Fafurion. You can get a 1st Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1030 Eye of Fafurion. You can get a 2nd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1031 Blood of Fafurion. You can get a 3rd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1032 Fafurion Flesh. You can get a 4th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1033 Heart of Fafurion. You can get a 5th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1034 Bone of Fafurion. You can get a 6th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1035 Fang of Fafurion. You can get a 7th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1037 Broken Claw of Lindvior. You can get a 1st Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1038 Eye of Lindvior. You can get a 2nd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1039 Blood of Lindvior. You can get a 3rd Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1040 Lindvior Flesh. You can get a 4th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1041 Heart of Lindvior. You can get a 5th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1042 Bone of Lindvior. You can get a 6th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1043 Fang of Lindvior. You can get a 7th Generation Heirloom of the Druga Clan if you take it to Larry's Assistant.
+1049 An exquisite assassin's dagger. The blade in the shape of a long claw is suitable for stabbing and performs poison attacks against an opponent with a certain probability.
+1050 Gem in the shape of a black shining star.
+1051 If you go to a white tree, you may feel an unknown power.
+1052 Key of Depravity. Key to a secret passageway that was carved by dark sorcery.
+1053 Cloth wrapping made of blades of grass. It was made a long time ago and looks very old.
+1054 Letter made of tree bark. It was written a long time ago and looks very old.
+1055 Pet armor carved with a sacred pattern. It exudes mysterious aura. WIS+2 MR+20%
+1056 Pet armor made of chain mail. It is heavy but extremely sturdy.
+1057 High quality pet armor made of iron and leather. It is very durable.
+1058 Pet armor made of tanned leather. It is light and tough.
+1059 Sacred pet armor made from a lump of pure mithril. INT+1 WIS+1 MR+10%
+1060 Pet armor that exudes magical power. It is made of oriharukon. INT+3 MR+10%
+1061 Pet armor made of animal bone. It is light and durable.
+1062 Pet armor made of tempered iron. It looks pretty heavy.
+1063 Red aura is exuding like a devil’s tooth.
+1064 Teeth with sharp fangs that stick out.
+1065 Created with a powerful dragon’s tooth.
+1066 A tooth that emanates strong devilish power.
+1067 A tooth that can be bitten by a hunting dog. It looks pretty sharp.
+1068 A tooth that gives you a cold feeling. It looks very hard.
+1069 A tooth flowing with a sacred aura.
+1070 A tooth made of gold. It looks very expensive.
+1071 A tooth made of tempered iron. It looks very hard.
+1072 A tooth that once it bites you, will never let you go. 
+1073
+1074 Plate made through alchemy using shining scales of Ramia as the main ingredient. It seems to shine with moonlight.
+1075 Key of Chaos. Key to a secret passageway that was carved by dark sorcery.
+1076 Long sword used by ordinary foot soldiers.
+1077 Sword that is a bit narrower than a long sword and is used by the head of the people of light.
+1078 Dagger used widely for close-range self-defense.
+1079 Small sword used by rangers. With a blade that is 40-50cm in length, can be wielded very precisely and is made of thick and strong metal.
+1080 One-handed spear used by guards.
+1081 Longbow used by rangers.
+1082 Crossbow used by thieves.
+1083 Heavy crossbow used by guards.
+1084 Staff used by Wizards. Has a magic bonus of +1 and helps to recover MP quickly. 
+1085 Chain mail used by the head of the people of light.
+1086 Leather armor used by ordinary foot soldiers, rangers and thieves.
+1087 Studded leather armor used by guards.
+1088 Robe on which Wizard magic is inscribed. Increases MP recovery rate.
+1089 Boots made of leather used by soldiers or rangers.
+1090 Round shield used by guards.
+1091 Wolf skin cloak used by beast tamers with excellent defensive ability.
+1092 Ring used by beast tamers. The white body of this ring, made of animal bone, is surrounded in red letters. If taken to Rader, something can be obtained.
+1093 Ring used by elementalists. There is a shiny black crystal embedded in this ring made of old wood. If taken to Rader, something can be obtained. 
+1094 A staff that is imbued with the Ice Queen’s charm and magical power. The magical power of the Ice Queen creates a powerful frost spell and gives considerable damage to a target. Through the application of imperfect alchemy, it has not fully recovered all of its original capabilities.
+1095 A staff that is imbued with a demon’s magical power. It will add +5 Magic Bonus.
+1096 A staff that is imbued with the magical power of Baphomet. The dark force of Baphomet will summon a huge earthquake and inflict massive damage to its target.
+1097 A staff that is imbued with the magical power of Beleth. It will increase magic bonus by +2 and very quickly recover one’s MP.
+1098 A sword that used to be used by Kurtz. The wrath of Kurtz summons lightning and inflicts significant damage to its target.
+1099 A scroll of soul. Evil spirits created the scroll to strengthen their magical power. 
+1100 Dark crystal of soul. It contains part of the soul a living being has.
+1101 A silver zongzi. Eating it will increase one’s HP.
+1102 A gold zongzi. Eating it will increase one’s MP.
+1103 A monster that is parasitic on another living being’s optic nerve and steals its visual information.
+1104 Bludika’s certificate affirming his intention to aid in the fight against Lastabad’s Dark Elves who have invaded Aden.
+1105 The first mark of Aden Kingdom that is awarded to those who have contributed to the defense of Aden.
+1106 It looks a little deteriorated. Its mysterious aura makes its possessor become violent.
+1107 A certificate of a Dwarven general promising to help in the fight against Lastabad’s Dark Elves who have invaded Aden.
+1108 The instruction manual for creating items by using black lump of pure mithril.
+1109 The second mark of Aden Kingdom that is awarded to those who have contributed to the defense of Aden.
+1110 A necklace of a soldier who was killed while defending Aden against Lastabad’s dark elves.
+1111 A badge worn by a Lastabad Dark Elf soldier.
+1112 A badge worn by a Lastabad Dark Elf general.
+1113 A ring that is given to a protector of Aden. It increases AC by 1.
+1114 Bread that exudes a mysterious aura.
+1115 Water that exudes a mysterious aura.
+1116 A pouch containing a dwarven general’s letter of agreement and instruction manual for making items out of mithril.
+1117 A pouch containing holy bread and holy water.
+1118 Compensation that is given to those who have devoted themselves in the defense of Aden.
+1119 Compensation that is given to those who have devoted themselves in the defense of Aden.
+1120 It is used to purify black lump of rough mithril and black lump of pure mithril.
+1121 A refined lump of pure mithril. It is used as an ingredient in the creation of items.
+1122 Alloy made with black lump of pure mithril. It is a type of metal that is very difficult to work with.
+1123 The curse of the Mummy Lord will give you power in exchange for sacrificing beauty. STR+2 DEX+1 CON+1 CHA-2 
+1124 
+1125
+1126
+1127
+1128
+1129
+1130
+1131
+1132 A pouch containing a scroll. What type of scroll it contains is unknown.
+1133
+1134
+1135
+1136
+1137
+1138
+1139
+1140
+1141
+1142 Ice Gem. Quest Item.
+1161 Claws that Baranka received from Dantes. Claws that have two large fang-like claws and another thin but very long claw.
+1162 Bone and leather armor used by Baranka. Armor that is made of full dragon bone and lesser dragon leather. Raises Strength and Dexterity by 1 each while sacrificing 2 of Charisma.
+1163 Bone and leather helmet used by Baranka. Helmet that is made of full dragon bone and lesser dragon leather. Raises Constitution by 1 while sacrificing 1 of Charisma.
+1164 Leather gloves used by Baranka. Gloves manufactured from a very thin and light leather material in order for Baranka to use his large claws.
+1165 Leather boots used by Baranka. Boots made of animal leather. The bottom part is very wide and thick.
+1166 Wand used by Laia. While reducing attack ability and defense ability, increases movement speed and MP recovery rate.
+1167 Amulet used by Laia. While sacrificing 2 of Constitution, increases Wisdom and Intelligence by 1 each.
+1168 Ring that Laia received from Dantes. As a ring infused with magic in order to improve defensive ability, this ring increases AC by up to 5.
+1169 Robe used by Laia. Increases maximum MP by 100 points.
+1170 Ring used by Beast Summoner. If taken to Rader, something can be obtained.
+1171 Amulet used by Beast Summoner. Raises Charisma by 2 while sacrificing 1 of Wisdom.
+1172 Robe used by Beast Summoner. Increases MP recovery rate and maximum HP value.
+1173 Whip used by Beast Summoner.
+1174 Ring used by Black Wizard. If taken to Rader, something can be obtained.
+1175 Amulet used by Black Wizard. Increases Intelligence by 2 while sacrificing 1 of Constitution.
+1176 Robe used by Black Wizard. Increases MP recovery rate and maximum MP value.
+1177 Staff used by Black Wizard.  Provides magic bonus of +2 and raises MP recovery rate.
+1178 Ring used by Dark Forester. If taken to Rader, something can be obtained.
+1179 Boots used by Dark Forester. Increases maximum HP value.
+1180 Robe used by Dark Forester. Increases maximum MP value.
+1181 Potion made of plant extract. Is a potion that changes the characteristics of materials so that they become stronger.
+1182 The dark energy of Black Ent creates monsters.
+1183 The curse of Black Ent causes you to change into a monster.
+1184 Fruit enchanted with the curse of death. If used, the player obtains an item called Oath of Death while losing experience points.
+1185 Crystal made of blue and red crystals. The HP recovery rate is increased as much as the MP recovery rate is reduced.
+1186 Leather of Black Tiger. Used as an ingredient for making things.
+1187 Fang of Black Tiger. Used as an ingredient for making things.
+1188 Claw of Black Tiger. Used as an ingredient for making things.
+1189 Root of Deep Flower. Used as an ingredient for making things.
+1190 Flower Bud of Deep Flower. Used as an ingredient for making things.
+1191 Venom of Plate Worm. Used as an ingredient for making things.
+1192 Fang of Plate Worm. Used as an ingredient for making things.
+1193 Rind of Plate Worm. Used as an ingredient for making things.
+1194 Leather of Mole. Used as an ingredient for making things.
+1195 Tail of Dillo. Used as an ingredient for making things.
+1196 Plate Worm Rind Armor. 
+1197 Black Tiger energy increases HP recovery rate.
+1198 A sword created by combining the method of manufacturing ancient Dark Elven weapons and the method of manufacturing Dwarven weapons. The target of an attack is not able to use magic for a certain time due to Plate Worm Venom and Deep Flower Gas.
+1199 Great sword manufactured by restoring the techniques of manufacturing ancient Dark Elven weapons.
+1200 Crossbow manufactured by restoring the techniques of manufacturing ancient Dark Elven weapons.
+1201 Document made in order to remove Black Mithril Ore.
+1202 Pouch used for holding Black Mithril Ore at the mine.
+1203 Bubbling blob gastric juice.
+1204 Looks like lava that has been burned to dust.
+1205 Black stone in the shape of a cone.
+1282 Dagger made of oriharukon. Does not get damaged.
+1283 Dagger made of mithril. Has magical strength so that MP recovery and magical abilities increase.
+1284 Strong axe made of black mithril. Can break if enchanted.
+1285 Long spear that can attack across two cells. Has maximum HP effect of +50.
+1286 Coat made of animal fur that has magical powers. Freeze resistance +8%, resistance to water elemental +10%, resistance to fire elemental -10%.
+1287 Hat made of mambo rabbit fur. This item brings good luck when worn. Freeze resistance 2%, lucky bonus +1
+1288 Gloves having energy of Spirit of Flame. Resistance to fire elemental +4%
+1289 Gloves having energy of Spirit of Water. Resistance to water elemental +4%
+1290 Gloves having energy of Spirit of Wind. Resistance to water elemental +4%
+1291 Gloves having energy of Spirit of Earth. Resistance to land elemental +4%
+1292 Ring made by gathering energy of Spirit of Abyss. Resistance to sleep +4%
+1305 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1306 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1307 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1308 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1309 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1310 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1311 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1312 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1313 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it. 
+1314 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1315 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1316 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1317 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1318 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1319 Talking scroll. This magical scroll contains precious knowledge about the essential elements of the world and all kinds of phenomena and rules about it.
+1320 Ivory Tower One-Handed Sword. One-handed sword manufactured at Ivory Tower.
+1321 Ivory Tower Two-Handed Sword. Two-handed sword manufactured at Ivory Tower.
+1322 Ivory Tower Axe. Axe manufactured at Ivory Tower.
+1323 Ivory Tower Spear. Spear manufactured at Ivory Tower.
+1324 Ivory Tower Bow. Bow manufactured at Ivory Tower.
+1325 Ivory Tower Stone Bow. Stone bow manufactured at Ivory Tower.
+1326 Ivory Tower Staff. Staff manufactured at Ivory Tower.
+1327 Ivory Tower Great Sword. Great sword manufactured at Ivory Tower.
+1328 Ivory Tower Claw. Claw manufactured at Ivory Tower.
+1329 Ivory Tower Dagger. Dagger manufactured at Ivory Tower.
+1330 Ivory Tower Leather Helm. Helm manufactured at Ivory Tower.
+1331 Ivory Tower Leather Armor. Armor manufactured at Ivory Tower.
+1332 Ivory Tower Leather Sandals. Sandals manufactured at Ivory Tower.
+1333 Ivory Tower Leather Gloves. Gloves manufactured at Ivory Tower.
+1334 Ivory Tower Leather Shield. Shield manufactured at Ivory Tower.
+1335 Ivory Tower Ring. Ring manufactured at Ivory Tower.
+1336 Ivory Tower T-Shirt. T-shirt manufactured at Ivory Tower.
+1337 Ivory Tower Teleport Scroll. Teleports to a random location when used. If used together with a "Ring of Teleport Control", the character can be teleported to a desired location.
+1338 Ivory Tower Scroll of Return. Teleports to the nearest village when used.
+1339 Ivory Tower Scroll of Identity. Can identify ability of an item when used.
+1340 Ivory Tower Scroll of Curse Removal. Removes the curse on an item when used.
+1341 Ivory Tower Scroll of Polymorph. Can polymorph into the desired monster when used. However, the polymoph duration is only 20-30 minutes.
+1342 Ivory Tower Healing Potion. Physical ability is recovered a little if taken.
+1343 Ivory Tower Haste Potion. Body moves more quickly for a certain period of time if taken.
+1344 Scroll of Return - Talking Island Village. Teleports to Talking Island Village if used.
+1345 Scroll of Return - Gludin Town. Teleports to Gludin Town if used.
+1346 Scroll of Return - Kent Village. Teleports to Kent Village if used.
+1347 Scroll of Return - Woodbec Village. Teleports to Woodbec Village if used.
+1348 Scroll of Return - Fire-Field Farmers Town. Teleports to Fire-Field Farmers Village if used.
+1349 Scroll of Return - Elven Forest. Teleports to near Elven Forest if used.
+1350 Scroll of Return - Silver Knight Town. Teleports to Silver Knight Town if used.
+1351 Scroll of Return - Giran City. Teleports to Giran City if used.
+1352 Scroll of Return - Heine City. Teleports to Heine City if used.
+1353 Scroll of Return - Oren City. Teleports to Oren City if used.
+1354 Scroll of Return - Werldern Village. Teleports to Werldern Village if used.
+1355 Scroll of Return - Aden Town. Teleports to Aden Town if used.
+1356 Scroll of Return - Silent Cavern. Teleports to Silent Cavern if used.
+1357 1st Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan.
+1358 2nd Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan.
+1359 3rd Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan. 
+1360 4th Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan.
+1361 5th Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan.
+1362 6th Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan.
+1363 7th Generation Heirloom of the Druga Clan. Contains rare and precious items of the Druga clan.
+1364 Unknown Heirloom. Will be changed to a rare and precious item later.
+1365 Unknown Heirloom. Will be changed to a rare and precious item later.
+1366 Unknown Heirloom. Will be changed to a rare and precious item later.
+1367 Unknown Heirloom. Will be changed to a rare and precious item later.
+1368 Unknown Heirloom. Will be changed to a rare and precious item later.
+1369 Unknown Heirloom. Will be changed to a rare and precious item later. 
+1370 Unknown Heirloom. Will be changed to a rare and precious item later.
+1371 Unknown Heirloom. Will be changed to a rare and precious item later.
+1372 Unknown Heirloom. Will be changed to a rare and precious item later.
+1373 Unknown Heirloom. Will be changed to a rare and precious item later.
+1374 Unknown Heirloom. Will be changed to a rare and precious item later.
+1375 Unknown Heirloom. Will be changed to a rare and precious item later.
+1376 Unknown Heirloom. Will be changed to a rare and precious item later.
+1377 Unknown Heirloom. Will be changed to a rare and precious item later.
+1378 Tarak's Head. Looks as if it's alive. If the Shadow Sanctuary is activated, this is the key needed for going down the hall where the Shadow of Flame is located.
+1379 Tarak's Robe. Robe on which Shadow of Flame has cast Curse of Blood. Raises maximum MP by 100 points and the rate of MP recovery. Cannot be enchanted.
+1380 Tarak's Glove. Glove on which Shadow of Flame has cast Curse of Blood. Raises maximum HP by 100 points and constitution by 1.
+1381 Tarak's Cloak. Cloak on which Shadow of Flame has cast Curse of Blood. Raises maximum HP by 100 points and constitution by 1.
+1382 Tarak's Boots. Boots on which Shadow of Flame has cast Curse of Blood. Raises maximum HP by 100 points.
+1383 Tarak's Sickle. Ingredient for making the key necessary for going to Shadow Sanctuary.
+1384 Tarak's Valuables. Box that seals the sorcerers that oppose Shadow of Flame.
+1385 Tarak's Devil Book, Volume 1. History of the undead sorcerers that Tarak wrote.
+1386 Tarak's Tongue. Used as an ingredient for making something.
+1387 Tarak's Devil Book, Volume 2. History of the undead sorcerers that Tarak wrote.
+1388 Tarak's Poison. Used as an ingredient for making something.
+1389 Tarak's Devil Book, Volume 3. History of the undead sorcerers that Tarak wrote.
+1390 Tarak's Fang. Used as an ingredient for making something.
+1391 Tarak's Devil Book, Volume 4. History of the undead sorcerers that Tarak wrote.
+1392 Tarak's Hand. Used as an ingredient for making something.
+1393 Ancients' Book of Magic, Volume 1. Regarding magic of the ancients and written by Gian.
+1394 Devil's Black Shackles.
+1395 Gian's Scroll. Bestows magic on armor so that it can have higher defensive ability.
+1396 Kalbas' Scroll. Bestows magic on a weapon to make it stronger.
+1397 Ancients' Book of Magic, Volume 2. Regarding the magic of the ancients and written by Gian.
+1398 Devil's Black Shackles.
+1399 Ancients' Alchemy Scroll. Bestows magic on a weapon to make it stronger.
+1400 Ancients' Book of Magic, Volume 3. Regarding the magic of the ancients and written by Gian.
+1401 Devil's Blue Shackles
+1402 Ancients' Magic Scroll. Bestows magic on armor so that higher defensive ability can be obtained.
+1403 Ancients' Book of Magic, Volume 4. Regarding the magic of the ancients and written by Gian.
+1404 Devil's White Shackles.
+1405 Alchemist's Stone. Is a stone that has strong creative power and from which the power of a great alchemist can be felt. It makes exciting things according to a certain cycle
+1406 Potion of Mental Ability. A certain amount of MP is recovered if taken.
+1407 Cursed Blood. Is a blob of blood having strong creative power and so it makes exciting things with Devil's Blood according to a certain cycle.
+1408 Devil's Blood. Devil energy soaks its way deep into the mind if taken so that it causes very wide energy and makes movement happen more quickly for a certain duration.
+1409 Varlok's Blood-Colored Cloak. Cloak used by Varlock when running away from Summoner of Blood.
+1401 Devil's Crossbow. If this crossbow used by sorcerers is used, HP falls continuously while movement speeds up.
+1411 Devil's Sword. If this sword used by sorcerers is used, HP falls continuously while movement speeds up.
+1412 Devil's Great Sword. If this great sword used by sorcerers is used, HP falls continuously while movement speeds up.
+1413 Devil's Claw. If this claw used by sorcerers is used, HP falls continuously while movement speeds up.
+1431 Roy's Pouch. Contains magical items.
+1432 Jail Key. Can enter jail if used in front of a skeleton.
+1433 Jail Key. Can enter jail if used in front of a skeleton.
+1434 Jail Key. Can enter jail if used in front of a skeleton.
+5000 Magic boots that provide haste effect while worn. These cannot be safely enchanted.
+5001 A simple ring, but useful for crafting magical rings.
+5002 A magical ring that provides resistantance to fire line attacks. It increases the wearer's total mana by 5.
+5003 A magical ring that increases mana regeneration.
+5004 A magical ring that increases wearer's total mana and hit points by 5.
+5005 A magical ring that increases the wearer's carrying capacity.
+5032 A special elven crossbow that requires elemental arrows. Safely enchants to +6.
+5056 Armor of the Dark Elf. When worn as a set, gives great power at great cost. Safely enchants to +6.
+5057 Sandals of the Dark Elf. When worn as a set, gives great power at great cost. Safely enchants to +6.
+5058 Circlet of the Dark Elf. When worn as a set, gives great power at great cost. Safely enchants to +6.
+5105 A magical ring with randomly changing attributes. It could grant the wearer great power or place them in grave danger.
+5155 A quest item used for making elven elemental arrows.
+5156 A quest item used for making elven elemental arrows.
+5157 A quest item used for making elven elemental arrows.
+5158 A quest item used for making elven elemental arrows.

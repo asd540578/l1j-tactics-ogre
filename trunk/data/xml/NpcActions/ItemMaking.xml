@@ -265,59 +265,65 @@
 <!-- オリジナルアイテムここまで -->
 <!-- オリジナルアイテムここまで -->
 
-
+<!-- エリクサーここまで -->
 	<!--ロウ ブーツ / ネルファ-->
 	<Action Name="request low boots">
 		<MakeItem>
-			<Item Amount="1" ItemId="20213"/>
-			<Material Amount="2" ItemId="40505"/>
-			<Material Amount="4" ItemId="40502"/>
+			<Item Amount="1" ItemId="40033"/>
+			<Material Amount="3" ItemId="60018"/>
+			<Material Amount="5" ItemId="60044"/>
+			<Material Amount="100" ItemId="60185"/>
 		</MakeItem>
 	</Action>
 	<!--ブーツ / ネルファ-->
 	<Action Name="request boots">
 		<MakeItem>
-			<Item Amount="1" ItemId="20205"/>
-			<Material Amount="2" ItemId="40504"/>
-			<Material Amount="10" ItemId="40502"/>
+			<Item Amount="1" ItemId="40034"/>
+			<Material Amount="3" ItemId="60018"/>
+			<Material Amount="5" ItemId="60044"/>
+			<Material Amount="100" ItemId="60185"/>
 		</MakeItem>
 	</Action>
 	<!--エントの枝 / ネルファ-->
 	<Action Name="request twig of ent">
 		<MakeItem>
-			<Item Amount="1" ItemId="40507"/>
-			<Material Amount="200" ItemId="40743"/>
+			<Item Amount="1" ItemId="40035"/>
+			<Material Amount="3" ItemId="60018"/>
+			<Material Amount="5" ItemId="60046"/>
+			<Material Amount="100" ItemId="60185"/>
 		</MakeItem>
 	</Action>
 	<!--ウッドン ジャケット / ネルファ-->
 	<Action Name="request wooden jacket" NpcId="70838">
 		<MakeItem>
-			<Material Amount="10" ItemId="40507"/>
-			<Material Amount="6" ItemId="40502"/>
-			<Item Amount="1" ItemId="21107"/>
+			<Item Amount="1" ItemId="40038"/>
+			<Material Amount="3" ItemId="60018"/>
+			<Material Amount="5" ItemId="60047"/>
+			<Material Amount="100" ItemId="60185"/>
 		</MakeItem>
 	</Action>
+	
 	<!--ウィザードの服 / モーリア-->
 	<Action Name="request magician dress">
 		<MakeItem>
-			<Item Amount="1" ItemId="20111"/>
-			<Material Amount="1" ItemId="40054"/>
-			<Material Amount="25" ItemId="40318"/>
-			<Material Amount="2" ItemId="40457"/>
-			<Material Amount="4" ItemId="40455"/>
+			<Item Amount="1" ItemId="40036"/>
+			<Material Amount="3" ItemId="60018"/>
+			<Material Amount="5" ItemId="60045"/>
+			<Material Amount="100" ItemId="60185"/>
 		</MakeItem>
 	</Action>
 	<!--ウィザードの帽子 / モーリア-->
 	<Action Name="request magician cap">
 		<MakeItem>
-			<Item Amount="1" ItemId="20012"/>
-			<Material Amount="2" ItemId="40051"/>
-			<Material Amount="20" ItemId="40318"/>
-			<Material Amount="1" ItemId="40457"/>
-			<Material Amount="1" ItemId="40456"/>
-			<Material Amount="1" ItemId="40455"/>
+			<Item Amount="1" ItemId="40037"/>
+			<Material Amount="3" ItemId="60018"/>
+			<Material Amount="5" ItemId="60045"/>
+			<Material Amount="100" ItemId="60185"/>
 		</MakeItem>
 	</Action>
+
+<!-- エリクサーここまで -->
+
 	<!--アイアン グローブ / ヘクター-->
 	<Action Name="request iron gloves">
 		<MakeItem>

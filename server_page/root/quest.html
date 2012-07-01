@@ -1,0 +1,938 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+	<meta http-equiv="content-style-type" content="text/css">
+	<title>L1J Tactics-Server</title>
+	<link rel="stylesheet" type="text/css" href="csstemplate/style.css">
+</head>
+<body id="INDEX">
+	<div id="PAGETOP">
+		<!--================-->
+		<!--　　ヘッダー　　-->
+		<!--================-->
+		<div id="HEADER">
+			<h1>
+				L1J Tactics-Server</h1>
+			<ul id="PAN">
+				<li>index</li>
+			</ul>
+		</div>
+		<hr>
+		<!--================-->
+		<!--　　メニュー　　-->
+		<!--================-->
+		<div id="MENU">
+			<h2>
+				menu</h2>
+			<ul>
+				<li id="MENU01"><a href="index.html">index</a></li>
+				<li id="MENU02"><a href="rule.html">rule</a></li>
+				<li id="MENU03"><a href="about.html">about</a></li>
+				<li id="MENU04"><a href="andmore.html">and more</a></li>
+				<li id="MENU05" class="menu-on"><a href="quest.html">quest</a></li>
+				<li id="MENU06"><a href="ranking.html">web tool</a></li>
+				<li id="MENU07"><a href="guide.html">guide</a></li>
+			</ul>
+		</div>
+		<hr>
+		<!--================-->
+		<!--　　記事部分　　-->
+		<!--================-->
+		<div id="KIZI">
+			<div class="text">
+				<h3>
+					目次</h3>
+				<ul>
+					<li><a href="#MATERIAL">素材について</a></li>
+					<li><a href="#Make">アイテム製作所</a></li>
+					<li><a href="#WEAPON">武器一覧</a></li>
+					<li><a href="#ARMOR">防具一覧</a></li>
+				</ul>
+				<br>
+				<br>
+				<a name="MATERIAL" id="MATERIAL"></a>
+				<h2>素材について</h2>
+				<ul>
+				Ｓランク装備の作成が可能になりました。<br>
+				素材は全部で下記の９種類あり、作成したアイテムによって必要な素材と数が異なります。<br>
+				尚、アイテム毎の素材一覧では、略称で表記しています。<br>
+				<br>
+				<ul>
+					<li>オリハルコン</li>
+					<li>白金鉱石</li>
+					<li>魔水晶の原石</li>
+					<li>魔神の骨</li>
+					<li>霊馬の羽根</li>
+					<li>星の霊石</li>
+					<li>闇流の秘本</li>
+					<li>絹糸</li>
+					<li>時空の氷鏡</li>
+					<li>燐火の結晶</li>
+					<li>死者の指輪</li>
+					<li>隕鉄</li>
+					<li>妖精の鱗粉</li>
+					<li>灰の秘薬</li>
+					<li>死者の本</li>
+					<li>?の秘薬</li>
+				</ul>
+				<br>
+				素材は雑魚のモンスターやボスからドロップします。<br>
+				素材をドロップするボスモンスターは下記の通りです。<br>
+				<ul>
+					<li>ドルガルア王</li>
+					<li>覇王ドルガルア</li>
+					<li>騎士アガレス</li>
+					<li>激昂のアーバイン</li>
+					<li>障碍のジルドア</li>
+					<li>人斬りハンゾウ</li>
+					<li>暗黒騎士バルバス</li>
+					<li>暗黒騎士マルティム</li>
+					<li>暗黒騎士アンドラス</li>
+					<li>騎士リューモス</li>
+					<li>賞金稼ぎザパン</li>
+					<li>暗紅のハイラム</li>
+					<li>黄土のグアチャロ</li>
+					<li>勇躍のオルゲウ</li>
+					<li>毒牙のラミドス</li>
+					<li>祈りのカズン</li>
+					<li>円舞</li>
+					<li>青月</li>
+					<li>金武</li>
+					<li>烈空</li>
+					<li>屍術師ニバス</li>
+					<li>ブラックモア</li>
+					<li>魔女ベルゼビュート</li>
+					<li>毒使いファルファデ</li>
+					<li>白魔道士ヴェパール</li>
+					<li>妖女ザドバ</li>
+					<li>竜使いハルファス</li>
+					<li>騎士グランディエ</li>
+					<li>騎士ヴェルマドワ</li>
+					<li>司祭ブランタ</li>
+					<li>騎士ラウアール</li>
+					<li>鉄紺のウラム</li>
+					<li>怒りのモディリアーニ</li>
+					<li>枯色のカムラット</li>
+					<li>大地の魔術師シェリー</li>
+					<li>焦香のビンガム</li>
+					<li>東雲のカークリノーラス</li>
+					<li>無念のディダーロ</li>
+					<li>灰白のルロッツァ</li>
+					<li>砂漠のロボス</li>
+					<li>弓使いアロセール</li>
+					<li>暗黒騎士ランスロット</li>
+					<li>暗黒騎士バールゼフォン</li>
+					<li>暗黒騎士ヴォラック</li>
+					<li>ザエボス</li>
+					<li>レオナール</li>
+					<li>暗黒騎士バルバス</li>
+				</ul>
+				<br>
+				<br>
+				<ul class="modori">
+					<li><a href="#PAGETOP">TOP</a></li>
+				</ul>
+				</ul>
+			<hr>
+			<a name="Make" id="Make"></a>
+			<div>
+			<h2>アイテム制作所</h2>
+			<br>
+			<ul>
+			各装備は、下記のＮＰＣで作成します。<br>
+			<br>
+			<table border=1 cellpadding=0 cellspacing=0 width=456 style='border-collapse:
+			 collapse;table-layout:fixed;width:343pt'>
+			 <col width=158 style='mso-width-source:userset;mso-width-alt:5056;width:119pt'>
+			 <col width=100 style='mso-width-source:userset;mso-width-alt:3200;width:75pt'>
+			 <col width=198 style='mso-width-source:userset;mso-width-alt:6336;width:149pt'>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 width=158 style='height:13.5pt;width:119pt'>装備</td>
+			  <td class=xl6526126 width=100 style='border-left:none;width:75pt'>NPC名</td>
+			  <td class=xl6526126 width=198 style='border-left:none;width:149pt'>選択アイテム名</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>アサシンブレード</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンクローク</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ファフニール</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ダーククロスボウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>レクサソール</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ダーククロウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>冷艶鋸</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ダークデュアルブレード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>オウガブレード</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>シルバークロウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>伐折羅</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>シルバー デュアルブレード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>イービルスピア</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ブラインド クロスボウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>フレイムフレイル</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ブラインド クロウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>エウロス</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>鍛冶屋 クプ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ブラインド デュアルブレード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ウェーリタース</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント グレートソード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>羅刹</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント ソード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>陽炎</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント ボーガン</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>鬼丸国綱</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント プレートメイル</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>童子切安綱</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント レザーアーマー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>賢者の杖</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント ローブ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ワイズマンスタッフ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ディティクター</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エンシェント スケイルメイル</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>バラド</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>フェアリーダスト<span
+			  style='mso-spacerun:yes'>&nbsp;</span></td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>波夷羅</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ボウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>センテオトルの弓</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴン　ボウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ウィツィロポチトリ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>クロスボウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>聖女の盾</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ロングボウ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>メデューサの盾</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>アロー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ソーサラーブック</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ミスリルの矢</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>タイタニアメイルメイル</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>オリハルコンアロー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ジィルガの魔鎧</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンダガー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>死神の甲冑</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>メイルブレイカー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>オウガアーマー</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンソード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>賢者の衣</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>レイピア</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>セクシードレス</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ギサルメ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>レリクス クローク</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンスピアー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>セクシー クローク</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>フォチャード</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ホーリークラウン</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>クラブ</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>オウガヘルム</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>バトルアックス</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ダイダロスガントレット</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ウッドンアーマー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>スナイプブレイサー</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンブレストプレート</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>セクシーハイブーツ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンチェインメイル</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>キンキーブーツ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンプレートメイル</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>盗賊の指輪</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ウッドンシールド</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>オウガベルト</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンシールド</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>ファイアクレスト</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>エルヴンレザーヘルム</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>千里のピアス</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ブレスオブエルム</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>聖王の首飾り</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ブレイサー</td>
+			 </tr>
+			 <tr height=18 style='height:13.5pt'>
+			  <td height=18 class=xl6526126 style='height:13.5pt;border-top:none'>死霊の首飾り</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>ネルファ</td>
+			  <td class=xl6526126 style='border-top:none;border-left:none'>パワーグローブ</td>
+			 </tr>
+			 <![if supportMisalignedColumns]>
+			 <tr height=0 style='display:none'>
+			  <td width=158 style='width:119pt'></td>
+			  <td width=100 style='width:75pt'></td>
+			  <td width=198 style='width:149pt'></td>
+			 </tr>
+			 <![endif]>
+			</table>
+			</ul>
+			<a name="WEAPON" id="WEAPON"></a>
+			<div>
+			<h2>武器一覧</h2>
+			<br>
+			<ul>
+			Ｓランクの武器一覧です。<br>
+			<br>
+				<table border=1 cellpadding=0 cellspacing=0 width=660 style='border-collapse:
+				 collapse;table-layout:fixed;width:496pt'>
+				 <col width=161 style='mso-width-source:userset;mso-width-alt:5152;width:121pt'>
+				 <col width=95 style='mso-width-source:userset;mso-width-alt:3040;width:71pt'>
+				 <col width=61 style='mso-width-source:userset;mso-width-alt:1952;width:46pt'>
+				 <col width=92 style='mso-width-source:userset;mso-width-alt:2944;width:69pt'>
+				 <col width=68 style='mso-width-source:userset;mso-width-alt:2176;width:51pt'>
+				 <col width=61 span=3 style='mso-width-source:userset;mso-width-alt:1952;
+				 width:46pt'>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl661280 width=161 style='height:13.5pt;width:121pt'>武器</td>
+				  <td class=xl661280 width=95 style='border-left:none;width:71pt'>種類</td>
+				  <td class=xl661280 width=61 style='border-left:none;width:46pt'>素材１</td>
+				  <td class=xl661280 width=92 style='border-left:none;width:69pt'>素材２</td>
+				  <td class=xl661280 width=68 style='border-left:none;width:51pt'>素材３</td>
+				  <td class=xl661280 width=61 style='border-left:none;width:46pt'>素材４</td>
+				  <td class=xl661280 width=61 style='border-left:none;width:46pt'>素材５</td>
+				  <td class=xl661280 width=61 style='border-left:none;width:46pt'>素材６</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>アサシンブレード</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>dagger</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>ファフニール</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>sword</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>レクサソール</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>sword</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>冷艶鋸</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>tohandsword</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>オウガブレード</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>tohandsword</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 15</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>伐折羅</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>spear</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>イービルスピア</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>spear</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>フレイムフレイル</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>tohandblunt</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>エウロス</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>tohandblunt</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>ウェーリタース</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>tohandblunt</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>羅刹</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>edoryu</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>陽炎</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>edoryu</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>鬼丸国綱</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>chainsword</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>童子切安綱</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>chainsword</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>賢者の杖</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>staff</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>ワイズマンスタッフ</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>staff</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>バラド</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>singlebow</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>波夷羅</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>bow</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>白 * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>センテオトルの弓</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>bow</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651280 style='height:13.5pt;border-top:none'>ウィツィロポチトリ</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>claw</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651280 style='border-top:none;border-left:none'>燐 * 20</td>
+				 </tr>
+				 <![if supportMisalignedColumns]>
+				 <tr height=0 style='display:none'>
+				  <td width=161 style='width:121pt'></td>
+				  <td width=95 style='width:71pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				  <td width=92 style='width:69pt'></td>
+				  <td width=68 style='width:51pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				 </tr>
+				 <![endif]>
+				</table>
+			</ul>
+			<ul class="modori">
+				<li><a href="#PAGETOP">TOP</a></li>
+			</ul>
+			<br>
+			<br>
+			<hr>
+			<a name="ARMOR" id="ARMOR"></a>
+			<h2>防具一覧</h2>
+			<br>
+			<ul>
+			Ｓランクの防具一覧です。<br>
+			<b>一部防具では、効果の種類が多すぎるせいか「ＭＲ」と「スタン耐性」の表記が<br>
+			入れ替わっています。実際につけて確認して下さい。</b><br>
+			<br>
+				<table border=1 cellpadding=0 cellspacing=0 width=660 style='border-collapse:
+				 collapse;table-layout:fixed;width:496pt'>
+				 <col width=161 style='mso-width-source:userset;mso-width-alt:5152;width:121pt'>
+				 <col width=95 style='mso-width-source:userset;mso-width-alt:3040;width:71pt'>
+				 <col width=61 style='mso-width-source:userset;mso-width-alt:1952;width:46pt'>
+				 <col width=92 style='mso-width-source:userset;mso-width-alt:2944;width:69pt'>
+				 <col width=68 style='mso-width-source:userset;mso-width-alt:2176;width:51pt'>
+				 <col width=61 span=3 style='mso-width-source:userset;mso-width-alt:1952;
+				 width:46pt'>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl661591 width=161 style='height:13.5pt;width:121pt'>防具</td>
+				  <td class=xl661591 width=95 style='border-left:none;width:71pt'>種類</td>
+				  <td class=xl661591 width=61 style='border-left:none;width:46pt'>素材１</td>
+				  <td class=xl661591 width=92 style='border-left:none;width:69pt'>素材２</td>
+				  <td class=xl661591 width=68 style='border-left:none;width:51pt'>素材３</td>
+				  <td class=xl661591 width=61 style='border-left:none;width:46pt'>素材４</td>
+				  <td class=xl661591 width=61 style='border-left:none;width:46pt'>素材５</td>
+				  <td class=xl661591 width=61 style='border-left:none;width:46pt'>素材６</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>聖女の盾</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>shield</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>メデューサの盾</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>shield</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>ソーサラーブック</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>shield</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>魔 * 10</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>闇 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>タイタニアメイルメイル</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>armor</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>ジィルガの魔鎧</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>armor</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>死神の甲冑</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>armor</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>オウガアーマー</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>armor</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>賢者の衣</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>armor</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>魔 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>絹 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>セクシードレス</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>armor</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>魔 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>絹 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>レリクス クローク</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>cloak</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>絹 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>セクシー クローク</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>cloak</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>魔 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>絹 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>ホーリークラウン</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>helm</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>魔 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>灰 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>オウガヘルム</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>helm</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>ダイダロスガントレット</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>glove</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>灰 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>スナイプブレイサー</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>glove</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>魔 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>霊 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>灰 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>セクシーハイブーツ</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>boots</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>燐 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>キンキーブーツ</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>boots</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>燐 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>盗賊の指輪</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>ring</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>白 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>オウガベルト</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>belt</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>燐 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>隕 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>ファイアクレスト</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>belt</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 50</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>時 * 50</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>霊 * 50</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 50</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>妖 * 50</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>燐 * 50</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>千里のピアス</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>earring</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 10</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>時 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>星 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>聖王の首飾り</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>amulet</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>死指輪 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>死本 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>? * 10</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <tr height=18 style='height:13.5pt'>
+				  <td height=18 class=xl651591 style='height:13.5pt;border-top:none'>死霊の首飾り</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>amulet</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>オ * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>死指輪 * 20</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>死本 * 5</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>灰 * 10</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				  <td class=xl651591 style='border-top:none;border-left:none'>　</td>
+				 </tr>
+				 <![if supportMisalignedColumns]>
+				 <tr height=0 style='display:none'>
+				  <td width=161 style='width:121pt'></td>
+				  <td width=95 style='width:71pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				  <td width=92 style='width:69pt'></td>
+				  <td width=68 style='width:51pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				  <td width=61 style='width:46pt'></td>
+				 </tr>
+				 <![endif]>
+				</table>
+			<ul class="modori">
+				<li><a href="#PAGETOP">TOP</a></li>
+			</ul>
+			<br>
+			<br>
+		</div>
+		<!--================-->
+		<!--　　フッター　　-->
+		<!--================-->
+		<div id="FOOTER">
+			<h2>
+				連絡先</h2>
+			<ul>
+				<li id="FOOTER01"><a href="#PAGETOP">TOP</a></li>
+				<li id="FOOTER03">
+					<address>
+						<a href="mailto:dummy@gmail.com">Copyright&nbsp; (c)&nbsp;ogre&nbsp;All Right
+							Reserved.</a></address>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript"><!--
+var fhp_c_pc = navigator.userAgent.toLowerCase();
+var fhp_ie = ((fhp_c_pc.indexOf("msie") != -1) && (fhp_c_pc.indexOf("opera") == -1));
+var fhp_cs, fhp_wt, fhp_dm;
+
+if (fhp_ie) {
+        fhp_cs = document.charset;
+}else{
+        fhp_cs = document.characterSet;
+}
+fhp_dm = encodeURI(document.location);
+
+fhp_wt = "";
+fhp_wt = '<' + 'script src="http://web.fc2.com/header.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '" charset="UTF-8"><' + '/script>';
+fhp_wt += '<' + 'script src="http://web.fc2.com/footer/footer.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '"><' + '/script>';
+document.write(fhp_wt);
+//--></script>
+</body>
+</html>

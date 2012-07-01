@@ -1,0 +1,10 @@
+<body>
+<br>
+请选择要排列的佣兵。
+<br><br>
+<a action="mercenarySelect0"><var src="#0"></a><br>
+<a action="mercenarySelect1"><var src="#1"></a><br>
+<a action="mercenarySelect2"><var src="#2"></a><br>
+<a action="mercenarySelect3"><var src="#3"></a><br>
+<a action="mercenarySelect4"><var src="#4"></a><br>
+<a action="mercenarySelect5"><var src="#5"></a><br>

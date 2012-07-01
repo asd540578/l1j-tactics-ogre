@@ -1,0 +1,287 @@
+286
+6
+45 95 209 ; field zone name 0 blue
+10 173 90 ; 1-19 zone 1 green
+174 157 14 ; 20-29 zone 2 yellow
+213 130 23 ; 30-39 zone 3 orange
+222 60 60 ; 40-49 zone 4 red
+133 14 189 ; 50-99 zone 5 purple
+
+; Zone Infomation
+"Talking Island" 0 0 0 0 0 0
+"Talking Island Dungeon 1F" 1 1 0 0 0 0  
+"Talking Island Dungeon 2F" 1 2 0 0 0 0  
+"Gunter's House" 0 3 0 0 0 0 
+"Talking Island Ship to Aden Mainland" 0 5 0 0 0 0
+"Aden Mainland Ship to Talking Island" 0 6 0 0 0 0
+"Mainland Dungeon 1F" 1 7 0 0 0 0
+"Mainland Dungeon 2F" 1 8 0 0 0 0
+"Mainland Dungeon 3F" 1 9 0 0 0 0
+"Mainland Dungeon 4F" 1 10 0 0 0 0
+"Mainland Dungeon 5F" 1 11 0 0 0 0
+"Mainland Dungeon 6F" 1 12 0 0 0 0
+"Mainland Dungeon 7F" 1 13 0 0 0 0
+"Underground Passage" 1 14 0 0 0 0
+"Kent Inner Castle" 0 15 0 0 0 0
+"Hardin's Lab" 0 16 0 0 0 0
+"Nerupa's Cave" 0 17 0 0 0 0
+"Dupelgenon Dungeon" 0 18 0 0 0 0
+"Elven Dungeon 1F" 1 19 0 0 0 0
+"Elven Dungeon 2F" 1 20 0 0 0 0
+"Elven Dungeon 3F" 1 21 0 0 0 0
+"Gerard Test Dungeon" 1 22 0 0 0 0
+"Windawood Castle Dungeon" 1 23 0 0 0 0
+"Windawood Castle Dungeon" 2 24 0 0 0 0
+"Silver Knight Town Caves 1F" 1 25 0 0 0 0
+"Silver Knight Town Caves 2F" 1 26 0 0 0 0
+"Silver Knight Town Caves 3F" 1 27 0 0 0 0
+"Silver Knight Town Caves 4F" 2 28 0 0 0 0
+"Windawood Inner Castle" 0 29 0 0 0 0
+"Dragon Valley Caves 1F" 2 30 0 0 0 0
+"Dragon Valley Caves 2F" 2 31 0 0 0 0
+"Dragon Valley Caves 3F" 2 32 0 0 0 0
+"Dragon Valley Caves 4F" 2 33 0 0 0 0
+"Dragon Valley Caves 5F" 2 35 0 0 0 0
+"Dragon Valley Caves 6F" 2 36 0 0 0 0
+"Dragon Valley Caves 7F" 5 37 0 0 0 0
+"Ant Caves" 1 43 0 0 0 0
+"Ant Caves" 1 44 0 0 0 0
+"Ant Caves" 1 45 0 0 0 0
+"Ant Caves" 1 46 0 0 0 0
+"Ant Caves" 1 47 0 0 0 0
+"Ant Caves" 1 48 0 0 0 0
+"Ant Caves" 1 49 0 0 0 0
+"Ant Caves" 1 50 0 0 0 0
+"Ant Caves" 2 51 0 0 0 0
+"Giran Inner Castle" 0 52 0 0 0 0
+"Giran Dungeon 1F" 1 53 0 0 0 0
+"Giran Dungeon 2F" 1 54 0 0 0 0
+"Giran Dungeon 3F" 1 55 0 0 0 0
+"Giran Dungeon 4F" 1 56 0 0 0 0
+"Singing Island" 0 57 0 0 0 0
+"Hidden Valley" 0 58 0 0 0 0
+"Heine Dungeon 1F" 1 59 0 0 0 0
+"Heine Dungeon 2F" 1 60 0 0 0 0
+"Heine Dungeon 3F" 2 61 0 0 0 0
+"Sanctuary of Eva" 0 62 0 0 0 0
+"Kingdom of Eva" 1 63 0 0 0 0
+"Heine Inner Castle" 0 64 0 0 0 0
+"Lair of Fafurion" 5 65 0 0 0 0
+"Iron Gate Guild Inner Castle" 0 66 0 0 0 0
+"Lair of Valakas" 5 67 0 0 0 0
+"Singing Island" 1 68 0 0 0 0
+"Hidden Valley" 1 69 0 0 0 0
+"Lair of Lindvior" 5 4 34065 33053 34017 32948
+"Forgotten Island" 3 70 0 0 0 0
+"Crystal Cavern 1F" 2 72 0 0 0 0
+"Crystal Cavern 2F" 2 73 0 0 0 0
+"Crystal Cavern 3F" 2 74 0 0 0 0
+"Ivory Tower 1F" 1 75 0 0 0 0
+"Ivory Tower 2F" 1 76 0 0 0 0
+"Ivory Tower 3F" 1 77 0 0 0 0
+"Ivory Tower 4F" 1 78 0 0 0 0
+"Ivory Tower 5F" 1 79 0 0 0 0
+"Ivory Tower 6F" 1 80 0 0 0 0
+"Ivory Tower 7F" 1 81 0 0 0 0
+"Ivory Tower 8F" 3 82 0 0 0 0
+"Aden Mainland Ship to Forgotten Island" 0 83 0 0 0 0
+"Forgotten Island Ship to Aden Mainland" 0 84 0 0 0 0
+"Singing Island Dungeon" 1 85 0 0 0 0
+"Hidden Valley Dungeon" 1 86 0 0 0 0
+"Pago's Room" 0 87 0 0 0 0
+"Giran Arena" 0 88 0 0 0 0
+"Giran Arena" 0 89 0 0 0 0
+"Giran Arena" 0 90 0 0 0 0
+"Talking Island Arena" 0 91 0 0 0 0
+"Gludio Arena" 0 92 0 0 0 0
+"Kent Arena" 0 93 0 0 0 0
+"Windawood Arena" 0 94 0 0 0 0
+"Silver Knight Arena" 0 95 0 0 0 0
+"Lair of Valakas Arena" 0 96 0 0 0 0
+"Heine Arena" 0 97 0 0 0 0
+"Werldern Arena" 0 98 0 0 0 0
+"GM Room" 0 99 0 0 0 0
+"Tower of Insolence 1F" 0 101 0 0 0 0
+"Tower of Insolence 2F" 3 102 0 0 0 0
+"Tower of Insolence 3F" 3 103 0 0 0 0
+"Tower of Insolence 4F" 2 104 0 0 0 0
+"Tower of Insolence 5F" 3 105 0 0 0 0
+"Tower of Insolence 6F" 1 106 0 0 0 0
+"Tower of Insolence 7F" 3 107 0 0 0 0
+"Tower of Insolence 8F" 1 108 0 0 0 0
+"Tower of Insolence 9F" 3 109 0 0 0 0
+"Tower of Insolence 10F" 3 110 0 0 0 0
+"Tower of Insolence 11F" 3 111 0 0 0 0
+"Tower of Insolence 12F" 3 112 0 0 0 0
+"Tower of Insolence 13F" 3 113 0 0 0 0
+"Tower of Insolence 14F" 1 114 0 0 0 0
+"Tower of Insolence 15F" 3 115 0 0 0 0
+"Tower of Insolence 16F" 1 116 0 0 0 0
+"Tower of Insolence 17F" 3 117 0 0 0 0
+"Tower of Insolence 18F" 1 118 0 0 0 0
+"Tower of Insolence 19F" 3 119 0 0 0 0
+"Tower of Insolence 20F" 4 120 0 0 0 0
+"Tower of Insolence 21F" 3 121 0 0 0 0
+"Tower of Insolence 22F" 4 122 0 0 0 0
+"Tower of Insolence 23F" 4 123 0 0 0 0
+"Tower of Insolence 24F" 2 124 0 0 0 0
+"Tower of Insolence 25F" 4 125 0 0 0 0
+"Tower of Insolence 26F" 1 126 0 0 0 0
+"Tower of Insolence 27F" 4 127 0 0 0 0
+"Tower of Insolence 28F" 2 128 0 0 0 0
+"Tower of Insolence 29F" 4 129 0 0 0 0
+"Tower of Insolence 30F" 4 130 0 0 0 0
+"Tower of Insolence 31F" 4 131 0 0 0 0
+"Tower of Insolence 32F" 4 132 0 0 0 0
+"Tower of Insolence 33F" 4 133 0 0 0 0
+"Tower of Insolence 34F" 1 134 0 0 0 0
+"Tower of Insolence 35F" 4 135 0 0 0 0
+"Tower of Insolence 36F" 1 136 0 0 0 0
+"Tower of Insolence 37F" 4 137 0 0 0 0
+"Tower of Insolence 38F" 2 138 0 0 0 0
+"Tower of Insolence 39F" 4 139 0 0 0 0
+"Tower of Insolence 40F" 4 140 0 0 0 0
+"Tower of Insolence 41F" 4 141 0 0 0 0
+"Tower of Insolence 42F" 4 142 0 0 0 0
+"Tower of Insolence 43F" 4 143 0 0 0 0
+"Tower of Insolence 44F" 2 144 0 0 0 0
+"Tower of Insolence 45F" 4 145 0 0 0 0
+"Tower of Insolence 46F" 1 146 0 0 0 0
+"Tower of Insolence 47F" 4 147 0 0 0 0
+"Tower of Insolence 48F" 2 148 0 0 0 0
+"Tower of Insolence 49F" 4 149 0 0 0 0
+"Tower of Insolence 50F" 4 150 0 0 0 0
+"Tower of Insolence 51F" 4 151 0 0 0 0
+"Tower of Insolence 52F" 4 152 0 0 0 0
+"Tower of Insolence 53F" 4 153 0 0 0 0
+"Tower of Insolence 54F" 2 154 0 0 0 0
+"Tower of Insolence 55F" 4 155 0 0 0 0
+"Tower of Insolence 56F" 1 156 0 0 0 0
+"Tower of Insolence 57F" 4 157 0 0 0 0
+"Tower of Insolence 58F" 2 158 0 0 0 0
+"Tower of Insolence 59F" 4 159 0 0 0 0
+"Tower of Insolence 60F" 5 160 0 0 0 0
+"Tower of Insolence 61F" 4 161 0 0 0 0
+"Tower of Insolence 62F" 4 162 0 0 0 0
+"Tower of Insolence 63F" 4 163 0 0 0 0
+"Tower of Insolence 64F" 2 164 0 0 0 0
+"Tower of Insolence 65F" 4 165 0 0 0 0
+"Tower of Insolence 66F" 1 166 0 0 0 0
+"Tower of Insolence 67F" 4 167 0 0 0 0
+"Tower of Insolence 68F" 2 168 0 0 0 0
+"Tower of Insolence 69F" 4 169 0 0 0 0
+"Tower of Insolence 70F" 5 170 0 0 0 0
+"Tower of Insolence 71F" 4 171 0 0 0 0
+"Tower of Insolence 72F" 4 172 0 0 0 0
+"Tower of Insolence 73F" 4 173 0 0 0 0
+"Tower of Insolence 74F" 2 174 0 0 0 0
+"Tower of Insolence 75F" 5 175 0 0 0 0
+"Tower of Insolence 76F" 1 176 0 0 0 0
+"Tower of Insolence 77F" 4 177 0 0 0 0
+"Tower of Insolence 78F" 2 178 0 0 0 0
+"Tower of Insolence 79F" 5 179 0 0 0 0
+"Tower of Insolence 80F" 5 180 0 0 0 0
+"Tower of Insolence 81F" 5 181 0 0 0 0
+"Tower of Insolence 82F" 5 182 0 0 0 0
+"Tower of Insolence 83F" 5 183 0 0 0 0
+"Tower of Insolence 84F" 3 184 0 0 0 0
+"Tower of Insolence 85F" 5 185 0 0 0 0
+"Tower of Insolence 86F" 1 186 0 0 0 0
+"Tower of Insolence 87F" 5 187 0 0 0 0
+"Tower of Insolence 88F" 3 188 0 0 0 0
+"Tower of Insolence 89F" 5 189 0 0 0 0
+"Tower of Insolence 90F" 5 190 0 0 0 0
+"Tower of Insolence 91F" 5 191 0 0 0 0
+"Tower of Insolence 92F" 5 192 0 0 0 0
+"Tower of Insolence 93F" 5 193 0 0 0 0
+"Tower of Insolence 94F" 5 194 0 0 0 0
+"Tower of Insolence 95F" 5 195 0 0 0 0
+"Tower of Insolence 96F" 1 196 0 0 0 0
+"Tower of Insolence 97F" 5 197 0 0 0 0
+"Tower of Insolence 98F" 5 198 0 0 0 0
+"Tower of Insolence 99F" 5 199 0 0 0 0
+"Tower of Insolence 100F" 5 200 0 0 0 0
+"Mage Quest Dungeon" 1 201 0 0 0 0
+"Mage Quest Dungeon" 1 202 0 0 0 0
+"Mage Quest Dungeon" 1 203 0 0 0 0
+"Mage Quest Dungeon" 1 204 0 0 0 0
+"Darkelf Dungeon" 1 209 0 0 0 0
+"Darkelf Dungeon" 1 210 0 0 0 0
+"Darkelf Dungeon" 1 211 0 0 0 0
+"Darkelf Dungeon" 1 212 0 0 0 0
+"Darkelf Dungeon" 3 213 0 0 0 0
+"Darkelf Dungeon" 1 214 0 0 0 0
+"Darkelf Dungeon" 1 215 0 0 0 0
+"Darkelf Dungeon" 1 216 0 0 0 0
+"Mutant Ant Dungeon" 1 217 0 0 0 0
+"Mutant Ant Dungeon" 1 218 0 0 0 0
+"Gerard Test Dungeon" 1 221 0 0 0 0
+"Gerard Test Dungeon" 1 222 0 0 0 0
+"Gerard Test Dungeon" 1 223 0 0 0 0
+"Gerard Test Dungeon" 1 224 0 0 0 0
+"Gerard Test Dungeon" 1 225 0 0 0 0
+"Gerard Test Dungeon" 1 226 0 0 0 0
+"Gerard Test Dungeon" 1 227 0 0 0 0
+"Gerard Test Dungeon" 1 228 0 0 0 0
+"Jim's Dungeon" 0 237 0 0 0 0
+"Aden Inner Castle" 0 300 0 0 0 0
+"Aden Sewer" 0 301 0 0 0 0
+"Sepia Dungeon" 0 302 0 0 0 0
+"Dream Island" 3 303 0 0 0 0
+"Silent Cavern" 1 304 0 0 0 0
+"Elder Room" 1 305 0 0 0 0
+"Dungeon of Evil Thoughts" 1 306 0 0 0 0
+"Lastabad Dungeon 1F" 1 307 0 0 0 0
+"Lastabad Dungeon 2F" 1 308 0 0 0 0
+"Lastabad Dungeon 3F" 1 309 0 0 0 0
+"Hell" 0 666 0 0 0 0
+"Ancient 1F" 1 2000 0 0 0 0
+"Ancient 2F" 4 2001 0 0 0 0
+"Ancient 3F" 4 2002 0 0 0 0
+"Ancient 4F" 3 2003 0 0 0 0
+"Orcish Forest" 0 4 32511 32191 32960 32537
+"Gludio" 0 4 32512 32537 32960 33023
+"Windawood" 0 4 32512 33023 32960 33535
+"Elven Forest" 0 4 32960 32191 33216 32511
+"Kent" 0 4 32960 32511 33280 33023
+"Kent" 0 4 33088 33023 33280 33087 ; Kent2
+"Silver Knight Town" 0 4 32960 33023 33088 33087
+"Silver Knight Town" 0 4 32959 33087 33280 33535 ; Silver knight Town2
+"Dragon Valley" 0 4 33216 32191 33472 32511
+"Lair of Valakas" 0 4 33472 32191 33856 32511
+"Lair of Valakas" 0 4 33536 32511 33856 32575 ; Lair of Valakas2
+"Giran" 0 4 33280 32511 33536 33023
+"Giran" 0 4 33536 32575 33920 33023 ; Giran2
+"Heine" 0 4 33280 33023 33792 33535
+"Oren" 0 4 33856 32191 33920 32575
+"Oren" 0 4 33920 32127 34304 32739 ; Oren2
+"Aden" 0 4 33920 32739 34304 33023
+"Aden" 0 4 33792 33023 34304 33535 ; Aden2
+"Auberge" 0 17492 0 0 0 0
+"Gludin Traders Village" 0 340 0 0 0 0
+"Giran Traders Village" 0 350 0 0 0 0
+"Oren Traders Village" 0 360 0 0 0 0
+"Silver Knight Traders Village" 0 370 0 0 0 0
+"Oum Dungeon" 0 310 0 0 0 0
+"Diad Fortress" 3 320 0 0 0 0
+"Mineral Dungeon" 0 330 0 0 0 0
+"Kent Castle Dungeon 1F" 3 240 0 0 0 0
+"Kent Castle Dungeon 2F" 3 241 0 0 0 0
+"Kent Castle Dungeon 3F" 3 242 0 0 0 0
+"Kent Castle Dungeon 4F" 4 243 0 0 0 0
+"Ancient Giant Ruins" 5 400 32728 32853 32788 33016
+"Ancient Giant Ruins" 5 400 32787 32905 32860 33014
+"Ancient Giant Ruins" 5 400 32767 32827 32798 32854
+"Cavern" 3 400 0 0 0 0
+"Cavern" 3 401 0 0 0 0
+"Sanctuary of Evil" 5 410 0 0 0 0
+"Abyss Lake" 3 420 0 0 0 0
+"Elemental Grave" 4 430 0 0 0 0
+"Pirate Island" 2 440 0 0 0 0
+"Pirate Island Dungeon 1F" 2 441 0 0 0 0
+"Pirate Island Dungeon 2F" 2 442 0 0 0 0
+"Pirate Island Dungeon 3F" 3 443 0 0 0 0
+"Pirate Island Dungeon 4F" 3 444 0 0 0 0
+"Hidden Dock to Pirate Island" 0 445 0 0 0 0
+"Pirate Island Ship to Hidden Dock" 0 446 0 0 0 0
+"Hidden Dock Ship to Pirate Island" 0 447 0 0 0 0

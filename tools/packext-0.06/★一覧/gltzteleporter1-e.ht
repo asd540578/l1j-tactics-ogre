@@ -1,0 +1,11 @@
+<body>
+<font fg=ffffff><p align=left>Traders Village Teleporter:</p></font>
+<br>
+<p>OK, are you ready to teleport? I hope you can find the item you are looking for.
+<br>
+<p>And remember to talk to a guard when you want to leave Traders Village.
+<br>
+<br>
+<a action="teleport gludio-gludin-trade-zone">Teleport to Gludin Traders Village.</a>
+</body>
+

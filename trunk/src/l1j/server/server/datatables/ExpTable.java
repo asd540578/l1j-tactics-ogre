@@ -34,11 +34,14 @@ public final class ExpTable {
 	/**
 	 * 有効な経験値の範囲(0~1,859,065,562)
 	 */
-	public static final IntRange EXP_RANGE = new IntRange(0, 0x6ecf16da);
-
+	/* t.s 2012/06/29 mod start */
+		public static final IntRange EXP_RANGE = new IntRange(0, 0x6ecf16da);
+	// 有効な経験値の範囲(0~2,616,432,494）
+	//public static final IntRange EXP_RANGE = new IntRange(0, 0x9BF3976E);
+	/* t.s 2012/06/29 mod end */
 	/**
 	 * 指定されたレベルになるのに必要な累積経験値を求める。
-	 * 
+	 *
 	 * @param level
 	 *            レベル
 	 * @return 必要な累積経験値
@@ -49,7 +52,7 @@ public final class ExpTable {
 
 	/**
 	 * 次のレベルになるのに必要な経験値を求める。
-	 * 
+	 *
 	 * @param level
 	 *            現在のレベル
 	 * @return 必要な経験値
@@ -60,7 +63,7 @@ public final class ExpTable {
 
 	/**
 	 * 累積経験値からレベルを求める。
-	 * 
+	 *
 	 * @param exp
 	 *            累積経験値
 	 * @return 求められたレベル
@@ -83,7 +86,7 @@ public final class ExpTable {
 
 	/**
 	 * 現在のレベルから、経験値のペナルティーレートを求める
-	 * 
+	 *
 	 * @param level
 	 *            現在のレベル
 	 * @return 求められた経験値のペナルティーレート
@@ -99,7 +102,7 @@ public final class ExpTable {
 	}
 
 	/**
-	 * 経験値テーブル(累積値) Lv0-100
+	 * 経験値テーブル(累積値) Lv0-120
 	 */
 	private static final int _expTable[] = { 0, 125, 300, 500, 750, 1296, 2401,
 			4096, 6581, 10000, 14661, 20756, 28581, 38436, 50645, 0x10014,
@@ -118,7 +121,7 @@ public final class ExpTable {
 			0x4e9071de, 0x50b6c122, 0x52dd1066, 0x55035faa, 0x5729aeee,
 			0x594ffe32, 0x5b764d76, 0x5d9c9cba, 0x5fc2ebfe, 0x61e93b42,
 			0x640f8a86, 0x6635d9ca, 0x685c290e, 0x6a827852, 0x6ca8c796,
-			0x6ecf16da, };
+			0x6ecf16da,};
 
 	/**
 	 * 死亡時経験値ペナルティテーブル
@@ -136,5 +139,5 @@ public final class ExpTable {
 			Config.LV87_EXP, Config.LV88_EXP, Config.LV89_EXP, Config.LV90_EXP,
 			Config.LV91_EXP, Config.LV92_EXP, Config.LV93_EXP, Config.LV94_EXP,
 			Config.LV95_EXP, Config.LV96_EXP, Config.LV97_EXP, Config.LV98_EXP,
-			Config.LV99_EXP };
+			Config.LV99_EXP,  };
 }

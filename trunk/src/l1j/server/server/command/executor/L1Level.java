@@ -44,8 +44,14 @@ public class L1Level implements L1CommandExecutor {
 			if (level == pc.getLevel()) {
 				return;
 			}
-			if (!IntRange.includes(level, 1, 99)) {
+			/* t.s 2012/06/29 mod start */
+			/*
+  			if (!IntRange.includes(level, 1, 99)) {
 				pc.sendPackets(new S_SystemMessage("1-99の範囲で指定してください"));
+			 */
+			/* t.s 2012/06/29 mod end */
+			if (!IntRange.includes(level, 1, 119)) {
+				pc.sendPackets(new S_SystemMessage("1-119の範囲で指定してください"));
 				return;
 			}
 			pc.setExp(ExpTable.getExpByLevel(level));

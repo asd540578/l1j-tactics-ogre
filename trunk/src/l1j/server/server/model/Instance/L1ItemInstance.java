@@ -1162,7 +1162,7 @@ public class L1ItemInstance extends L1Object
 		case SHADOW_FANG:
 			/* t.s 2011/12/24 add start */
 			// setDmgByMagic(5);
-			setDmgByMagic(8);
+			setDmgByMagic(20);
 			/* t.s 2011/12/24 add end */
 			break;
 
